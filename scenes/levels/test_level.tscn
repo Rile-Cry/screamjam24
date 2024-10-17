@@ -1,33 +1,148 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=22 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
 [ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/items/ball.tscn" id="2_ji0dx"]
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="3_p630s"]
+[ext_resource type="Terrain3DStorage" uid="uid://b70e0pipjuf3c" path="res://Terrain.res" id="4_o753f"]
+[ext_resource type="Texture2D" uid="uid://bumegg8opujxp" path="res://Placeholders (Will be deleted)/textures/snow_03_rough_4k.jpg" id="5_ik2fh"]
+[ext_resource type="Texture2D" uid="uid://c7j30lsugj4hk" path="res://Placeholders (Will be deleted)/textures/normal.png" id="6_164tw"]
+[ext_resource type="Texture2D" uid="uid://bltm8lrcxsjfh" path="res://Placeholders (Will be deleted)/textures/snow_03_diff_4k.jpg" id="7_r7g0s"]
+[ext_resource type="PackedScene" uid="uid://edogbne3jao8" path="res://scenes/items/pumpkin.tscn" id="8_3lsbo"]
+[ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/items/candle.tscn" id="9_aff50"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_6fplu"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w30xt"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0.89467, 0.485806, 0.620766, 1)
+sky_curve = 0.191184
+sun_curve = 0.0157668
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_brgpr"]
-size = Vector3(20, 0.2, 20)
+[sub_resource type="Sky" id="Sky_36j21"]
+sky_material = SubResource("ProceduralSkyMaterial_w30xt")
+
+[sub_resource type="Environment" id="Environment_jpyii"]
+background_mode = 2
+sky = SubResource("Sky_36j21")
+ambient_light_source = 3
+ambient_light_sky_contribution = 0.0
+tonemap_mode = 3
+glow_enabled = true
+fog_light_color = Color(1, 1, 1, 1)
+fog_density = 0.0
+fog_aerial_perspective = 1.0
+fog_sky_affect = 0.0
+fog_height_density = 3.0211
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.15
+volumetric_fog_albedo = Color(0.585062, 0.585062, 0.585062, 1)
+volumetric_fog_length = 32.0
+volumetric_fog_sky_affect = 0.999
+
+[sub_resource type="Gradient" id="Gradient_duofl"]
+offsets = PackedFloat32Array(0.2, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ne8ja"]
+noise_type = 2
+frequency = 0.03
+cellular_jitter = 3.0
+cellular_return_type = 0
+domain_warp_enabled = true
+domain_warp_type = 1
+domain_warp_amplitude = 50.0
+domain_warp_fractal_type = 2
+domain_warp_fractal_lacunarity = 1.5
+domain_warp_fractal_gain = 1.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3g76b"]
+seamless = true
+color_ramp = SubResource("Gradient_duofl")
+noise = SubResource("FastNoiseLite_ne8ja")
+
+[sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_0580b"]
+_shader_parameters = {
+"auto_base_texture": 0,
+"auto_height_reduction": 0.1,
+"auto_overlay_texture": 1,
+"auto_slope": 1.0,
+"blend_sharpness": 0.494,
+"height_blending": true,
+"macro_variation1": Color(1, 1, 1, 1),
+"macro_variation2": Color(0.460033, 0.61752, 0.561284, 1),
+"noise1_angle": 0.0,
+"noise1_offset": Vector2(0.5, 0.5),
+"noise1_scale": 0.04,
+"noise2_scale": 0.001,
+"noise3_scale": 0.225,
+"noise_texture": SubResource("NoiseTexture2D_3g76b"),
+"vertex_normals_distance": 128.0,
+"world_noise_blend_far": 1.0,
+"world_noise_blend_near": 0.0,
+"world_noise_height": 64.0,
+"world_noise_lod_distance": 7500.0,
+"world_noise_max_octaves": 4,
+"world_noise_min_octaves": 2,
+"world_noise_offset": Vector3(0, 0, 0),
+"world_noise_scale": 5.0
+}
+world_background = 2
+auto_shader = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_br3au"]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_vf2dx"]
+height_offset = 0.5
+density = 10.0
+material_override = SubResource("StandardMaterial3D_br3au")
+generated_type = 1
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_b6uwn"]
+name = "snow_03_rough_4k"
+albedo_color = Color(0.678944, 0.678944, 0.678944, 1)
+albedo_texture = ExtResource("5_ik2fh")
+normal_texture = ExtResource("6_164tw")
+uv_scale = 0.005
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_jiy6k"]
+name = "test_level"
+id = 1
+albedo_color = Color(0.881937, 0.881936, 0.881937, 1)
+albedo_texture = ExtResource("7_r7g0s")
+normal_texture = ExtResource("6_164tw")
+uv_scale = 0.3
+
+[sub_resource type="Terrain3DAssets" id="Terrain3DAssets_u4b4r"]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_vf2dx")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_b6uwn"), SubResource("Terrain3DTextureAsset_jiy6k")])
 
 [node name="TestLevel" type="Node3D"]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(20, 0, 0, 0, 0.2, 0, 0, 0, 20, 0, 0, 0)
-mesh = SubResource("BoxMesh_6fplu")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-shape = SubResource("BoxShape3D_brgpr")
-
-[node name="Player" parent="." instance=ExtResource("1_k3732")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.721907, 0)
-
-[node name="Ball" parent="." instance=ExtResource("2_ji0dx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 0)
+[node name="PlayerHud" parent="." instance=ExtResource("3_p630s")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.916335, 0.400413, 0, -0.400413, 0.916335, 0, 0, 0)
+transform = Transform3D(0.988949, -0.135854, -0.0593644, 0.148057, 0.925824, 0.347749, 0.00771791, -0.352695, 0.935707, 0, 0, 0)
+light_color = Color(0.59, 0.719833, 1, 1)
 shadow_enabled = true
 
-[node name="PlayerHud" parent="." instance=ExtResource("3_p630s")]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jpyii")
+
+[node name="Terrain3D" type="Terrain3D" parent="."]
+storage = ExtResource("4_o753f")
+material = SubResource("Terrain3DMaterial_0580b")
+assets = SubResource("Terrain3DAssets_u4b4r")
+
+[node name="Player" parent="." instance=ExtResource("1_k3732")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.2507, 0)
+
+[node name="Ball" parent="." instance=ExtResource("2_ji0dx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 9.43518, 0)
+
+[node name="Pumpkin" parent="." instance=ExtResource("8_3lsbo")]
+transform = Transform3D(-0.13881, 0, -0.990319, 0, 1, 0, 0.990319, 0, -0.13881, -5.60825, 9.95356, -2.14175)
+
+[node name="Candle" parent="." instance=ExtResource("9_aff50")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 2.21023, 8.7998, 6.08983)

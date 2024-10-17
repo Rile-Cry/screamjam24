@@ -4,7 +4,7 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
-var colliding_obj = null
+var colliding_obj :Interactable= null
 var name_ref = ""
 
 # Child Node references
@@ -20,7 +20,7 @@ func _ready():
 	camera = $Camera3D
 	hand = $Camera3D/Hand
 	ray = $Camera3D/RayCast3D
-	
+
 	# Start with mouse captured
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -32,12 +32,12 @@ func _input(event):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		else:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
+
 	if event is InputEventMouseMotion:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			rotate_y(event.relative.x * -0.001)
 			camera.rotate_x(event.relative.y * -0.001)
-	
+
 	# Basic Interaction with objects, currently only picks up and crudely at that
 	if event.is_action_pressed("interact"):
 		if colliding_obj != null and colliding_obj.type == colliding_obj.ItemType.PICKUP:
@@ -56,7 +56,7 @@ func movement(delta):
 		velocity.y -= gravity * delta
 	else:
 		velocity.y = 0
-	
+
 	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
@@ -65,7 +65,7 @@ func movement(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-	
+
 	move_and_slide()
 
 # _process methods
@@ -85,7 +85,7 @@ func pick_up():
 	if colliding_obj.get_parent() != null:
 		colliding_obj.get_parent().remove_child(colliding_obj)
 	hand.add_child(colliding_obj)
-	colliding_obj.gravity_scale = 0
+	colliding_obj.process_mode =Node.PROCESS_MODE_DISABLED
 	colliding_obj.position = Vector3.ZERO
 
 # ToDo: improve 'pickup' system after hearing back on inventory ideas

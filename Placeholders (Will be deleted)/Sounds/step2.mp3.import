@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4xe0nfeoys0w"
+path="res://.godot/imported/step2.mp3-d8dd662dad3316576657c6ad056c3bac.mp3str"
+
+[deps]
+
+source_file="res://Placeholders (Will be deleted)/Sounds/step2.mp3"
+dest_files=["res://.godot/imported/step2.mp3-d8dd662dad3316576657c6ad056c3bac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3rx44y1ynwpg"]
+
+[ext_resource type="AudioStream" uid="uid://dqomrjh56npbp" path="res://Placeholders (Will be deleted)/Sounds/horror-background-atmosphere-11-240870.mp3" id="1_igi0r"]
+[ext_resource type="AudioStream" uid="uid://cy53k86yfr8cx" path="res://Placeholders (Will be deleted)/Sounds/horror-background-atmosphere-12-240871.mp3" id="2_cf852"]
+[ext_resource type="AudioStream" uid="uid://b44tximy2q1fe" path="res://Placeholders (Will be deleted)/Sounds/horror-background-atmosphere-13-246915.mp3" id="3_viw6m"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_5p0fu"]
+streams_count = 3
+stream_0/stream = ExtResource("1_igi0r")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("2_cf852")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("3_viw6m")
+stream_2/weight = 1.0
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamRandomizer_5p0fu")
+volume_db = -15.0
+autoplay = true
+bus = &"Music"

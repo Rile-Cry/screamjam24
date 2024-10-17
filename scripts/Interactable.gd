@@ -1,3 +1,4 @@
+class_name Interactable
 extends CollisionObject3D
 
 # Type enum for interaction, will flesh out later
@@ -24,9 +25,11 @@ func mouse_entered():
 	Global.item_name = name
 	if type == ItemType.PICKUP:
 		can_pickup = true
-		mesh.set_surface_override_material(0, OutlineShader)
+		if mesh:
+			mesh.set_surface_override_material(0, OutlineShader)
 
 func mouse_exited():
 	Global.item_name = ""
 	can_pickup = false
-	mesh.set_surface_override_material(0, null)
+	if mesh:
+		mesh.set_surface_override_material(0, null)

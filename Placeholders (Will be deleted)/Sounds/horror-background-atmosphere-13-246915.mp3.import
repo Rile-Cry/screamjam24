@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b44tximy2q1fe"
+path="res://.godot/imported/horror-background-atmosphere-13-246915.mp3-0f6bd5bc1774859ce06a7f430e951adb.mp3str"
+
+[deps]
+
+source_file="res://Placeholders (Will be deleted)/Sounds/horror-background-atmosphere-13-246915.mp3"
+dest_files=["res://.godot/imported/horror-background-atmosphere-13-246915.mp3-0f6bd5bc1774859ce06a7f430e951adb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
