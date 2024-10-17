@@ -36,6 +36,7 @@ volumetric_fog_density = 0.15
 volumetric_fog_albedo = Color(0.585062, 0.585062, 0.585062, 1)
 volumetric_fog_length = 32.0
 volumetric_fog_sky_affect = 0.999
+volumetric_fog_temporal_reprojection_enabled = false
 
 [sub_resource type="Gradient" id="Gradient_duofl"]
 offsets = PackedFloat32Array(0.2, 1)
