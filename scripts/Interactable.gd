@@ -8,17 +8,25 @@ enum ItemType {
 }
 
 # Variables
+@onready var OutlineShader = preload("res://visuals/shaders/outline.tres")
 var can_pickup : bool = true
+
+var mesh : MeshInstance3D
 
 # Export Variables
 @export var type : ItemType = ItemType.INTERACT
+
+func _ready():
+	mesh = $MeshInstance3D2
 
 # Handle raycasting from player
 func mouse_entered():
 	Global.item_name = name
 	if type == ItemType.PICKUP:
 		can_pickup = true
+		mesh.set_surface_override_material(0, OutlineShader)
 
 func mouse_exited():
 	Global.item_name = ""
 	can_pickup = false
+	mesh.set_surface_override_material(0, null)
