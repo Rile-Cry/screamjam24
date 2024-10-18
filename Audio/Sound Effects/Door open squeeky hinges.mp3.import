@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3slhrble4x42"
+path="res://.godot/imported/Door open squeeky hinges.mp3-4bfea7d0a12a46aef929cfa96f343090.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sound Effects/Door open squeeky hinges.mp3"
+dest_files=["res://.godot/imported/Door open squeeky hinges.mp3-4bfea7d0a12a46aef929cfa96f343090.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

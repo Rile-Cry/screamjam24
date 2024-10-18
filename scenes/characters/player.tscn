@@ -12,8 +12,7 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_qjw6a"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_tgh7o"]
-size = Vector3(0.5, 1.8, 0.5)
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_w17vh"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_kn2ge"]
 noise_type = 3
@@ -66,10 +65,10 @@ mesh = SubResource("BoxMesh_qjw6a")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
-shape = SubResource("BoxShape3D_tgh7o")
+shape = SubResource("CapsuleShape3D_w17vh")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+transform = Transform3D(1, 9.49948e-08, -3.91155e-08, -9.49948e-08, 1, -1.15484e-07, 3.91155e-08, 1.15484e-07, 1, 0, 1.6, 0)
 cull_mask = 1048573
 fov = 55.0
 
@@ -80,7 +79,7 @@ collision_mask = 4
 [node name="Hand" type="Node3D" parent="Camera3D"]
 transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 0.330267, -0.266782, -0.804486)
 
-[node name="ShakerComponent3D" type="Node3D" parent="Camera3D/Hand"]
+[node name="HandShake" type="Node3D" parent="Camera3D/Hand"]
 script = ExtResource("2_irlbp")
 AutoPlay = true
 shakerPreset = SubResource("Resource_eid41")

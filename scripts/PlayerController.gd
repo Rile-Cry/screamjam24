@@ -1,9 +1,10 @@
+class_name Player
 extends CharacterBody3D
 
 # Constants and Variables
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
-
+const STEP_HEIGHT := 0.1
 var colliding_obj :Interactable= null
 var name_ref = ""
 
@@ -11,6 +12,9 @@ var name_ref = ""
 var camera : Camera3D
 var hand : Node3D
 var ray : RayCast3D
+
+
+
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -40,8 +44,13 @@ func _input(event):
 
 	# Basic Interaction with objects, currently only picks up and crudely at that
 	if event.is_action_pressed("interact"):
-		if colliding_obj != null and colliding_obj.type == colliding_obj.ItemType.PICKUP:
-			pick_up()
+		if colliding_obj != null:
+			match colliding_obj.type:
+				colliding_obj.ItemType.PICKUP:
+					pick_up()
+				colliding_obj.ItemType.INTERACT:
+					colliding_obj.interact()
+
 
 func _physics_process(delta):
 	movement(delta)
@@ -62,12 +71,20 @@ func movement(delta):
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		if Input.is_action_pressed("run"):
+			velocity *= 1.5
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
 
+
+#makes camera move with steps, might delete this later, im not convinced we neeed it
+	camera.position.y = move_toward(camera.position.y,1.6 +  footsteps_player.get_step_percent_complete()* STEP_HEIGHT,delta*.3)
+
+
+@onready var footsteps_player: FootstepsPlayer = $FootstepsPlayer
 # _process methods
 func check_ray():
 	# Make sure the ray is colliding before grabbing collision obj (layer 3: items)

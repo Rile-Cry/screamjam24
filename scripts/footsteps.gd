@@ -8,3 +8,6 @@ func _physics_process(delta: float) -> void:
 	if lastStepPosition.distance_to(global_position) > stepSize:
 		lastStepPosition = global_position
 		play()
+
+func get_step_percent_complete()->float:
+	return lastStepPosition.distance_to(global_position)/stepSize

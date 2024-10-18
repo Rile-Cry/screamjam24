@@ -5,20 +5,31 @@ extends CollisionObject3D
 enum ItemType {
 	READABLE,
 	PICKUP,
-	INTERACT
+	INTERACT,
 }
 
 # Variables
 @onready var OutlineShader = preload("res://visuals/shaders/outline.tres")
 var can_pickup : bool = true
-
 var mesh : MeshInstance3D
 
 # Export Variables
 @export var type : ItemType = ItemType.INTERACT
 
+# Signals
+
+signal OnInteracted
+
+
 func _ready():
 	mesh = $MeshInstance3D2
+
+
+#override in inherited class
+func interact():
+	OnInteracted.emit()
+	return
+
 
 # Handle raycasting from player
 func mouse_entered():
