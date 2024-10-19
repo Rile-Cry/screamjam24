@@ -10,7 +10,6 @@ var climbing := false
 var colliding_obj : Interactable
 var is_on_ladder := false
 var name_ref := ""
-
 @export var drop_dist := 1.25
 
 # Child Node references
@@ -26,7 +25,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 func _ready():
 	# Start with mouse captured
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
+
 	add_to_group("player")
 
 
@@ -38,7 +37,7 @@ func _input(event):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		else:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	
+
 	if event is InputEventMouseMotion:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			rotate_y(event.relative.x * -0.001)
@@ -52,17 +51,17 @@ func _input(event):
 					pick_up()
 				colliding_obj.ItemType.INTERACT:
 					colliding_obj.interact()
-	
+
 	if event.is_action_pressed("stop_climbing"):
 		if is_on_ladder:
 			climbing = false
-	
+
 	if event.is_action_pressed("drop"):
 		drop()
-	
+
 	if event.is_action_pressed("throw"):
 		drop(true)
-	
+
 	if event.is_action_pressed("hand_switch"):
 		switch_hands()
 
@@ -107,7 +106,7 @@ func climb_ladder(delta):
 	# Basic Climb Ability :: already have another idea in mind to improve but as a start.
 	var input_dir = Input.get_axis("move_backward", "move_forward")
 	velocity.y = input_dir * CLIMB_SPEED
-	
+
 	move_and_slide()
 
 

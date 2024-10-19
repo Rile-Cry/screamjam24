@@ -1,0 +1,73 @@
+[gd_scene load_steps=13 format=3 uid="uid://da0s13yra3wsb"]
+
+[ext_resource type="Script" path="res://scenes/characters/demon.gd" id="1_vxvcs"]
+[ext_resource type="AudioStream" uid="uid://cei8rcl27tsxe" path="res://Placeholders (Will be deleted)/Sounds/lightening-bang-impact-40580 (1).mp3" id="2_ouy75"]
+[ext_resource type="PackedScene" uid="uid://dvf7nbplub6jb" path="res://scenes/characters/DemonFootprint.tscn" id="4_bnfay"]
+[ext_resource type="AudioStream" uid="uid://dxq6egirwb8d1" path="res://Placeholders (Will be deleted)/Sounds/explosion-80108.mp3" id="5_4pccl"]
+[ext_resource type="AudioStream" uid="uid://fy334wunsdrs" path="res://Placeholders (Will be deleted)/Sounds/monster-growl-251374.mp3" id="5_nxuwr"]
+[ext_resource type="Script" path="res://scripts/footsteps.gd" id="6_apb5v"]
+[ext_resource type="Script" path="res://scenes/characters/DemonKnockbackField.gd" id="8_gocbq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xfsp2"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_iwx0f"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("2_ouy75")
+stream_0/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_c5rp3"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("5_nxuwr")
+stream_0/weight = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6arky"]
+radius = 1.0
+height = 6.682
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_baefb"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("5_4pccl")
+stream_0/weight = 1.0
+
+[node name="Demon" type="CharacterBody3D"]
+script = ExtResource("1_vxvcs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.997937, 0)
+shape = SubResource("CapsuleShape3D_xfsp2")
+
+[node name="FootstepsPlayer" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.058992, 0)
+stream = SubResource("AudioStreamRandomizer_iwx0f")
+max_polyphony = 5
+bus = &"SoundEffects"
+script = ExtResource("6_apb5v")
+stepSize = 3.0
+footprintPrefab = ExtResource("4_bnfay")
+cameraShakeAmount = 1.0
+
+[node name="Loop" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.058992, 0)
+stream = SubResource("AudioStreamRandomizer_c5rp3")
+autoplay = true
+bus = &"SoundEffects"
+
+[node name="Area3D" type="Area3D" parent="."]
+script = ExtResource("8_gocbq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.997937, 0)
+shape = SubResource("CapsuleShape3D_6arky")
+
+[node name="KnockbackSound" type="AudioStreamPlayer3D" parent="Area3D"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.058992, 0)
+stream = SubResource("AudioStreamRandomizer_baefb")
+max_polyphony = 3
+bus = &"SoundEffects"
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="Area3D" to="Area3D" method="_on_body_shape_entered"]

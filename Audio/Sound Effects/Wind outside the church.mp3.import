@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://g34mpftkupdb"
-path="res://.godot/imported/Wind outside the church.mp3-2778758a352c669af469a5fb7c522e78.mp3str"
+path="res://.godot/imported/Wind outside the church.mp3-30f0c40b796c6c2a318341bbb6d06e5c.mp3str"
 
 [deps]
 
-source_file="res://audio/Sound Effects/Wind outside the church.mp3"
-dest_files=["res://.godot/imported/Wind outside the church.mp3-2778758a352c669af469a5fb7c522e78.mp3str"]
+source_file="res://Audio/Sound Effects/Wind outside the church.mp3"
+dest_files=["res://.godot/imported/Wind outside the church.mp3-30f0c40b796c6c2a318341bbb6d06e5c.mp3str"]
 
 [params]
 

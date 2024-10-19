@@ -781,7 +781,7 @@ size = Vector3(18.8435, 32.0547, 43.4326)
 [sub_resource type="BoxShape3D" id="BoxShape3D_7ja4u"]
 size = Vector3(18.0977, 15.2777, 15.7189)
 
-[node name="TestLevel" type="Node3D"]
+[node name="TestLevel2" type="Node3D"]
 
 [node name="PlayerHud" parent="." instance=ExtResource("3_p630s")]
 

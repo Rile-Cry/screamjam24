@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyvgpv0jb7vij"]
+
+[ext_resource type="Texture2D" uid="uid://baajsgku13l3m" path="res://Placeholders (Will be deleted)/textures/footprint-312425_640.png" id="1_cl86w"]
+[ext_resource type="Texture2D" uid="uid://8j006tj5pfur" path="res://Placeholders (Will be deleted)/textures/smoke.png" id="2_b8pgr"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vyaam"]
+direction = Vector3(0, 1, 0)
+spread = 30.0
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l24on"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_b8pgr")
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="QuadMesh_ob1ts"]
+material = SubResource("StandardMaterial3D_l24on")
+
+[node name="PlayerFootprint" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, 0.1, 0)
+texture = ExtResource("1_cl86w")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+amount = 3
+lifetime = 2.0
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_vyaam")
+draw_pass_1 = SubResource("QuadMesh_ob1ts")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[connection signal="ready" from="GPUParticles3D" to="GPUParticles3D" method="set_emitting" binds= [true]]
+[connection signal="timeout" from="Timer" to="." method="queue_free"]

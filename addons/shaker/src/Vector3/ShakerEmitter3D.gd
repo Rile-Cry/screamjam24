@@ -31,14 +31,14 @@ var collision:CollisionShape3D
 # Called when the node enters the scene tree for the first time
 func _ready() -> void:
 	add_to_group("ShakerEmitter")
-	
+
 	for child in get_children():
 		if child is Area3D:
 			area3d = child
-	
+
 	if not area3d:
 		_create_area3d()
-	
+
 	set_emit(emit)
 
 # Creates an Area3D child node if one doesn't exist
@@ -51,7 +51,7 @@ func _create_area3d() -> void:
 	collision.set_owner(get_tree().edited_scene_root)
 	area3d.name = "Area3D"
 	collision.name = "CollisionShape3D"
-	
+
 	area3d.collision_layer = 1 << 9
 	area3d.collision_mask = 0
 
@@ -75,26 +75,26 @@ func _progress_shake() -> void:
 		var _ease_in: float = 1.0
 		var _ease_out: float = 1.0
 		var _final_duration: float = duration if (duration > 0 and not _fading_out) else 1.0
-		
+
 		_ease_in = ease(timer/_final_duration, fade_in)
 		_ease_out = ease(1.0 - (max((timer - _timer_offset), 0.0))/_final_duration, fade_out)
-		
+
 		if not (duration > 0) or _fading_out:
 			if _ease_out <= get_process_delta_time():
 				force_stop_shake()
-		
+
 		var _shake_position: Vector3 = Vector3.ZERO
 		var _shake_rotation: Vector3 = Vector3.ZERO
 		var _shake_scale: Vector3 = Vector3.ZERO
-		
+
 		if shakerPreset != null:
 			var _value: float = timer
 			var _strength: float = intensity * _ease_in * _ease_out
-			
+
 			_shake_position += (shakerPreset.get_value(_value, ShakerPreset3D.Categories.POSITION) * _strength)
 			_shake_rotation += (shakerPreset.get_value(_value, ShakerPreset3D.Categories.ROTATION) * _strength * (PI/2.0))
 			_shake_scale += (shakerPreset.get_value(_value, ShakerPreset3D.Categories.SCALE) * _strength)
-		
+
 		shake_offset_position = _shake_position
 		shake_offset_rotation = _shake_rotation
 		shake_offset_scale = _shake_scale
