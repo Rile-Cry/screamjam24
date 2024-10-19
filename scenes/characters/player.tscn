@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://ci4s5wyfxbnsl"]
 
-[ext_resource type="Script" path="res://scripts/PlayerController.gd" id="1_uayg2"]
+[ext_resource type="Script" path="res://scripts/characters/PlayerController.gd" id="1_uayg2"]
 [ext_resource type="Script" path="res://addons/shaker/src/Vector3/shaker_component3D.gd" id="2_irlbp"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeNoiseShake3D.gd" id="3_u12es"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerPreset3D.gd" id="4_3wdtf"]
@@ -56,6 +56,7 @@ stream_3/stream = ExtResource("8_xf7yh")
 stream_3/weight = 1.0
 
 [node name="Player" type="CharacterBody3D"]
+collision_mask = 9
 script = ExtResource("1_uayg2")
 
 [node name="Body" type="MeshInstance3D" parent="."]
@@ -73,13 +74,21 @@ cull_mask = 1048573
 fov = 55.0
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
-target_position = Vector3(0, 0, -10)
+target_position = Vector3(0, 0, -4)
 collision_mask = 4
 
-[node name="Hand" type="Node3D" parent="Camera3D"]
+[node name="MainHand" type="Node3D" parent="Camera3D"]
 transform = Transform3D(1, 5.96046e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 0.330267, -0.266782, -0.804486)
 
-[node name="HandShake" type="Node3D" parent="Camera3D/Hand"]
+[node name="HandShake" type="Node3D" parent="Camera3D/MainHand"]
+script = ExtResource("2_irlbp")
+AutoPlay = true
+shakerPreset = SubResource("Resource_eid41")
+
+[node name="OffHand" type="Node3D" parent="Camera3D"]
+transform = Transform3D(1, 1.19209e-07, 0, -1.19209e-07, 1, 0, 0, 7.10543e-15, 1, -0.33, -0.267, -0.804)
+
+[node name="HandShake" type="Node3D" parent="Camera3D/OffHand"]
 script = ExtResource("2_irlbp")
 AutoPlay = true
 shakerPreset = SubResource("Resource_eid41")

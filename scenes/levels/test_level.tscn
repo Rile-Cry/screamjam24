@@ -1,20 +1,21 @@
-[gd_scene load_steps=71 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=72 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
-[ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/items/ball.tscn" id="2_ji0dx"]
+[ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/interactables/ball.tscn" id="2_ji0dx"]
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="3_p630s"]
 [ext_resource type="Terrain3DStorage" uid="uid://b70e0pipjuf3c" path="res://Terrain.res" id="4_o753f"]
 [ext_resource type="Texture2D" uid="uid://c7j30lsugj4hk" path="res://Placeholders (Will be deleted)/textures/normal.png" id="6_164tw"]
 [ext_resource type="Texture2D" uid="uid://bltm8lrcxsjfh" path="res://Placeholders (Will be deleted)/textures/snow_03_diff_4k.jpg" id="7_r7g0s"]
-[ext_resource type="PackedScene" uid="uid://edogbne3jao8" path="res://scenes/items/pumpkin.tscn" id="8_3lsbo"]
-[ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/items/candle.tscn" id="9_aff50"]
+[ext_resource type="PackedScene" uid="uid://edogbne3jao8" path="res://scenes/interactables/pumpkin.tscn" id="8_3lsbo"]
+[ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/interactables/candle.tscn" id="9_aff50"]
 [ext_resource type="Texture2D" uid="uid://bqtopdl8vvlb0" path="res://Placeholders (Will be deleted)/seats/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg" id="9_cp480"]
 [ext_resource type="Texture2D" uid="uid://lq3txe43487y" path="res://Placeholders (Will be deleted)/seats/bench-f006fd8a29f2696150ada2932f96eba9_Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg" id="9_f4660"]
-[ext_resource type="PackedScene" uid="uid://c1gx06ns82v0r" path="res://scenes/items/door.tscn" id="9_h5mvl"]
+[ext_resource type="PackedScene" uid="uid://c1gx06ns82v0r" path="res://scenes/interactables/door.tscn" id="9_h5mvl"]
 [ext_resource type="Texture2D" uid="uid://pfay3lbkerwt" path="res://Placeholders (Will be deleted)/seats/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2_n.jpg" id="10_b6yw3"]
 [ext_resource type="Script" path="res://scenes/levels/AtmosphericZone.gd" id="12_kieop"]
 [ext_resource type="Texture2D" uid="uid://6re67cnacjj7" path="res://Placeholders (Will be deleted)/textures/zombie-521243_1280.png" id="16_1hbl3"]
 [ext_resource type="Script" path="res://scenes/levels/Jumpscare.gd" id="17_0f8tg"]
+[ext_resource type="PackedScene" uid="uid://b64v2w7rch36v" path="res://scenes/objects/ladder.tscn" id="17_bas5w"]
 [ext_resource type="AudioStream" uid="uid://bsf5bqbf6cgt8" path="res://Placeholders (Will be deleted)/Sounds/jumpscareSound.mp3" id="18_t0yxu"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w30xt"]
@@ -1026,7 +1027,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.13565, 4.90497, -24.828)
 shape = SubResource("BoxShape3D_7ja4u")
 
 [node name="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)" type="Node3D" parent="."]
-visible = false
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.06619, 9.84472, -47.004)
@@ -1045,6 +1045,9 @@ script = ExtResource("17_0f8tg")
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 aabb = AABB(-0.15827, -1, -0.33727, 0.316539, 2, 0.674539)
 
+[node name="Ladder" parent="." instance=ExtResource("17_bas5w")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.281667, 10.6021, -17.2582)
+
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
-[connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="_on_visible_on_screen_notifier_3d_screen_entered"]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]
+[connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="_on_visible_on_screen_notifier_3d_screen_entered"]
