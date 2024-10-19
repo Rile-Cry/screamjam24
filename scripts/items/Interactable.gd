@@ -10,8 +10,8 @@ enum ItemType {
 
 # Variables
 @onready var OutlineShader = preload("res://visuals/shaders/outline.tres")
+@onready var mesh := $MeshInstance3D
 var can_pickup : bool = true
-var mesh : MeshInstance3D
 
 # Export Variables
 @export var type : ItemType = ItemType.INTERACT
@@ -20,16 +20,13 @@ var mesh : MeshInstance3D
 
 signal OnInteracted
 
-
 func _ready():
-	mesh = $MeshInstance3D2
-
+	pass
 
 #override in inherited class
 func interact():
 	OnInteracted.emit()
 	return
-
 
 # Handle raycasting from player
 func mouse_entered():

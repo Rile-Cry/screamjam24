@@ -2,10 +2,7 @@ extends CanvasLayer
 
 # Basic Hud :: Will definitely not look like this later, just doing interaction stuffs
 
-var label : Label
+@onready var label := $Label
 
-func _ready():
-	label = $Label
-
-func _process(delta):
+func _process(delta) -> void:
 	label.text = Global.item_name

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b05k46fvdihy3"]
 
-[ext_resource type="AudioStream" uid="uid://g34mpftkupdb" path="res://Audio/Sound Effects/Wind outside the church.mp3" id="1_ao3xj"]
+[ext_resource type="AudioStream" uid="uid://g34mpftkupdb" path="res://audio/Sound Effects/Wind outside the church.mp3" id="1_ao3xj"]
 
 [node name="AtmosphericSounds" type="AudioStreamPlayer"]
 stream = ExtResource("1_ao3xj")

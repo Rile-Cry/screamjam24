@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://drm4nnnapaago"]
 
-[ext_resource type="Script" path="res://scripts/Interactable.gd" id="1_q3366"]
+[ext_resource type="Script" path="res://scripts/items/Interactable.gd" id="1_q3366"]
 [ext_resource type="PackedScene" uid="uid://dglbbmjvokxv5" path="res://scenes/items/root_node.tscn" id="2_ynya4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rlkhp"]

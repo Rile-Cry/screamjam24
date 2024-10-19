@@ -8,12 +8,12 @@ const STEP_HEIGHT := 0.1
 var colliding_obj :Interactable= null
 var name_ref = ""
 
+@export var drop_dist := 1.25
+
 # Child Node references
 var camera : Camera3D
 var hand : Node3D
 var ray : RayCast3D
-
-
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -50,6 +50,9 @@ func _input(event):
 					pick_up()
 				colliding_obj.ItemType.INTERACT:
 					colliding_obj.interact()
+	
+	if event.is_action_pressed("drop"):
+		drop()
 
 
 func _physics_process(delta):
@@ -99,10 +102,22 @@ func check_ray():
 # other methods
 func pick_up():
 	# Crude pickup method :: will look very different.
+	drop()
 	if colliding_obj.get_parent() != null:
 		colliding_obj.get_parent().remove_child(colliding_obj)
 	hand.add_child(colliding_obj)
 	colliding_obj.process_mode =Node.PROCESS_MODE_DISABLED
 	colliding_obj.position = Vector3.ZERO
+	colliding_obj.rotation = hand.rotation
+
+func drop():
+	if hand.get_child_count() > 1:
+		var hand_item = hand.get_child(1)
+		hand.remove_child(hand_item)
+		get_parent().add_child(hand_item)
+		var theta = rotation.y
+		var offset = Vector3(-drop_dist * sin(theta), 0, -drop_dist * cos(theta))
+		hand_item.global_position = hand.global_position + offset
+		hand_item.process_mode = Node.PROCESS_MODE_ALWAYS
 
 # ToDo: improve 'pickup' system after hearing back on inventory ideas
