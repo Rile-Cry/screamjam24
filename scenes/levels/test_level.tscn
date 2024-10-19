@@ -12,14 +12,14 @@
 [ext_resource type="Texture2D" uid="uid://lq3txe43487y" path="res://Placeholders (Will be deleted)/seats/bench-f006fd8a29f2696150ada2932f96eba9_Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg" id="9_f4660"]
 [ext_resource type="PackedScene" uid="uid://c1gx06ns82v0r" path="res://scenes/interactables/door.tscn" id="9_h5mvl"]
 [ext_resource type="Texture2D" uid="uid://pfay3lbkerwt" path="res://Placeholders (Will be deleted)/seats/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2_n.jpg" id="10_b6yw3"]
-[ext_resource type="Script" path="res://scenes/levels/AtmosphericZone.gd" id="12_kieop"]
+[ext_resource type="Script" path="res://scripts/ambience/AtmosphericZone.gd" id="12_kieop"]
 [ext_resource type="Texture2D" uid="uid://6re67cnacjj7" path="res://Placeholders (Will be deleted)/textures/zombie-521243_1280.png" id="16_1hbl3"]
-[ext_resource type="Script" path="res://scenes/levels/Jumpscare.gd" id="17_0f8tg"]
+[ext_resource type="Script" path="res://scripts/ambience/Jumpscare.gd" id="17_0f8tg"]
 [ext_resource type="PackedScene" uid="uid://b64v2w7rch36v" path="res://scenes/objects/ladder.tscn" id="17_bas5w"]
 [ext_resource type="PackedScene" uid="uid://c7ub53k5l7lte" path="res://scenes/levels/church_test_zone.tscn" id="18_egcwb"]
 [ext_resource type="AudioStream" uid="uid://bsf5bqbf6cgt8" path="res://Placeholders (Will be deleted)/Sounds/jumpscareSound.mp3" id="18_t0yxu"]
 [ext_resource type="PackedScene" uid="uid://da0s13yra3wsb" path="res://scenes/characters/demon.tscn" id="19_b7usr"]
-[ext_resource type="PackedScene" uid="uid://bgotjvkit2l11" path="res://scenes/items/Book.tscn" id="20_gxufa"]
+[ext_resource type="PackedScene" uid="uid://bgotjvkit2l11" path="res://scenes/interactables/book.tscn" id="20_gxufa"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w30xt"]
 sky_top_color = Color(0, 0, 0, 1)

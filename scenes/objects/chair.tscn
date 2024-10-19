@@ -1,13 +1,13 @@
 [gd_scene load_steps=43 format=3 uid="uid://u52fmvg00fv"]
 
-[ext_resource type="Texture2D" uid="uid://lq3txe43487y" path="res://Placeholders (Will be deleted)/seats/bench-f006fd8a29f2696150ada2932f96eba9_Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg" id="1_0pagy"]
-[ext_resource type="AudioStream" uid="uid://dxq6egirwb8d1" path="res://Placeholders (Will be deleted)/Sounds/explosion-80108.mp3" id="2_0rt1s"]
-[ext_resource type="Script" path="res://scripts/CollisionSound.gd" id="2_3s4pf"]
+[ext_resource type="AudioStream" uid="uid://dxq6egirwb8d1" path="res://Placeholders (Will be deleted)/Sounds/explosion-80108.mp3" id="1_b2acf"]
+[ext_resource type="Script" path="res://scripts/characters/CollisionSound.gd" id="2_ap6ut"]
+[ext_resource type="Texture2D" uid="uid://lq3txe43487y" path="res://Placeholders (Will be deleted)/seats/bench-f006fd8a29f2696150ada2932f96eba9_Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg" id="3_pjhkf"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_mn57t"]
 random_pitch = 1.1
 streams_count = 1
-stream_0/stream = ExtResource("2_0rt1s")
+stream_0/stream = ExtResource("1_b2acf")
 stream_0/weight = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gqpup"]
@@ -16,7 +16,7 @@ size = Vector3(5.69666, 1.02289, 0.69281)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gqm00"]
 resource_name = "lambert3"
 albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
-albedo_texture = ExtResource("1_0pagy")
+albedo_texture = ExtResource("3_pjhkf")
 metallic = 0.2
 roughness = 0.8
 
@@ -638,7 +638,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0589924, 0)
 stream = SubResource("AudioStreamRandomizer_mn57t")
 max_polyphony = 3
 bus = &"SoundEffects"
-script = ExtResource("2_3s4pf")
+script = ExtResource("2_ap6ut")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0361938, -0.131683, 0.469879)

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dbwwnapmgo6ab"
-path="res://.godot/imported/BookLP.fbx-bef6286ec16bc6f965277578dfe47a82.scn"
+uid="uid://cwu2gwv4pu77o"
+path="res://.godot/imported/Votive.FBX-8a862b10730dcae2ef6810f1fec15b51.scn"
 
 [deps]
 
-source_file="res://visuals/Models/Book/BookLP.fbx"
-dest_files=["res://.godot/imported/BookLP.fbx-bef6286ec16bc6f965277578dfe47a82.scn"]
+source_file="res://models/book/Votive.FBX"
+dest_files=["res://.godot/imported/Votive.FBX-8a862b10730dcae2ef6810f1fec15b51.scn"]
 
 [params]
 

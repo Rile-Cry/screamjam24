@@ -1,7 +1,7 @@
 [gd_scene load_steps=21 format=3 uid="uid://ci4s5wyfxbnsl"]
 
 [ext_resource type="Script" path="res://scripts/characters/PlayerController.gd" id="1_uayg2"]
-[ext_resource type="Script" path="res://scenes/characters/Camera.gd" id="2_gjwb2"]
+[ext_resource type="Script" path="res://scripts/characters/Camera.gd" id="2_gjwb2"]
 [ext_resource type="Script" path="res://addons/shaker/src/Vector3/shaker_component3D.gd" id="2_irlbp"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeNoiseShake3D.gd" id="3_u12es"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerPreset3D.gd" id="4_3wdtf"]
@@ -10,7 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://c4xe0nfeoys0w" path="res://Placeholders (Will be deleted)/Sounds/step2.mp3" id="6_wt8pi"]
 [ext_resource type="AudioStream" uid="uid://dka6jh7ogkys" path="res://Placeholders (Will be deleted)/Sounds/step3.mp3" id="7_7jjje"]
 [ext_resource type="AudioStream" uid="uid://dfoah6ygqbcos" path="res://Placeholders (Will be deleted)/Sounds/step4.mp3" id="8_xf7yh"]
-[ext_resource type="Script" path="res://scripts/footsteps.gd" id="9_vrtr5"]
+[ext_resource type="Script" path="res://scripts/characters/footsteps.gd" id="9_vrtr5"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_qjw6a"]
 

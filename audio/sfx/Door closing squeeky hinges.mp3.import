@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dk2dnoby5xfd4"
+path="res://.godot/imported/Door closing squeeky hinges.mp3-6dcb04b6b056a078a880fee73dec0655.mp3str"
+
+[deps]
+
+source_file="res://audio/sfx/Door closing squeeky hinges.mp3"
+dest_files=["res://.godot/imported/Door closing squeeky hinges.mp3-6dcb04b6b056a078a880fee73dec0655.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

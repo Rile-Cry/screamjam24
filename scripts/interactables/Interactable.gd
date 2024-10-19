@@ -9,7 +9,7 @@ enum ItemType {
 }
 
 # Variables
-@onready var OutlineShader = preload("res://visuals/shaders/base_mat.tres")
+@onready var OutlineShader = preload("res://visuals/materials/base_mat.tres")
 @onready var mesh_list : Array[MeshInstance3D] = [] 
 var can_pickup : bool = true
 

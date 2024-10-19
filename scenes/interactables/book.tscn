@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=3 uid="uid://bgotjvkit2l11"]
 
 [ext_resource type="Script" path="res://scripts/interactables/Interactable.gd" id="1_5v3vm"]
-[ext_resource type="Texture2D" uid="uid://d3bpacyr0lwtb" path="res://visuals/Models/Book/BookLP_standardSurface1_BaseColor.tga" id="2_52dax"]
-[ext_resource type="Texture2D" uid="uid://crulkwbwja778" path="res://visuals/Models/Book/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga" id="3_roa1b"]
+[ext_resource type="Texture2D" uid="uid://d3bpacyr0lwtb" path="res://models/book/BookLP_standardSurface1_BaseColor.tga" id="2_52dax"]
+[ext_resource type="Texture2D" uid="uid://crulkwbwja778" path="res://models/book/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga" id="3_roa1b"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqdx3"]
 size = Vector3(0.269165, 0.0811768, 0.360229)
