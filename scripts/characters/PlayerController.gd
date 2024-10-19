@@ -10,6 +10,7 @@ var climbing := false
 var colliding_obj : Interactable
 var is_on_ladder := false
 var name_ref := ""
+var sanity := 100.0
 @export var drop_dist := 1.25
 
 # Child Node references
@@ -95,7 +96,7 @@ func movement(delta) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-
+	
 	move_and_slide()
 
 #makes camera move with steps, might delete this later, im not convinced we neeed it

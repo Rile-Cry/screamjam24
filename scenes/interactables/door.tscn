@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://c1gx06ns82v0r"]
 
-[ext_resource type="Script" path="res://scenes/levels/Door.gd" id="1_04jlq"]
+[ext_resource type="Script" path="res://scripts/interactables/Door.gd" id="1_04jlq"]
 [ext_resource type="Texture2D" uid="uid://bqtopdl8vvlb0" path="res://Placeholders (Will be deleted)/seats/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg" id="2_eowbc"]
 [ext_resource type="Texture2D" uid="uid://pfay3lbkerwt" path="res://Placeholders (Will be deleted)/seats/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2_n.jpg" id="3_3ugbu"]
-[ext_resource type="AudioStream" uid="uid://c3slhrble4x42" path="res://Audio/Sound Effects/Door open squeeky hinges.mp3" id="4_ve35b"]
-[ext_resource type="AudioStream" uid="uid://dk2dnoby5xfd4" path="res://Audio/Sound Effects/Door closing squeeky hinges.mp3" id="5_mep4l"]
+[ext_resource type="AudioStream" uid="uid://c3slhrble4x42" path="res://audio/Sound Effects/Door open squeeky hinges.mp3" id="4_ve35b"]
+[ext_resource type="AudioStream" uid="uid://dk2dnoby5xfd4" path="res://audio/Sound Effects/Door closing squeeky hinges.mp3" id="5_mep4l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_35vjq"]
 size = Vector3(2.46924, 3.53296, 0.395935)
