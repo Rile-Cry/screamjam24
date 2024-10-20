@@ -7,7 +7,7 @@ const teleportFromPlayerMinDistance:= 2
 var currentIndexAt:= 0
 @onready var jump_sound: AudioStreamPlayer = %JumpSound
 @onready var visible_on_screen_notifier_3d: VisibleOnScreenNotifier3D = %VisibleOnScreenNotifier3D
-
+const sanityDrainPerTeleport := 5
 
 
 
@@ -25,6 +25,7 @@ func _physics_process(delta: float) -> void:
 
 
 func teleportToNextPosition():
+	Global.sanity -= 5
 	jump_sound.play()
 	currentIndexAt = (currentIndexAt + 1) % positionsToSpawnAt.get_child_count()
 	global_position = positionsToSpawnAt.get_child(currentIndexAt).global_position

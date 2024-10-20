@@ -250,18 +250,6 @@ shadow_mesh = SubResource("ArrayMesh_fnxhd")
 [node name="RootNode" type="Node3D"]
 transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 0, 0, 0)
 
-[node name="Point" type="OmniLight3D" parent="."]
-transform = Transform3D(0.142857, 7.81781e-16, -3.72529e-09, 0, 0.142857, 2.99796e-08, 3.72529e-09, -2.99796e-08, 0.142857, 0, 0.0750667, 0)
-light_color = Color(1, 0.7865, 0.39, 1)
-light_energy = 3.0
-light_volumetric_fog_energy = 0.3
-light_size = 0.1
-shadow_enabled = true
-distance_fade_begin = 0.0
-distance_fade_shadow = 0.0
-distance_fade_length = 5.0
-omni_range = 10.0
-
 [node name="Cylinder_004" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.021081, 0, 0, 0, -2.51305e-09, 0.0276012, 0, -0.021081, -3.29032e-09, 0, 0.0505818, 0)
 mesh = SubResource("ArrayMesh_gex6d")

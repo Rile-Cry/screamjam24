@@ -6,7 +6,6 @@ const CLIMB_SPEED := 2.0
 const SPEED := 5.0
 const STEP_HEIGHT := 0.1
 const THROW_SPEED := 25.0
-var inputEnabled := true
 var climbing := false
 var colliding_obj : Interactable
 var is_on_ladder := false
@@ -47,8 +46,6 @@ func _input(event):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		else:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	if !inputEnabled:
-		return
 	if event is InputEventMouseMotion:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			rotate_y(event.relative.x * -0.001)
@@ -73,6 +70,8 @@ func _input(event):
 					colliding_obj.interact()
 				colliding_obj.ItemType.READABLE:
 					read()
+				colliding_obj.ItemType.LIGHTABLE:
+					colliding_obj.interact()
 
 	if event.is_action_pressed("stop_climbing"):
 		if is_on_ladder:
@@ -206,9 +205,9 @@ func switch_hands() -> void:
 func OnSanityChanged():
 	if !goingInsane and Global.sanity <=0:
 		GoInsane()
+
 func GoInsane():
 	goingInsane = true
-	inputEnabled = false
 	var pitchShiftEffect := AudioServer.get_bus_effect(0,1) as AudioEffectPitchShift
 	var reverbEffect := AudioServer.get_bus_effect(0,2) as AudioEffectReverb
 	AudioServer.set_bus_effect_enabled(0,1,true)
@@ -225,7 +224,6 @@ func GoInsane():
 	Global.sanity = 100
 	var newPositions := get_tree().get_nodes_in_group("RespawnPosition")
 	global_position = newPositions.pick_random().global_position
-	inputEnabled = true
 	tween = create_tween().set_parallel(true)
 	tween.tween_property(camera.environment,"adjustment_saturation",1,20)
 	tween.tween_property(PostProcessing.chromatic_aberation,"material:shader_parameter/spread",.005,20)

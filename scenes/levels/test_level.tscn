@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=78 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
 [ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/interactables/ball.tscn" id="2_ji0dx"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://bdqy48qca251o" path="res://scenes/objects/sanity_items/sanity_ball.tscn" id="22_4xpif"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="22_6qe3w"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="24_dx4xd"]
+[ext_resource type="PackedScene" uid="uid://cliyn783t3tkt" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
 
 [sub_resource type="Gradient" id="Gradient_duofl"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -1077,6 +1078,9 @@ size = Vector3(5.31689, 0.419434, 7.16687)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wooden Platform test"]
 shape = SubResource("BoxShape3D_wjbjk")
+
+[node name="Candle2" parent="." instance=ExtResource("25_opk6a")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 9.83796, 9.44416, 16.228)
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]

@@ -8,6 +8,8 @@ var is_holding_book := false
 var sanity := 100:
 	set(x):
 		sanity = x
+		if sanity <0:
+			sanity = 0
 		OnSanityChanged.emit()
 signal OnSanityChanged
 

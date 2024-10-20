@@ -2,10 +2,15 @@ class_name FootstepsPlayer
 extends AudioStreamPlayer3D
 
 var lastStepPosition:= Vector3.ZERO
+
+#dont set if not player
+@export var player: Player
+
 @export var stepSize := 2.0
 @export var legWidth := 1.0
 @export var footprintPrefab: PackedScene
 @export var cameraShakeAmount := 0.0
+
 var leftFootStep := false
 var terrainMask: int
 signal OnStep
@@ -14,7 +19,11 @@ func _ready() -> void:
 	terrainMask = create_collision_mask([4])
 
 func _physics_process(delta: float) -> void:
-	if lastStepPosition.distance_to(global_position) > stepSize:
+	var adjustedStepSize := stepSize
+	if player and player.is_on_ladder:
+		adjustedStepSize *=.4
+
+	if lastStepPosition.distance_to(global_position) > adjustedStepSize:
 		lastStepPosition = global_position
 		play()
 		drop_footprint()

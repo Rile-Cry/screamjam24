@@ -22,10 +22,7 @@ func _process(delta):
 func sanity_drain(delta) -> void:
 	if time > 1:
 		if is_player_around:
-			if Global.sanity > 0:
-				Global.sanity -= DRAIN_STRENGTH
-			elif Global.sanity < 0:
-				Global.sanity = 0
+			Global.sanity -= DRAIN_STRENGTH
 		time = 0.0
 
 	time += delta

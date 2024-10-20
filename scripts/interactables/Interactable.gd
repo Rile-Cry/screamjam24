@@ -6,12 +6,17 @@ enum ItemType {
 	READABLE,
 	PICKUP,
 	INTERACT,
+	LIGHTABLE,
 }
 
 # Variables
 @onready var OutlineShader = preload("res://visuals/materials/outline_mat.tres")
 @onready var mesh_list : Array[MeshInstance3D] = []
 var can_pickup : bool = true
+
+
+
+
 
 # Export Variables
 @export var type : ItemType = ItemType.INTERACT

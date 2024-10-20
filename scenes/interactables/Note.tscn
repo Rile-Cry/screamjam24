@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ccvs74jc3856l"]
 
-[ext_resource type="Script" path="res://scenes/interactables/Readable.gd" id="1_8r0mw"]
+[ext_resource type="Script" path="res://scripts/Readable.gd" id="1_8r0mw"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="2_7575m"]
 [ext_resource type="Texture2D" uid="uid://dytl4hr4qxetk" path="res://Placeholders (Will be deleted)/textures/note.png" id="2_w111q"]
 [ext_resource type="FontFile" uid="uid://iooms834mlvy" path="res://visuals/fonts/ReenieBeanie-Regular.ttf" id="4_am882"]

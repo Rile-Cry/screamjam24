@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d0iptb8nsl8am"]
 
 [ext_resource type="Script" path="res://scripts/objects/creepy_item.gd" id="1_shih8"]
-[ext_resource type="AudioStream" uid="uid://bbkxiw8uhvai4" path="res://audio/sfx/Demonic Mist test 1.mp3" id="2_oykbt"]
+[ext_resource type="AudioStream" uid="uid://bbkxiw8uhvai4" path="res://Audio/sfx/Demonic Mist test 1.mp3" id="2_oykbt"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u5pse"]
 

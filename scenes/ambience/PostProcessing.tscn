@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ciqvb0wayla4l"]
 
-[ext_resource type="Script" path="res://PostProcessing.gd" id="1_blc7j"]
+[ext_resource type="Script" path="res://scripts/ambience/PostProcessing.gd" id="1_blc7j"]
 [ext_resource type="Shader" path="res://visuals/shaders/ChromaticAberation.gdshader" id="2_ckcn2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ln3d5"]
