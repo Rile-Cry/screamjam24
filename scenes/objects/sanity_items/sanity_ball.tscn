@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdqy48qca251o"]
+
+[ext_resource type="Script" path="res://scripts/objects/sanity_item.gd" id="1_f2dw4"]
+[ext_resource type="PackedScene" uid="uid://btfvcj2fwxx0f" path="res://Placeholders (Will be deleted)/lantern/Bad Jack.fbx" id="2_k2isu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wnqr5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gwpu2"]
+radius = 3.0
+
+[node name="SanityItem" type="RigidBody3D"]
+script = ExtResource("1_f2dw4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_wnqr5")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_gwpu2")
+
+[node name="Root Scene" parent="." instance=ExtResource("2_k2isu")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, -0.551743, 0)

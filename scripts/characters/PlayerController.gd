@@ -130,6 +130,8 @@ func pick_up() -> void:
 	drop()
 	if colliding_obj.get_parent() != null:
 		colliding_obj.get_parent().remove_child(colliding_obj)
+	if is_instance_of(colliding_obj, Book):
+		Global.is_holding_book = true
 	main_hand.add_child(colliding_obj)
 	colliding_obj.linear_velocity = Vector3.ZERO
 	colliding_obj.process_mode = Node.PROCESS_MODE_DISABLED
@@ -140,10 +142,12 @@ func pick_up() -> void:
 func drop(throw: bool = false) -> void:
 	if main_hand.get_child_count() > 1:
 		var main_hand_item = main_hand.get_child(1)
+		if is_instance_of(main_hand_item, Book):
+			Global.is_holding_book = false
 		main_hand.remove_child(main_hand_item)
 		get_parent().add_child(main_hand_item)
 		main_hand_item.global_position = main_hand.global_position + (transform.basis * main_hand.position).normalized()
-		main_hand_item.process_mode = Node.PROCESS_MODE_ALWAYS
+		main_hand_item.process_mode = Node.PROCESS_MODE_PAUSABLE
 		if throw:
 			var theta = camera.rotation.y
 			var phi = camera.rotation.x

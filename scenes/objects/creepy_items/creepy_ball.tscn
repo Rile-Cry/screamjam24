@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkb2wc341xj2y"]
+
+[ext_resource type="Script" path="res://scripts/objects/creepy_item.gd" id="1_rppsg"]
+[ext_resource type="PackedScene" uid="uid://cf4tcjljrk04n" path="res://models/ball.glb" id="2_5olyx"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ju0fc"]
+radius = 0.2
+
+[node name="CreepyBall" type="RigidBody3D"]
+script = ExtResource("1_rppsg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_ju0fc")
+
+[node name="ball" parent="." instance=ExtResource("2_5olyx")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)

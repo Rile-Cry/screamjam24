@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0iptb8nsl8am"]
+
+[ext_resource type="Script" path="res://scripts/objects/creepy_item.gd" id="1_shih8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u5pse"]
+
+[node name="CreepyItem" type="RigidBody3D"]
+script = ExtResource("1_shih8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_u5pse")

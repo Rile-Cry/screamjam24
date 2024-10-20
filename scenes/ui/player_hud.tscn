@@ -6,7 +6,7 @@
 follow_viewport_enabled = true
 script = ExtResource("1_g8afo")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="HoverText" type="MarginContainer" parent="."]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -19,6 +19,35 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/margin_bottom = 20
 
-[node name="Label" type="Label" parent="MarginContainer"]
+[node name="Label" type="Label" parent="HoverText"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
+
+[node name="BookLabel" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.5
+offset_top = -27.5
+offset_right = 105.5
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "Book Open"
+
+[node name="Sanity" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="Label" type="Label" parent="Sanity"]
+layout_mode = 2
