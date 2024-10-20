@@ -18,6 +18,9 @@ size = Vector3(2.00586, 0.501465, 1)
 size = Vector3(11.9949, 3.19043, 0.440247)
 
 [node name="ChurchTestZone" type="StaticBody3D"]
+collision_layer = 9
+collision_mask = 9
+metadata/GroundType = 2
 
 [node name="Root Scene" parent="." instance=ExtResource("1_ul5x7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0178189, 4.76837e-07, -0.0864429)

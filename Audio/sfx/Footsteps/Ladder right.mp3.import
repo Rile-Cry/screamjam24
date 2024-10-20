@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2an8cs668scu"
+path="res://.godot/imported/Ladder right.mp3-ca6cd2a96b610fee35668a908639048b.mp3str"
+
+[deps]
+
+source_file="res://Audio/sfx/Footsteps/Ladder right.mp3"
+dest_files=["res://.godot/imported/Ladder right.mp3-ca6cd2a96b610fee35668a908639048b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

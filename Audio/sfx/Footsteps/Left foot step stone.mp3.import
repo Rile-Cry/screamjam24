@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhd4pnv83n1qt"
+path="res://.godot/imported/Left foot step stone.mp3-d2e5566b27d8dca0683bdd6c88e58add.mp3str"
+
+[deps]
+
+source_file="res://Audio/sfx/Footsteps/Left foot step stone.mp3"
+dest_files=["res://.godot/imported/Left foot step stone.mp3-d2e5566b27d8dca0683bdd6c88e58add.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

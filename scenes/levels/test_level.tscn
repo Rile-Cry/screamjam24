@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=77 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
 [ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/interactables/ball.tscn" id="2_ji0dx"]
@@ -760,6 +760,9 @@ script = ExtResource("22_6qe3w")
 pageNumber = 2
 text = "asdfawerasdfasvcvb dfg "
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_wjbjk"]
+size = Vector3(5.31689, 0.419434, 7.16687)
+
 [node name="TestLevel2" type="Node3D"]
 
 [node name="PlayerHud" parent="." instance=ExtResource("3_p630s")]
@@ -775,6 +778,10 @@ shadow_enabled = true
 storage = ExtResource("4_o753f")
 material = SubResource("Terrain3DMaterial_0580b")
 assets = SubResource("Terrain3DAssets_u4b4r")
+render_layers = 2147483657
+collision_layer = 9
+collision_mask = 9
+metadata/GroundType = 0
 
 [node name="Player" parent="." instance=ExtResource("1_k3732")]
 unique_name_in_owner = true
@@ -1058,6 +1065,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.24921, 9.44416, 6.66754)
 
 [node name="Node3D3" type="Node3D" parent="PlayerRespawnPositions" groups=["RespawnPosition"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.611, 8.64971, 12.177)
+
+[node name="Wooden Platform test" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0269, 8.85296, 7.89782)
+collision_layer = 9
+collision_mask = 9
+metadata/GroundType = 2
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Wooden Platform test"]
+size = Vector3(5.31689, 0.419434, 7.16687)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wooden Platform test"]
+shape = SubResource("BoxShape3D_wjbjk")
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]

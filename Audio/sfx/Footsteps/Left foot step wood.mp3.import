@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://t5dra4wqn2vh"
+path="res://.godot/imported/Left foot step wood.mp3-bf5ef6c5662baa5dc3f6746ff71b80de.mp3str"
+
+[deps]
+
+source_file="res://Audio/sfx/Footsteps/Left foot step wood.mp3"
+dest_files=["res://.godot/imported/Left foot step wood.mp3-bf5ef6c5662baa5dc3f6746ff71b80de.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
