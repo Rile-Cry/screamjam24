@@ -9,7 +9,10 @@ const THROW_SPEED := 25.0
 var climbing := false
 var colliding_obj : Interactable
 var is_on_ladder := false
+var max_pitch := deg_to_rad(89)
+var min_pitch := deg_to_rad(-89)
 var name_ref := ""
+var pitch := 0.0
 var sanity := 100.0
 var currentReadingItem: Readable
 @export var drop_dist := 1.25
@@ -45,7 +48,10 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			rotate_y(event.relative.x * -0.001)
-			camera.rotate_x(event.relative.y * -0.001)
+			
+			pitch -= event.relative.y * 0.001
+			pitch = clamp(pitch, min_pitch, max_pitch)
+			camera.rotation.x = pitch
 
 	# Basic Interaction with objects, currently only picks up and crudely at that
 	if event.is_action_pressed("interact"):
