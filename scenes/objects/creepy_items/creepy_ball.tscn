@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/objects/creepy_item.gd" id="1_rppsg"]
 [ext_resource type="PackedScene" uid="uid://cf4tcjljrk04n" path="res://models/ball.glb" id="2_5olyx"]
-[ext_resource type="AudioStream" uid="uid://bbkxiw8uhvai4" path="res://audio/sfx/Demonic Mist test 1.mp3" id="2_13pgg"]
+[ext_resource type="AudioStream" uid="uid://bbkxiw8uhvai4" path="res://Audio/sfx/Demonic Mist test 1.mp3" id="2_13pgg"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_oxekl"]
 radius = 0.3
@@ -15,6 +15,7 @@ shape = SubResource("SphereShape3D_oxekl")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("2_13pgg")
+bus = &"SoundEffects"
 
 [node name="ball" parent="." instance=ExtResource("2_5olyx")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7wijbueu0bly"
+path="res://.godot/imported/jump-scare-sound-2-82831.mp3-79e8213d294967958498035e5fa42c92.mp3str"
+
+[deps]
+
+source_file="res://Placeholders (Will be deleted)/Sounds/jump-scare-sound-2-82831.mp3"
+dest_files=["res://.godot/imported/jump-scare-sound-2-82831.mp3-79e8213d294967958498035e5fa42c92.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

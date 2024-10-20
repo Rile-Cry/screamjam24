@@ -20,9 +20,10 @@
 [ext_resource type="AudioStream" uid="uid://bsf5bqbf6cgt8" path="res://Placeholders (Will be deleted)/Sounds/jumpscareSound.mp3" id="18_t0yxu"]
 [ext_resource type="PackedScene" uid="uid://bgotjvkit2l11" path="res://scenes/interactables/book.tscn" id="20_gxufa"]
 [ext_resource type="PackedScene" uid="uid://4jnjd47tkoo7" path="res://scenes/objects/creepy_items/creepy_ball.tscn" id="21_ie4oq"]
-[ext_resource type="PackedScene" path="res://scenes/interactables/Note.tscn" id="21_w87xw"]
+[ext_resource type="PackedScene" uid="uid://ccvs74jc3856l" path="res://scenes/interactables/Note.tscn" id="21_w87xw"]
 [ext_resource type="PackedScene" uid="uid://bdqy48qca251o" path="res://scenes/objects/sanity_items/sanity_ball.tscn" id="22_4xpif"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="22_6qe3w"]
+[ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="24_dx4xd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w30xt"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -784,9 +785,6 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_03ch4"]
 size = Vector3(18.8435, 32.0547, 43.4326)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7ja4u"]
-size = Vector3(18.0977, 15.2777, 15.7189)
-
 [sub_resource type="Resource" id="Resource_3nvvx"]
 script = ExtResource("22_6qe3w")
 pageNumber = 2
@@ -1024,18 +1022,8 @@ room_size = 0.5
 wall_hardness = 1.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AtmosphericZone"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.78088, 7.7411, -39.2816)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.91978, 7.7411, 27.4325)
 shape = SubResource("BoxShape3D_03ch4")
-
-[node name="AtmosphericZone2" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.7858, -44.9456)
-script = ExtResource("12_kieop")
-room_size = 0.1
-wall_hardness = 1.0
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AtmosphericZone2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.13565, 4.90497, -24.828)
-shape = SubResource("BoxShape3D_7ja4u")
 
 [node name="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)" type="Node3D" parent="."]
 
@@ -1077,6 +1065,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.77183, 9.44416, 13.9147)
 [node name="Note2" parent="." instance=ExtResource("21_w87xw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12874, 9.44416, 13.0725)
 noteResource = SubResource("Resource_3nvvx")
+
+[node name="Doll" parent="." node_paths=PackedStringArray("positionsToSpawnAt") instance=ExtResource("24_dx4xd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.09525, 9.44416, 17.5494)
+positionsToSpawnAt = NodePath("../DollPositions")
+
+[node name="DollPositions" type="Node3D" parent="."]
+
+[node name="Node3D" type="Node3D" parent="DollPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.70707, 9.44416, 16.9405)
+
+[node name="Node3D2" type="Node3D" parent="DollPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.24921, 9.44416, 6.66754)
+
+[node name="Node3D3" type="Node3D" parent="DollPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2136, 9.44416, 16.5449)
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]

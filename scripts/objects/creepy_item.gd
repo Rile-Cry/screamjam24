@@ -29,7 +29,7 @@ func creepy_proc(delta) -> void:
 		elif (randi() % 10000) < ((100 - Global.sanity) - 51) and Global.sanity <= 25:
 			whispers()
 		time = 0.
-	
+
 	time += delta
 
 func polter() -> void:

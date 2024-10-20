@@ -99,3 +99,8 @@ read={
 [layer_names]
 
 3d_physics/layer_3="Interactable Layer"
+
+[rendering]
+
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=5
+lights_and_shadows/positional_shadow/atlas_16_bits=false

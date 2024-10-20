@@ -26,12 +26,14 @@ shape = SubResource("BoxShape3D_lqdx3")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(-2.18557e-08, -0.5, -2.18557e-08, 0, -2.18557e-08, 0.5, -0.5, 2.18557e-08, 9.55343e-16, 0, 0.0900044, 0)
+shaded = true
 texture = ExtResource("2_w111q")
 
 [node name="TextOnPage" type="Label3D" parent="Sprite3D"]
 unique_name_in_owner = true
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 8.35188e-23, 0, 0, 1, 6.80377e-26, 0, 0.01)
 sorting_offset = 0.1
+shaded = true
 modulate = Color(0.314316, 0.314316, 0.314316, 1)
 text = "There was a young man of Nantucket.
 Who went down a well in a bucket;

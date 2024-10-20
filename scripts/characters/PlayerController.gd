@@ -29,11 +29,13 @@ var currentReadingItem: Readable
 # Project Setting References
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+func _enter_tree() -> void:
+	add_to_group("player")
 func _ready():
 	# Start with mouse captured
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-	add_to_group("player")
+
 
 
 func _input(event):
@@ -48,7 +50,7 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			rotate_y(event.relative.x * -0.001)
-			
+
 			pitch -= event.relative.y * 0.001
 			pitch = clamp(pitch, min_pitch, max_pitch)
 			camera.rotation.x = pitch
