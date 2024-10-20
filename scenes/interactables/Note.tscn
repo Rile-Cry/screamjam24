@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://ccvs74jc3856l"]
+
+[ext_resource type="Script" path="res://scenes/interactables/Readable.gd" id="1_8r0mw"]
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="2_7575m"]
+[ext_resource type="Texture2D" uid="uid://dytl4hr4qxetk" path="res://Placeholders (Will be deleted)/textures/note.png" id="2_w111q"]
+[ext_resource type="FontFile" uid="uid://iooms834mlvy" path="res://visuals/fonts/ReenieBeanie-Regular.ttf" id="4_am882"]
+
+[sub_resource type="Resource" id="Resource_4my3h"]
+script = ExtResource("2_7575m")
+pageNumber = 1
+text = "There was a young man of Nantucket.Who went down a well in a bucket;The last words he spoke.Before the rope broke,Were, \"Arsehole, you bugger, and suck it.\""
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lqdx3"]
+size = Vector3(1, 0.145386, 1)
+
+[node name="Note" type="RigidBody3D"]
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("1_8r0mw")
+noteResource = SubResource("Resource_4my3h")
+type = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0853882, 0)
+shape = SubResource("BoxShape3D_lqdx3")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-2.18557e-08, -0.5, -2.18557e-08, 0, -2.18557e-08, 0.5, -0.5, 2.18557e-08, 9.55343e-16, 0, 0.0900044, 0)
+texture = ExtResource("2_w111q")
+
+[node name="TextOnPage" type="Label3D" parent="Sprite3D"]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 8.35188e-23, 0, 0, 1, 6.80377e-26, 0, 0.01)
+sorting_offset = 0.1
+modulate = Color(0.314316, 0.314316, 0.314316, 1)
+text = "There was a young man of Nantucket.
+Who went down a well in a bucket;
+The last words he spoke.
+Before the rope broke,
+Were, \"Arsehole, you bugger, and suck it.\""
+font = ExtResource("4_am882")
+font_size = 40
+autowrap_mode = 3
+width = 400.0

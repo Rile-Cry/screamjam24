@@ -11,6 +11,7 @@ var colliding_obj : Interactable
 var is_on_ladder := false
 var name_ref := ""
 var sanity := 100.0
+var currentReadingItem: Readable
 @export var drop_dist := 1.25
 
 # Child Node references
@@ -19,6 +20,8 @@ var sanity := 100.0
 @onready var main_hand := $Camera3D/MainHand
 @onready var off_hand := $Camera3D/OffHand
 @onready var ray := $Camera3D/RayCast3D
+@onready var reading_position: Node3D = %ReadingPosition
+
 
 # Project Setting References
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -46,12 +49,20 @@ func _input(event):
 
 	# Basic Interaction with objects, currently only picks up and crudely at that
 	if event.is_action_pressed("interact"):
+		if currentReadingItem:
+			Global.AddNote(currentReadingItem.noteResource)
+			currentReadingItem.queue_free()
+			currentReadingItem = null
+			return
+
 		if colliding_obj != null:
 			match colliding_obj.type:
 				colliding_obj.ItemType.PICKUP:
 					pick_up()
 				colliding_obj.ItemType.INTERACT:
 					colliding_obj.interact()
+				colliding_obj.ItemType.READABLE:
+					read()
 
 	if event.is_action_pressed("stop_climbing"):
 		if is_on_ladder:
@@ -96,7 +107,7 @@ func movement(delta) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-	
+
 	move_and_slide()
 
 #makes camera move with steps, might delete this later, im not convinced we neeed it
@@ -137,6 +148,16 @@ func pick_up() -> void:
 	colliding_obj.process_mode = Node.PROCESS_MODE_DISABLED
 	colliding_obj.position = Vector3.ZERO
 	colliding_obj.rotation = main_hand.rotation
+
+func read() ->void:
+	if colliding_obj.type != Interactable.ItemType.READABLE:
+		return
+	colliding_obj.process_mode = Node.PROCESS_MODE_DISABLED
+	colliding_obj.reparent(reading_position)
+	colliding_obj.position = Vector3.ZERO
+	colliding_obj.rotation = Vector3.ZERO
+	colliding_obj.interact()
+	currentReadingItem = colliding_obj
 
 
 func drop(throw: bool = false) -> void:

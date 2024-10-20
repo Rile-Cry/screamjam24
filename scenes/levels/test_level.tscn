@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=79 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
 [ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/interactables/ball.tscn" id="2_ji0dx"]
@@ -18,9 +18,11 @@
 [ext_resource type="PackedScene" uid="uid://b64v2w7rch36v" path="res://scenes/objects/ladder.tscn" id="17_bas5w"]
 [ext_resource type="PackedScene" uid="uid://c7ub53k5l7lte" path="res://scenes/levels/church_test_zone.tscn" id="18_egcwb"]
 [ext_resource type="AudioStream" uid="uid://bsf5bqbf6cgt8" path="res://Placeholders (Will be deleted)/Sounds/jumpscareSound.mp3" id="18_t0yxu"]
-[ext_resource type="PackedScene" uid="uid://bgotjvkit2l11" path="res://scenes/interactables/book.tscn" id="20_gxufa"]
+[ext_resource type="PackedScene" path="res://scenes/interactables/book.tscn" id="20_gxufa"]
 [ext_resource type="PackedScene" uid="uid://dkb2wc341xj2y" path="res://scenes/objects/creepy_items/creepy_ball.tscn" id="21_ie4oq"]
+[ext_resource type="PackedScene" uid="uid://ccvs74jc3856l" path="res://scenes/interactables/Note.tscn" id="21_w87xw"]
 [ext_resource type="PackedScene" uid="uid://bdqy48qca251o" path="res://scenes/objects/sanity_items/sanity_ball.tscn" id="22_4xpif"]
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="22_6qe3w"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w30xt"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -785,6 +787,11 @@ size = Vector3(18.8435, 32.0547, 43.4326)
 [sub_resource type="BoxShape3D" id="BoxShape3D_7ja4u"]
 size = Vector3(18.0977, 15.2777, 15.7189)
 
+[sub_resource type="Resource" id="Resource_3nvvx"]
+script = ExtResource("22_6qe3w")
+pageNumber = 2
+text = "asdfawerasdfasvcvb dfg "
+
 [node name="TestLevel2" type="Node3D"]
 
 [node name="PlayerHud" parent="." instance=ExtResource("3_p630s")]
@@ -1063,6 +1070,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.32801, 9.87536, 14.0817)
 
 [node name="SanityItem" parent="." instance=ExtResource("22_4xpif")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5974, 10.1101, 14.9878)
+
+[node name="Note" parent="." instance=ExtResource("21_w87xw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.77183, 9.44416, 13.9147)
+
+[node name="Note2" parent="." instance=ExtResource("21_w87xw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.12874, 9.44416, 13.0725)
+noteResource = SubResource("Resource_3nvvx")
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]
