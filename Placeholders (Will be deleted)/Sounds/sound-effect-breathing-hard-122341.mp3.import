@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cniekevytrd3u"
+path="res://.godot/imported/sound-effect-breathing-hard-122341.mp3-a2c1657937224fa5266664fe6ea131e0.mp3str"
+
+[deps]
+
+source_file="res://Placeholders (Will be deleted)/Sounds/sound-effect-breathing-hard-122341.mp3"
+dest_files=["res://.godot/imported/sound-effect-breathing-hard-122341.mp3-a2c1657937224fa5266664fe6ea131e0.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

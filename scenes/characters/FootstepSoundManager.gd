@@ -12,7 +12,6 @@ extends RayCast3D
 func _physics_process(delta: float) -> void:
 	if is_colliding():
 		var groundType := get_collider().get_meta("GroundType",-1) as int
-		print(footsteps_player.stream)
 		if groundType != -1:
 			if footsteps_player.stream != footstepSounds[groundType]:
 				footsteps_player.stream = footstepSounds[groundType]

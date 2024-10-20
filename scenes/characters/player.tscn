@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://ci4s5wyfxbnsl"]
+[gd_scene load_steps=35 format=3 uid="uid://ci4s5wyfxbnsl"]
 
 [ext_resource type="Script" path="res://scripts/characters/PlayerController.gd" id="1_uayg2"]
 [ext_resource type="Script" path="res://scripts/characters/Camera.gd" id="2_gjwb2"]
@@ -19,6 +19,9 @@
 [ext_resource type="AudioStream" uid="uid://d0of0lmkxbhdp" path="res://Audio/sfx/Footsteps/Right foot step wood.mp3" id="17_1v64y"]
 [ext_resource type="AudioStream" uid="uid://dhd4pnv83n1qt" path="res://Audio/sfx/Footsteps/Left foot step stone.mp3" id="18_7jahm"]
 [ext_resource type="AudioStream" uid="uid://cbdt4q0xgweqt" path="res://Audio/sfx/Footsteps/Right foot step stone.mp3" id="19_mkfsn"]
+[ext_resource type="Script" path="res://scenes/characters/breath_heartbeat_manager.gd" id="20_2c275"]
+[ext_resource type="AudioStream" uid="uid://cniekevytrd3u" path="res://Placeholders (Will be deleted)/Sounds/sound-effect-breathing-hard-122341.mp3" id="21_4iupb"]
+[ext_resource type="AudioStream" uid="uid://dwdesjpy130b6" path="res://Placeholders (Will be deleted)/Sounds/heartbeat-sound-effects-for-you-122458.mp3" id="22_gwg13"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_qjw6a"]
 
@@ -175,3 +178,23 @@ footstepSounds = [SubResource("AudioStreamRandomizer_7os0v"), SubResource("Audio
 [node name="ReadingPosition" type="Node3D" parent="."]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 0.727773, -0.685818, 0, 0.685818, 0.727773, 0, 0.679914, -0.974449)
+
+[node name="breath_heartbeat_manager" type="Node3D" parent="."]
+script = ExtResource("20_2c275")
+
+[node name="Breath" type="AudioStreamPlayer" parent="breath_heartbeat_manager"]
+unique_name_in_owner = true
+stream = ExtResource("21_4iupb")
+autoplay = true
+max_polyphony = 10
+
+[node name="Heartbeat" type="AudioStreamPlayer" parent="breath_heartbeat_manager"]
+unique_name_in_owner = true
+stream = ExtResource("22_gwg13")
+max_polyphony = 10
+
+[node name="HeartbeatTimer" type="Timer" parent="breath_heartbeat_manager/Heartbeat"]
+unique_name_in_owner = true
+autostart = true
+
+[connection signal="timeout" from="breath_heartbeat_manager/Heartbeat/HeartbeatTimer" to="breath_heartbeat_manager/Heartbeat" method="play"]

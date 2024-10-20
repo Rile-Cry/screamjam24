@@ -1,7 +1,7 @@
 class_name SanityItem
 extends RigidBody3D
 
-const DRAIN_STRENGTH := 1
+const DRAIN_STRENGTH := 10
 
 var is_player_around := false
 var time := 0.0
