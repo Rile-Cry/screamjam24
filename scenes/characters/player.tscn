@@ -1,8 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://ci4s5wyfxbnsl"]
+[gd_scene load_steps=22 format=3 uid="uid://ci4s5wyfxbnsl"]
 
 [ext_resource type="Script" path="res://scripts/characters/PlayerController.gd" id="1_uayg2"]
 [ext_resource type="Script" path="res://scripts/characters/Camera.gd" id="2_gjwb2"]
 [ext_resource type="Script" path="res://addons/shaker/src/Vector3/shaker_component3D.gd" id="2_irlbp"]
+[ext_resource type="Environment" uid="uid://djeooyrkn3e2i" path="res://Volumetric environment.tres" id="2_v0xmj"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeNoiseShake3D.gd" id="3_u12es"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerPreset3D.gd" id="4_3wdtf"]
 [ext_resource type="AudioStream" uid="uid://cost8yhcvbvpe" path="res://Placeholders (Will be deleted)/Sounds/step1.mp3" id="5_kr5dx"]
@@ -94,6 +95,7 @@ shape = SubResource("CapsuleShape3D_w17vh")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 9.49948e-08, -3.91155e-08, -9.49948e-08, 1, -1.15484e-07, 3.91155e-08, 1.15484e-07, 1, 0, 1.6, 0)
 cull_mask = 1048573
+environment = ExtResource("2_v0xmj")
 fov = 55.0
 script = ExtResource("2_gjwb2")
 

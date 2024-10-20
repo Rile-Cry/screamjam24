@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=76 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
 [ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/interactables/ball.tscn" id="2_ji0dx"]
@@ -24,36 +24,6 @@
 [ext_resource type="PackedScene" uid="uid://bdqy48qca251o" path="res://scenes/objects/sanity_items/sanity_ball.tscn" id="22_4xpif"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="22_6qe3w"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="24_dx4xd"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w30xt"]
-sky_top_color = Color(0, 0, 0, 1)
-sky_horizon_color = Color(0.89467, 0.485806, 0.620766, 1)
-sky_curve = 0.191184
-sun_curve = 0.0157668
-
-[sub_resource type="Sky" id="Sky_36j21"]
-sky_material = SubResource("ProceduralSkyMaterial_w30xt")
-
-[sub_resource type="Environment" id="Environment_jpyii"]
-background_mode = 2
-sky = SubResource("Sky_36j21")
-ambient_light_source = 1
-ambient_light_sky_contribution = 0.0
-reflected_light_source = 1
-tonemap_mode = 3
-glow_enabled = true
-glow_normalized = true
-fog_light_color = Color(1, 1, 1, 1)
-fog_density = 0.0
-fog_aerial_perspective = 1.0
-fog_sky_affect = 0.0
-fog_height_density = 3.0211
-volumetric_fog_enabled = true
-volumetric_fog_density = 0.15
-volumetric_fog_albedo = Color(0.439049, 0.439049, 0.439049, 1)
-volumetric_fog_sky_affect = 0.97
-volumetric_fog_temporal_reprojection_enabled = false
-adjustment_enabled = true
 
 [sub_resource type="Gradient" id="Gradient_duofl"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -801,9 +771,6 @@ light_energy = 0.3
 light_volumetric_fog_energy = 2.0
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_jpyii")
-
 [node name="Terrain3D" type="Terrain3D" parent="."]
 storage = ExtResource("4_o753f")
 material = SubResource("Terrain3DMaterial_0580b")
@@ -1080,6 +1047,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.24921, 9.44416, 6.66754)
 
 [node name="Node3D3" type="Node3D" parent="DollPositions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2136, 9.44416, 16.5449)
+
+[node name="PlayerRespawnPositions" type="Node3D" parent="."]
+
+[node name="Node3D" type="Node3D" parent="PlayerRespawnPositions" groups=["RespawnPosition"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.81857, 7.57151, 9.31828)
+
+[node name="Node3D2" type="Node3D" parent="PlayerRespawnPositions" groups=["RespawnPosition"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.24921, 9.44416, 6.66754)
+
+[node name="Node3D3" type="Node3D" parent="PlayerRespawnPositions" groups=["RespawnPosition"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.611, 8.64971, 12.177)
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]

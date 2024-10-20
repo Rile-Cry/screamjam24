@@ -6,6 +6,7 @@ const CLIMB_SPEED := 2.0
 const SPEED := 5.0
 const STEP_HEIGHT := 0.1
 const THROW_SPEED := 25.0
+var inputEnabled := true
 var climbing := false
 var colliding_obj : Interactable
 var is_on_ladder := false
@@ -13,10 +14,9 @@ var max_pitch := deg_to_rad(89)
 var min_pitch := deg_to_rad(-89)
 var name_ref := ""
 var pitch := 0.0
-var sanity := 100.0
 var currentReadingItem: Readable
+var goingInsane := false
 @export var drop_dist := 1.25
-
 # Child Node references
 @onready var camera := $Camera3D
 @onready var collider := $CollisionShape3D
@@ -34,6 +34,7 @@ func _enter_tree() -> void:
 func _ready():
 	# Start with mouse captured
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Global.OnSanityChanged.connect(OnSanityChanged)
 
 
 
@@ -46,7 +47,8 @@ func _input(event):
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		else:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
+	if !inputEnabled:
+		return
 	if event is InputEventMouseMotion:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			rotate_y(event.relative.x * -0.001)
@@ -199,6 +201,42 @@ func switch_hands() -> void:
 		off_hand.remove_child(off_hand_item)
 		main_hand.add_child(off_hand_item)
 		off_hand_item.position = Vector3.ZERO
+
+
+func OnSanityChanged():
+	if !goingInsane and Global.sanity <=0:
+		GoInsane()
+func GoInsane():
+	goingInsane = true
+	inputEnabled = false
+	var pitchShiftEffect := AudioServer.get_bus_effect(0,1) as AudioEffectPitchShift
+	var reverbEffect := AudioServer.get_bus_effect(0,2) as AudioEffectReverb
+	AudioServer.set_bus_effect_enabled(0,1,true)
+	AudioServer.set_bus_effect_enabled(0,2,true)
+	var tween = create_tween().set_parallel(true)
+	tween.tween_property(camera.environment,"adjustment_saturation",8,6)
+	tween.tween_property(PostProcessing.chromatic_aberation,"material:shader_parameter/spread",.1,6)
+	tween.tween_property(camera.environment,"adjustment_contrast",8,6)
+	tween.tween_property(camera.environment,"adjustment_brightness",0,6)
+	tween.tween_property(pitchShiftEffect,"pitch_scale",.0,6)
+	tween.tween_property(reverbEffect,"wet",1,6)
+	await tween.finished
+	await get_tree().create_timer(1).timeout
+	Global.sanity = 100
+	var newPositions := get_tree().get_nodes_in_group("RespawnPosition")
+	global_position = newPositions.pick_random().global_position
+	inputEnabled = true
+	tween = create_tween().set_parallel(true)
+	tween.tween_property(camera.environment,"adjustment_saturation",1,20)
+	tween.tween_property(PostProcessing.chromatic_aberation,"material:shader_parameter/spread",.005,20)
+	tween.tween_property(camera.environment,"adjustment_contrast",1,3)
+	tween.tween_property(camera.environment,"adjustment_brightness",1,3)
+	tween.tween_property(pitchShiftEffect,"pitch_scale",1,20)
+	tween.tween_property(reverbEffect,"wet",0,10)
+	await tween.finished
+	AudioServer.set_bus_effect_enabled(0,1,false)
+	AudioServer.set_bus_effect_enabled(0,2,false)
+	goingInsane = false
 
 
 # Signal Connections
