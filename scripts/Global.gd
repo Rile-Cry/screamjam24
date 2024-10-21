@@ -31,5 +31,5 @@ func _process(delta) -> void:
 			delta_sanity += sanity_list[id]
 		sanity += delta_sanity
 		time = 0.
-	
+
 	time += delta

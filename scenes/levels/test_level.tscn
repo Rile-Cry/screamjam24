@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://bdqy48qca251o" path="res://scenes/objects/sanity_items/sanity_ball.tscn" id="22_4xpif"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="22_6qe3w"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="24_dx4xd"]
-[ext_resource type="PackedScene" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
+[ext_resource type="PackedScene" uid="uid://cliyn783t3tkt" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
 [ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="25_ybvel"]
 [ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="27_qsduh"]
 [ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="28_desw2"]
@@ -775,7 +775,7 @@ size = Vector3(5.31689, 0.419434, 7.16687)
 transform = Transform3D(0.629299, -0.359015, 0.689269, 0.148335, 0.926084, 0.346936, -0.762876, -0.116084, 0.636039, 0, 0, 0)
 light_color = Color(0.59, 0.719833, 1, 1)
 light_energy = 0.3
-light_volumetric_fog_energy = 2.0
+light_volumetric_fog_energy = 16.0
 shadow_enabled = true
 
 [node name="Terrain3D" type="Terrain3D" parent="."]
@@ -997,7 +997,8 @@ libraries = {
 [node name="AtmosphericZone" type="Area3D" parent="."]
 script = ExtResource("12_kieop")
 room_size = 0.5
-wall_hardness = 1.0
+wall_hardness = 0.0
+fog_density = 0.1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AtmosphericZone"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.91978, 7.7411, 27.4325)

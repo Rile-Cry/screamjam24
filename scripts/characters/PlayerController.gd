@@ -23,6 +23,7 @@ var goingInsane := false
 @onready var off_hand := $Camera3D/OffHand
 @onready var ray := $Camera3D/RayCast3D
 @onready var reading_position: Node3D = %ReadingPosition
+@onready var animation_player: AnimationPlayer = %AnimationPlayer
 
 
 # Project Setting References

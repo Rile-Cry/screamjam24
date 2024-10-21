@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jq4v1sk42v1k"
+path="res://.godot/imported/_Behold I arrive like a theif_.mp3-6581355558a980a73eec6de26dea7efc.mp3str"
+
+[deps]
+
+source_file="res://Audio/sfx/_Behold I arrive like a theif_.mp3"
+dest_files=["res://.godot/imported/_Behold I arrive like a theif_.mp3-6581355558a980a73eec6de26dea7efc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

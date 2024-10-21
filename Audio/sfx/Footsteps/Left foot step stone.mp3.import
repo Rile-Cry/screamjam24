@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dhd4pnv83n1qt"
-path="res://.godot/imported/Left foot step stone.mp3-2a4528813f18b76382cd2ca66f0793d9.mp3str"
+path="res://.godot/imported/Left foot step stone.mp3-d2e5566b27d8dca0683bdd6c88e58add.mp3str"
 
 [deps]
 
-source_file="res://audio/sfx/Footsteps/Left foot step stone.mp3"
-dest_files=["res://.godot/imported/Left foot step stone.mp3-2a4528813f18b76382cd2ca66f0793d9.mp3str"]
+source_file="res://Audio/sfx/Footsteps/Left foot step stone.mp3"
+dest_files=["res://.godot/imported/Left foot step stone.mp3-d2e5566b27d8dca0683bdd6c88e58add.mp3str"]
 
 [params]
 

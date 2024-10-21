@@ -11,3 +11,5 @@ func raise_chromatic() -> void:
 		chromatic_aberation.color.a = (75. - Global.sanity) / 75.
 	else:
 		chromatic_aberation.color.a = 0.
+
+

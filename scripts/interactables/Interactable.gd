@@ -13,7 +13,8 @@ enum ItemType {
 @onready var OutlineShader = preload("res://visuals/materials/outline_mat.tres")
 @onready var mesh_list : Array[MeshInstance3D] = []
 var can_pickup : bool = true
-
+@export var itemName:= "no name assigned"
+var mouse_over := false
 
 
 
@@ -37,7 +38,8 @@ func interact():
 
 # Handle raycasting from player
 func mouse_entered():
-	Global.item_name = name
+	mouse_over = true
+	Global.item_name = itemName
 	if type == ItemType.PICKUP:
 		can_pickup = true
 		if mesh_list.size() > 0:
@@ -52,6 +54,7 @@ func mouse_entered():
 
 
 func mouse_exited():
+	mouse_over = false
 	Global.item_name = ""
 	can_pickup = false
 	if mesh_list.size() > 0:
