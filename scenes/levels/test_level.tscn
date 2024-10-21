@@ -1087,20 +1087,23 @@ transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544
 [node name="RitualCircle" parent="." instance=ExtResource("25_ybvel")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1651, 9.67395, -0.200003)
 
-[node name="KeyItem" parent="." instance=ExtResource("27_qsduh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3029, 10.4116, -1.72493)
+[node name="KeyItems" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.07513, 12.289, 6.68544)
 
-[node name="KeyItem2" parent="." instance=ExtResource("27_qsduh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0635, 10.4116, -1.72493)
+[node name="KeyItem" parent="KeyItems" instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22774, -1.87739, -8.41037)
 
-[node name="KeyItem3" parent="." instance=ExtResource("27_qsduh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3029, 10.4116, -0.956703)
+[node name="KeyItem2" parent="KeyItems" instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.98832, -1.87739, -8.41037)
 
-[node name="KeyItem4" parent="." instance=ExtResource("27_qsduh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3029, 10.4116, -2.47439)
+[node name="KeyItem3" parent="KeyItems" instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22774, -1.87739, -7.64215)
 
-[node name="KeyItem5" parent="." instance=ExtResource("27_qsduh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3076, 10.4116, -3.23425)
+[node name="KeyItem4" parent="KeyItems" instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22774, -1.87739, -9.15983)
+
+[node name="KeyItem5" parent="KeyItems" instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.23251, -1.87739, -9.9197)
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]

@@ -30,12 +30,12 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _enter_tree() -> void:
 	add_to_group("player")
+
+
 func _ready():
 	# Start with mouse captured
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	Global.OnSanityChanged.connect(OnSanityChanged)
-
-
 
 
 func _input(event):
