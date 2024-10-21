@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://c12gftjxf1usb"]
+
+[ext_resource type="Texture2D" uid="uid://rkvw1n47nj7s" path="res://ui/art/sanity_base.png" id="1_oymr4"]
+[ext_resource type="Texture2D" uid="uid://bodpvqdo7omc8" path="res://ui/art/sanity_overlay.png" id="2_j4yhq"]
+[ext_resource type="Texture2D" uid="uid://d4cy8y5wksb2m" path="res://ui/art/icon_connectors.png" id="3_lwg0a"]
+[ext_resource type="Texture2D" uid="uid://d27fglknvf6aa" path="res://ui/art/heart_base.png" id="4_7p8gb"]
+[ext_resource type="Texture2D" uid="uid://da58bq4m61uqx" path="res://ui/art/heart_overlay.png" id="5_afiqu"]
+[ext_resource type="Texture2D" uid="uid://tew0wgq3e2ag" path="res://ui/art/stamina_base.png" id="6_gtip1"]
+[ext_resource type="Texture2D" uid="uid://8gvcmjxaav53" path="res://ui/art/stamina_overlay.png" id="7_mtuqh"]
+
+[node name="HUD_icons" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="icons_container" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = -37
+alignment = 1
+
+[node name="top_row_margin" type="MarginContainer" parent="icons_container"]
+layout_mode = 2
+theme_override_constants/margin_right = 16
+
+[node name="sanity_progress" type="TextureProgressBar" parent="icons_container/top_row_margin"]
+layout_mode = 2
+size_flags_horizontal = 4
+value = 50.0
+fill_mode = 3
+texture_under = ExtResource("1_oymr4")
+texture_progress = ExtResource("2_j4yhq")
+texture_progress_offset = Vector2(4, 4)
+
+[node name="connectors" type="TextureRect" parent="icons_container"]
+show_behind_parent = true
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("3_lwg0a")
+stretch_mode = 2
+
+[node name="bottom_row_margin" type="MarginContainer" parent="icons_container"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = -20
+theme_override_constants/margin_right = 28
+
+[node name="bottom_row_container" type="HBoxContainer" parent="icons_container/bottom_row_margin"]
+layout_mode = 2
+theme_override_constants/separation = 65
+
+[node name="heart_progress" type="TextureProgressBar" parent="icons_container/bottom_row_margin/bottom_row_container"]
+layout_mode = 2
+value = 50.0
+fill_mode = 3
+texture_under = ExtResource("4_7p8gb")
+texture_progress = ExtResource("5_afiqu")
+texture_progress_offset = Vector2(4, 4)
+
+[node name="stamina_progress" type="TextureProgressBar" parent="icons_container/bottom_row_margin/bottom_row_container"]
+layout_mode = 2
+value = 50.0
+fill_mode = 2
+texture_under = ExtResource("6_gtip1")
+texture_progress = ExtResource("7_mtuqh")
+texture_progress_offset = Vector2(4, 4)
