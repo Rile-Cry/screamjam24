@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=81 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
 [ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/interactables/ball.tscn" id="2_ji0dx"]
@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
 [ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="25_ybvel"]
 [ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="27_qsduh"]
+[ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="28_desw2"]
 
 [sub_resource type="Gradient" id="Gradient_duofl"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -1104,6 +1105,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.22774, -1.87739, -9.15983)
 
 [node name="KeyItem5" parent="KeyItems" instance=ExtResource("27_qsduh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.23251, -1.87739, -9.9197)
+
+[node name="Church3" parent="." instance=ExtResource("28_desw2")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 38.1678, 7.65274, 15.3932)
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]

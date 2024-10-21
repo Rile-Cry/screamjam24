@@ -10,7 +10,7 @@ var time := 0.
 var sanity := 100:
 	set(x):
 		sanity = x
-		if sanity <0:
+		if sanity < 0:
 			sanity = 0
 		OnSanityChanged.emit()
 signal OnSanityChanged

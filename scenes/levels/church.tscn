@@ -1,12 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://08w31gfhrnws"]
 
-[ext_resource type="PackedScene" uid="uid://dbbxa8fe3ga3" path="res://models/MainRoom.fbx" id="1_kcgvj"]
+[ext_resource type="PackedScene" uid="uid://bixvjhvgmcuha" path="res://scenes/levels/main_room.tscn" id="1_0bcah"]
 
 [node name="Church" type="Node3D"]
 
-[node name="MainRoom" type="Node3D" parent="."]
-
-[node name="Root Scene" parent="MainRoom" instance=ExtResource("1_kcgvj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.699624, 0, 1.46759)
-
-[node name="MainRoomColliders" type="Node3D" parent="MainRoom"]
+[node name="Root Scene" parent="." instance=ExtResource("1_0bcah")]
