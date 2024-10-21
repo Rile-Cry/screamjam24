@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://d0of0lmkxbhdp"
-path="res://.godot/imported/Right foot step wood.mp3-ba36cba6c9ea227ddf2df044312218a3.mp3str"
+path="res://.godot/imported/Right foot step wood.mp3-83910d569d3f0a7a96c5b72db19f203b.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/Footsteps/Right foot step wood.mp3"
-dest_files=["res://.godot/imported/Right foot step wood.mp3-ba36cba6c9ea227ddf2df044312218a3.mp3str"]
+source_file="res://audio/sfx/Footsteps/Right foot step wood.mp3"
+dest_files=["res://.godot/imported/Right foot step wood.mp3-83910d569d3f0a7a96c5b72db19f203b.mp3str"]
 
 [params]
 

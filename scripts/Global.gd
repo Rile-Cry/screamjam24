@@ -4,6 +4,8 @@ extends Node
 var can_see_item := false
 var item_name := ""
 var is_holding_book := false
+var sanity_list : Dictionary = {}
+var time := 0.
 
 var sanity := 100:
 	set(x):
@@ -21,3 +23,13 @@ func AddNote(note: NoteResource):
 		return
 	foundNotes.push_back(note)
 	OnNotesChanged.emit()
+
+func _process(delta) -> void:
+	if time > 1:
+		var delta_sanity = 0
+		for id in sanity_list:
+			delta_sanity += sanity_list[id]
+		sanity += delta_sanity
+		time = 0.
+	
+	time += delta

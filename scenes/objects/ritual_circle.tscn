@@ -1,0 +1,144 @@
+[gd_scene load_steps=10 format=3 uid="uid://b6uo0bxp6jnr"]
+
+[ext_resource type="Script" path="res://scripts/objects/RitualCircle.gd" id="1_m1hmm"]
+[ext_resource type="Script" path="res://addons/shaker/src/Vector3/shaker_component3D.gd" id="2_awdsw"]
+[ext_resource type="Script" path="res://scenes/objects/ritual_pedestal.gd" id="2_w8bas"]
+[ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeSineWave3D.gd" id="3_4m2io"]
+[ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerPreset3D.gd" id="4_l1cui"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fsa36"]
+height = 0.75
+radius = 0.4
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_88n6h"]
+top_radius = 0.2
+bottom_radius = 0.4
+height = 0.75
+
+[sub_resource type="Resource" id="Resource_obemx"]
+script = ExtResource("3_4m2io")
+frequency = Vector3(1, 0.5, 1)
+phase = Vector3(1, 1, 1)
+amplitude = Vector3(0, 0.2, 0)
+offset = Vector3(0, 0, 0)
+BlendingMode = 0
+fade_in = 0.0
+fade_out = 0.0
+start_percent = 0.0
+end_percent = 1.0
+_temp_graph = false
+bake_internal = 64
+
+[sub_resource type="Resource" id="Resource_b3p3c"]
+script = ExtResource("4_l1cui")
+PositionShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([SubResource("Resource_obemx")])
+RotationShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([])
+ScaleShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([])
+bake_internal = 64
+__follow_timeline = false
+
+[node name="RitualCircle" type="Node3D"]
+script = ExtResource("1_m1hmm")
+
+[node name="RitualPedestalA" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.381868, 0)
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("2_w8bas")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RitualPedestalA"]
+shape = SubResource("CylinderShape3D_fsa36")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RitualPedestalA"]
+mesh = SubResource("CylinderMesh_88n6h")
+
+[node name="ItemSpot" type="Node3D" parent="RitualPedestalA"]
+transform = Transform3D(1, 1.19209e-07, -4.76837e-07, -1.19209e-07, 1, 0, 4.76837e-07, 5.68434e-14, 1, 0, 1.50141, 0)
+
+[node name="ShakerComponent3D" type="Node3D" parent="RitualPedestalA/ItemSpot"]
+script = ExtResource("2_awdsw")
+AutoPlay = true
+shakerPreset = SubResource("Resource_b3p3c")
+
+[node name="RitualPedestalA2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927, 0.382, -2.853)
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("2_w8bas")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RitualPedestalA2"]
+shape = SubResource("CylinderShape3D_fsa36")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RitualPedestalA2"]
+mesh = SubResource("CylinderMesh_88n6h")
+
+[node name="ItemSpot" type="Node3D" parent="RitualPedestalA2"]
+transform = Transform3D(1, 1.19209e-07, -4.76837e-07, -1.19209e-07, 1, 0, 4.76837e-07, 5.68434e-14, 1, 0, 1.50141, 0)
+
+[node name="ShakerComponent3D" type="Node3D" parent="RitualPedestalA2/ItemSpot"]
+script = ExtResource("2_awdsw")
+AutoPlay = true
+shakerPreset = SubResource("Resource_b3p3c")
+
+[node name="RitualPedestalA3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.427, 0.382, -1.763)
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("2_w8bas")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RitualPedestalA3"]
+shape = SubResource("CylinderShape3D_fsa36")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RitualPedestalA3"]
+mesh = SubResource("CylinderMesh_88n6h")
+
+[node name="ItemSpot" type="Node3D" parent="RitualPedestalA3"]
+transform = Transform3D(1, 1.19209e-07, -4.76837e-07, -1.19209e-07, 1, 0, 4.76837e-07, 5.68434e-14, 1, 0, 1.50141, 0)
+
+[node name="ShakerComponent3D" type="Node3D" parent="RitualPedestalA3/ItemSpot"]
+script = ExtResource("2_awdsw")
+AutoPlay = true
+shakerPreset = SubResource("Resource_b3p3c")
+
+[node name="RitualPedestalA4" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.427, 0.382, 1.763)
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("2_w8bas")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RitualPedestalA4"]
+shape = SubResource("CylinderShape3D_fsa36")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RitualPedestalA4"]
+mesh = SubResource("CylinderMesh_88n6h")
+
+[node name="ItemSpot" type="Node3D" parent="RitualPedestalA4"]
+transform = Transform3D(1, 1.19209e-07, -4.76837e-07, -1.19209e-07, 1, 0, 4.76837e-07, 5.68434e-14, 1, 0, 1.50141, 0)
+
+[node name="ShakerComponent3D" type="Node3D" parent="RitualPedestalA4/ItemSpot"]
+script = ExtResource("2_awdsw")
+AutoPlay = true
+shakerPreset = SubResource("Resource_b3p3c")
+
+[node name="RitualPedestalA5" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.927, 0.382, 2.853)
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("2_w8bas")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RitualPedestalA5"]
+shape = SubResource("CylinderShape3D_fsa36")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RitualPedestalA5"]
+mesh = SubResource("CylinderMesh_88n6h")
+
+[node name="ItemSpot" type="Node3D" parent="RitualPedestalA5"]
+transform = Transform3D(1, 1.19209e-07, -4.76837e-07, -1.19209e-07, 1, 0, 4.76837e-07, 5.68434e-14, 1, 0, 1.50141, 0)
+
+[node name="ShakerComponent3D" type="Node3D" parent="RitualPedestalA5/ItemSpot"]
+script = ExtResource("2_awdsw")
+AutoPlay = true
+shakerPreset = SubResource("Resource_b3p3c")
+
+[node name="DemonSpawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.929053, 0)

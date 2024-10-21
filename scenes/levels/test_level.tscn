@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=3 uid="uid://cbpkmkwvltmrr"]
+[gd_scene load_steps=80 format=3 uid="uid://cbpkmkwvltmrr"]
 
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="1_k3732"]
 [ext_resource type="PackedScene" uid="uid://swy8xxrgt6je" path="res://scenes/interactables/ball.tscn" id="2_ji0dx"]
@@ -24,7 +24,9 @@
 [ext_resource type="PackedScene" uid="uid://bdqy48qca251o" path="res://scenes/objects/sanity_items/sanity_ball.tscn" id="22_4xpif"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="22_6qe3w"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="24_dx4xd"]
-[ext_resource type="PackedScene" uid="uid://cliyn783t3tkt" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
+[ext_resource type="PackedScene" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
+[ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="25_ybvel"]
+[ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="27_qsduh"]
 
 [sub_resource type="Gradient" id="Gradient_duofl"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -1081,6 +1083,24 @@ shape = SubResource("BoxShape3D_wjbjk")
 
 [node name="Candle2" parent="." instance=ExtResource("25_opk6a")]
 transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 9.83796, 9.44416, 16.228)
+
+[node name="RitualCircle" parent="." instance=ExtResource("25_ybvel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1651, 9.67395, -0.200003)
+
+[node name="KeyItem" parent="." instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3029, 10.4116, -1.72493)
+
+[node name="KeyItem2" parent="." instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0635, 10.4116, -1.72493)
+
+[node name="KeyItem3" parent="." instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3029, 10.4116, -0.956703)
+
+[node name="KeyItem4" parent="." instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3029, 10.4116, -2.47439)
+
+[node name="KeyItem5" parent="." instance=ExtResource("27_qsduh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3076, 10.4116, -3.23425)
 
 [connection signal="OnOpen" from="Door2" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D" method="set_visible" binds= [true]]
 [connection signal="screen_entered" from="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/Sprite3D/VisibleOnScreenNotifier3D" to="(DONT ENABLE IF YOU DONT LIKE JUMP SCARES)/AudioStreamPlayer3D" method="play"]

@@ -1,7 +1,7 @@
 class_name SanityItem
 extends RigidBody3D
 
-const DRAIN_STRENGTH := 10
+const DRAIN_STRENGTH := -1
 
 var is_player_around := false
 var time := 0.0
@@ -15,17 +15,16 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	sanity_drain(delta)
+func _process(_delta):
+	sanity_drain()
 
 
-func sanity_drain(delta) -> void:
-	if time > 1:
+func sanity_drain() -> void:
+	if Global.time > 1:
 		if is_player_around:
-			Global.sanity -= DRAIN_STRENGTH
-		time = 0.0
-
-	time += delta
+			Global.sanity_list[get_instance_id()] = DRAIN_STRENGTH
+		else:
+			Global.sanity_list.erase(get_instance_id())
 
 
 func player_check_enter(body: Node) -> void:

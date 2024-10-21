@@ -142,6 +142,7 @@ func check_ray() -> void:
 	elif colliding_obj != null:
 		if colliding_obj.has_method("mouse_exited"):
 			colliding_obj.mouse_exited()
+		colliding_obj = null
 
 
 # other methods

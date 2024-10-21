@@ -1,6 +1,10 @@
-[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://c4db5gu8vlday"]
+[gd_resource type="ShaderMaterial" load_steps=8 format=3 uid="uid://c4db5gu8vlday"]
 
 [ext_resource type="Shader" path="res://visuals/shaders/mold.gdshader" id="1_5iklo"]
+
+[sub_resource type="Gradient" id="Gradient_2ckwb"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.246479, 1)
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_t1h73"]
 noise_type = 2
@@ -18,20 +22,36 @@ domain_warp_fractal_octaves = 3
 domain_warp_fractal_lacunarity = 10.0
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_m5yqd"]
+seamless = true
+color_ramp = SubResource("Gradient_2ckwb")
 noise = SubResource("FastNoiseLite_t1h73")
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_hkmnk"]
-noise_type = 4
-seed = 6464215
-fractal_octaves = 6
-fractal_lacunarity = 1.8
+[sub_resource type="Gradient" id="Gradient_q5tvm"]
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_nc6ns"]
-noise = SubResource("FastNoiseLite_hkmnk")
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_1v0m2"]
+noise_type = 2
+seed = 4646895
+offset = Vector3(307.69, 0, 0)
+fractal_octaves = 10
+fractal_lacunarity = 1.6
+fractal_gain = 0.9
+fractal_weighted_strength = 0.26
+cellular_jitter = 0.8
+domain_warp_enabled = true
+domain_warp_amplitude = 60.0
+domain_warp_frequency = 0.06
+domain_warp_fractal_octaves = 3
+domain_warp_fractal_lacunarity = 10.0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_3kidy"]
+seamless = true
+as_normal_map = true
+color_ramp = SubResource("Gradient_q5tvm")
+noise = SubResource("FastNoiseLite_1v0m2")
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_5iklo")
 shader_parameter/mold_color = Color(0, 0.560784, 0, 1)
 shader_parameter/noise = SubResource("NoiseTexture2D_m5yqd")
-shader_parameter/noise2 = SubResource("NoiseTexture2D_nc6ns")
+shader_parameter/noise2 = SubResource("NoiseTexture2D_3kidy")

@@ -11,8 +11,8 @@ void vertex() {
 void fragment() {
 	// Called for every pixel the material is visible on.
 	ALBEDO = mold_color;
-	float average = (texture(noise, UV / 2.).x + texture(noise2, UV / 2.).y) / 2.;
-	ALPHA = average / 3.;
+	ALPHA = texture(noise, UV).x;
+	NORMAL_MAP = texture(noise2, UV).xyz;
 }
 
 //void light() {
