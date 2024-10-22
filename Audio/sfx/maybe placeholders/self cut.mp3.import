@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://udayjud2os72"
-path="res://.godot/imported/self cut.mp3-33f993a308e9fff4d12eb7abf7f94cae.mp3str"
+path="res://.godot/imported/self cut.mp3-40356f8d3665cd3136ec480012c90b30.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/maybe placeholders/self cut.mp3"
-dest_files=["res://.godot/imported/self cut.mp3-33f993a308e9fff4d12eb7abf7f94cae.mp3str"]
+source_file="res://audio/sfx/maybe placeholders/self cut.mp3"
+dest_files=["res://.godot/imported/self cut.mp3-40356f8d3665cd3136ec480012c90b30.mp3str"]
 
 [params]
 

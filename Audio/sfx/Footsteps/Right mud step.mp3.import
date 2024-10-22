@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c0s85t2wp424j"
-path="res://.godot/imported/Right mud step.mp3-6dae116808fc8082abb40c208838270b.mp3str"
+path="res://.godot/imported/Right mud step.mp3-b47e29050374ef81b02e75bd6ce996a3.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/Footsteps/Right mud step.mp3"
-dest_files=["res://.godot/imported/Right mud step.mp3-6dae116808fc8082abb40c208838270b.mp3str"]
+source_file="res://audio/sfx/Footsteps/Right mud step.mp3"
+dest_files=["res://.godot/imported/Right mud step.mp3-b47e29050374ef81b02e75bd6ce996a3.mp3str"]
 
 [params]
 

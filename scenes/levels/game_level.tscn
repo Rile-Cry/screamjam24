@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/interactables/candle.tscn" id="5_7wh1f"]
 [ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="9_535ft"]
 [ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
-[ext_resource type="PackedScene" path="res://scenes/objects/altar.tscn" id="11_snhal"]
+[ext_resource type="PackedScene" uid="uid://bruwmf30bj5fc" path="res://scenes/objects/altar.tscn" id="11_snhal"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="12_02yxp"]
 [ext_resource type="PackedScene" uid="uid://cmlxcocw8rbxb" path="res://scripts/objects/knife.tscn" id="13_frigp"]
 [ext_resource type="Script" path="res://scripts/objects/KeyItemKnife.gd" id="14_d8016"]
@@ -142,7 +142,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.491255, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00303, 0.645386, 11.4041)
 
 [node name="Candle" parent="." instance=ExtResource("5_7wh1f")]
-transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 4.14822, 0.612054, 1.8871)
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 4.39661, 1.36696, 0.866812)
 
 [node name="RitualCircle" parent="." instance=ExtResource("9_535ft")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.99738, -7.51906, 9.00955)

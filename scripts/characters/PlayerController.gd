@@ -184,6 +184,7 @@ func drop(throw: bool = false) -> void:
 		main_hand_item.global_position = main_hand.global_position + (transform.basis * main_hand.position).normalized()
 		main_hand_item.process_mode = Node.PROCESS_MODE_PAUSABLE
 		if throw:
+			Global.sanity += 1
 			var theta = camera.rotation.y
 			var phi = camera.rotation.x
 			var look_vec = Vector3(-sin(theta), sin(phi), -cos(theta))
