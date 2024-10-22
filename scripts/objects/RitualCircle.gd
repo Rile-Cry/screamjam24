@@ -47,11 +47,7 @@ func _process(delta) -> void:
 func check_pedestals() -> bool:
 	var check := true
 	for pedestal in pedestal_list:
-		check = pedestal.is_holding_item
-		if check:
-			break
-		print(check)
-		#check and pedestal.is_holding_item just for testing for 1 item
+		check = check and pedestal.is_holding_item
 	return check
 
 
