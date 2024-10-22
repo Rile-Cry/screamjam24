@@ -219,7 +219,7 @@ func OnSanityChanged():
 		GoInsane()
 
 func GoInsane():
-	PlayerHud.display_overlay_text("You Have Gone Completely Insane...")
+	PlayerHud.Instance.display_overlay_text("You Have Gone Completely Insane...")
 	goingInsane = true
 	var pitchShiftEffect := AudioServer.get_bus_effect(0,1) as AudioEffectPitchShift
 	var reverbEffect := AudioServer.get_bus_effect(0,2) as AudioEffectReverb

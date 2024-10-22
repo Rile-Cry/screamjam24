@@ -1,5 +1,6 @@
-[gd_scene load_steps=45 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=46 format=3 uid="uid://bnhqyw7sepsbm"]
 
+[ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
 [ext_resource type="PackedScene" path="res://scenes/levels/church.tscn" id="1_rxm03"]
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="2_csr4c"]
@@ -141,6 +142,8 @@ pageNumber = 0
 text = "The demon can only be brought back into a form where you can kill him by performing the ritual. You need A holy fat candle, a doll owned by a murdered child, a holy grail and a knife, and a mirror that reflects only darkness."
 
 [node name="GameLevel" type="Node3D"]
+
+[node name="PlayerHud" parent="." instance=ExtResource("1_btbe4")]
 
 [node name="SettingsMenu" parent="." instance=ExtResource("1_bxdda")]
 visible = false

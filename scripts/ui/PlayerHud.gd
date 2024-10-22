@@ -1,3 +1,4 @@
+class_name PlayerHud
 extends CanvasLayer
 
 # Basic Hud :: Will definitely not look like this later, just doing interaction stuffs
@@ -11,7 +12,7 @@ extends CanvasLayer
 var overlayTween: Tween
 const overlayDisplayTime := 5.0
 @onready var drop_note_text: Label = $DropNoteText/DropNoteText
-
+static var Instance: PlayerHud
 
 
 var player: Player:
@@ -22,6 +23,7 @@ var player: Player:
 func _ready() -> void:
 	add_to_group("hud")
 	process_mode = Node.PROCESS_MODE_ALWAYS
+	Instance = self
 
 
 func _input(event) -> void:
