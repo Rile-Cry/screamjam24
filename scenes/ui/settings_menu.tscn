@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://cgt568l8kwmu7"]
+[gd_scene load_steps=12 format=3 uid="uid://bvdo4m6dao4wf"]
 
+[ext_resource type="Script" path="res://scenes/ui/settings_menu.gd" id="1_eyj3e"]
 [ext_resource type="Texture2D" uid="uid://dcohboog3guj7" path="res://ui/art/book_cover_open.png" id="1_t4atj"]
 [ext_resource type="Texture2D" uid="uid://cmkk32le5nmx2" path="res://ui/art/page_torn.png" id="2_m1rcv"]
 [ext_resource type="Texture2D" uid="uid://cx4c5iho74frh" path="res://ui/art/pages_grouped.png" id="3_0uavt"]
@@ -18,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_eyj3e")
 
 [node name="book_container" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -72,6 +74,7 @@ offset_left = -42.5
 offset_right = 42.5
 offset_bottom = 50.0
 grow_horizontal = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 400
 theme_override_constants/margin_top = 90
 

@@ -6,7 +6,14 @@ extends CanvasLayer
 @onready var label := $HoverText/Label
 @onready var sanity_label := $Sanity/Label
 @onready var interactHelperLabel: Label = $InteractHelper/Label
+@onready var hand_swap_label: Label = $HandSwapIndicator/HandSwapLabel
 
+
+var player: Player:
+	get:
+		if !player:
+			player =get_tree().get_first_node_in_group("player")
+		return player
 func _ready() -> void:
 	add_to_group("hud")
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -22,17 +29,18 @@ func _input(event) -> void:
 func _process(delta) -> void:
 	if Global.hoveredItem:
 		label.text = Global.hoveredItem.itemName
-
 		if Global.hoveredItem.interactable:
 			interactHelperLabel.text = Global.hoveredItem.interactDescription + " (E)"
 		else:
 			interactHelperLabel.text = ""
-
-
 	else:
 		label.text = ""
 		interactHelperLabel.text = ""
 
+	if player.main_hand.get_child_count() >1 or player.off_hand.get_child_count() >1:
+		hand_swap_label.text = "Tab to Swap Hands\n'Q' to Drop"
+	else:
+		hand_swap_label.text = ""
 
 
 	sanity_label.text = str(Global.sanity)

@@ -21,7 +21,13 @@ func _process(_delta):
 
 
 func interact():
-	var hand = player.get_child(2).get_child(1)
+	if try_hand(player.main_hand):
+		return
+	else:
+		try_hand(player.off_hand)
+
+#returns if hand was used
+func try_hand(hand:Node3D) ->bool:
 	if not is_holding_item:
 		if hand.get_child_count() > 1:
 			var hand_item = hand.get_child(1)
@@ -32,6 +38,7 @@ func interact():
 				hand_item.process_mode = Node.PROCESS_MODE_DISABLED
 				hand_item.position = Vector3.ZERO
 				toggle_sound(true)
+				return true
 	else:
 		if hand.get_child_count() == 1:
 			var item = pedestal_slot.get_child(1)
@@ -39,8 +46,15 @@ func interact():
 			hand.add_child(item)
 			item.position = Vector3.ZERO
 			toggle_sound(false)
+			return true
+	return false
 
-
+func drop_item():
+	if is_holding_item:
+		var item = pedestal_slot.get_child(1)
+		item.reparent(get_tree().current_scene)
+		toggle_sound(false)
+		item.process_mode = Node.PROCESS_MODE_INHERIT
 func toggle_sound(on: bool):
 	if volumeTween and volumeTween.is_running():
 		volumeTween.kill()

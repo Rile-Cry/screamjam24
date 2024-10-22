@@ -17,6 +17,7 @@ signal OnStep
 
 func _ready() -> void:
 	terrainMask = create_collision_mask([4])
+	lastStepPosition = global_position
 
 func _physics_process(delta: float) -> void:
 	var adjustedStepSize := stepSize

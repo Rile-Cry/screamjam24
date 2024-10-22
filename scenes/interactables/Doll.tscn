@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://scripts/objects/Doll.gd" id="1_3yyrv"]
 [ext_resource type="AudioStream" uid="uid://7wijbueu0bly" path="res://Placeholders (Will be deleted)/Sounds/jump-scare-sound-2-82831.mp3" id="3_xb3ul"]
 [ext_resource type="AudioStream" uid="uid://bmp1u2g67skko" path="res://Placeholders (Will be deleted)/Sounds/baby-laugh-70665.mp3" id="4_cqgq2"]
-[ext_resource type="PackedScene" uid="uid://bjtrv2tc22e2g" path="res://scenes/interactables/seb.tscn" id="4_d4xiv"]
+[ext_resource type="PackedScene" uid="uid://8rymqsdc5iob" path="res://scenes/interactables/seb.tscn" id="4_d4xiv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqdx3"]
-size = Vector3(0.316406, 0.503418, 0.352539)
+size = Vector3(0.316406, 0.856323, 0.352539)
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_47kug"]
 random_pitch = 1.1
@@ -22,7 +22,7 @@ itemName = "Doll"
 type = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.248291, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.424744, 0)
 shape = SubResource("BoxShape3D_lqdx3")
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]
@@ -42,6 +42,7 @@ bus = &"SoundEffects"
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.211328, 0)
-aabb = AABB(-0.181275, -0.231685, -0.212785, 0.362551, 0.463371, 0.42557)
+aabb = AABB(-0.181275, -0.633752, -0.212785, 0.362551, 1.26751, 0.42557)
 
 [node name="Seb" parent="." instance=ExtResource("4_d4xiv")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

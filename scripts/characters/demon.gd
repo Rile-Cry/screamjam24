@@ -1,3 +1,5 @@
+
+class_name Demon
 extends CharacterBody3D
 
 
@@ -7,11 +9,23 @@ var player: Player
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var pauseBeforeMove := 5.0
+@export var pauseBeforeCanDamagePlayer := 5.0
+@onready var knockback_field: DemonKnockbackField = $KnockbackField
+
+
 var isMoving := false
+var ritualCircle: RitualCircle
+static var spawnedInstance : Demon
+const sanityDrainPerSecondWhileDemonIsAlive := 2.0
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
 	await get_tree().create_timer(pauseBeforeMove).timeout
 	isMoving = true
+	spawnedInstance = self
+	Global.sanity_list[get_instance_id()] = -sanityDrainPerSecondWhileDemonIsAlive
+	await get_tree().create_timer(pauseBeforeCanDamagePlayer).timeout
+	knockback_field.canDamagePlayer = true
+
 
 func _physics_process(delta: float) -> void:
 	if !isMoving:
@@ -33,3 +47,12 @@ func _physics_process(delta: float) -> void:
 	lookPosition.y = global_position.y
 	look_at(lookPosition)
 	move_and_slide()
+
+func reset_ritual():
+	for pedistal in ritualCircle.pedestal_list:
+		pedistal.drop_item()
+	ritualCircle.summoned = false
+	MusicManager.change_to_non_demon_music()
+	spawnedInstance = null
+	Global.sanity_list.erase(get_instance_id())
+	queue_free()

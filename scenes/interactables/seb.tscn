@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjtrv2tc22e2g"]
+[gd_scene load_steps=6 format=3 uid="uid://8rymqsdc5iob"]
 
 [ext_resource type="PackedScene" uid="uid://b5063cl5m23dy" path="res://models/objects/dollguy.fbx" id="1_3ytlg"]
 [ext_resource type="Texture2D" uid="uid://c0qxig3ja7cak" path="res://visuals/Textures/interactables/dollguy_pSphere10_01_BaseColor.tga" id="2_xip20"]
-[ext_resource type="Material" uid="uid://dt10yh720856s" path="res://visuals/materials/seb.tres" id="3_idpj4"]
+[ext_resource type="Material" path="res://visuals/materials/seb.tres" id="3_idpj4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i6ekh"]
 albedo_texture = ExtResource("2_xip20")

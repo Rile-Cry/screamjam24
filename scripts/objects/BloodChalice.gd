@@ -29,6 +29,7 @@ func interact():
 					playerHasKnife()
 				else:
 					Global.sanity =0
+					filled = false
 			return
 
 	var jumpTween := create_tween()

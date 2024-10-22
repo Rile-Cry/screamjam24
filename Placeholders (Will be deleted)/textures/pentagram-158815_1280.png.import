@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boacwjwimkf5v"
-path.s3tc="res://.godot/imported/top_page_single.png-45d80a5b26a1dfc1af3ec1964f92b803.s3tc.ctex"
+uid="uid://cbavb4wordl13"
+path.s3tc="res://.godot/imported/pentagram-158815_1280.png-4e2d045cfb46536a2dde019d3b520dbe.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://ui/art/top_page_single.png"
-dest_files=["res://.godot/imported/top_page_single.png-45d80a5b26a1dfc1af3ec1964f92b803.s3tc.ctex"]
+source_file="res://Placeholders (Will be deleted)/textures/pentagram-158815_1280.png"
+dest_files=["res://.godot/imported/pentagram-158815_1280.png-4e2d045cfb46536a2dde019d3b520dbe.s3tc.ctex"]
 
 [params]
 

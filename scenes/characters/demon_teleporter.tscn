@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bohodi3wlnly"]
+
+[ext_resource type="Script" path="res://scenes/levels/DemonTeleporter.gd" id="1_pmmbm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6wuvl"]
+size = Vector3(55.6354, 25.2167, 59.3623)
+
+[node name="DemonTeleporter" type="Area3D"]
+script = ExtResource("1_pmmbm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.04474, 1.62999, -14.6851)
+shape = SubResource("BoxShape3D_6wuvl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

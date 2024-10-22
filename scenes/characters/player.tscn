@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://ci4s5wyfxbnsl"]
+[gd_scene load_steps=44 format=3 uid="uid://ci4s5wyfxbnsl"]
 
 [ext_resource type="Script" path="res://scripts/characters/PlayerController.gd" id="1_uayg2"]
 [ext_resource type="Script" path="res://scripts/characters/Camera.gd" id="2_gjwb2"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeRandom3D.gd" id="6_0tcli"]
 [ext_resource type="AudioStream" uid="uid://c4xe0nfeoys0w" path="res://Placeholders (Will be deleted)/Sounds/step2.mp3" id="6_wt8pi"]
 [ext_resource type="AudioStream" uid="uid://dka6jh7ogkys" path="res://Placeholders (Will be deleted)/Sounds/step3.mp3" id="7_7jjje"]
+[ext_resource type="Texture2D" uid="uid://cq5wiidhdfuxp" path="res://visuals/Textures/Crosshair.png" id="8_rshdo"]
 [ext_resource type="AudioStream" uid="uid://dfoah6ygqbcos" path="res://Placeholders (Will be deleted)/Sounds/step4.mp3" id="8_xf7yh"]
 [ext_resource type="Script" path="res://scripts/characters/footsteps.gd" id="9_vrtr5"]
 [ext_resource type="Script" path="res://scripts/characters/FootstepSoundManager.gd" id="13_tbhcq"]
@@ -53,6 +54,27 @@ bake_internal = 64
 [sub_resource type="Resource" id="Resource_eid41"]
 script = ExtResource("4_3wdtf")
 PositionShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([SubResource("Resource_0mupv")])
+RotationShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([SubResource("Resource_0mupv")])
+ScaleShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([])
+bake_internal = 64
+__follow_timeline = false
+
+[sub_resource type="Resource" id="Resource_i153u"]
+script = ExtResource("3_u12es")
+noise_texture = SubResource("NoiseTexture3D_1njfl")
+amplitude = Vector3(0.03, 0.03, 0.03)
+offset = Vector3(0, 0, 0)
+BlendingMode = 0
+fade_in = 0.0
+fade_out = 0.0
+start_percent = 0.0
+end_percent = 1.0
+_temp_graph = false
+bake_internal = 64
+
+[sub_resource type="Resource" id="Resource_kqqxf"]
+script = ExtResource("4_3wdtf")
+PositionShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([SubResource("Resource_i153u")])
 RotationShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([SubResource("Resource_0mupv")])
 ScaleShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.gd")]([])
 bake_internal = 64
@@ -203,6 +225,7 @@ cull_mask = 1048573
 environment = ExtResource("2_v0xmj")
 current = true
 fov = 55.0
+far = 50.53
 script = ExtResource("2_gjwb2")
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
@@ -223,7 +246,8 @@ transform = Transform3D(1, 1.19209e-07, 0, -1.19209e-07, 1, 0, 0, 7.10543e-15, 1
 [node name="HandShake" type="Node3D" parent="Camera3D/OffHand"]
 script = ExtResource("2_irlbp")
 AutoPlay = true
-shakerPreset = SubResource("Resource_eid41")
+shake_speed = 0.9
+shakerPreset = SubResource("Resource_kqqxf")
 
 [node name="CameraShake" type="Node3D" parent="Camera3D"]
 unique_name_in_owner = true
@@ -232,6 +256,10 @@ duration = 0.2
 shake_speed = 0.5
 fade_out = 1.0
 shakerPreset = SubResource("Resource_ebf4x")
+
+[node name="Sprite3D" type="Sprite3D" parent="Camera3D"]
+transform = Transform3D(0.1, 2.58821e-16, 0, -2.58821e-16, 0.1, 0, 0, 0, 0.1, -1.99652e-08, 0, -0.511682)
+texture = ExtResource("8_rshdo")
 
 [node name="FootstepsPlayer" type="AudioStreamPlayer3D" parent="."]
 stream = SubResource("AudioStreamRandomizer_1a6vh")

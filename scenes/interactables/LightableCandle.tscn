@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/objects/Lightable.gd" id="1_2l6vj"]
 [ext_resource type="PackedScene" uid="uid://dglbbmjvokxv5" path="res://scenes/interactables/root_node.tscn" id="2_mi4pf"]
-[ext_resource type="AudioStream" uid="uid://c0van36teygrq" path="res://audio/sfx/maybe placeholders/match-lighting-candle-81020.mp3" id="3_f7lwe"]
-[ext_resource type="AudioStream" uid="uid://4hc70gw5o6t3" path="res://audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3" id="4_ug7eu"]
+[ext_resource type="AudioStream" uid="uid://c0van36teygrq" path="res://Audio/sfx/maybe placeholders/match-lighting-candle-81020.mp3" id="3_f7lwe"]
+[ext_resource type="AudioStream" uid="uid://4hc70gw5o6t3" path="res://Audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3" id="4_ug7eu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rlkhp"]
 size = Vector3(0.456787, 0.577026, 0.419678)
@@ -15,6 +15,7 @@ collision_mask = 5
 axis_lock_angular_x = true
 axis_lock_angular_z = true
 script = ExtResource("1_2l6vj")
+timeCandleStaysLit = 30.0
 itemName = "Candle"
 interactDescription = "Light"
 type = 3
@@ -29,7 +30,7 @@ shape = SubResource("BoxShape3D_rlkhp")
 transform = Transform3D(1, 1.42109e-14, -8.9407e-08, 0, 1, 2.09858e-07, 8.9407e-08, -2.09857e-07, 1, 0, 0.399809, 0)
 light_color = Color(1, 0.788235, 0.388235, 1)
 light_energy = 3.0
-light_volumetric_fog_energy = 0.3
+light_volumetric_fog_energy = 0.1
 light_size = 0.1
 shadow_enabled = true
 distance_fade_begin = 0.0

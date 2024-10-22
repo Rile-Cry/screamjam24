@@ -21,6 +21,10 @@ func _physics_process(delta: float) -> void:
 	var distanceToPlayer :=global_position.distance_to(player.global_position)
 	if  distanceToPlayer< teleportFromPlayerDistance and distanceToPlayer> teleportFromPlayerMinDistance:
 		teleportToNextPosition()
+	look_at(player.global_position)
+	global_rotation.x = 0
+	global_rotation.z = 0
+	global_rotation.y -= PI
 
 
 func teleportToNextPosition():

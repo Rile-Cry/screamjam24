@@ -13,6 +13,7 @@ layer = 0
 script = ExtResource("1_blc7j")
 
 [node name="ChromaticAberation" type="ColorRect" parent="."]
+visible = false
 material = SubResource("ShaderMaterial_ln3d5")
 anchors_preset = 15
 anchor_right = 1.0
