@@ -32,10 +32,12 @@ func interact():
 		openingTween.tween_property(door_one,"rotation:y",startingRotationOne.y ,closeSpeed).set_ease(Tween.EASE_IN)
 		openingTween.tween_property(door_two,"rotation:y",startingRotationTwo.y ,closeSpeed).set_ease(Tween.EASE_IN)
 		isOpen = false
+		interactDescription = "Open"
 
 	else:
 		door_open_sound.play()
 		openingTween.tween_property(door_one,"rotation:y",startingRotationOne.y + openingRotation,openingSpeed)
 		openingTween.tween_property(door_two,"rotation:y",startingRotationTwo.y - openingRotation,openingSpeed)
 		isOpen = true
+		interactDescription = "Close"
 		OnOpen.emit()

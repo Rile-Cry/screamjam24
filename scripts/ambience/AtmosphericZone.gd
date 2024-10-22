@@ -19,6 +19,8 @@ static var transitionTween: Tween
 var reverbEffect: AudioEffectReverb
 var outsideLowPass: AudioEffectLowPassFilter
 
+@export var aboveGround:= true
+
 func _ready() -> void:
 	reverbEffect = AudioServer.get_bus_effect(2,0)
 	outsideLowPass = AudioServer.get_bus_effect(3,0)
@@ -38,6 +40,11 @@ func _on_body_exited(body: Node3D) -> void:
 			transition_out()
 
 func transition_into():
+	if !Demon.spawnedInstance:
+		if aboveGround:
+			MusicManager.change_to_church_music()
+		else:
+			MusicManager.change_to_crypt_music()
 	if transitionTween:
 		transitionTween.kill()
 	transitionTween = create_tween().set_parallel(true)

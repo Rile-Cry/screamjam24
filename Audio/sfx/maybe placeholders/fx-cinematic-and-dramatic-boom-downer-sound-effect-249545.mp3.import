@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://mvct3jh3f0k7"
-path="res://.godot/imported/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3-9f21e5671bad1f61b637a4895d48a65b.mp3str"
+path="res://.godot/imported/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3-a00dfaf2c176759c9aefdae02a46c708.mp3str"
 
 [deps]
 
-source_file="res://audio/sfx/maybe placeholders/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3"
-dest_files=["res://.godot/imported/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3-9f21e5671bad1f61b637a4895d48a65b.mp3str"]
+source_file="res://Audio/sfx/maybe placeholders/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3"
+dest_files=["res://.godot/imported/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3-a00dfaf2c176759c9aefdae02a46c708.mp3str"]
 
 [params]
 

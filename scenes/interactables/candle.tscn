@@ -18,7 +18,6 @@ itemName = "Candle"
 type = 1
 
 [node name="CandleRoot" parent="." instance=ExtResource("2_cid0s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Point" type="OmniLight3D" parent="."]
 transform = Transform3D(0.999999, 3.55271e-14, -1.49012e-07, 0, 1, 2.09857e-07, 1.49012e-07, -2.09857e-07, 0.999999, 0, 0.260452, 0)

@@ -24,6 +24,7 @@ var goingInsane := false
 @onready var ray := $Camera3D/RayCast3D
 @onready var reading_position: Node3D = %ReadingPosition
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
+@onready var death_sound: AudioStreamPlayer = %DeathSound
 
 
 # Project Setting References
@@ -181,10 +182,11 @@ func drop(throw: bool = false) -> void:
 		var main_hand_item = main_hand.get_child(1)
 		if is_instance_of(main_hand_item, Book):
 			Global.is_holding_book = false
-		main_hand.remove_child(main_hand_item)
-		get_parent().add_child(main_hand_item)
-		main_hand_item.global_position = main_hand.global_position + (transform.basis * main_hand.position).normalized()
+		main_hand_item.reparent(get_parent())
+#		i got rid of this so you cant push things through walls
+		#main_hand_item.global_position = main_hand.global_position + (transform.basis * main_hand.position).normalized()
 		main_hand_item.process_mode = Node.PROCESS_MODE_PAUSABLE
+		(main_hand_item as RigidBody3D).add_collision_exception_with(self)
 		if throw:
 			Global.sanity += 1
 			var theta = camera.rotation.y
@@ -219,6 +221,7 @@ func OnSanityChanged():
 		GoInsane()
 
 func GoInsane():
+	death_sound.play()
 	PlayerHud.Instance.display_overlay_text("You Have Gone Completely Insane...")
 	goingInsane = true
 	var pitchShiftEffect := AudioServer.get_bus_effect(0,1) as AudioEffectPitchShift

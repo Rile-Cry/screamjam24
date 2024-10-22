@@ -52,7 +52,7 @@ func reset_ritual():
 	for pedistal in ritualCircle.pedestal_list:
 		pedistal.drop_item()
 	ritualCircle.summoned = false
-	MusicManager.change_to_non_demon_music()
+	MusicManager.change_to_church_music()
 	spawnedInstance = null
 	Global.sanity_list.erase(get_instance_id())
 	queue_free()

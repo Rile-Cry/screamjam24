@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://diq6m5n535d0"]
 
 [ext_resource type="Script" path="res://scripts/objects/Doll.gd" id="1_3yyrv"]
-[ext_resource type="AudioStream" uid="uid://7wijbueu0bly" path="res://Placeholders (Will be deleted)/Sounds/jump-scare-sound-2-82831.mp3" id="3_xb3ul"]
+[ext_resource type="AudioStream" uid="uid://ko24gg6snv64" path="res://Audio/sfx/Sebenezer Escape!.mp3" id="2_o0ce7"]
 [ext_resource type="AudioStream" uid="uid://bmp1u2g67skko" path="res://Placeholders (Will be deleted)/Sounds/baby-laugh-70665.mp3" id="4_cqgq2"]
 [ext_resource type="PackedScene" uid="uid://8rymqsdc5iob" path="res://scenes/interactables/seb.tscn" id="4_d4xiv"]
 
@@ -9,9 +9,8 @@
 size = Vector3(0.316406, 0.856323, 0.352539)
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_47kug"]
-random_pitch = 1.1
 streams_count = 1
-stream_0/stream = ExtResource("3_xb3ul")
+stream_0/stream = ExtResource("2_o0ce7")
 stream_0/weight = 1.0
 
 [node name="Doll" type="RigidBody3D"]
@@ -28,7 +27,7 @@ shape = SubResource("BoxShape3D_lqdx3")
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = SubResource("AudioStreamRandomizer_47kug")
-volume_db = -10.0
+volume_db = 20.0
 bus = &"SoundEffects"
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]

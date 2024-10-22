@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://b6dtreo20vkg3"
-path="res://.godot/imported/Spooky Church Ambience (1).mp3-859afbf00cea879a3f4b43cc6409fbd2.mp3str"
+path="res://.godot/imported/Spooky Church Ambience (1).mp3-03511212ff5142a7bf443f72e729ecd2.mp3str"
 
 [deps]
 
-source_file="res://audio/Music/Spooky Church Ambience (1).mp3"
-dest_files=["res://.godot/imported/Spooky Church Ambience (1).mp3-859afbf00cea879a3f4b43cc6409fbd2.mp3str"]
+source_file="res://Audio/Music/Spooky Church Ambience (1).mp3"
+dest_files=["res://.godot/imported/Spooky Church Ambience (1).mp3-03511212ff5142a7bf443f72e729ecd2.mp3str"]
 
 [params]
 

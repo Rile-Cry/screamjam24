@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/objects/Lightable.gd" id="1_2l6vj"]
 [ext_resource type="PackedScene" uid="uid://dglbbmjvokxv5" path="res://scenes/interactables/root_node.tscn" id="2_mi4pf"]
-[ext_resource type="AudioStream" uid="uid://c0van36teygrq" path="res://audio/sfx/maybe placeholders/match-lighting-candle-81020.mp3" id="3_f7lwe"]
-[ext_resource type="AudioStream" uid="uid://4hc70gw5o6t3" path="res://audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3" id="4_ug7eu"]
+[ext_resource type="AudioStream" uid="uid://c0van36teygrq" path="res://Audio/sfx/maybe placeholders/match-lighting-candle-81020.mp3" id="3_f7lwe"]
+[ext_resource type="AudioStream" uid="uid://4hc70gw5o6t3" path="res://Audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3" id="4_ug7eu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rlkhp"]
 size = Vector3(0.456787, 0.577026, 0.419678)
