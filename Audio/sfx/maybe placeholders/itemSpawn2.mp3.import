@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://vusus71lkamg"
-path="res://.godot/imported/itemSpawn2.mp3-22821a158a28e6e45e019d62bc88d198.mp3str"
+path="res://.godot/imported/itemSpawn2.mp3-33bf8c0c0c7806e8bf93154f1c19ad73.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/maybe placeholders/itemSpawn2.mp3"
-dest_files=["res://.godot/imported/itemSpawn2.mp3-22821a158a28e6e45e019d62bc88d198.mp3str"]
+source_file="res://audio/sfx/maybe placeholders/itemSpawn2.mp3"
+dest_files=["res://.godot/imported/itemSpawn2.mp3-33bf8c0c0c7806e8bf93154f1c19ad73.mp3str"]
 
 [params]
 

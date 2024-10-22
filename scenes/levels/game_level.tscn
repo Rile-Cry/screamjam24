@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnhqyw7sepsbm"]
+
+[ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="1_rxm03"]
+[ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="2_csr4c"]
+
+[node name="GameLevel" type="Node3D"]
+
+[node name="Church" parent="." instance=ExtResource("1_rxm03")]
+
+[node name="Player" parent="." instance=ExtResource("2_csr4c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00303, 0.0464884, 11.4041)

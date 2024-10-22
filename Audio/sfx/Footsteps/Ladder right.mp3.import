@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://d2an8cs668scu"
-path="res://.godot/imported/Ladder right.mp3-ca6cd2a96b610fee35668a908639048b.mp3str"
+path="res://.godot/imported/Ladder right.mp3-c579b1da7f6c2cf4fddbb87709f7731b.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/Footsteps/Ladder right.mp3"
-dest_files=["res://.godot/imported/Ladder right.mp3-ca6cd2a96b610fee35668a908639048b.mp3str"]
+source_file="res://audio/sfx/Footsteps/Ladder right.mp3"
+dest_files=["res://.godot/imported/Ladder right.mp3-c579b1da7f6c2cf4fddbb87709f7731b.mp3str"]
 
 [params]
 

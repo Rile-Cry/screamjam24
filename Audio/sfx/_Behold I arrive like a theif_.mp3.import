@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://jq4v1sk42v1k"
-path="res://.godot/imported/_Behold I arrive like a theif_.mp3-6581355558a980a73eec6de26dea7efc.mp3str"
+path="res://.godot/imported/_Behold I arrive like a theif_.mp3-5e2cf2184d49ad60513eb1589724065f.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/_Behold I arrive like a theif_.mp3"
-dest_files=["res://.godot/imported/_Behold I arrive like a theif_.mp3-6581355558a980a73eec6de26dea7efc.mp3str"]
+source_file="res://audio/sfx/_Behold I arrive like a theif_.mp3"
+dest_files=["res://.godot/imported/_Behold I arrive like a theif_.mp3-5e2cf2184d49ad60513eb1589724065f.mp3str"]
 
 [params]
 

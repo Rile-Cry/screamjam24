@@ -1,7 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://08w31gfhrnws"]
+[gd_scene load_steps=6 format=3 uid="uid://08w31gfhrnws"]
 
-[ext_resource type="PackedScene" uid="uid://bixvjhvgmcuha" path="res://scenes/levels/main_room.tscn" id="1_0bcah"]
+[ext_resource type="PackedScene" uid="uid://bixvjhvgmcuha" path="res://scenes/levels/church_rooms/main_room.tscn" id="1_0bcah"]
+[ext_resource type="PackedScene" uid="uid://bs0ojowtgp12i" path="res://scenes/levels/church_rooms/office.tscn" id="2_5ejkn"]
+[ext_resource type="PackedScene" uid="uid://bwk11es7xv4tt" path="res://scenes/levels/church_rooms/bell_tower.tscn" id="3_jv7h6"]
+[ext_resource type="PackedScene" uid="uid://c6wbbsqi6tefj" path="res://scenes/levels/church_rooms/starting_room.tscn" id="4_jpqtv"]
+[ext_resource type="PackedScene" uid="uid://c5xx8sx0ghmf4" path="res://scenes/levels/church_rooms/crypt.tscn" id="5_acgs3"]
 
 [node name="Church" type="Node3D"]
 
-[node name="Root Scene" parent="." instance=ExtResource("1_0bcah")]
+[node name="MainRoom" parent="." instance=ExtResource("1_0bcah")]
+
+[node name="Office" parent="." instance=ExtResource("2_5ejkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.99635, 0, -24.4987)
+
+[node name="BellTower" parent="." instance=ExtResource("3_jv7h6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.001, 0, -24.4943)
+
+[node name="StartingRoom" parent="." instance=ExtResource("4_jpqtv")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.000900149, -4.76837e-07, -0.00638676)
+
+[node name="Crypt" parent="." instance=ExtResource("5_acgs3")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.97688, -8.01032, -33.5042)

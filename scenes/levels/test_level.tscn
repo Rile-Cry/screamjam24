@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://bdqy48qca251o" path="res://scenes/objects/sanity_items/sanity_ball.tscn" id="22_4xpif"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="22_6qe3w"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="24_dx4xd"]
-[ext_resource type="PackedScene" uid="uid://cliyn783t3tkt" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
+[ext_resource type="PackedScene" uid="uid://7uk2mtu17r5o" path="res://scenes/interactables/LightableCandle.tscn" id="25_opk6a"]
 [ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="25_ybvel"]
 [ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="27_qsduh"]
 [ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="28_desw2"]
