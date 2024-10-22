@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=23 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_gldlg"]
 [ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="1_rxm03"]
@@ -10,7 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/interactables/candle.tscn" id="5_7wh1f"]
 [ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="9_535ft"]
 [ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
-[ext_resource type="PackedScene" uid="uid://bruwmf30bj5fc" path="res://scenes/objects/altar.tscn" id="11_snhal"]
+[ext_resource type="PackedScene" path="res://scenes/objects/altar.tscn" id="11_snhal"]
+[ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="12_02yxp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 32.0547, 49.2281)
@@ -159,3 +160,38 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.36521, -6.79586, 8.04946)
 
 [node name="Altar" parent="." instance=ExtResource("11_snhal")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.53755, 0.491255, -19.4888)
+
+[node name="DollPuzzle" type="Node3D" parent="."]
+
+[node name="Doll" parent="DollPuzzle" node_paths=PackedStringArray("positionsToSpawnAt") instance=ExtResource("12_02yxp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.41206, 0.491254, 1.76953)
+positionsToSpawnAt = NodePath("../DollSpawnPositions")
+
+[node name="DollSpawnPositions" type="Node3D" parent="DollPuzzle"]
+
+[node name="DollSpawnPosition" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.96357, 0.925428, 1.33368)
+
+[node name="DollSpawnPosition2" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.13141, 0.925428, 11.7989)
+
+[node name="DollSpawnPosition3" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.13141, 0.925428, 1.79894)
+
+[node name="DollSpawnPosition4" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.94408, 0.925428, 11.6016)
+
+[node name="DollSpawnPosition5" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.3485, 0.925428, -0.793014)
+
+[node name="DollSpawnPosition6" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.30193, 0.925428, -0.578642)
+
+[node name="DollSpawnPosition7" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.50094, 0.925428, -22.6904)
+
+[node name="DollSpawnPosition8" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2278, 0.925428, -22.9779)
+
+[node name="DollSpawnPosition9" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05136, 1.97057, -20.037)
