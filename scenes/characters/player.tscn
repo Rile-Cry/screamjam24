@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://ci4s5wyfxbnsl"]
+[gd_scene load_steps=41 format=3 uid="uid://ci4s5wyfxbnsl"]
 
 [ext_resource type="Script" path="res://scripts/characters/PlayerController.gd" id="1_uayg2"]
 [ext_resource type="Script" path="res://scripts/characters/Camera.gd" id="2_gjwb2"]
@@ -6,7 +6,11 @@
 [ext_resource type="Environment" uid="uid://djeooyrkn3e2i" path="res://Volumetric environment.tres" id="2_v0xmj"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeNoiseShake3D.gd" id="3_u12es"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerPreset3D.gd" id="4_3wdtf"]
+[ext_resource type="AudioStream" uid="uid://cost8yhcvbvpe" path="res://Placeholders (Will be deleted)/Sounds/step1.mp3" id="5_kr5dx"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeRandom3D.gd" id="6_0tcli"]
+[ext_resource type="AudioStream" uid="uid://c4xe0nfeoys0w" path="res://Placeholders (Will be deleted)/Sounds/step2.mp3" id="6_wt8pi"]
+[ext_resource type="AudioStream" uid="uid://dka6jh7ogkys" path="res://Placeholders (Will be deleted)/Sounds/step3.mp3" id="7_7jjje"]
+[ext_resource type="AudioStream" uid="uid://dfoah6ygqbcos" path="res://Placeholders (Will be deleted)/Sounds/step4.mp3" id="8_xf7yh"]
 [ext_resource type="Script" path="res://scripts/characters/footsteps.gd" id="9_vrtr5"]
 [ext_resource type="Script" path="res://scripts/characters/FootstepSoundManager.gd" id="13_tbhcq"]
 [ext_resource type="AudioStream" uid="uid://dxt4gg1s6i3x1" path="res://audio/sfx/Footsteps/Left mud step.mp3" id="14_v47s2"]
@@ -75,13 +79,17 @@ ScaleShake = Array[Resource("res://addons/shaker/data/Vector3/BaseShakerType3D.g
 bake_internal = 64
 __follow_timeline = false
 
-[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_me1y1"]
-random_pitch = 1.05
-streams_count = 2
-stream_0/stream = ExtResource("18_7jahm")
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_1a6vh"]
+random_pitch = 1.1
+streams_count = 4
+stream_0/stream = ExtResource("5_kr5dx")
 stream_0/weight = 1.0
-stream_1/stream = ExtResource("19_mkfsn")
+stream_1/stream = ExtResource("6_wt8pi")
 stream_1/weight = 1.0
+stream_2/stream = ExtResource("7_7jjje")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("8_xf7yh")
+stream_3/weight = 1.0
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7os0v"]
 random_pitch = 1.05
@@ -97,6 +105,14 @@ streams_count = 2
 stream_0/stream = ExtResource("16_pxlrl")
 stream_0/weight = 1.0
 stream_1/stream = ExtResource("17_1v64y")
+stream_1/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_me1y1"]
+random_pitch = 1.05
+streams_count = 2
+stream_0/stream = ExtResource("18_7jahm")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("19_mkfsn")
 stream_1/weight = 1.0
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_d0yum"]
@@ -217,7 +233,7 @@ fade_out = 1.0
 shakerPreset = SubResource("Resource_ebf4x")
 
 [node name="FootstepsPlayer" type="AudioStreamPlayer3D" parent="."]
-stream = SubResource("AudioStreamRandomizer_me1y1")
+stream = SubResource("AudioStreamRandomizer_1a6vh")
 volume_db = -5.0
 max_polyphony = 5
 bus = &"SoundEffects"

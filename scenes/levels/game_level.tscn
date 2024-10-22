@@ -12,14 +12,14 @@
 [ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
 [ext_resource type="PackedScene" uid="uid://bruwmf30bj5fc" path="res://scenes/objects/altar.tscn" id="11_snhal"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="12_02yxp"]
-[ext_resource type="PackedScene" uid="uid://cmlxcocw8rbxb" path="res://scripts/objects/knife.tscn" id="13_frigp"]
+[ext_resource type="PackedScene" path="res://scripts/objects/knife.tscn" id="13_frigp"]
 [ext_resource type="Script" path="res://scripts/objects/KeyItemKnife.gd" id="14_d8016"]
 [ext_resource type="PackedScene" uid="uid://b3qphi6tibi4g" path="res://scenes/interactables/BloodChalice.tscn" id="14_ymk8b"]
 [ext_resource type="Script" path="res://scripts/Trials/CandleTrial.gd" id="16_6210w"]
 [ext_resource type="PackedScene" uid="uid://7uk2mtu17r5o" path="res://scenes/interactables/LightableCandle.tscn" id="16_l853q"]
-[ext_resource type="PackedScene" uid="uid://cuvfhpri2sadg" path="res://scenes/interactables/KeyItemCandle.tscn" id="18_20srk"]
-[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://Audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="19_yahdx"]
-[ext_resource type="AudioStream" uid="uid://vusus71lkamg" path="res://Audio/sfx/maybe placeholders/itemSpawn2.mp3" id="20_6e08d"]
+[ext_resource type="PackedScene" path="res://scenes/interactables/KeyItemCandle.tscn" id="18_20srk"]
+[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="19_yahdx"]
+[ext_resource type="AudioStream" uid="uid://vusus71lkamg" path="res://audio/sfx/maybe placeholders/itemSpawn2.mp3" id="20_6e08d"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 32.0547, 49.2281)
@@ -340,3 +340,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.44522, 16.4913, -28.8807)
 
 [node name="PlayerSpawnPosition24" type="Node3D" parent="PlayerRespawnPositions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9314, 16.4913, -30.5735)
+
+[node name="MeganCamera" type="Node3D" parent="."]
+
+[node name="Camera1" type="Camera3D" parent="MeganCamera"]
+
+[node name="Camera2" type="Camera3D" parent="MeganCamera"]
+
+[node name="Camera3" type="Camera3D" parent="MeganCamera"]
