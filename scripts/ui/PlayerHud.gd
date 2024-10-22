@@ -7,6 +7,11 @@ extends CanvasLayer
 @onready var sanity_label := $Sanity/Label
 @onready var interactHelperLabel: Label = $InteractHelper/Label
 @onready var hand_swap_label: Label = $HandSwapIndicator/HandSwapLabel
+@onready var overlay_text: Label = $OverlayText/OverlayText
+var overlayTween: Tween
+const overlayDisplayTime := 5.0
+@onready var drop_note_text: Label = $DropNoteText/DropNoteText
+
 
 
 var player: Player:
@@ -42,8 +47,9 @@ func _process(delta) -> void:
 	else:
 		hand_swap_label.text = ""
 
+	if player.currentReadingItem:
+		interactHelperLabel.text = "Press 'E' to Drop Note"
 
-	sanity_label.text = str(Global.sanity)
 
 func open_book() -> void:
 	get_tree().paused = true
@@ -54,3 +60,17 @@ func close_book() -> void:
 	book_label.hide()
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	get_tree().paused = false
+
+func display_overlay_text(text: String):
+	if overlayTween:
+		overlayTween.kill()
+	overlay_text.modulate.a = 0
+	overlay_text.text = text
+	overlayTween = create_tween()
+	overlayTween.tween_property(overlay_text,"modulate:a",1,1)
+	await get_tree().create_timer(overlayDisplayTime).timeout
+	overlayTween = create_tween()
+	overlayTween.tween_property(overlay_text,"modulate:a",0,1)
+
+
+

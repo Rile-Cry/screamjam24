@@ -1,7 +1,6 @@
-[gd_scene load_steps=37 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=45 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
-[ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_gldlg"]
 [ext_resource type="PackedScene" path="res://scenes/levels/church.tscn" id="1_rxm03"]
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="2_csr4c"]
 [ext_resource type="Terrain3DStorage" uid="uid://b70e0pipjuf3c" path="res://Terrain.res" id="2_i2uo6"]
@@ -24,7 +23,9 @@
 [ext_resource type="PackedScene" uid="uid://bgotjvkit2l11" path="res://scenes/interactables/book.tscn" id="22_52psr"]
 [ext_resource type="PackedScene" uid="uid://c1gx06ns82v0r" path="res://scenes/interactables/door.tscn" id="23_emex3"]
 [ext_resource type="PackedScene" uid="uid://bohodi3wlnly" path="res://scenes/characters/demon_teleporter.tscn" id="24_eb66c"]
+[ext_resource type="PackedScene" uid="uid://ccvs74jc3856l" path="res://scenes/interactables/Note.tscn" id="25_1lmjg"]
 [ext_resource type="PackedScene" uid="uid://b64v2w7rch36v" path="res://scenes/objects/ladder.tscn" id="25_w0xto"]
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="26_utnp7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 32.0547, 49.2281)
@@ -104,12 +105,45 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
+[sub_resource type="Resource" id="Resource_f7eub"]
+script = ExtResource("26_utnp7")
+pageNumber = 0
+text = "I am a your families. Big bad demon in basement, the bell kills demons. Good luck!"
+
+[sub_resource type="Resource" id="Resource_us5n7"]
+script = ExtResource("26_utnp7")
+pageNumber = 0
+text = "The holy fat was hidden in darkness, only the light could reveal it again."
+
+[sub_resource type="Resource" id="Resource_sbvpc"]
+script = ExtResource("26_utnp7")
+pageNumber = 0
+text = "The only one who survived the shedding of blood was Jack"
+
+[sub_resource type="Resource" id="Resource_w40ss"]
+script = ExtResource("26_utnp7")
+pageNumber = 0
+text = "The bookshelf hides the truth, A golden book is the key"
+
+[sub_resource type="Resource" id="Resource_7h851"]
+script = ExtResource("26_utnp7")
+pageNumber = 0
+text = "The Child who was murdered could never stand eye contact with strangers, dont look at her"
+
+[sub_resource type="Resource" id="Resource_oiso7"]
+script = ExtResource("26_utnp7")
+pageNumber = 0
+text = "Only this holy bell could damage the devil. Only in his physical form can he be destroyed"
+
+[sub_resource type="Resource" id="Resource_01ktg"]
+script = ExtResource("26_utnp7")
+pageNumber = 0
+text = "The demon can only be brought back into a form where you can kill him by performing the ritual. You need A holy fat candle, a doll owned by a murdered child, a holy grail and a knife, and a mirror that reflects only darkness."
+
 [node name="GameLevel" type="Node3D"]
 
 [node name="SettingsMenu" parent="." instance=ExtResource("1_bxdda")]
 visible = false
-
-[node name="PlayerHud" parent="." instance=ExtResource("1_gldlg")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.0763496, -0.690965, -0.718845, -0.837298, -0.435888, 0.330052, -0.54139, 0.576687, -0.611824, -2.49683, 2.45225, 17.0174)
@@ -302,7 +336,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.34683, -2.38419e-07, -4.665
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0725, -2.38419e-07, -13.8988)
 
 [node name="PlayerSpawnPosition11" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.82361, -2.38419e-07, -18.9609)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.72904, 2.38418e-07, -16.6823)
 
 [node name="PlayerSpawnPosition12" type="Node3D" parent="PlayerRespawnPositions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9451, -2.38419e-07, -22.4841)
@@ -317,31 +351,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.20717, -2.38419e-07, -26.4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.44691, -2.38419e-07, -26.4933)
 
 [node name="PlayerSpawnPosition16" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.923, -2.38419e-07, -25.3594)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.07431, -2.38419e-07, -21.8338)
 
 [node name="PlayerSpawnPosition17" type="Node3D" parent="PlayerRespawnPositions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29716, -2.38419e-07, -17.584)
 
 [node name="PlayerSpawnPosition18" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.69468, -1.19209e-06, -31.3649)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.45049, -1.19209e-06, -30.3555)
 
 [node name="PlayerSpawnPosition19" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99721, 2.99126, -30.9481)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99721, 3.33735, -30.9481)
 
 [node name="PlayerSpawnPosition20" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9067, 2.99126, -31.123)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9067, 3.18972, -31.123)
 
 [node name="PlayerSpawnPosition21" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5056, 5.49125, -25.2548)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5056, 5.88276, -25.2548)
 
 [node name="PlayerSpawnPosition22" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76563, 5.49125, -25.2751)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76563, 5.85901, -25.2751)
 
 [node name="PlayerSpawnPosition23" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.44522, 16.4913, -28.8807)
-
-[node name="PlayerSpawnPosition24" type="Node3D" parent="PlayerRespawnPositions"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9314, 16.4913, -30.5735)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.44522, 16.6527, -28.8807)
 
 [node name="MeganCamera" type="Node3D" parent="."]
 
@@ -396,6 +427,36 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 2.35727, 0, 1, 0, -4.37114e-08, 
 
 [node name="Ladder2" parent="BuildingStuff" instance=ExtResource("25_w0xto")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 2.35727, 0, 1, 0, -4.37114e-08, 11.2698, 12.4273, -30.056)
+
+[node name="Notes" type="Node3D" parent="."]
+
+[node name="Note" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.80128, 0.491254, 4.27222)
+noteResource = SubResource("Resource_f7eub")
+
+[node name="Note2" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 0.85173, 0.47856, -18.4791)
+noteResource = SubResource("Resource_us5n7")
+
+[node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -9.85117, 0.47856, -26.4675)
+noteResource = SubResource("Resource_sbvpc")
+
+[node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)
+noteResource = SubResource("Resource_w40ss")
+
+[node name="Note7" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.99835, 0, 0.0574247, 0, 1, 0, -0.0574247, 0, 0.99835, -5.89124, -7.53176, 4.96243)
+noteResource = SubResource("Resource_7h851")
+
+[node name="Note6" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 9.56037, 16.6513, -28.8426)
+noteResource = SubResource("Resource_oiso7")
+
+[node name="Note3" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(-0.946351, 0, -0.323141, 0, 1, 0, 0.323141, 0, -0.946351, -5.50982, -7.53176, -2.38123)
+noteResource = SubResource("Resource_01ktg")
 
 [editable path="DemonTeleporters/UpstairsDemonTeleporter"]
 [editable path="DemonTeleporters/DownstairsDemonTeleporter"]

@@ -58,8 +58,10 @@ func _input(event):
 	# Basic Interaction with objects, currently only picks up and crudely at that
 	if event.is_action_pressed("interact"):
 		if currentReadingItem:
-			Global.AddNote(currentReadingItem.noteResource)
-			currentReadingItem.queue_free()
+# Change this back if we want to add notes to the book rather than dropping
+			#Global.AddNote(currentReadingItem.noteResource)
+			#currentReadingItem.queue_free()
+			drop_note()
 			currentReadingItem = null
 			return
 
@@ -190,6 +192,10 @@ func drop(throw: bool = false) -> void:
 			var look_vec = Vector3(-sin(theta), sin(phi), -cos(theta))
 			main_hand_item.linear_velocity = (transform.basis * look_vec).normalized() * THROW_SPEED
 
+func drop_note() -> void:
+	if currentReadingItem:
+		currentReadingItem.reparent(get_tree().current_scene)
+		currentReadingItem.process_mode = Node.PROCESS_MODE_PAUSABLE
 func switch_hands() -> void:
 	if main_hand.get_child_count() > 1:
 		var main_hand_item = main_hand.get_child(1)
@@ -213,6 +219,7 @@ func OnSanityChanged():
 		GoInsane()
 
 func GoInsane():
+	PlayerHud.display_overlay_text("You Have Gone Completely Insane...")
 	goingInsane = true
 	var pitchShiftEffect := AudioServer.get_bus_effect(0,1) as AudioEffectPitchShift
 	var reverbEffect := AudioServer.get_bus_effect(0,2) as AudioEffectReverb
@@ -224,7 +231,7 @@ func GoInsane():
 	tween.tween_property(camera.environment,"adjustment_contrast",8,6)
 	tween.tween_property(camera.environment,"adjustment_brightness",0,6)
 	tween.tween_property(pitchShiftEffect,"pitch_scale",.0,6)
-	tween.tween_property(reverbEffect,"wet",1,6)
+	tween.tween_property(reverbEffect,"wet",.5,6)
 	await tween.finished
 	await get_tree().create_timer(1).timeout
 	Global.sanity = 100
