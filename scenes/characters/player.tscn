@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://ci4s5wyfxbnsl"]
+[gd_scene load_steps=41 format=3 uid="uid://ci4s5wyfxbnsl"]
 
 [ext_resource type="Script" path="res://scripts/characters/PlayerController.gd" id="1_uayg2"]
 [ext_resource type="Script" path="res://scripts/characters/Camera.gd" id="2_gjwb2"]
@@ -10,7 +10,6 @@
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeRandom3D.gd" id="6_0tcli"]
 [ext_resource type="AudioStream" uid="uid://c4xe0nfeoys0w" path="res://Placeholders (Will be deleted)/Sounds/step2.mp3" id="6_wt8pi"]
 [ext_resource type="AudioStream" uid="uid://dka6jh7ogkys" path="res://Placeholders (Will be deleted)/Sounds/step3.mp3" id="7_7jjje"]
-[ext_resource type="Texture2D" uid="uid://cq5wiidhdfuxp" path="res://visuals/Textures/Crosshair.png" id="8_8pouq"]
 [ext_resource type="AudioStream" uid="uid://dfoah6ygqbcos" path="res://Placeholders (Will be deleted)/Sounds/step4.mp3" id="8_xf7yh"]
 [ext_resource type="Script" path="res://scripts/characters/footsteps.gd" id="9_vrtr5"]
 [ext_resource type="Script" path="res://scripts/characters/FootstepSoundManager.gd" id="13_tbhcq"]
@@ -232,11 +231,6 @@ duration = 0.2
 shake_speed = 0.5
 fade_out = 1.0
 shakerPreset = SubResource("Resource_ebf4x")
-
-[node name="Sprite3D" type="Sprite3D" parent="Camera3D"]
-transform = Transform3D(0.01, 1.10946e-15, 3.10862e-16, -1.10946e-15, 0.01, -1.77636e-15, -3.10862e-16, 1.77636e-15, 0.01, -1.68802e-09, 0, -0.0548238)
-texture_filter = 2
-texture = ExtResource("8_8pouq")
 
 [node name="FootstepsPlayer" type="AudioStreamPlayer3D" parent="."]
 stream = SubResource("AudioStreamRandomizer_1a6vh")

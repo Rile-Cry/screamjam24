@@ -319,15 +319,24 @@ data = PackedVector3Array(-0.3411, 0.0534, 0.25, -9.2754, -0.2431, 0.25, -9.2754
 
 [node name="Root Scene" instance=ExtResource("1_fuejb")]
 
+[node name="pasted__pPlane3" parent="RootNode/group106" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pPlane3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pPlane3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_8h8dn")
 
+[node name="pasted__LandingBellTpwer_pCube38" parent="RootNode/group106" index="1"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__LandingBellTpwer_pCube38" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__LandingBellTpwer_pCube38/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_8od60")
+
+[node name="pasted__pasted__LandingBellTpwer_pCube38" parent="RootNode/group106" index="2"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__LandingBellTpwer_pCube38" index="0"]
 
@@ -336,176 +345,279 @@ shape = SubResource("ConcavePolygonShape3D_oxbad")
 
 [node name="pPlane1" parent="RootNode/group106" index="3"]
 transform = Transform3D(1, 2.44929e-16, 0, 0, 0, 1, 2.44929e-16, -1, 0, 2, 2, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_xc3s7")
 
+[node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p2" parent="RootNode/group106" index="4"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_dottr")
+
+[node name="pPlane3" parent="RootNode/group106" index="5"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pPlane3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pPlane3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_r3hxq")
 
+[node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__p" parent="RootNode/group106" index="6"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__p" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__p/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4xb2x")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="7"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_5es72")
 
+[node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__group137pasted__pasted__group139pasted__group140group141" parent="RootNode/group106" index="8"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__group137pasted__pasted__group139pasted__group140group141" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__group137pasted__pasted__group139pasted__group140group141/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_eavce")
+
+[node name="pasted__pasted__pPlane1" parent="RootNode/group106" index="9"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ca4qg")
 
+[node name="pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="10"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_5momg")
+
+[node name="pasted__pasted__pPlane18" parent="RootNode/group106" index="11"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane18" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pPlane18/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_3o2yu")
 
+[node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p1" parent="RootNode/group106" index="12"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_r605a")
+
+[node name="LandingBellTpwer_pasted__pasted__pasted__pCube39pasted__pasted__group137pasted__group139group140" parent="RootNode/group106" index="13"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pCube39pasted__pasted__group137pasted__group139group140" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pCube39pasted__pasted__group137pasted__group139group140/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_0ch0p")
 
+[node name="LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139p" parent="RootNode/group106" index="14"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139p" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139p/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_lna1l")
+
+[node name="LandingBellTpwer_pCube38" parent="RootNode/group106" index="15"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pCube38" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pCube38/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_htkdi")
 
+[node name="LandingBellTpwer_pasted__pCube39group136" parent="RootNode/group106" index="16"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pCube39group136" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pCube39group136/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_r8e6e")
+
+[node name="Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" parent="RootNode/group106" index="17"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_rhiiv")
 
+[node name="LandingBellTpwer_pCube39" parent="RootNode/group106" index="18"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pCube39" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pCube39/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fqy63")
+
+[node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p" parent="RootNode/group106" index="19"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4it5k")
 
+[node name="pasted__pPlane1" parent="RootNode/group106" index="20"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_07wv7")
+
+[node name="LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p1" parent="RootNode/group106" index="21"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_p0car")
 
+[node name="LandingBellTpwer_pasted__pCube39group137" parent="RootNode/group106" index="22"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pCube39group137" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pasted__pCube39group137/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_5xd7m")
+
+[node name="LandingBellTpwer_pCube16" parent="RootNode/group106" index="23"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pCube16" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_pCube16/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_cagou")
 
+[node name="pasted__pasted__pasted__pPlane17" parent="RootNode/group106" index="24"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane17" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane17/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_jf33f")
+
+[node name="LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p" parent="RootNode/group106" index="25"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_jq4p5")
 
+[node name="pasted__Stairs_pCube11" parent="RootNode/group106" index="26"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pCube11" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pCube11/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_b4u0j")
+
+[node name="pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" parent="RootNode/group106" index="27"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ren57")
 
+[node name="pasted__Stairs_polySurface7pasted__pCube10group54" parent="RootNode/group106" index="28"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_polySurface7pasted__pCube10group54" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_polySurface7pasted__pCube10group54/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_hoxdk")
+
+[node name="Stairs_polySurface7pasted__pCube10group54" parent="RootNode/group106" index="29"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_polySurface7pasted__pCube10group54" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_polySurface7pasted__pCube10group54/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_q0fgf")
 
+[node name="pasted__Stairs_pasted__pCube10group54polySurface8" parent="RootNode/group106" index="30"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube10group54polySurface8" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube10group54polySurface8/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4rilk")
+
+[node name="Stairs_pasted__pasted__pCube11pasted__group60group61" parent="RootNode/group106" index="31"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pCube11pasted__group60group61" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__pasted__pCube11pasted__group60group61/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_2a6xb")
 
+[node name="Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" parent="RootNode/group106" index="32"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_l5wqq")
+
+[node name="Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" parent="RootNode/group106" index="33"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_3nsb5")
 
+[node name="Stairs_pasted__polySurface10pasted__pCube10group58" parent="RootNode/group106" index="34"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__polySurface10pasted__pCube10group58" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__polySurface10pasted__pCube10group58/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_rjjsn")
+
+[node name="pasted__Stairs_pCube12" parent="RootNode/group106" index="35"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pCube12" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pCube12/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_pxkn0")
 
+[node name="Stairs_pCube10polySurface10" parent="RootNode/group106" index="36"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pCube10polySurface10" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pCube10polySurface10/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_x2703")
+
+[node name="pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" parent="RootNode/group106" index="37"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" index="0"]
 
@@ -514,46 +626,71 @@ shape = SubResource("ConcavePolygonShape3D_s6n24")
 
 [node name="pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" parent="RootNode/group106" index="38"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_x8w1c")
 
+[node name="Stairs_pCube11" parent="RootNode/group106" index="39"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pCube11" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pCube11/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_nfhmw")
+
+[node name="Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" parent="RootNode/group106" index="40"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_nmdiq")
 
+[node name="pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group63" parent="RootNode/group106" index="41"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group63" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group63/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_hws6d")
+
+[node name="pasted__Stairs_pasted__pCube11group60" parent="RootNode/group106" index="42"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube11group60" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube11group60/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ia7xc")
 
+[node name="pasted__Stairs_pasted__pCube10group54polySurface9" parent="RootNode/group106" index="43"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube10group54polySurface9" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube10group54polySurface9/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4l7do")
+
+[node name="pasted__Stairs_polySurface7pasted__pCube10group55" parent="RootNode/group106" index="44"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_polySurface7pasted__pCube10group55" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_polySurface7pasted__pCube10group55/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_24k74")
 
+[node name="pasted__Stairs_pasted__pasted__pCube11pasted__group60group61" parent="RootNode/group106" index="45"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pCube11pasted__group60group61" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pCube11pasted__group60group61/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ua6is")
+
+[node name="Stairs_pasted__pCube10group54polySurface8" parent="RootNode/group106" index="46"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pCube10group54polySurface8" index="0"]
 
@@ -562,31 +699,47 @@ shape = SubResource("ConcavePolygonShape3D_o4ojw")
 
 [node name="pasted__pasted__pasted__Stairs_pCube10polySurface10" parent="RootNode/group106" index="47"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pCube10polySurface10" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pCube10polySurface10/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_0coaw")
 
+[node name="Stairs_pasted__pCube11group60" parent="RootNode/group106" index="48"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pCube11group60" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__pCube11group60/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_2r653")
+
+[node name="Stairs_polySurface9pCube10" parent="RootNode/group106" index="49"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_polySurface9pCube10" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_polySurface9pCube10/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_btutv")
 
+[node name="Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" parent="RootNode/group106" index="50"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_yt3vc")
 
+[node name="pasted__Stairs_pasted__pCube11group61" parent="RootNode/group106" index="51"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube11group61" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube11group61/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_0r8ln")
+
+[node name="pasted__Stairs_pasted__pasted__pCube11pasted__group60group62" parent="RootNode/group106" index="52"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pCube11pasted__group60group62" index="0"]
 
@@ -595,21 +748,31 @@ shape = SubResource("ConcavePolygonShape3D_gvjwj")
 
 [node name="pasted__pasted__Stairs_pasted__polySurface10pasted__pCube10group58" parent="RootNode/group106" index="53"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__polySurface10pasted__pCube10group58" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__polySurface10pasted__pCube10group58/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_874lb")
 
+[node name="pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="54"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_wgp6n")
 
+[node name="pasted__pasted__pasted__pPlane18" parent="RootNode/group106" index="55"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane18" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane18/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_kyq6j")
+
+[node name="pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" parent="RootNode/group106" index="56"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" index="0"]
 
@@ -618,6 +781,7 @@ shape = SubResource("ConcavePolygonShape3D_puhaa")
 
 [node name="pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" parent="RootNode/group106" index="57"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" index="0"]
 
@@ -626,16 +790,23 @@ shape = SubResource("ConcavePolygonShape3D_7roda")
 
 [node name="pasted__pasted__pasted__Stairs_polySurface9pCube10" parent="RootNode/group106" index="58"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_polySurface9pCube10" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_polySurface9pCube10/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_qy65a")
 
+[node name="pasted__Stairs_pasted__polySurface10pasted__pCube10group58" parent="RootNode/group106" index="59"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface10pasted__pCube10group58" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface10pasted__pCube10group58/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_l4xj6")
+
+[node name="pasted__pasted__Stairs_polySurface9pCube10" parent="RootNode/group106" index="60"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_polySurface9pCube10" index="0"]
 
@@ -644,26 +815,39 @@ shape = SubResource("ConcavePolygonShape3D_x2x5u")
 
 [node name="pasted__pPlane16" parent="RootNode/group106" index="61"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2, 6, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pPlane16" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pPlane16/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_6gvar")
 
+[node name="pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group58" parent="RootNode/group106" index="62"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group58" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group58/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_bu7er")
+
+[node name="pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" parent="RootNode/group106" index="63"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_jk0sr")
 
+[node name="pasted__pasted__pPlane19" parent="RootNode/group106" index="64"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane19" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pPlane19/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_q31d0")
+
+[node name="pasted__pasted__pasted__pPlane19" parent="RootNode/group106" index="65"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane19" index="0"]
 
@@ -672,41 +856,63 @@ shape = SubResource("ConcavePolygonShape3D_whigs")
 
 [node name="pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" parent="RootNode/group106" index="66"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_6f7k3")
 
+[node name="pasted__pasted__Stairs_pCube10polySurface10" parent="RootNode/group106" index="67"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pCube10polySurface10" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__Stairs_pCube10polySurface10/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_47w6s")
+
+[node name="pasted__pasted__pasted__pPlane20" parent="RootNode/group106" index="68"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane20" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane20/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_uiuj4")
 
+[node name="pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" parent="RootNode/group106" index="69"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_cnthv")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="70"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fkim2")
 
+[node name="pasted__pasted__pasted__pasted__pPlane2" parent="RootNode/group106" index="71"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_71vio")
 
+[node name="pasted__pasted__pasted__pasted__pPlane3" parent="RootNode/group106" index="72"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_nw6gt")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane2" parent="RootNode/group106" index="73"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pPlane2" index="0"]
 
@@ -715,11 +921,15 @@ shape = SubResource("ConcavePolygonShape3D_g68fp")
 
 [node name="pasted__pasted__pPlane20" parent="RootNode/group106" index="74"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2, 10, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane20" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pPlane20/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_btgee")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pPlane2" parent="RootNode/group106" index="75"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane2" index="0"]
 
@@ -728,76 +938,119 @@ shape = SubResource("ConcavePolygonShape3D_qbigj")
 
 [node name="pasted__pasted__pasted__pPlane21" parent="RootNode/group106" index="76"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2, 14, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane21" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane21/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_bmt8o")
 
+[node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane3" parent="RootNode/group106" index="77"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pPlane3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pPlane3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4x6tx")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pPlane3" parent="RootNode/group106" index="78"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_l64x2")
 
+[node name="pasted__pasted__pasted__pasted__pPlane4" parent="RootNode/group106" index="79"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_av34v")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pPlane4" parent="RootNode/group106" index="80"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_w2vwf")
 
+[node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="81"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pasted__pPlane1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pasted__pPlane1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_feth5")
+
+[node name="pasted__pasted__pCube1" parent="RootNode/group106" index="82"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pCube1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pCube1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_umhr7")
 
+[node name="pasted__pasted__pasted__pasted__pasted__pPlane5" parent="RootNode/group106" index="83"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pPlane5/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_gqvq1")
+
+[node name="pCube1" parent="RootNode/group106" index="84"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pCube1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pCube1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_eygj2")
 
+[node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane4" parent="RootNode/group106" index="85"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pPlane4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pasted__pasted__pPlane4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_j8joq")
+
+[node name="pasted__pasted__pasted__pasted__pPlane5" parent="RootNode/group106" index="86"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pPlane5/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_vy7qx")
 
+[node name="pasted__pasted__pCylinder5" parent="RootNode/group106" index="87"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pCylinder5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pCylinder5/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_w0h1u")
+
+[node name="pasted__pasted__pasted__pCylinder5" parent="RootNode/group106" index="88"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pCylinder5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pCylinder5/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ino2y")
 
+[node name="pasted__pCylinder5" parent="RootNode/group106" index="89"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pCylinder5" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pCylinder5/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_xucmb")
+
+[node name="pasted__pPlane8" parent="RootNode/group106" index="90"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pPlane8" index="0"]
 
@@ -806,31 +1059,47 @@ shape = SubResource("ConcavePolygonShape3D_t0pdi")
 
 [node name="pasted__pasted__pPlane16" parent="RootNode/group106" index="91"]
 transform = Transform3D(0, 0, -1, -1, 0, 0, 0, 1, 0, 2, 22, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane16" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pPlane16/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_7iqet")
 
+[node name="pasted__pasted__pPlane17" parent="RootNode/group106" index="92"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane17" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pPlane17/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_y638g")
+
+[node name="pasted__pasted__pPlane8" parent="RootNode/group106" index="93"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane8" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pPlane8/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_e8spq")
 
+[node name="pasted__pasted__pasted__pPlane8" parent="RootNode/group106" index="94"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane8" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane8/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_qts5v")
 
+[node name="pasted__pasted__pasted__pPlane16" parent="RootNode/group106" index="95"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane16" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane16/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_uphrr")
+
+[node name="pasted__polySurface13" parent="RootNode/group106" index="96"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__polySurface13" index="0"]
 
@@ -839,6 +1108,7 @@ shape = SubResource("ConcavePolygonShape3D_am8m7")
 
 [node name="pasted__pPlane15" parent="RootNode/group106" index="97"]
 transform = Transform3D(0, 0, -1.09019, -0.0629282, 0, 0, 0, 1, 0, 2, 18, -0.144675)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pPlane15" index="0"]
 
@@ -847,26 +1117,39 @@ shape = SubResource("ConcavePolygonShape3D_ujjs2")
 
 [node name="pPlane15" parent="RootNode/group106" index="98"]
 transform = Transform3D(0.0629282, 0, 0, 0, 0, -1.09019, 0, 1, 0, 2, 18, -0.144675)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pPlane15" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pPlane15/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_dw8wl")
 
+[node name="polySurface14" parent="RootNode/group106" index="99"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/polySurface14" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/polySurface14/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_plhkt")
+
+[node name="pasted__pasted__pasted__pCube1" parent="RootNode/group106" index="100"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pCube1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pCube1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_77blu")
 
+[node name="pasted__pasted__pasted__pCube2" parent="RootNode/group106" index="101"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pCube2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pCube2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_bg2dc")
+
+[node name="pCylinder4" parent="RootNode/group106" index="102"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pCylinder4" index="0"]
 
@@ -875,11 +1158,15 @@ shape = SubResource("ConcavePolygonShape3D_hcavb")
 
 [node name="pasted__pasted__pasted__pasted__pCube1" parent="RootNode/group106" index="103"]
 transform = Transform3D(0, 0, 0.370088, 0, 1, 0, -1, 0, 0, 1.94462, 19.2801, 1.64066)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pCube1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pCube1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_3e5xh")
+
+[node name="pasted__pCube1" parent="RootNode/group106" index="104"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pCube1" index="0"]
 

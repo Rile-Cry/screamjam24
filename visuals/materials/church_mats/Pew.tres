@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://d3dahn6rtooj0"]
+
+[ext_resource type="Texture2D" uid="uid://do2c6jo6467br" path="res://Pew_standardSurface1_BaseColor.tga" id="1_lbtxe"]
+[ext_resource type="Texture2D" uid="uid://c8748bovv65e4" path="res://Pew_standardSurface1_Normal.tga" id="2_idf3r"]
+[ext_resource type="Texture2D" uid="uid://bpde1m75gr6aa" path="res://Pew_standardSurface1_OcclusionRoughnessMetallic.tga" id="3_2b5li"]
+
+[resource]
+albedo_texture = ExtResource("1_lbtxe")
+orm_texture = ExtResource("3_2b5li")
+normal_enabled = true
+normal_texture = ExtResource("2_idf3r")

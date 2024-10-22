@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cqnrau4kdfjo0"
-path="res://.godot/imported/Hover sound.mp3-4a6c7a9a9112a5a22e4e3c9873564a55.mp3str"
+path="res://.godot/imported/Hover sound.mp3-9330255d72398e71b7a1e9f8f1d57004.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/maybe placeholders/Hover sound.mp3"
-dest_files=["res://.godot/imported/Hover sound.mp3-4a6c7a9a9112a5a22e4e3c9873564a55.mp3str"]
+source_file="res://audio/sfx/maybe placeholders/Hover sound.mp3"
+dest_files=["res://.godot/imported/Hover sound.mp3-9330255d72398e71b7a1e9f8f1d57004.mp3str"]
 
 [params]
 

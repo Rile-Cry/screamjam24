@@ -217,10 +217,16 @@ data = PackedVector3Array(-3.409, 4.0271, -12.2883, -3.382, 4, -12.3153, -3.409,
 
 [node name="Root Scene" instance=ExtResource("1_uv13u")]
 
+[node name="Floor" parent="RootNode" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Floor" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Floor/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_2yap1")
+
+[node name="Wall1" parent="RootNode" index="1"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Wall1" index="0"]
 
@@ -229,6 +235,7 @@ shape = SubResource("ConcavePolygonShape3D_7agr5")
 
 [node name="pasted__polySurface5" parent="RootNode/Window/group111" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -2, 3, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__polySurface5" index="0"]
 
@@ -237,6 +244,7 @@ shape = SubResource("ConcavePolygonShape3D_s7ct7")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube9" parent="RootNode/Window/group111" index="1"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, 0, 0, 0, 0.0720956, -2, 2, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pasted__pasted__pCube9" index="0"]
 
@@ -245,6 +253,7 @@ shape = SubResource("ConcavePolygonShape3D_6vkhf")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="2"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, 0, 0, 0, 0.0720956, -2, 1, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube8" index="0"]
 
@@ -253,6 +262,7 @@ shape = SubResource("ConcavePolygonShape3D_ew7ce")
 
 [node name="pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="3"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, 0, 0, 0, 0.0720956, -2, 2.5, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pasted__pCube8" index="0"]
 
@@ -261,6 +271,7 @@ shape = SubResource("ConcavePolygonShape3D_lq0hi")
 
 [node name="pasted__pPlane6" parent="RootNode/Window/group111" index="4"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -2.086, 2.35876, 0.201388)
+transparency = 0.42
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pPlane6" index="0"]
 
@@ -269,6 +280,7 @@ shape = SubResource("ConcavePolygonShape3D_e1t62")
 
 [node name="pasted__pasted__pasted__pCube7" parent="RootNode/Window/group111" index="5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pCube7" index="0"]
 
@@ -277,6 +289,7 @@ shape = SubResource("ConcavePolygonShape3D_p8gca")
 
 [node name="pPlane7" parent="RootNode/Window/group111" index="6"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, -2, 2, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pPlane7" index="0"]
 
@@ -285,6 +298,7 @@ shape = SubResource("ConcavePolygonShape3D_7hftw")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="7"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, 0, 0, 0, 0.0720956, -2, 1.5, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pasted__pasted__pasted__pCube8" index="0"]
 
@@ -293,6 +307,7 @@ shape = SubResource("ConcavePolygonShape3D_y5rpv")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="8"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, 0, 0, 0, 0.0720956, -2, 3, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pasted__pasted__pCube8" index="0"]
 
@@ -301,6 +316,7 @@ shape = SubResource("ConcavePolygonShape3D_pg6jv")
 
 [node name="pasted__pCube7" parent="RootNode/Window/group111" index="9"]
 transform = Transform3D(0.0857323, 0, 0, 0, 0, -1.54099, 0, 0.0857323, 0, -2, 2.66579, 0.149591)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pCube7" index="0"]
 
@@ -309,86 +325,135 @@ shape = SubResource("ConcavePolygonShape3D_2hydy")
 
 [node name="pasted__pasted__pasted__pasted__pCube7" parent="RootNode/Window/group111" index="10"]
 transform = Transform3D(-1, 1.22465e-16, 1.01064e-15, 1.22465e-16, 1, 1.22465e-16, -1.01064e-15, 1.22465e-16, -1, -3.99288, 0, 0.311274)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pasted__pCube7" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Window/group111/pasted__pasted__pasted__pasted__pCube7/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_wqyfc")
 
+[node name="pPlane17" parent="RootNode/Doorway" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Doorway/pPlane17" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Doorway/pPlane17/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_vje2k")
+
+[node name="pasted__pCube4" parent="RootNode/Doorway" index="1"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Doorway/pasted__pCube4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Doorway/pasted__pCube4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_wypcd")
 
+[node name="pasted__polySurface2" parent="RootNode/Doorway" index="2"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Doorway/pasted__polySurface2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Doorway/pasted__polySurface2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_1m6l8")
+
+[node name="polySurface1" parent="RootNode/Doorway" index="3"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Doorway/polySurface1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Doorway/polySurface1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_l2ykj")
 
+[node name="pasted__polySurface1" parent="RootNode/Doorway" index="4"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Doorway/pasted__polySurface1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Doorway/pasted__polySurface1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_hdhht")
+
+[node name="pasted__pasted__pCube3" parent="RootNode/Doorway" index="5"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Doorway/pasted__pasted__pCube3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Doorway/pasted__pasted__pCube3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_vap3v")
 
+[node name="pasted__Floor" parent="RootNode/group112" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group112/pasted__Floor" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group112/pasted__Floor/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_8ipc4")
+
+[node name="pasted__Floor2" parent="RootNode/group113" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group113/pasted__Floor2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group113/pasted__Floor2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_0l674")
 
+[node name="pasted__Floor3" parent="RootNode/group114" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group114/pasted__Floor3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group114/pasted__Floor3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_26oju")
+
+[node name="pasted__pasted__Floor" parent="RootNode/group114/pasted__group112" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group114/pasted__group112/pasted__pasted__Floor" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group114/pasted__group112/pasted__pasted__Floor/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_mpq4w")
 
+[node name="pasted__pasted__Floor2" parent="RootNode/group114/pasted__group113" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group114/pasted__group113/pasted__pasted__Floor2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group114/pasted__group113/pasted__pasted__Floor2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_fxvfd")
+
+[node name="pasted__pasted__Floor3" parent="RootNode/group115/pasted__group114" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group115/pasted__group114/pasted__pasted__Floor3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group115/pasted__group114/pasted__pasted__Floor3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ayjsg")
 
+[node name="pasted__pasted__pasted__Floor" parent="RootNode/group115/pasted__group114/pasted__pasted__group112" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group115/pasted__group114/pasted__pasted__group112/pasted__pasted__pasted__Floor" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group115/pasted__group114/pasted__pasted__group112/pasted__pasted__pasted__Floor/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_o41c5")
+
+[node name="pasted__pasted__pasted__Floor2" parent="RootNode/group115/pasted__group114/pasted__pasted__group113" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group115/pasted__group114/pasted__pasted__group113/pasted__pasted__pasted__Floor2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group115/pasted__group114/pasted__pasted__group113/pasted__pasted__pasted__Floor2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4iifg")
 
+[node name="pasted__Wall1" parent="RootNode/group116" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group116/pasted__Wall1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group116/pasted__Wall1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_g8rcb")
+
+[node name="pasted__Wall12" parent="RootNode/group117" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group117/pasted__Wall12" index="0"]
 
@@ -397,6 +462,7 @@ shape = SubResource("ConcavePolygonShape3D_2ou2x")
 
 [node name="pasted__pasted__Wall1" parent="RootNode/group118/pasted__group117" index="0"]
 transform = Transform3D(-1, -3.92011e-15, 1.22465e-16, 1.22465e-16, -3.56307e-31, 1, -3.92011e-15, 1, 2.47536e-31, 2, 2, -0.5)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group118/pasted__group117/pasted__pasted__Wall1" index="0"]
 
@@ -405,6 +471,7 @@ shape = SubResource("ConcavePolygonShape3D_euu64")
 
 [node name="pasted__pasted__polySurface5" parent="RootNode/group119/pasted__Window/pasted__group111" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1.23768e-31, 1, 0, -1, -1.23768e-31, -2, 3, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__polySurface5" index="0"]
 
@@ -413,6 +480,7 @@ shape = SubResource("ConcavePolygonShape3D_fly7d")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pCube9" parent="RootNode/group119/pasted__Window/pasted__group111" index="1"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, -8.92313e-33, 0, -8.92313e-33, 0.0720956, -2, 2, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pasted__pasted__pCube9" index="0"]
 
@@ -421,6 +489,7 @@ shape = SubResource("ConcavePolygonShape3D_5wyde")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/group119/pasted__Window/pasted__group111" index="2"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, -8.92313e-33, 0, -8.92313e-33, 0.0720956, -2, 1, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube8" index="0"]
 
@@ -429,6 +498,7 @@ shape = SubResource("ConcavePolygonShape3D_e0gga")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube82" parent="RootNode/group119/pasted__Window/pasted__group111" index="3"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, -8.92313e-33, 0, -8.92313e-33, 0.0720956, -2, 2.5, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pasted__pCube82" index="0"]
 
@@ -437,6 +507,7 @@ shape = SubResource("ConcavePolygonShape3D_wlu60")
 
 [node name="pasted__pasted__pPlane6" parent="RootNode/group119/pasted__Window/pasted__group111" index="4"]
 transform = Transform3D(1, 0, 0, 0, 1.23768e-31, 1, 0, -1, -1.23768e-31, -2.086, 2.35876, 0.201388)
+transparency = 0.42
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pPlane6" index="0"]
 
@@ -445,6 +516,7 @@ shape = SubResource("ConcavePolygonShape3D_3ax0t")
 
 [node name="pasted__pasted__pasted__pasted__pCube72" parent="RootNode/group119/pasted__Window/pasted__group111" index="5"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.23768e-31, 0, -1.23768e-31, 1, 0, 0, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pCube72" index="0"]
 
@@ -453,6 +525,7 @@ shape = SubResource("ConcavePolygonShape3D_vyjb7")
 
 [node name="pasted__pPlane7" parent="RootNode/group119/pasted__Window/pasted__group111" index="6"]
 transform = Transform3D(1, 0, 0, 0, 1.23768e-31, 1, 0, -1, -1.23768e-31, -2, 2, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pPlane7" index="0"]
 
@@ -461,6 +534,7 @@ shape = SubResource("ConcavePolygonShape3D_1w3qo")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube82" parent="RootNode/group119/pasted__Window/pasted__group111" index="7"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, -8.92313e-33, 0, -8.92313e-33, 0.0720956, -2, 1.5, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube82" index="0"]
 
@@ -469,6 +543,7 @@ shape = SubResource("ConcavePolygonShape3D_uhqjg")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pCube82" parent="RootNode/group119/pasted__Window/pasted__group111" index="8"]
 transform = Transform3D(0.952155, 0, 0, 0, 0.0720956, -8.92313e-33, 0, -8.92313e-33, 0.0720956, -2, 3, 0.169465)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pasted__pasted__pCube82" index="0"]
 
@@ -477,6 +552,7 @@ shape = SubResource("ConcavePolygonShape3D_rtenn")
 
 [node name="pasted__pasted__pCube7" parent="RootNode/group119/pasted__Window/pasted__group111" index="9"]
 transform = Transform3D(0.0857323, 0, 0, 0, -1.06109e-32, -1.54099, 0, 0.0857323, 1.90725e-31, -2, 2.66579, 0.149592)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pCube7" index="0"]
 
@@ -485,11 +561,15 @@ shape = SubResource("ConcavePolygonShape3D_itm8m")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube7" parent="RootNode/group119/pasted__Window/pasted__group111" index="10"]
 transform = Transform3D(-1, 1.22465e-16, 1.01064e-15, 1.22465e-16, 1, 1.22465e-16, -1.01064e-15, 1.22465e-16, -1, -3.99288, -2.11758e-22, 0.311274)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pasted__pCube7" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group119/pasted__Window/pasted__group111/pasted__pasted__pasted__pasted__pasted__pCube7/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_hxw13")
+
+[node name="pasted__pasted__Wall12" parent="RootNode/group120/pasted__group1172" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group120/pasted__group1172/pasted__pasted__Wall12" index="0"]
 
@@ -498,21 +578,31 @@ shape = SubResource("ConcavePolygonShape3D_lbhua")
 
 [node name="pasted__pasted__pasted__Wall1" parent="RootNode/group121/pasted__group118/pasted__pasted__group117" index="0"]
 transform = Transform3D(-1, -3.92011e-15, 1.22465e-16, 1.22465e-16, -3.56307e-31, 1, -3.92011e-15, 1, 2.47536e-31, 2, 2, -0.5)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group121/pasted__group118/pasted__pasted__group117/pasted__pasted__pasted__Wall1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group121/pasted__group118/pasted__pasted__group117/pasted__pasted__pasted__Wall1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_lmciy")
 
+[node name="pasted__Wall13" parent="RootNode/group123" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group123/pasted__Wall13" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group123/pasted__Wall13/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_0vydu")
 
+[node name="pasted__pasted__Wall13" parent="RootNode/group124/pasted__group116" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group124/pasted__group116/pasted__pasted__Wall13" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group124/pasted__group116/pasted__pasted__Wall13/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_5njq8")
+
+[node name="pasted__pasted__pasted__Wall12" parent="RootNode/group125/pasted__group124/pasted__pasted__group116" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group125/pasted__group124/pasted__pasted__group116/pasted__pasted__pasted__Wall12" index="0"]
 
@@ -521,6 +611,7 @@ shape = SubResource("ConcavePolygonShape3D_6uatu")
 
 [node name="pasted__pasted__Wall14" parent="RootNode/group126/pasted__group1173" index="0"]
 transform = Transform3D(-1, -2.68534e-15, 2.85853e-15, 1.22465e-16, 0.707107, 0.707107, -3.92011e-15, 0.707107, -0.707107, 2, 1.41421, -1.91421)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group126/pasted__group1173/pasted__pasted__Wall14" index="0"]
 
@@ -529,6 +620,7 @@ shape = SubResource("ConcavePolygonShape3D_m71i4")
 
 [node name="pasted__pasted__pasted__Wall13" parent="RootNode/group127/pasted__group126/pasted__pasted__group1172" index="0"]
 transform = Transform3D(-1, -2.68534e-15, 2.85853e-15, 1.22465e-16, 0.707107, 0.707107, -3.92011e-15, 0.707107, -0.707107, 2, 1.41421, -1.91421)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group127/pasted__group126/pasted__pasted__group1172/pasted__pasted__pasted__Wall13" index="0"]
 
@@ -537,6 +629,7 @@ shape = SubResource("ConcavePolygonShape3D_xcofv")
 
 [node name="pasted__pasted__pasted__pasted__Wall1" parent="RootNode/group128/pasted__group127/pasted__pasted__group126/pasted__pasted__pasted__group117" index="0"]
 transform = Transform3D(-1, -2.68534e-15, 2.85853e-15, 1.22465e-16, 0.707107, 0.707107, -3.92011e-15, 0.707107, -0.707107, 2, 1.41421, -1.91421)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group128/pasted__group127/pasted__pasted__group126/pasted__pasted__pasted__group117/pasted__pasted__pasted__pasted__Wall1" index="0"]
 
@@ -545,6 +638,7 @@ shape = SubResource("ConcavePolygonShape3D_6t3g5")
 
 [node name="pasted__pasted__pasted__Wall14" parent="RootNode/group129/pasted__group1262/pasted__pasted__group1173" index="0"]
 transform = Transform3D(-1, -2.68534e-15, 2.85853e-15, 1.22465e-16, 0.707107, 0.707107, -3.92011e-15, 0.707107, -0.707107, 2, 1.41421, -1.91421)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group129/pasted__group1262/pasted__pasted__group1173/pasted__pasted__pasted__Wall14" index="0"]
 
@@ -553,6 +647,7 @@ shape = SubResource("ConcavePolygonShape3D_sjsm1")
 
 [node name="pasted__pasted__pasted__pasted__Wall12" parent="RootNode/group129/pasted__group1272/pasted__pasted__group1262/pasted__pasted__pasted__group1172" index="0"]
 transform = Transform3D(-1, -2.68534e-15, 2.85853e-15, 1.22465e-16, 0.707107, 0.707107, -3.92011e-15, 0.707107, -0.707107, 2, 1.41421, -1.91421)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group129/pasted__group1272/pasted__pasted__group1262/pasted__pasted__pasted__group1172/pasted__pasted__pasted__pasted__Wall12" index="0"]
 
@@ -561,51 +656,79 @@ shape = SubResource("ConcavePolygonShape3D_pme12")
 
 [node name="pasted__pasted__pasted__pasted__pasted__Wall1" parent="RootNode/group129/pasted__group128/pasted__pasted__group127/pasted__pasted__pasted__group126/pasted__pasted__pasted__pasted__group117" index="0"]
 transform = Transform3D(-1, -2.68534e-15, 2.85853e-15, 1.22465e-16, 0.707107, 0.707107, -3.92011e-15, 0.707107, -0.707107, 2, 1.41421, -1.91421)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group129/pasted__group128/pasted__pasted__group127/pasted__pasted__pasted__group126/pasted__pasted__pasted__pasted__group117/pasted__pasted__pasted__pasted__pasted__Wall1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group129/pasted__group128/pasted__pasted__group127/pasted__pasted__pasted__group126/pasted__pasted__pasted__pasted__group117/pasted__pasted__pasted__pasted__pasted__Wall1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_5iywj")
 
+[node name="pasted__Floor4" parent="RootNode/group130" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group130/pasted__Floor4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group130/pasted__Floor4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_vgol7")
+
+[node name="pasted__pasted__Floor4" parent="RootNode/group130/pasted__group1142" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group130/pasted__group1142/pasted__pasted__Floor4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group130/pasted__group1142/pasted__pasted__Floor4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_jx3r5")
 
+[node name="pasted__pasted__pasted__Floor3" parent="RootNode/group130/pasted__group115/pasted__pasted__group114" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group130/pasted__group115/pasted__pasted__group114/pasted__pasted__pasted__Floor3" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group130/pasted__group115/pasted__pasted__group114/pasted__pasted__pasted__Floor3/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_bixns")
+
+[node name="pasted__Wall14" parent="RootNode/group133" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group133/pasted__Wall14" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group133/pasted__Wall14/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_so41q")
 
+[node name="pasted__pasted__Wall15" parent="RootNode/group133/pasted__group1162" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group133/pasted__group1162/pasted__pasted__Wall15" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group133/pasted__group1162/pasted__pasted__Wall15/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_0xt81")
+
+[node name="pasted__pasted__pasted__pasted__Floor2" parent="RootNode" index="25"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/pasted__pasted__pasted__pasted__Floor2" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/pasted__pasted__pasted__pasted__Floor2/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4k35r")
 
+[node name="pasted__pasted__pasted__Wall15" parent="RootNode/group134/pasted__group133/pasted__pasted__group1162" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group134/pasted__group133/pasted__pasted__group1162/pasted__pasted__pasted__Wall15" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group134/pasted__group133/pasted__pasted__group1162/pasted__pasted__pasted__Wall15/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_wqevv")
 
+[node name="pasted__pasted__Wall16" parent="RootNode/group135/pasted__group1332" index="0"]
+cast_shadow = 2
+
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group135/pasted__group1332/pasted__pasted__Wall16" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group135/pasted__group1332/pasted__pasted__Wall16/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_bwuc4")
+
+[node name="polySurface3" parent="RootNode/pCube368" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/pCube368/polySurface3" index="0"]
 
@@ -614,11 +737,15 @@ shape = SubResource("ConcavePolygonShape3D_44fps")
 
 [node name="polySurface4" parent="RootNode/pCube368" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/pCube368/polySurface4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/pCube368/polySurface4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_2nog7")
+
+[node name="pCube369" parent="RootNode" index="32"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/pCube369" index="0"]
 
@@ -627,11 +754,15 @@ shape = SubResource("ConcavePolygonShape3D_guej7")
 
 [node name="pasted__pCube369" parent="RootNode/group138" index="0"]
 transform = Transform3D(0.672324, 0, 0, 0, 0, -0.922337, 0, 1, 0, -1.92657, 1.72676, -12.4506)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group138/pasted__pCube369" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group138/pasted__pCube369/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_b8o7s")
+
+[node name="pCylinder1" parent="RootNode" index="34"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/pCylinder1" index="0"]
 
@@ -640,6 +771,7 @@ shape = SubResource("ConcavePolygonShape3D_2xubt")
 
 [node name="pasted__pCylinder1" parent="RootNode/group139" index="0"]
 transform = Transform3D(0.337388, 0, 0, 0, 0.942986, 0, 0, 0, 0.337388, -1.92657, 2.60639, -12.3583)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group139/pasted__pCylinder1" index="0"]
 
@@ -648,11 +780,15 @@ shape = SubResource("ConcavePolygonShape3D_7o3vl")
 
 [node name="pasted__pasted__pCylinder1" parent="RootNode/group140/pasted__group139" index="0"]
 transform = Transform3D(0.337388, 0, 0, 0, 0.942986, 0, 0, 0, 0.337388, -1.92657, 2.60639, -12.3583)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group140/pasted__group139/pasted__pasted__pCylinder1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group140/pasted__group139/pasted__pasted__pCylinder1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_ktw0f")
+
+[node name="pasted__pCylinder12" parent="RootNode/group141" index="0"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group141/pasted__pCylinder12" index="0"]
 
@@ -661,6 +797,7 @@ shape = SubResource("ConcavePolygonShape3D_6kt0n")
 
 [node name="pasted__pasted__pCylinder12" parent="RootNode/group141/pasted__group1392" index="0"]
 transform = Transform3D(0.337388, 0, 0, 0, 0.942986, 0, 0, 0, 0.337388, -1.92657, 2.60639, -12.3583)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group141/pasted__group1392/pasted__pasted__pCylinder12" index="0"]
 
@@ -669,11 +806,15 @@ shape = SubResource("ConcavePolygonShape3D_odc83")
 
 [node name="pasted__pasted__pasted__pCylinder1" parent="RootNode/group141/pasted__group140/pasted__pasted__group139" index="0"]
 transform = Transform3D(0.337388, 0, 0, 0, 0.942986, 0, 0, 0, 0.337388, -1.92657, 2.60639, -12.3583)
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group141/pasted__group140/pasted__pasted__group139/pasted__pasted__pasted__pCylinder1" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group141/pasted__group140/pasted__pasted__group139/pasted__pasted__pasted__pCylinder1/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_qqevx")
+
+[node name="group137_pasted__pCube367" parent="RootNode" index="38"]
+cast_shadow = 2
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group137_pasted__pCube367" index="0"]
 
