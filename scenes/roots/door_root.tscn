@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctdkn1g1vdofr"]
+
+[ext_resource type="PackedScene" uid="uid://cj6kl0bg1ylfd" path="res://models/objects/Door.fbx" id="1_qqbyn"]
+
+[node name="DoorRoot" instance=ExtResource("1_qqbyn")]

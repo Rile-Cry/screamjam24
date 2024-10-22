@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci1150jtyq3lw"]
+
+[ext_resource type="PackedScene" uid="uid://cn1ybgbckp7is" path="res://scenes/roots/chains_root.tscn" id="1_tnhi3"]
+
+[node name="Chains" type="Node3D"]
+
+[node name="ChainsRoot" parent="." instance=ExtResource("1_tnhi3")]

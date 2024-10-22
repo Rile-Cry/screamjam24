@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cfrx4rc1ld7eh"
-path="res://.godot/imported/_Be fearful of the demon Mincinos_.mp3-a493cd711efb299ac8c92d9908b6def6.mp3str"
+path="res://.godot/imported/_Be fearful of the demon Mincinos_.mp3-05dd03eaa386f5e7b37ebecea7289652.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/_Be fearful of the demon Mincinos_.mp3"
-dest_files=["res://.godot/imported/_Be fearful of the demon Mincinos_.mp3-a493cd711efb299ac8c92d9908b6def6.mp3str"]
+source_file="res://audio/sfx/_Be fearful of the demon Mincinos_.mp3"
+dest_files=["res://.godot/imported/_Be fearful of the demon Mincinos_.mp3-05dd03eaa386f5e7b37ebecea7289652.mp3str"]
 
 [params]
 

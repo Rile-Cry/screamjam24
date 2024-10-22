@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyuaudabu4bux"]
+
+[ext_resource type="PackedScene" uid="uid://c2smvqt6m3phc" path="res://models/objects/Pew.fbx" id="1_6khcg"]
+
+[node name="PewRoot" instance=ExtResource("1_6khcg")]

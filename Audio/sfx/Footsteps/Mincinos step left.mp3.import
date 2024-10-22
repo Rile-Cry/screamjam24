@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cn7y0ki5vsi08"
-path="res://.godot/imported/Mincinos step left.mp3-071c955819564124d9a327ff1e437b3a.mp3str"
+path="res://.godot/imported/Mincinos step left.mp3-b132d4e6a3de6c9902b8139f8de2d7dd.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/Footsteps/Mincinos step left.mp3"
-dest_files=["res://.godot/imported/Mincinos step left.mp3-071c955819564124d9a327ff1e437b3a.mp3str"]
+source_file="res://audio/sfx/Footsteps/Mincinos step left.mp3"
+dest_files=["res://.godot/imported/Mincinos step left.mp3-b132d4e6a3de6c9902b8139f8de2d7dd.mp3str"]
 
 [params]
 

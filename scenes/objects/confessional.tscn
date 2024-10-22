@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://g0johx6oqj32"]
+
+[ext_resource type="PackedScene" uid="uid://c6bb3k3m7d7iv" path="res://scenes/roots/confessional_root.tscn" id="1_itrrl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3db0x"]
+size = Vector3(0.894501, 0.112732, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qq1g4"]
+size = Vector3(1.02612, 2.39401, 1.12744)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c1bqk"]
+size = Vector3(0.542725, 2.4989, 3.00293)
+
+[node name="Confessional" type="StaticBody3D"]
+
+[node name="ConfessionalRoot" parent="." instance=ExtResource("1_itrrl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.50383, 0.0509338, -1)
+shape = SubResource("BoxShape3D_3db0x")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.428833, 1.30196, -0.993896)
+shape = SubResource("BoxShape3D_qq1g4")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.22034, 1.24164, -1.00146)
+shape = SubResource("BoxShape3D_c1bqk")

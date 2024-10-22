@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" path="res://scripts/objects/RitualCircle.gd" id="1_m1hmm"]
 [ext_resource type="Script" path="res://addons/shaker/src/Vector3/shaker_component3D.gd" id="2_awdsw"]
-[ext_resource type="AudioStream" uid="uid://mvct3jh3f0k7" path="res://Audio/sfx/maybe placeholders/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3" id="2_oofu3"]
+[ext_resource type="AudioStream" uid="uid://mvct3jh3f0k7" path="res://audio/sfx/maybe placeholders/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3" id="2_oofu3"]
 [ext_resource type="Script" path="res://scripts/objects/ritual_pedestal.gd" id="2_w8bas"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeSineWave3D.gd" id="3_4m2io"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerPreset3D.gd" id="4_l1cui"]
-[ext_resource type="AudioStream" uid="uid://cqnrau4kdfjo0" path="res://Audio/sfx/maybe placeholders/Hover sound.mp3" id="6_xbs44"]
+[ext_resource type="AudioStream" uid="uid://cqnrau4kdfjo0" path="res://audio/sfx/maybe placeholders/Hover sound.mp3" id="6_xbs44"]
 [ext_resource type="Texture2D" uid="uid://cbavb4wordl13" path="res://Placeholders (Will be deleted)/textures/pentagram-158815_1280.png" id="8_s8lsl"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_fsa36"]

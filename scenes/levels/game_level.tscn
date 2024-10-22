@@ -1,8 +1,8 @@
-[gd_scene load_steps=46 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=47 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
-[ext_resource type="PackedScene" path="res://scenes/levels/church.tscn" id="1_rxm03"]
+[ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="1_rxm03"]
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="2_csr4c"]
 [ext_resource type="Terrain3DStorage" uid="uid://b70e0pipjuf3c" path="res://Terrain.res" id="2_i2uo6"]
 [ext_resource type="Texture2D" uid="uid://bltm8lrcxsjfh" path="res://Placeholders (Will be deleted)/textures/snow_03_diff_4k.jpg" id="3_k21dg"]
@@ -10,23 +10,24 @@
 [ext_resource type="Texture2D" uid="uid://c7j30lsugj4hk" path="res://Placeholders (Will be deleted)/textures/normal.png" id="4_tyx3h"]
 [ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/interactables/candle.tscn" id="5_7wh1f"]
 [ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="9_535ft"]
-[ext_resource type="PackedScene" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
-[ext_resource type="PackedScene" path="res://scenes/objects/altar.tscn" id="11_snhal"]
+[ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
+[ext_resource type="PackedScene" uid="uid://bruwmf30bj5fc" path="res://scenes/objects/altar.tscn" id="11_snhal"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="12_02yxp"]
-[ext_resource type="PackedScene" path="res://scripts/objects/knife.tscn" id="13_frigp"]
+[ext_resource type="PackedScene" uid="uid://cmlxcocw8rbxb" path="res://scripts/objects/knife.tscn" id="13_frigp"]
 [ext_resource type="Script" path="res://scripts/objects/KeyItemKnife.gd" id="14_d8016"]
 [ext_resource type="PackedScene" uid="uid://b3qphi6tibi4g" path="res://scenes/interactables/BloodChalice.tscn" id="14_ymk8b"]
 [ext_resource type="Script" path="res://scripts/Trials/CandleTrial.gd" id="16_6210w"]
 [ext_resource type="PackedScene" uid="uid://7uk2mtu17r5o" path="res://scenes/interactables/LightableCandle.tscn" id="16_l853q"]
 [ext_resource type="PackedScene" uid="uid://dkjqmfo078bo3" path="res://scenes/interactables/KeyItemCandle.tscn" id="18_20srk"]
-[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://Audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="19_yahdx"]
-[ext_resource type="AudioStream" uid="uid://vusus71lkamg" path="res://Audio/sfx/maybe placeholders/itemSpawn2.mp3" id="20_6e08d"]
+[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="19_yahdx"]
+[ext_resource type="AudioStream" uid="uid://vusus71lkamg" path="res://audio/sfx/maybe placeholders/itemSpawn2.mp3" id="20_6e08d"]
 [ext_resource type="PackedScene" uid="uid://bgotjvkit2l11" path="res://scenes/interactables/book.tscn" id="22_52psr"]
-[ext_resource type="PackedScene" uid="uid://c1gx06ns82v0r" path="res://scenes/interactables/door.tscn" id="23_emex3"]
 [ext_resource type="PackedScene" uid="uid://bohodi3wlnly" path="res://scenes/characters/demon_teleporter.tscn" id="24_eb66c"]
 [ext_resource type="PackedScene" uid="uid://ccvs74jc3856l" path="res://scenes/interactables/Note.tscn" id="25_1lmjg"]
 [ext_resource type="PackedScene" uid="uid://b64v2w7rch36v" path="res://scenes/objects/ladder.tscn" id="25_w0xto"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="26_utnp7"]
+[ext_resource type="PackedScene" uid="uid://c5ss28meyqyum" path="res://scenes/interactables/doorway.tscn" id="28_0kth3"]
+[ext_resource type="PackedScene" uid="uid://bm617llvppw0h" path="res://scenes/objects/votive.tscn" id="28_ftldx"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 32.0547, 49.2281)
@@ -181,7 +182,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.491255, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00303, 0.645386, 11.4041)
 
 [node name="Candle" parent="." instance=ExtResource("5_7wh1f")]
-transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 1.63808, 0.492868, 6.58427)
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -0.422723, 1.52536, 0.673901)
 
 [node name="RitualCircle" parent="." instance=ExtResource("9_535ft")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.99738, -7.51906, 9.00955)
@@ -414,22 +415,14 @@ transform = Transform3D(-0.722026, 0.691866, 0, -0.691866, -0.722026, 0, 0, 0, 1
 
 [node name="BuildingStuff" type="Node3D" parent="."]
 
-[node name="Door" parent="BuildingStuff" instance=ExtResource("23_emex3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.68631, 2.28173, -24.058)
-openingRotation = 2.827
-
-[node name="Door2" parent="BuildingStuff" instance=ExtResource("23_emex3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.18426, 2.28173, -24.058)
-openingRotation = 2.827
-
-[node name="Door3" parent="BuildingStuff" instance=ExtResource("23_emex3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.687638, 2.28173, 0.192486)
+[node name="Doorway" parent="BuildingStuff" instance=ExtResource("28_0kth3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00489, 0.491255, -0.00511283)
 
 [node name="Ladder" parent="BuildingStuff" instance=ExtResource("25_w0xto")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 2.35727, 0, 1, 0, -4.37114e-08, -5.90351, -3.71185, -32.6506)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.1366, -0.243284, -31.7739)
 
 [node name="Ladder2" parent="BuildingStuff" instance=ExtResource("25_w0xto")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 2.35727, 0, 1, 0, -4.37114e-08, 11.2698, 12.4273, -30.056)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.8431, 16.1015, -30.4057)
 
 [node name="Notes" type="Node3D" parent="."]
 
@@ -460,6 +453,9 @@ noteResource = SubResource("Resource_oiso7")
 [node name="Note3" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(-0.946351, 0, -0.323141, 0, 1, 0, 0.323141, 0, -0.946351, -5.50982, -7.53176, -2.38123)
 noteResource = SubResource("Resource_01ktg")
+
+[node name="Votive" parent="." instance=ExtResource("28_ftldx")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.342939, 0.491255, 1.10634)
 
 [editable path="DemonTeleporters/UpstairsDemonTeleporter"]
 [editable path="DemonTeleporters/DownstairsDemonTeleporter"]

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnx5kskdl621w"]
+
+[ext_resource type="PackedScene" uid="uid://6pt8mfgsopwn" path="res://models/objects/Altar.fbx" id="1_d6fbi"]
+
+[node name="Altar" instance=ExtResource("1_d6fbi")]

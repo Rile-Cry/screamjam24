@@ -9,7 +9,7 @@ extends Area3D
 
 @export var fog_density:= .05
 
-var environment = preload("res://Volumetric environment.tres")
+var environment = preload("res://visuals/environments/Volumetric environment.tres")
 var fog_starting_density:float
 static var currentAtmosphericZoneIn: AtmosphericZone
 static var transitionSpeed := .3

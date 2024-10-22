@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://by6x1n3osimd2"]
+
+[ext_resource type="PackedScene" uid="uid://cqt74ua4mr11m" path="res://models/objects/Votive.fbx" id="1_ay5j0"]
+
+[node name="VotiveRoot" instance=ExtResource("1_ay5j0")]

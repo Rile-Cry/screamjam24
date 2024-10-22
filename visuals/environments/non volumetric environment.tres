@@ -1,0 +1,29 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://claosp24di8b4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w30xt"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0.27493, 0.0754482, 0.152276, 1)
+sky_curve = 0.191184
+sun_curve = 0.0157668
+
+[sub_resource type="Sky" id="Sky_36j21"]
+sky_material = SubResource("ProceduralSkyMaterial_w30xt")
+
+[resource]
+background_mode = 2
+sky = SubResource("Sky_36j21")
+ambient_light_source = 1
+reflected_light_source = 1
+tonemap_mode = 3
+glow_enabled = true
+glow_normalized = true
+fog_enabled = true
+fog_light_color = Color(0.247, 0.297983, 0.38, 1)
+fog_light_energy = 0.51
+fog_sun_scatter = 0.01
+fog_density = 0.1
+volumetric_fog_density = 0.1
+volumetric_fog_albedo = Color(0.585062, 0.585062, 0.585062, 1)
+volumetric_fog_sky_affect = 0.97
+volumetric_fog_temporal_reprojection_enabled = false
+adjustment_enabled = true

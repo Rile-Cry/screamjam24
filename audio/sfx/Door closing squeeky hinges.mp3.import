@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://dk2dnoby5xfd4"
-path="res://.godot/imported/Door closing squeeky hinges.mp3-30bd07783ca25567035c2e053ecf9360.mp3str"
+path="res://.godot/imported/Door closing squeeky hinges.mp3-6dcb04b6b056a078a880fee73dec0655.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/Door closing squeeky hinges.mp3"
-dest_files=["res://.godot/imported/Door closing squeeky hinges.mp3-30bd07783ca25567035c2e053ecf9360.mp3str"]
+source_file="res://audio/sfx/Door closing squeeky hinges.mp3"
+dest_files=["res://.godot/imported/Door closing squeeky hinges.mp3-6dcb04b6b056a078a880fee73dec0655.mp3str"]
 
 [params]
 

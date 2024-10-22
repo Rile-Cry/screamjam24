@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://c5ss28meyqyum"]
+
+[ext_resource type="PackedScene" uid="uid://s5fsvx4krcc8" path="res://scenes/objects/door.tscn" id="1_5wmog"]
+[ext_resource type="Script" path="res://scripts/interactables/Door.gd" id="1_50ug6"]
+[ext_resource type="AudioStream" uid="uid://c3slhrble4x42" path="res://audio/sfx/Door open squeeky hinges.mp3" id="3_rwh6e"]
+[ext_resource type="AudioStream" uid="uid://dk2dnoby5xfd4" path="res://audio/sfx/Door closing squeeky hinges.mp3" id="4_a1v64"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ibfr4"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("3_rwh6e")
+stream_0/weight = 1.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4ugx2"]
+random_pitch = 1.1
+streams_count = 1
+stream_0/stream = ExtResource("4_a1v64")
+stream_0/weight = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kqggg"]
+size = Vector3(1.92285, 3.45895, 0.105713)
+
+[node name="Doorway" type="StaticBody3D"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_50ug6")
+
+[node name="Door" parent="." instance=ExtResource("1_5wmog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.95, 0, 0)
+
+[node name="Door2" parent="." instance=ExtResource("1_5wmog")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95, 0, 0)
+
+[node name="Door open sound" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamRandomizer_ibfr4")
+
+[node name="Door close sound" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamRandomizer_4ugx2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000488281, 1.72163, 0.0220947)
+shape = SubResource("BoxShape3D_kqggg")

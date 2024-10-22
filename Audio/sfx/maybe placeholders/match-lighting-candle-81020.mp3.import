@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://c0van36teygrq"
-path="res://.godot/imported/match-lighting-candle-81020.mp3-6a0448903f29d36cf872c32f4ee97f35.mp3str"
+path="res://.godot/imported/match-lighting-candle-81020.mp3-abb2dd03a8d57d86b709971aff82642f.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/maybe placeholders/match-lighting-candle-81020.mp3"
-dest_files=["res://.godot/imported/match-lighting-candle-81020.mp3-6a0448903f29d36cf872c32f4ee97f35.mp3str"]
+source_file="res://audio/sfx/maybe placeholders/match-lighting-candle-81020.mp3"
+dest_files=["res://.godot/imported/match-lighting-candle-81020.mp3-abb2dd03a8d57d86b709971aff82642f.mp3str"]
 
 [params]
 

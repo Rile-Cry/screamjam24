@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cngtjukni3ncy"]
+
+[ext_resource type="PackedScene" uid="uid://cyuaudabu4bux" path="res://scenes/roots/pew_root.tscn" id="1_bvw2x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ifb1g"]
+size = Vector3(1, 1.85474, 4.21149)
+
+[node name="Pew" type="StaticBody3D"]
+
+[node name="PewRoot" parent="." instance=ExtResource("1_bvw2x")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.914917, -2.00497)
+shape = SubResource("BoxShape3D_ifb1g")

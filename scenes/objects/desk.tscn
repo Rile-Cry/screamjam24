@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3j75812wqbcc"]
+
+[ext_resource type="PackedScene" uid="uid://diddvfrmfvv1k" path="res://scenes/roots/desk_root.tscn" id="1_djcla"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v8l3b"]
+size = Vector3(1.99719, 0.738098, 0.806641)
+
+[node name="Desk" type="StaticBody3D"]
+
+[node name="DeskRoot" parent="." instance=ExtResource("1_djcla")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00299072, 0.367523, 0.40332)
+shape = SubResource("BoxShape3D_v8l3b")

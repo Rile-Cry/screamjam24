@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://wqd78sydjjs8"
-path="res://.godot/imported/_Worthy to open the book_.mp3-2c2f480eb5b7b624143e92eb548356e8.mp3str"
+path="res://.godot/imported/_Worthy to open the book_.mp3-8532ff27fd187439eeb81ad46cdf1b85.mp3str"
 
 [deps]
 
-source_file="res://Audio/sfx/_Worthy to open the book_.mp3"
-dest_files=["res://.godot/imported/_Worthy to open the book_.mp3-2c2f480eb5b7b624143e92eb548356e8.mp3str"]
+source_file="res://audio/sfx/_Worthy to open the book_.mp3"
+dest_files=["res://.godot/imported/_Worthy to open the book_.mp3-8532ff27fd187439eeb81ad46cdf1b85.mp3str"]
 
 [params]
 
