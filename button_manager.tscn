@@ -1,0 +1,14 @@
+[gd_scene load_steps=6 format=3 uid="uid://b14ssueapnp46"]
+
+[ext_resource type="Script" path="res://ButtonManager.gd" id="1_lvx71"]
+[ext_resource type="AudioStream" uid="uid://d2an8cs668scu" path="res://Audio/sfx/Footsteps/Ladder right.mp3" id="3_4pfub"]
+[ext_resource type="AudioStream" uid="uid://4hc70gw5o6t3" path="res://Audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3" id="3_p7fen"]
+[ext_resource type="FontFile" uid="uid://bkuqdawqyx233" path="res://ui/fonts/Sk lmvargic-Regular.ttf" id="4_viit0"]
+[ext_resource type="FontFile" uid="uid://xuoghss3te07" path="res://ui/fonts/PTSansNarrow-Regular.ttf" id="5_7p4kc"]
+
+[node name="ButtonManager" type="Node"]
+script = ExtResource("1_lvx71")
+clickSound = ExtResource("3_p7fen")
+hoverSound = ExtResource("3_4pfub")
+unreadableFont = ExtResource("4_viit0")
+readableFont = ExtResource("5_7p4kc")

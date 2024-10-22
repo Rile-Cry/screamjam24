@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://4hc70gw5o6t3"
-path="res://.godot/imported/blowing-out-candlewav-14441.mp3-15ec18187a231d2f9a37f0717659ae90.mp3str"
+path="res://.godot/imported/blowing-out-candlewav-14441.mp3-4120c156747b673b96a99eb9de4f5cb9.mp3str"
 
 [deps]
 
-source_file="res://audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3"
-dest_files=["res://.godot/imported/blowing-out-candlewav-14441.mp3-15ec18187a231d2f9a37f0717659ae90.mp3str"]
+source_file="res://Audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3"
+dest_files=["res://.godot/imported/blowing-out-candlewav-14441.mp3-4120c156747b673b96a99eb9de4f5cb9.mp3str"]
 
 [params]
 

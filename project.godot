@@ -23,6 +23,7 @@ Shaker="*res://addons/shaker/src/Shaker.gd"
 MusicManager="*res://scenes/ambience/Music Manager.tscn"
 AtmosphericSounds="*res://scenes/ambience/AtmosphericSounds.tscn"
 PostProcessing="*res://scenes/ambience/PostProcessing.tscn"
+ButtonManager="*res://button_manager.tscn"
 
 [display]
 
