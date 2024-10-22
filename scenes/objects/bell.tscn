@@ -1,14 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://c106x0ii6l8be"]
+[gd_scene load_steps=5 format=3 uid="uid://c106x0ii6l8be"]
 
+[ext_resource type="Script" path="res://scenes/objects/Bell.gd" id="1_gir1y"]
 [ext_resource type="PackedScene" uid="uid://bg16fl28yy7jh" path="res://scenes/roots/bell_root.tscn" id="1_kjyhh"]
+[ext_resource type="AudioStream" uid="uid://bdfsct0gf8rwe" path="res://Audio/sfx/Church Bell.mp3" id="3_kone1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ueuo3"]
-size = Vector3(4.20447, 1, 1)
+size = Vector3(4.20447, 1.77441, 2.12671)
 
 [node name="Bell" type="StaticBody3D"]
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("1_gir1y")
+itemName = "Bell"
 
 [node name="BellRoot" parent="." instance=ExtResource("1_kjyhh")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000183105, 0, 0)
 shape = SubResource("BoxShape3D_ueuo3")
+
+[node name="BellSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kone1")
+bus = &"SoundEffects"

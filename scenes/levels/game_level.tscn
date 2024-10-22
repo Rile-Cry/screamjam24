@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=53 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://cuake6wm1ym4j" path="res://scenes/roots/cabinet.tscn" id="29_eir6v"]
 [ext_resource type="Script" path="res://scenes/roots/SecretDoorway.gd" id="30_mvp5o"]
 [ext_resource type="AudioStream" uid="uid://b2ibl5t0of3ln" path="res://Audio/sfx/Stone on stone scraping (secret passageway) 1.mp3" id="31_nba7b"]
+[ext_resource type="PackedScene" uid="uid://c106x0ii6l8be" path="res://scenes/objects/bell.tscn" id="32_4q8fj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 27.0753, 49.2281)
@@ -200,7 +201,7 @@ collision_mask = 9
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.491255, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_csr4c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00303, 0.645386, 11.4041)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2384, 16.4267, -28.7992)
 
 [node name="Candle" parent="." instance=ExtResource("5_7wh1f")]
 transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -0.422723, 1.52536, 0.673901)
@@ -496,6 +497,9 @@ bus = &"SoundEffects"
 
 [node name="slidePosition" type="Node3D" parent="Cabinet"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -3.32905)
+
+[node name="Bell" parent="." instance=ExtResource("32_4q8fj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.98289, 19.663, -26.033)
 
 [connection signal="body_entered" from="Cabinet/area" to="Cabinet/area" method="_on_body_entered"]
 

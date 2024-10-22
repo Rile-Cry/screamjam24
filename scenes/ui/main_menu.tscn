@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbr7gpfc4w0wj"]
+[gd_scene load_steps=4 format=3 uid="uid://dbr7gpfc4w0wj"]
 
 [ext_resource type="Texture2D" uid="uid://b8f1dof2vhuk7" path="res://ui/art/book_front.png" id="1_s8mlr"]
 [ext_resource type="Script" path="res://scenes/ui/main_menu.gd" id="1_w7jqa"]
 [ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="2_f1s41"]
-[ext_resource type="PackedScene" uid="uid://bnhqyw7sepsbm" path="res://scenes/levels/game_level.tscn" id="2_rgr6a"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -13,7 +12,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_w7jqa")
-main_scene = ExtResource("2_rgr6a")
 
 [node name="BookMargin" type="MarginContainer" parent="."]
 unique_name_in_owner = true
