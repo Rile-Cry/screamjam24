@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuvfhpri2sadg"]
+[gd_scene load_steps=4 format=3 uid="uid://dkjqmfo078bo3"]
 
 [ext_resource type="Script" path="res://scenes/interactables/KeyItemCandle.gd" id="1_v7th1"]
 [ext_resource type="PackedScene" uid="uid://dglbbmjvokxv5" path="res://scenes/interactables/root_node.tscn" id="2_isjpp"]

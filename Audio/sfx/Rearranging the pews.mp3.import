@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://d4ktjkc6gpv6l"
-path="res://.godot/imported/Rearranging the pews.mp3-5184df237f03b89eb8a9fb1a00be1a44.mp3str"
+path="res://.godot/imported/Rearranging the pews.mp3-0222c78ba9bdc80a995415930f6cbe28.mp3str"
 
 [deps]
 
-source_file="res://audio/sfx/Rearranging the pews.mp3"
-dest_files=["res://.godot/imported/Rearranging the pews.mp3-5184df237f03b89eb8a9fb1a00be1a44.mp3str"]
+source_file="res://Audio/sfx/Rearranging the pews.mp3"
+dest_files=["res://.godot/imported/Rearranging the pews.mp3-0222c78ba9bdc80a995415930f6cbe28.mp3str"]
 
 [params]
 

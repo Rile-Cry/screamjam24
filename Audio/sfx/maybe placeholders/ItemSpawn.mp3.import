@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://d4h8eheddotpe"
-path="res://.godot/imported/ItemSpawn.mp3-c607d8e9a494e568121c7694c636aadb.mp3str"
+path="res://.godot/imported/ItemSpawn.mp3-aafda45088ea626be263e889ca825c1b.mp3str"
 
 [deps]
 
-source_file="res://audio/sfx/maybe placeholders/ItemSpawn.mp3"
-dest_files=["res://.godot/imported/ItemSpawn.mp3-c607d8e9a494e568121c7694c636aadb.mp3str"]
+source_file="res://Audio/sfx/maybe placeholders/ItemSpawn.mp3"
+dest_files=["res://.godot/imported/ItemSpawn.mp3-aafda45088ea626be263e889ca825c1b.mp3str"]
 
 [params]
 
