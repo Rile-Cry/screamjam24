@@ -1,0 +1,147 @@
+[gd_scene load_steps=12 format=3 uid="uid://b142ih00tpxrv"]
+
+[ext_resource type="Texture2D" uid="uid://dcohboog3guj7" path="res://ui/art/book_cover_open.png" id="1_lsuca"]
+[ext_resource type="Texture2D" uid="uid://civ51eqbm2gfw" path="res://ui/art/left_page.png" id="2_hxxdn"]
+[ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="3_imhbc"]
+[ext_resource type="Texture2D" uid="uid://0cuf7niejdbd" path="res://ui/art/right_page.png" id="3_otije"]
+[ext_resource type="Texture2D" uid="uid://dmcf5gkvgx17d" path="res://ui/art/missing_page.png" id="4_vjfug"]
+[ext_resource type="Texture2D" uid="uid://c21bekmp0mrsx" path="res://ui/art/thread.png" id="5_5rm84"]
+[ext_resource type="Texture2D" uid="uid://bcfydlgjfumv2" path="res://ui/art/arrow.png" id="7_6cngk"]
+[ext_resource type="Texture2D" uid="uid://c0jduocae68sj" path="res://ui/art/arrow_pressed.png" id="8_q1b1v"]
+[ext_resource type="Texture2D" uid="uid://c611e11ucaocv" path="res://ui/art/arrow_hover.png" id="9_mko21"]
+[ext_resource type="Texture2D" uid="uid://76eqgq08h7c2" path="res://ui/art/arrow_disabled.png" id="10_83g1m"]
+[ext_resource type="Texture2D" uid="uid://uwyx4jd1ak6e" path="res://ui/art/arrow_focused.png" id="10_wk2b8"]
+
+[node name="Notebook" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="book_container" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="book" type="TextureRect" parent="book_container"]
+layout_mode = 2
+texture = ExtResource("1_lsuca")
+stretch_mode = 5
+
+[node name="pages_container" type="MarginContainer" parent="book_container"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_constants/margin_bottom = 10
+
+[node name="full_pages_container" type="HBoxContainer" parent="book_container/pages_container"]
+layout_mode = 2
+theme_override_constants/separation = -4
+alignment = 1
+
+[node name="left_page_full" type="TextureRect" parent="book_container/pages_container/full_pages_container"]
+layout_mode = 2
+texture = ExtResource("2_hxxdn")
+stretch_mode = 5
+
+[node name="page_margin" type="MarginContainer" parent="book_container/pages_container/full_pages_container/left_page_full"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 20
+
+[node name="text_container" type="VBoxContainer" parent="book_container/pages_container/full_pages_container/left_page_full/page_margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="page_number" type="Label" parent="book_container/pages_container/full_pages_container/left_page_full/page_margin/text_container"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_imhbc")
+theme_override_font_sizes/font_size = 50
+text = "1"
+
+[node name="text" type="Label" parent="book_container/pages_container/full_pages_container/left_page_full/page_margin/text_container"]
+custom_minimum_size = Vector2(2.08165e-12, 420)
+layout_mode = 2
+theme = ExtResource("3_imhbc")
+text = "This is where the body of text goes...
+"
+autowrap_mode = 3
+
+[node name="right_page_full" type="TextureRect" parent="book_container/pages_container/full_pages_container"]
+layout_mode = 2
+texture = ExtResource("3_otije")
+stretch_mode = 5
+
+[node name="missing_pages_container" type="HBoxContainer" parent="book_container/pages_container"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = -4
+alignment = 1
+
+[node name="left_missing" type="TextureRect" parent="book_container/pages_container/missing_pages_container"]
+layout_mode = 2
+texture = ExtResource("4_vjfug")
+stretch_mode = 5
+flip_h = true
+
+[node name="right_missing" type="TextureRect" parent="book_container/pages_container/missing_pages_container"]
+layout_mode = 2
+texture = ExtResource("4_vjfug")
+stretch_mode = 5
+
+[node name="thread_container" type="MarginContainer" parent="book_container/pages_container"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_top = 20
+
+[node name="thread" type="TextureRect" parent="book_container/pages_container/thread_container"]
+layout_mode = 2
+texture = ExtResource("5_5rm84")
+stretch_mode = 2
+
+[node name="arrow_buttons_margin" type="MarginContainer" parent="book_container/pages_container"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="arrow_buttons_container" type="HBoxContainer" parent="book_container/pages_container/arrow_buttons_margin"]
+layout_mode = 2
+theme_override_constants/separation = 638
+
+[node name="left_arrow" type="TextureButton" parent="book_container/pages_container/arrow_buttons_margin/arrow_buttons_container"]
+layout_mode = 2
+size_flags_vertical = 8
+texture_normal = ExtResource("7_6cngk")
+texture_pressed = ExtResource("8_q1b1v")
+texture_hover = ExtResource("9_mko21")
+texture_disabled = ExtResource("10_83g1m")
+texture_focused = ExtResource("10_wk2b8")
+flip_h = true
+
+[node name="right_arrow" type="TextureButton" parent="book_container/pages_container/arrow_buttons_margin/arrow_buttons_container"]
+layout_mode = 2
+size_flags_vertical = 8
+texture_normal = ExtResource("7_6cngk")
+texture_pressed = ExtResource("8_q1b1v")
+texture_hover = ExtResource("9_mko21")
+texture_disabled = ExtResource("10_83g1m")
+texture_focused = ExtResource("10_wk2b8")

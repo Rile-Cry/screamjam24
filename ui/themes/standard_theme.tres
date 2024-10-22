@@ -1,0 +1,42 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://cxlqi1so5wmjb"]
+
+[ext_resource type="FontFile" uid="uid://d1gnl65obr7h4" path="res://ui/fonts/Kings-Regular.ttf" id="1_vjkko"]
+[ext_resource type="Texture2D" uid="uid://bfbl33k3gelxp" path="res://ui/art/select_icons.png" id="2_4fi8v"]
+[ext_resource type="FontFile" uid="uid://ypscax7btp20" path="res://ui/fonts/ReenieBeanie-Regular.ttf" id="3_op0ld"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fqla5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xy866"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wnrp4"]
+content_margin_left = 40.0
+content_margin_right = 40.0
+texture = ExtResource("2_4fi8v")
+texture_margin_left = 145.0
+texture_margin_right = 145.0
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+region_rect = Rect2(81.0273, -1.64139, 63.2656, 77.6441)
+draw_center = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_di5pe"]
+
+[resource]
+Button/colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
+Button/colors/font_focus_color = Color(0.896129, 0.670543, 0.4296, 1)
+Button/colors/font_hover_color = Color(0.896129, 0.670543, 0.4296, 1)
+Button/colors/font_outline_color = Color(0.294772, 0.181172, 0.00790796, 1)
+Button/colors/font_pressed_color = Color(0.487102, 0.328949, 0.148275, 1)
+Button/constants/outline_size = 3
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_vjkko")
+Button/styles/disabled = SubResource("StyleBoxEmpty_fqla5")
+Button/styles/focus = SubResource("StyleBoxEmpty_xy866")
+Button/styles/hover = SubResource("StyleBoxTexture_wnrp4")
+Button/styles/normal = SubResource("StyleBoxEmpty_di5pe")
+Button/styles/pressed = SubResource("StyleBoxTexture_wnrp4")
+Label/colors/font_color = Color(1, 0.996078, 0.823529, 1)
+Label/colors/font_outline_color = Color(0.294772, 0.181172, 0.00790796, 1)
+Label/constants/outline_size = 2
+Label/font_sizes/font_size = 35
+Label/fonts/font = ExtResource("3_op0ld")
