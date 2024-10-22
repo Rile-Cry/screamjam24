@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=31 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_gldlg"]
 [ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="1_rxm03"]
@@ -12,6 +12,14 @@
 [ext_resource type="PackedScene" uid="uid://b6i685q2i4stv" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
 [ext_resource type="PackedScene" path="res://scenes/objects/altar.tscn" id="11_snhal"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="12_02yxp"]
+[ext_resource type="PackedScene" uid="uid://cmlxcocw8rbxb" path="res://scripts/objects/knife.tscn" id="13_frigp"]
+[ext_resource type="Script" path="res://scripts/objects/KeyItemKnife.gd" id="14_d8016"]
+[ext_resource type="PackedScene" uid="uid://b3qphi6tibi4g" path="res://scenes/interactables/BloodChalice.tscn" id="14_ymk8b"]
+[ext_resource type="Script" path="res://scripts/Trials/CandleTrial.gd" id="16_6210w"]
+[ext_resource type="PackedScene" uid="uid://7uk2mtu17r5o" path="res://scenes/interactables/LightableCandle.tscn" id="16_l853q"]
+[ext_resource type="PackedScene" uid="uid://cuvfhpri2sadg" path="res://scenes/interactables/KeyItemCandle.tscn" id="18_20srk"]
+[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://Audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="19_yahdx"]
+[ext_resource type="AudioStream" uid="uid://vusus71lkamg" path="res://Audio/sfx/maybe placeholders/itemSpawn2.mp3" id="20_6e08d"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 32.0547, 49.2281)
@@ -113,7 +121,6 @@ shadow_bias = 0.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5922, 0, -39.7383)
 script = ExtResource("4_jhpbd")
 room_size = 0.5
-wall_hardness = 0.0
 fog_density = 0.1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AtmosphericZone"]
@@ -127,7 +134,6 @@ assets = SubResource("Terrain3DAssets_pyh3d")
 render_layers = 2147483657
 collision_layer = 9
 collision_mask = 9
-metadata/GroundType = 0
 
 [node name="Church" parent="." instance=ExtResource("1_rxm03")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.491255, 0)
@@ -142,15 +148,6 @@ transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.99738, -7.51906, 9.00955)
 
 [node name="KeyItems" type="Node3D" parent="."]
-
-[node name="KeyItem" parent="KeyItems" instance=ExtResource("10_kpjts")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03299, -6.79586, 8.04946)
-
-[node name="KeyItem2" parent="KeyItems" instance=ExtResource("10_kpjts")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03299, -6.79586, 9.16822)
-
-[node name="KeyItem3" parent="KeyItems" instance=ExtResource("10_kpjts")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.03299, -6.79586, 6.71697)
 
 [node name="KeyItem4" parent="KeyItems" instance=ExtResource("10_kpjts")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.36385, -6.79586, 8.04946)
@@ -195,3 +192,151 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2278, 0.925428, -22.9779)
 
 [node name="DollSpawnPosition9" type="Node3D" parent="DollPuzzle/DollSpawnPositions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05136, 1.97057, -20.037)
+
+[node name="KnifePuzzle" type="Node3D" parent="."]
+
+[node name="Knife" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -10.239, 0.877896, -28.2235)
+script = ExtResource("14_d8016")
+itemName = "Jack's Knife"
+
+[node name="Knife2" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.36569, 0.877896, -28.2235)
+itemName = "Barrys's Knife"
+
+[node name="Knife3" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -8.48671, 0.877896, -28.2235)
+itemName = "Barrys's Knife"
+
+[node name="Knife4" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -8.48671, 0.877896, -24.9001)
+itemName = "Barrys's Knife"
+
+[node name="Knife5" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.29937, 0.877896, -24.9001)
+itemName = "Barrys's Knife"
+
+[node name="Knife6" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -10.5828, 0.877896, -24.9001)
+itemName = "Barrys's Knife"
+
+[node name="BloodChalice" parent="KnifePuzzle" instance=ExtResource("14_ymk8b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3808, 0.516101, -26.4836)
+
+[node name="CandlePuzzle" type="Node3D" parent="."]
+
+[node name="KeyItemCandle" parent="CandlePuzzle" instance=ExtResource("18_20srk")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 2.08022, 1.70631, -19.7447)
+
+[node name="Candles puzzle" type="Node3D" parent="CandlePuzzle" node_paths=PackedStringArray("itemToAppearWhenTrialIsPassed")]
+script = ExtResource("16_6210w")
+finishedColor = Color(0.768627, 0.2, 0.505882, 1)
+itemToAppearWhenTrialIsPassed = NodePath("../KeyItemCandle")
+
+[node name="LightableCandle" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -0.455898, 0.491255, -5.83081)
+
+[node name="LightableCandle2" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -0.455898, 0.491255, -10.0169)
+
+[node name="LightableCandle3" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -0.455898, 0.491255, -14.0495)
+
+[node name="LightableCandle4" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -0.455898, 0.491255, -18.1935)
+
+[node name="LightableCandle5" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 4.50375, 0.491255, -5.83081)
+
+[node name="LightableCandle6" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 4.50375, 0.491255, -10.0169)
+
+[node name="LightableCandle7" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 4.50375, 0.491255, -14.0495)
+
+[node name="LightableCandle8" parent="CandlePuzzle/Candles puzzle" instance=ExtResource("16_l853q")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 4.50375, 0.491255, -18.1935)
+
+[node name="FinishedSound" type="AudioStreamPlayer" parent="CandlePuzzle/Candles puzzle"]
+unique_name_in_owner = true
+stream = ExtResource("19_yahdx")
+bus = &"SoundEffects"
+
+[node name="ItemPopSound" type="AudioStreamPlayer" parent="CandlePuzzle/Candles puzzle"]
+unique_name_in_owner = true
+stream = ExtResource("20_6e08d")
+bus = &"SoundEffects"
+
+[node name="PlayerRespawnPositions" type="Node3D" parent="." groups=["RespawnPositions"]]
+
+[node name="PlayerSpawnPosition" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3749, -2.38419e-07, 9.87278)
+
+[node name="PlayerSpawnPosition2" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31949, -2.38419e-07, 10.8042)
+
+[node name="PlayerSpawnPosition3" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.63105, -2.38419e-07, 2.42137)
+
+[node name="PlayerSpawnPosition4" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.47155, -2.38419e-07, 3.59578)
+
+[node name="PlayerSpawnPosition5" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.72122, -2.38419e-07, -1.26384)
+
+[node name="PlayerSpawnPosition6" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73018, -2.38419e-07, -2.15477)
+
+[node name="PlayerSpawnPosition7" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.40621, -2.38419e-07, -8.87723)
+
+[node name="PlayerSpawnPosition8" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3155, -2.38419e-07, -2.43824)
+
+[node name="PlayerSpawnPosition9" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.34683, -2.38419e-07, -4.66557)
+
+[node name="PlayerSpawnPosition10" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0725, -2.38419e-07, -13.8988)
+
+[node name="PlayerSpawnPosition11" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.82361, -2.38419e-07, -18.9609)
+
+[node name="PlayerSpawnPosition12" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9451, -2.38419e-07, -22.4841)
+
+[node name="PlayerSpawnPosition13" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56821, -2.38419e-07, -22.1197)
+
+[node name="PlayerSpawnPosition14" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.20717, -2.38419e-07, -26.4123)
+
+[node name="PlayerSpawnPosition15" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.44691, -2.38419e-07, -26.4933)
+
+[node name="PlayerSpawnPosition16" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.923, -2.38419e-07, -25.3594)
+
+[node name="PlayerSpawnPosition17" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.29716, -2.38419e-07, -17.584)
+
+[node name="PlayerSpawnPosition18" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.69468, -1.19209e-06, -31.3649)
+
+[node name="PlayerSpawnPosition19" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99721, 2.99126, -30.9481)
+
+[node name="PlayerSpawnPosition20" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9067, 2.99126, -31.123)
+
+[node name="PlayerSpawnPosition21" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5056, 5.49125, -25.2548)
+
+[node name="PlayerSpawnPosition22" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76563, 5.49125, -25.2751)
+
+[node name="PlayerSpawnPosition23" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.44522, 16.4913, -28.8807)
+
+[node name="PlayerSpawnPosition24" type="Node3D" parent="PlayerRespawnPositions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9314, 16.4913, -30.5735)

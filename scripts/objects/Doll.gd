@@ -1,4 +1,4 @@
-extends Interactable
+extends KeyItem
 
 var player: Player
 const teleportFromPlayerDistance:= 5

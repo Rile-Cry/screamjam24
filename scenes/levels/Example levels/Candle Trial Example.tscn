@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="7_0k5u0"]
 [ext_resource type="Script" path="res://scripts/Trials/CandleTrial.gd" id="7_w65gx"]
 [ext_resource type="PackedScene" uid="uid://c7ub53k5l7lte" path="res://scenes/levels/church_test_zone.tscn" id="9_bv3ru"]
-[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="9_gvr02"]
-[ext_resource type="AudioStream" uid="uid://vusus71lkamg" path="res://audio/sfx/maybe placeholders/itemSpawn2.mp3" id="10_6ep6c"]
-[ext_resource type="PackedScene" uid="uid://u52fmvg00fv" path="res://scenes/objects/chair.tscn" id="13_rno4b"]
+[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://Audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="9_gvr02"]
+[ext_resource type="AudioStream" uid="uid://vusus71lkamg" path="res://Audio/sfx/maybe placeholders/itemSpawn2.mp3" id="10_6ep6c"]
+[ext_resource type="PackedScene" uid="uid://vl57mdwwn58p" path="res://scenes/objects/chair.tscn" id="13_rno4b"]
 [ext_resource type="PackedScene" uid="uid://edogbne3jao8" path="res://scenes/interactables/pumpkin.tscn" id="16_hwdd6"]
 [ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/interactables/candle.tscn" id="17_uw76k"]
 

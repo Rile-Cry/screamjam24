@@ -1,4 +1,4 @@
-extends Interactable
+extends KeyItem
 
 var player: Player
 @onready var cutting_sound: AudioStreamPlayer = %"Cutting sound"

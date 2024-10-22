@@ -227,7 +227,7 @@ func GoInsane():
 	await tween.finished
 	await get_tree().create_timer(1).timeout
 	Global.sanity = 100
-	var newPositions := get_tree().get_nodes_in_group("RespawnPosition")
+	var newPositions := get_tree().get_first_node_in_group("RespawnPositions").get_children()
 	global_position = newPositions.pick_random().global_position
 	tween = create_tween().set_parallel(true)
 	tween.tween_property(camera.environment,"adjustment_saturation",1,20)
