@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://brylbw0xxwedn"]
+
+[ext_resource type="Texture2D" uid="uid://bxmsax7qckfrv" path="res://visuals/Textures/objects/Altar/sm_chains_M_chain_BaseColor.tga" id="1_457mk"]
+[ext_resource type="Texture2D" uid="uid://cn2120pifm61x" path="res://visuals/Textures/objects/Altar/sm_chains_M_chain_Normal.tga" id="2_fwcw0"]
+[ext_resource type="Texture2D" uid="uid://08s56s0no7f5" path="res://visuals/Textures/objects/Altar/sm_chains_M_chain_OcclusionRoughnessMetallic.tga" id="3_lei47"]
+
+[resource]
+albedo_texture = ExtResource("1_457mk")
+orm_texture = ExtResource("3_lei47")
+normal_enabled = true
+normal_texture = ExtResource("2_fwcw0")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://xisynqg2ihh8"]
+
+[ext_resource type="PackedScene" uid="uid://jspfkqipefd7" path="res://models/CandleLP.fbx" id="1_fjdhf"]
+[ext_resource type="Material" uid="uid://dt0021kxuyhdj" path="res://visuals/materials/church_mats/M_Candle.tres" id="2_8nv1g"]
+
+[node name="CandleRoot" instance=ExtResource("1_fjdhf")]
+
+[node name="pCylinder4" parent="RootNode" index="0"]
+surface_material_override/0 = ExtResource("2_8nv1g")
+
+[node name="pCylinder5" parent="RootNode" index="1"]
+surface_material_override/0 = ExtResource("2_8nv1g")
+
+[node name="pasted__pCylinder6" parent="RootNode/group73" index="0"]
+surface_material_override/0 = ExtResource("2_8nv1g")

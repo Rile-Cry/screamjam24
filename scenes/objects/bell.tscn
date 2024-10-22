@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c106x0ii6l8be"]
+
+[ext_resource type="PackedScene" uid="uid://bg16fl28yy7jh" path="res://scenes/roots/bell_root.tscn" id="1_kjyhh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ueuo3"]
+size = Vector3(4.20447, 1, 1)
+
+[node name="Bell" type="StaticBody3D"]
+
+[node name="BellRoot" parent="." instance=ExtResource("1_kjyhh")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000183105, 0, 0)
+shape = SubResource("BoxShape3D_ueuo3")

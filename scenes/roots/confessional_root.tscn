@@ -1,5 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6bb3k3m7d7iv"]
+[gd_scene load_steps=3 format=3 uid="uid://c6bb3k3m7d7iv"]
 
 [ext_resource type="PackedScene" uid="uid://ci07nj45bgbst" path="res://models/objects/sm_confessional.fbx" id="1_t0dii"]
+[ext_resource type="Material" uid="uid://d1r0irejqu6a" path="res://visuals/materials/church_mats/M_Confessional.tres" id="2_uyllo"]
 
 [node name="ConfessionalRoot" instance=ExtResource("1_t0dii")]
+
+[node name="polySurface5" parent="RootNode/pCube34" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="polySurface6" parent="RootNode/pCube34" index="1"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pPlane3" parent="RootNode" index="1"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__pCube367" parent="RootNode/group45" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__pPlane3" parent="RootNode/group46" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__pCube3672" parent="RootNode/group47" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__polySurface5" parent="RootNode/group55/pasted__pCube34" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__pasted__polySurface5" parent="RootNode/group56/pasted__group55/pasted__pasted__pCube34" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__pasted__pPlane3" parent="RootNode/group57/pasted__group46" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__pasted__pasted__pPlane3" parent="RootNode/group58/pasted__group57/pasted__pasted__group46" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__polySurface4" parent="RootNode/group60/pasted__pCube35" index="0"]
+surface_material_override/0 = ExtResource("2_uyllo")
+
+[node name="pasted__polySurface82" parent="RootNode" index="12"]
+surface_material_override/0 = ExtResource("2_uyllo")

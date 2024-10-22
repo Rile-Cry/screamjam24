@@ -1,3 +1,20 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://br1d0g0eonu5g"]
+[gd_resource type="StandardMaterial3D" load_steps=7 format=3 uid="uid://br1d0g0eonu5g"]
+
+[ext_resource type="Texture2D" uid="uid://dm0s7m2jiqa3s" path="res://visuals/Textures/objects/Altar/sm_ClothForAltar_01_standardSurface1_BaseColor.tga" id="1_g7txf"]
+[ext_resource type="Texture2D" uid="uid://cfsu64qbca1hq" path="res://visuals/Textures/objects/Altar/sm_ClothForAltar_01_standardSurface1_Emissive.tga" id="2_mkscb"]
+[ext_resource type="Texture2D" uid="uid://by3kulgehiogu" path="res://visuals/Textures/objects/Altar/sm_ClothForAltar_01_standardSurface1_Height.tga" id="3_44ig0"]
+[ext_resource type="Texture2D" uid="uid://ccby0ueiayj6q" path="res://visuals/Textures/objects/Altar/sm_ClothForAltar_01_standardSurface1_Metallic.tga" id="4_eqorh"]
+[ext_resource type="Texture2D" uid="uid://4ib4yefsfv6b" path="res://visuals/Textures/objects/Altar/sm_ClothForAltar_01_standardSurface1_Normal.tga" id="5_jvsi7"]
+[ext_resource type="Texture2D" uid="uid://ey5t1jiwocxs" path="res://visuals/Textures/objects/Altar/sm_ClothForAltar_01_standardSurface1_Roughness.tga" id="6_cefky"]
 
 [resource]
+albedo_texture = ExtResource("1_g7txf")
+metallic = 1.0
+metallic_texture = ExtResource("4_eqorh")
+roughness_texture = ExtResource("6_cefky")
+emission_enabled = true
+emission_texture = ExtResource("2_mkscb")
+normal_enabled = true
+normal_texture = ExtResource("5_jvsi7")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_44ig0")

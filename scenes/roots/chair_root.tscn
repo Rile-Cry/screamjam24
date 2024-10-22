@@ -1,5 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://yha7dl1byjj1"]
+[gd_scene load_steps=3 format=3 uid="uid://yha7dl1byjj1"]
 
 [ext_resource type="PackedScene" uid="uid://bdjr377fd1it8" path="res://models/objects/Chair.fbx" id="1_d16dk"]
+[ext_resource type="Material" uid="uid://b5epslmay4tuu" path="res://visuals/materials/church_mats/M_Chair_and_table.tres" id="2_4sv68"]
 
 [node name="ChairRoot" instance=ExtResource("1_d16dk")]
+
+[node name="pasted__pasted__pasted__pasted__pCylinder4" parent="RootNode/group72" index="0"]
+surface_material_override/0 = ExtResource("2_4sv68")
+
+[node name="pCube370" parent="RootNode/group72" index="1"]
+surface_material_override/0 = ExtResource("2_4sv68")
+
+[node name="pasted__pasted__pasted__pCylinder4" parent="RootNode/group72" index="2"]
+surface_material_override/0 = ExtResource("2_4sv68")
+
+[node name="pCube369" parent="RootNode/group72" index="3"]
+surface_material_override/0 = ExtResource("2_4sv68")
+
+[node name="pasted__pasted__pasted__pasted__pCylinder5" parent="RootNode/group72" index="4"]
+surface_material_override/0 = ExtResource("2_4sv68")

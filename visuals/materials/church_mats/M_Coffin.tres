@@ -1,8 +1,8 @@
 [gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://qg18qplsfbcb"]
 
-[ext_resource type="Texture2D" uid="uid://c0k86fc7rnu1m" path="res://sm_coffin_M_UE4Man_Body_BaseColor.tga" id="1_nhee4"]
-[ext_resource type="Texture2D" uid="uid://cfrohfgjo3g7r" path="res://sm_coffin_M_UE4Man_Body_Normal.tga" id="2_4jyxa"]
-[ext_resource type="Texture2D" uid="uid://dxlaliaj4p4wv" path="res://sm_coffin_M_UE4Man_Body_OcclusionRoughnessMetallic.tga" id="3_x2ln0"]
+[ext_resource type="Texture2D" uid="uid://bwqeum2ttgvcq" path="res://visuals/Textures/objects/Coffin/sm_coffin_M_UE4Man_Body_BaseColor.tga" id="1_nhee4"]
+[ext_resource type="Texture2D" uid="uid://iu54ouows8k6" path="res://visuals/Textures/objects/Coffin/sm_coffin_M_UE4Man_Body_Normal.tga" id="2_4jyxa"]
+[ext_resource type="Texture2D" uid="uid://xltcfj5g5v0t" path="res://visuals/Textures/objects/Coffin/sm_coffin_M_UE4Man_Body_OcclusionRoughnessMetallic.tga" id="3_x2ln0"]
 
 [resource]
 albedo_texture = ExtResource("1_nhee4")

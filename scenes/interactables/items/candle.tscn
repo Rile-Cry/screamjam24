@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3fvf0v5nc0q8"]
-
-[ext_resource type="PackedScene" uid="uid://jspfkqipefd7" path="res://models/CandleLP.fbx" id="1_4r1j0"]
-
-[node name="Candle" instance=ExtResource("1_4r1j0")]

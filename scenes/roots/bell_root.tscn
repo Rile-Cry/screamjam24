@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg16fl28yy7jh"]
+
+[ext_resource type="PackedScene" uid="uid://2d1os6wvc1rk" path="res://models/objects/BellMechanism.fbx" id="1_rnl8b"]
+[ext_resource type="Material" uid="uid://dqnjshlm1ksjk" path="res://visuals/materials/church_mats/M_Bell.tres" id="2_d6g63"]
+
+[node name="BellRoot" instance=ExtResource("1_rnl8b")]
+
+[node name="pasted__pasted__pCylinder6" parent="RootNode/group105" index="0"]
+surface_material_override/0 = ExtResource("2_d6g63")

@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://dt0021kxuyhdj"]
+
+[ext_resource type="Texture2D" uid="uid://usgqxc2yn2bb" path="res://visuals/Textures/objects/Candle/CandleLP_standardSurface1_BaseColor.tga" id="1_751uc"]
+[ext_resource type="Texture2D" uid="uid://d0xftf0l46epu" path="res://visuals/Textures/objects/Candle/CandleLP_standardSurface1_Normal.tga" id="2_rkr1x"]
+[ext_resource type="Texture2D" uid="uid://1mlm0rv0mocj" path="res://visuals/Textures/objects/Candle/CandleLP_standardSurface1_OcclusionRoughnessMetallic.tga" id="3_sk7sx"]
+
+[resource]
+albedo_texture = ExtResource("1_751uc")
+orm_texture = ExtResource("3_sk7sx")
+normal_enabled = true
+normal_texture = ExtResource("2_rkr1x")

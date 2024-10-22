@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=48 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
@@ -28,6 +28,7 @@
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="26_utnp7"]
 [ext_resource type="PackedScene" uid="uid://c5ss28meyqyum" path="res://scenes/interactables/doorway.tscn" id="28_0kth3"]
 [ext_resource type="PackedScene" uid="uid://bm617llvppw0h" path="res://scenes/objects/votive.tscn" id="28_ftldx"]
+[ext_resource type="PackedScene" uid="uid://cuake6wm1ym4j" path="res://scenes/roots/cabinet.tscn" id="29_eir6v"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 32.0547, 49.2281)
@@ -456,6 +457,9 @@ noteResource = SubResource("Resource_01ktg")
 
 [node name="Votive" parent="." instance=ExtResource("28_ftldx")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.342939, 0.491255, 1.10634)
+
+[node name="Cabinet" parent="." instance=ExtResource("29_eir6v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7.2614, 0.491255, -28.3827)
 
 [editable path="DemonTeleporters/UpstairsDemonTeleporter"]
 [editable path="DemonTeleporters/DownstairsDemonTeleporter"]

@@ -1,3 +1,11 @@
-[gd_resource type="ORMMaterial3D" format=3 uid="uid://bvbirlrm4geek"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://bvbirlrm4geek"]
+
+[ext_resource type="Texture2D" uid="uid://cok0psrie0bsa" path="res://visuals/Textures/objects/Altar/sm_altarLP_lambert1_BaseColor.tga" id="1_lpdef"]
+[ext_resource type="Texture2D" uid="uid://kutbw8vp7av5" path="res://visuals/Textures/objects/Altar/sm_altarLP_lambert1_Normal.tga" id="2_f6flf"]
+[ext_resource type="Texture2D" uid="uid://dx2u4ckic2klg" path="res://visuals/Textures/objects/Altar/sm_altarLP_lambert1_OcclusionRoughnessMetallic.tga" id="3_37m8i"]
 
 [resource]
+albedo_texture = ExtResource("1_lpdef")
+orm_texture = ExtResource("3_37m8i")
+normal_enabled = true
+normal_texture = ExtResource("2_f6flf")

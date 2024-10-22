@@ -1,3 +1,11 @@
-[gd_resource type="ORMMaterial3D" format=3 uid="uid://b5epslmay4tuu"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://b5epslmay4tuu"]
+
+[ext_resource type="Texture2D" uid="uid://lka06abjrnp5" path="res://visuals/Textures/objects/ChairandTable/ChairandDesk_lambert1_BaseColor.tga" id="1_h4c2x"]
+[ext_resource type="Texture2D" uid="uid://ci28bn3pnrcqf" path="res://visuals/Textures/objects/ChairandTable/ChairandDesk_lambert1_Normal.tga" id="2_vw8ve"]
+[ext_resource type="Texture2D" uid="uid://cncv6jfxeamx4" path="res://visuals/Textures/objects/ChairandTable/ChairandDesk_lambert1_OcclusionRoughnessMetallic.tga" id="3_iqimd"]
 
 [resource]
+albedo_texture = ExtResource("1_h4c2x")
+orm_texture = ExtResource("3_iqimd")
+normal_enabled = true
+normal_texture = ExtResource("2_vw8ve")

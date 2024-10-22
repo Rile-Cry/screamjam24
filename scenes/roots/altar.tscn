@@ -1,5 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnx5kskdl621w"]
+[gd_scene load_steps=5 format=3 uid="uid://cnx5kskdl621w"]
 
 [ext_resource type="PackedScene" uid="uid://6pt8mfgsopwn" path="res://models/objects/Altar.fbx" id="1_d6fbi"]
+[ext_resource type="Material" uid="uid://bvbirlrm4geek" path="res://visuals/materials/church_mats/M_Altar_Wood.tres" id="2_8mqca"]
+[ext_resource type="Material" uid="uid://brylbw0xxwedn" path="res://visuals/materials/church_mats/M_Chain.tres" id="3_7w0cg"]
+[ext_resource type="Material" uid="uid://br1d0g0eonu5g" path="res://visuals/materials/church_mats/M_Altar_Cloth.tres" id="4_7dmyc"]
 
 [node name="Altar" instance=ExtResource("1_d6fbi")]
+
+[node name="pCube9" parent="RootNode" index="1"]
+material_override = ExtResource("2_8mqca")
+
+[node name="pCylinder3" parent="RootNode" index="2"]
+material_override = ExtResource("3_7w0cg")
+
+[node name="pPlane18" parent="RootNode" index="3"]
+surface_material_override/0 = ExtResource("4_7dmyc")
+
+[node name="pasted__pCylinder3" parent="RootNode/group134" index="0"]
+material_override = ExtResource("3_7w0cg")
+
+[node name="pasted__pCylinder32" parent="RootNode/group135" index="0"]
+material_override = ExtResource("3_7w0cg")
+
+[node name="pasted__pasted__pCylinder3" parent="RootNode/group135/pasted__group134" index="0"]
+material_override = ExtResource("3_7w0cg")
+
+[node name="pasted__pasted__pCylinder32" parent="RootNode/group164/pasted__group1342" index="0"]
+material_override = ExtResource("3_7w0cg")
+
+[node name="pasted__pasted__pasted__pCylinder3" parent="RootNode/group165/pasted__group164/pasted__pasted__group134" index="0"]
+material_override = ExtResource("3_7w0cg")

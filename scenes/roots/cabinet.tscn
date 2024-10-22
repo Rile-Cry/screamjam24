@@ -1,5 +1,39 @@
-[gd_scene load_steps=2 format=3 uid="uid://cuake6wm1ym4j"]
+[gd_scene load_steps=3 format=3 uid="uid://cuake6wm1ym4j"]
 
 [ext_resource type="PackedScene" uid="uid://bc4jl3p2mvbng" path="res://models/objects/Cabinet.fbx" id="1_pbacf"]
+[ext_resource type="Material" uid="uid://ci5opupbe6okx" path="res://visuals/materials/church_mats/M_Cabinet.tres" id="2_6se3k"]
 
 [node name="Cabinet" instance=ExtResource("1_pbacf")]
+
+[node name="pasted__pCube361" parent="RootNode/group14" index="0"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="pasted__pCube362" parent="RootNode/group14" index="2"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="pasted__pasted__pCube3622" parent="RootNode/group14/pasted__group11" index="0"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="pasted__pPlane1" parent="RootNode/group14" index="6"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="pasted__pasted__pPlane1" parent="RootNode/group14/pasted__group13" index="0"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="group14_pasted__group12_pasted__pasted__group9_pasted__pasted__pasted__pCube362" parent="RootNode" index="10"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pCube3622" parent="RootNode" index="11"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="group64_pasted__group14_pasted__pasted__group12_pasted__pasted__pasted__group9_pasted__pasted__pasted__pasted__pCube362" parent="RootNode" index="12"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="group14_pasted__group9_pasted__pasted__pCube362" parent="RootNode" index="13"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="group62_pasted__group14_pasted__pasted__group9_pasted__pasted__pasted__pCube362" parent="RootNode" index="14"]
+surface_material_override/0 = ExtResource("2_6se3k")
+
+[node name="pasted__group62_pasted__pasted__group14_pasted__pasted__pasted__group9_pasted__pasted__pasted__pasted__pCube362" parent="RootNode" index="15"]
+surface_material_override/0 = ExtResource("2_6se3k")

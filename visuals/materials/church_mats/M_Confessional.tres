@@ -1,8 +1,8 @@
 [gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://d1r0irejqu6a"]
 
-[ext_resource type="Texture2D" uid="uid://cxie8mmge27hk" path="res://sm_confessionalLP_lambert1_BaseColor.tga" id="1_vu8xq"]
-[ext_resource type="Texture2D" uid="uid://cla66fgikv46e" path="res://sm_confessionalLP_lambert1_Normal.tga" id="2_204aa"]
-[ext_resource type="Texture2D" uid="uid://bx20btxdy4a1a" path="res://sm_confessionalLP_lambert1_OcclusionRoughnessMetallic.tga" id="3_kgbwh"]
+[ext_resource type="Texture2D" uid="uid://cuq6vtw4plced" path="res://visuals/Textures/objects/Confessional/sm_confessionalLP_lambert1_BaseColor.tga" id="1_vu8xq"]
+[ext_resource type="Texture2D" uid="uid://uag3x434jx4o" path="res://visuals/Textures/objects/Confessional/sm_confessionalLP_lambert1_Normal.tga" id="2_204aa"]
+[ext_resource type="Texture2D" uid="uid://dw3bt7aevbjw1" path="res://visuals/Textures/objects/Confessional/sm_confessionalLP_lambert1_OcclusionRoughnessMetallic.tga" id="3_kgbwh"]
 
 [resource]
 albedo_texture = ExtResource("1_vu8xq")

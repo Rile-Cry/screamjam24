@@ -1,5 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://diddvfrmfvv1k"]
+[gd_scene load_steps=3 format=3 uid="uid://diddvfrmfvv1k"]
 
 [ext_resource type="PackedScene" uid="uid://ct7ufiow6mheo" path="res://models/objects/Desk.fbx" id="1_bxcg0"]
+[ext_resource type="Material" uid="uid://b5epslmay4tuu" path="res://visuals/materials/church_mats/M_Chair_and_table.tres" id="2_hdfdv"]
 
 [node name="DeskRoot" instance=ExtResource("1_bxcg0")]
+
+[node name="pasted__pCube368" parent="RootNode/group71" index="4"]
+surface_material_override/0 = ExtResource("2_hdfdv")
+
+[node name="pasted__pasted__pCylinder4" parent="RootNode/group71" index="5"]
+surface_material_override/0 = ExtResource("2_hdfdv")
+
+[node name="pasted__pCube369" parent="RootNode/group71" index="6"]
+surface_material_override/0 = ExtResource("2_hdfdv")
+
+[node name="pasted__pCylinder4" parent="RootNode/group71" index="7"]
+surface_material_override/0 = ExtResource("2_hdfdv")
+
+[node name="pCube368" parent="RootNode/group71" index="8"]
+surface_material_override/0 = ExtResource("2_hdfdv")

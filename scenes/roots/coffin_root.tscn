@@ -1,5 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6tbqriuo37cq"]
+[gd_scene load_steps=3 format=3 uid="uid://b6tbqriuo37cq"]
 
 [ext_resource type="PackedScene" uid="uid://bsmpybmk280n7" path="res://models/objects/sm_coffin.fbx" id="1_nase0"]
+[ext_resource type="Material" uid="uid://qg18qplsfbcb" path="res://visuals/materials/church_mats/M_Coffin.tres" id="2_slitb"]
 
 [node name="CoffinRoot" instance=ExtResource("1_nase0")]
+
+[node name="pCube367" parent="RootNode" index="0"]
+material_override = ExtResource("2_slitb")

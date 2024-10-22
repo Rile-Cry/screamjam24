@@ -13,11 +13,11 @@
 [node name="Office" parent="." instance=ExtResource("2_5ejkn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.99635, 0, -24.4987)
 
-[node name="BellTower" parent="." instance=ExtResource("3_jv7h6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.001, 0, -24.4943)
-
 [node name="StartingRoom" parent="." instance=ExtResource("4_jpqtv")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.000900149, -4.76837e-07, -0.00638676)
 
 [node name="Crypt" parent="." instance=ExtResource("5_acgs3")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.97688, -8.01032, -33.5042)
+
+[node name="BellTower" parent="." instance=ExtResource("3_jv7h6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.001, 0, -24.4943)
