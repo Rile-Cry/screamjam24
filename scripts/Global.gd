@@ -2,7 +2,7 @@ extends Node
 
 # Item Handling
 var can_see_item := false
-var item_name := ""
+var hoveredItem : Interactable
 var is_holding_book := false
 var sanity_list : Dictionary = {}
 var time := 0.

@@ -5,7 +5,8 @@ var is_holding_item = false
 
 @onready var pedestal_slot := $ItemSpot
 var player : Player
-
+@onready var hover_sound: AudioStreamPlayer3D = $HoverSound
+var volumeTween:Tween
 
 func _ready():
 	super._ready()
@@ -30,9 +31,21 @@ func interact():
 				pedestal_slot.add_child(hand_item)
 				hand_item.process_mode = Node.PROCESS_MODE_DISABLED
 				hand_item.position = Vector3.ZERO
+				toggle_sound(true)
 	else:
 		if hand.get_child_count() == 1:
 			var item = pedestal_slot.get_child(1)
 			pedestal_slot.remove_child(item)
 			hand.add_child(item)
 			item.position = Vector3.ZERO
+			toggle_sound(false)
+
+
+func toggle_sound(on: bool):
+	if volumeTween and volumeTween.is_running():
+		volumeTween.kill()
+	volumeTween = create_tween()
+	if on:
+		volumeTween.tween_property(hover_sound,"volume_db",0,.2)
+	else:
+		volumeTween.tween_property(hover_sound,"volume_db",-80,1)

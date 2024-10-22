@@ -6,6 +6,7 @@
 
 [node name="KeyItem" type="RigidBody3D"]
 script = ExtResource("1_6b23l")
+itemName = "Key Item"
 type = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

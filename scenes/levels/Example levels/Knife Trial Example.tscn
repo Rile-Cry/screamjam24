@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="2_5pfrb"]
 [ext_resource type="PackedScene" uid="uid://cmlxcocw8rbxb" path="res://scripts/objects/knife.tscn" id="6_c7mp8"]
 [ext_resource type="PackedScene" uid="uid://b3qphi6tibi4g" path="res://scenes/interactables/BloodChalice.tscn" id="7_j1mjo"]
-[ext_resource type="PackedScene" path="res://scenes/objects/chair.tscn" id="8_2mv6k"]
+[ext_resource type="PackedScene" uid="uid://vl57mdwwn58p" path="res://scenes/objects/chair.tscn" id="8_2mv6k"]
 [ext_resource type="PackedScene" uid="uid://c7ub53k5l7lte" path="res://scenes/levels/church_test_zone.tscn" id="9_hg2xc"]
 [ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/interactables/candle.tscn" id="10_2rd4r"]
 

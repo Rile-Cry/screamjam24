@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6dtreo20vkg3"
+path="res://.godot/imported/Spooky Church Ambience (1).mp3-03511212ff5142a7bf443f72e729ecd2.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/Spooky Church Ambience (1).mp3"
+dest_files=["res://.godot/imported/Spooky Church Ambience (1).mp3-03511212ff5142a7bf443f72e729ecd2.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

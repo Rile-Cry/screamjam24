@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://scripts/interactables/Door.gd" id="1_04jlq"]
 [ext_resource type="Texture2D" uid="uid://bqtopdl8vvlb0" path="res://Placeholders (Will be deleted)/seats/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg" id="2_eowbc"]
 [ext_resource type="Texture2D" uid="uid://pfay3lbkerwt" path="res://Placeholders (Will be deleted)/seats/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2_n.jpg" id="3_3ugbu"]
-[ext_resource type="AudioStream" uid="uid://c3slhrble4x42" path="res://audio/sfx/Door open squeeky hinges.mp3" id="4_ve35b"]
-[ext_resource type="AudioStream" uid="uid://dk2dnoby5xfd4" path="res://audio/sfx/Door closing squeeky hinges.mp3" id="5_mep4l"]
+[ext_resource type="AudioStream" uid="uid://c3slhrble4x42" path="res://Audio/sfx/Door open squeeky hinges.mp3" id="4_ve35b"]
+[ext_resource type="AudioStream" uid="uid://dk2dnoby5xfd4" path="res://Audio/sfx/Door closing squeeky hinges.mp3" id="5_mep4l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_35vjq"]
 size = Vector3(2.46924, 3.53296, 0.395935)
@@ -37,6 +37,8 @@ script = ExtResource("1_04jlq")
 openingSpeed = 8.0
 closeSpeed = 2.4
 openingRotation = -2.827
+itemName = "Door"
+interactDescription = "Open"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.22678, 0, -0.137543)

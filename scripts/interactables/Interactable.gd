@@ -14,6 +14,8 @@ enum ItemType {
 @onready var mesh_list : Array[MeshInstance3D] = []
 var can_pickup : bool = true
 @export var itemName:= "no name assigned"
+@export var interactDescription:= "Pickup"
+var interactable := true
 var mouse_over := false
 
 
@@ -39,7 +41,8 @@ func interact():
 # Handle raycasting from player
 func mouse_entered():
 	mouse_over = true
-	Global.item_name = itemName
+
+	Global.hoveredItem = self
 	if type == ItemType.PICKUP:
 		can_pickup = true
 		if mesh_list.size() > 0:
@@ -55,7 +58,7 @@ func mouse_entered():
 
 func mouse_exited():
 	mouse_over = false
-	Global.item_name = ""
+	Global.hoveredItem = null
 	can_pickup = false
 	if mesh_list.size() > 0:
 		for mesh in mesh_list:

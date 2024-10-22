@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://u52fmvg00fv"]
+[gd_scene load_steps=43 format=3 uid="uid://vl57mdwwn58p"]
 
 [ext_resource type="AudioStream" uid="uid://dxq6egirwb8d1" path="res://Placeholders (Will be deleted)/Sounds/explosion-80108.mp3" id="1_b2acf"]
 [ext_resource type="Script" path="res://scripts/characters/CollisionSound.gd" id="2_ap6ut"]

@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://b3qphi6tibi4g"]
+[gd_scene load_steps=15 format=3 uid="uid://b3qphi6tibi4g"]
 
 [ext_resource type="Script" path="res://scripts/objects/BloodChalice.gd" id="1_okifn"]
 [ext_resource type="Texture2D" uid="uid://gnovoqs57k5u" path="res://Placeholders (Will be deleted)/textures/chalice-3105741_640.png" id="2_thseb"]
 [ext_resource type="AudioStream" uid="uid://udayjud2os72" path="res://Audio/sfx/maybe placeholders/self cut.mp3" id="3_ykns5"]
-[ext_resource type="AudioStream" uid="uid://jq4v1sk42v1k" path="res://Audio/sfx/_Behold I arrive like a theif_.mp3" id="4_lslxt"]
+[ext_resource type="AudioStream" uid="uid://cfrx4rc1ld7eh" path="res://Audio/sfx/_Be fearful of the demon Mincinos_.mp3" id="4_nrxwe"]
 [ext_resource type="AudioStream" uid="uid://mvct3jh3f0k7" path="res://Audio/sfx/maybe placeholders/fx-cinematic-and-dramatic-boom-downer-sound-effect-249545.mp3" id="5_3of5s"]
+[ext_resource type="AudioStream" uid="uid://cei8rcl27tsxe" path="res://Placeholders (Will be deleted)/Sounds/lightening-bang-impact-40580 (1).mp3" id="5_ewhkd"]
 [ext_resource type="Script" path="res://addons/shaker/src/Vector3/shaker_component3D.gd" id="5_olwgd"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerTypeNoiseShake3D.gd" id="6_v7n66"]
 [ext_resource type="Script" path="res://addons/shaker/data/Vector3/ShakerPreset3D.gd" id="7_w8flu"]
@@ -58,15 +59,23 @@ texture = ExtResource("2_thseb")
 [node name="Cutting sound" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("3_ykns5")
+bus = &"SoundEffects"
 
 [node name="SuccessSound" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("4_lslxt")
+stream = ExtResource("4_nrxwe")
+bus = &"SoundEffects"
+
+[node name="FailSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_ewhkd")
+bus = &"SoundEffects"
 
 [node name="SuccessSound2" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("5_3of5s")
 volume_db = -5.0
+bus = &"SoundEffects"
 
 [node name="SuccessShake" type="Node3D" parent="."]
 script = ExtResource("5_olwgd")

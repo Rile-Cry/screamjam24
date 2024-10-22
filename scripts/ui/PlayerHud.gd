@@ -5,6 +5,7 @@ extends CanvasLayer
 @onready var book_label := $BookLabel
 @onready var label := $HoverText/Label
 @onready var sanity_label := $Sanity/Label
+@onready var interactHelperLabel: Label = $InteractHelper/Label
 
 func _ready() -> void:
 	add_to_group("hud")
@@ -19,7 +20,21 @@ func _input(event) -> void:
 			open_book()
 
 func _process(delta) -> void:
-	label.text = Global.item_name
+	if Global.hoveredItem:
+		label.text = Global.hoveredItem.itemName
+
+		if Global.hoveredItem.interactable:
+			interactHelperLabel.text = Global.hoveredItem.interactDescription + " (E)"
+		else:
+			interactHelperLabel.text = ""
+
+
+	else:
+		label.text = ""
+		interactHelperLabel.text = ""
+
+
+
 	sanity_label.text = str(Global.sanity)
 
 func open_book() -> void:

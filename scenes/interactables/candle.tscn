@@ -13,6 +13,7 @@ collision_mask = 5
 axis_lock_angular_x = true
 axis_lock_angular_z = true
 script = ExtResource("1_q3366")
+itemName = "Candle"
 type = 1
 
 [node name="RootNode" parent="." instance=ExtResource("2_ynya4")]
@@ -25,7 +26,7 @@ shape = SubResource("BoxShape3D_rlkhp")
 transform = Transform3D(1, 1.42109e-14, -8.9407e-08, 0, 1, 2.09858e-07, 8.9407e-08, -2.09857e-07, 1, 0, 0.399809, 0)
 light_color = Color(1, 0.7865, 0.39, 1)
 light_energy = 3.0
-light_volumetric_fog_energy = 0.3
+light_volumetric_fog_energy = 0.1
 light_size = 0.1
 shadow_enabled = true
 distance_fade_begin = 0.0

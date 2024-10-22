@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqnrau4kdfjo0"
+path="res://.godot/imported/Hover sound.mp3-4a6c7a9a9112a5a22e4e3c9873564a55.mp3str"
+
+[deps]
+
+source_file="res://Audio/sfx/maybe placeholders/Hover sound.mp3"
+dest_files=["res://.godot/imported/Hover sound.mp3-4a6c7a9a9112a5a22e4e3c9873564a55.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

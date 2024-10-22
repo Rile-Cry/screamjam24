@@ -64,7 +64,10 @@ func _input(event):
 			return
 
 		if colliding_obj != null:
+			if !colliding_obj.interactable:
+				return
 			match colliding_obj.type:
+
 				colliding_obj.ItemType.PICKUP:
 					pick_up()
 				colliding_obj.ItemType.INTERACT:
