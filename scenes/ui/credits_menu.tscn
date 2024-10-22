@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://cs74t83chk8wl"]
+
+[ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="1_3enx2"]
+[ext_resource type="Script" path="res://scenes/ui/credits_menu.gd" id="1_4l4we"]
+[ext_resource type="Texture2D" uid="uid://djteiwjuom4de" path="res://ui/art/paper_button_normal.png" id="2_702wl"]
+[ext_resource type="Texture2D" uid="uid://bklo6bmmsjuw4" path="res://ui/art/paper_button_pressed.png" id="3_rrg42"]
+[ext_resource type="Texture2D" uid="uid://bp624ujgre6t0" path="res://ui/art/paper_button_hover.png" id="4_ytf8c"]
+[ext_resource type="Texture2D" uid="uid://be47xvtrlygwf" path="res://ui/art/paper_button_focus.png" id="5_ip4ob"]
+
+[node name="CreditsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4l4we")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(600, 2.08165e-12)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_bottom = 22
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_3enx2")
+text = "CREDITS"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="role" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Role"
+
+[node name="name" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/name"]
+layout_mode = 2
+text = "name test"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/name"]
+layout_mode = 2
+text = "itch.io"
+
+[node name="name2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/name2"]
+layout_mode = 2
+text = "name test"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer/name2"]
+layout_mode = 2
+text = "itch.io"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resources"
+
+[node name="back_button_container" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="back_button" type="TextureButton" parent="back_button_container"]
+layout_mode = 2
+theme = ExtResource("1_3enx2")
+texture_normal = ExtResource("2_702wl")
+texture_pressed = ExtResource("3_rrg42")
+texture_hover = ExtResource("4_ytf8c")
+texture_focused = ExtResource("5_ip4ob")
+
+[node name="Label" type="Label" parent="back_button_container/back_button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -24.5
+offset_right = 29.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="back_button_container/back_button" to="." method="_on_back_button_pressed"]

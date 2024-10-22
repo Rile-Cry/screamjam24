@@ -22,7 +22,7 @@ Global="*res://scripts/Global.gd"
 Shaker="*res://addons/shaker/src/Shaker.gd"
 MusicManager="*res://scenes/ambience/Music Manager.tscn"
 AtmosphericSounds="*res://scenes/ambience/AtmosphericSounds.tscn"
-PostProcessing="*res://scenes/ambience/PostProcessing.tscn"
+PostProcessing="res://scenes/ambience/PostProcessing.tscn"
 
 [display]
 
@@ -38,6 +38,10 @@ project/assembly_name="Screamjam 24"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/shaker/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
+
+[filesystem]
+
+import/fbx/enabled=false
 
 [input]
 

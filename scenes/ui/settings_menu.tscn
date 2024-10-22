@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://cgt568l8kwmu7"]
+[gd_scene load_steps=17 format=3 uid="uid://cgt568l8kwmu7"]
 
+[ext_resource type="Script" path="res://scenes/ui/settings_menu.gd" id="1_eqi5l"]
 [ext_resource type="Texture2D" uid="uid://dcohboog3guj7" path="res://ui/art/book_cover_open.png" id="1_t4atj"]
 [ext_resource type="Texture2D" uid="uid://cmkk32le5nmx2" path="res://ui/art/page_torn.png" id="2_m1rcv"]
 [ext_resource type="Texture2D" uid="uid://cx4c5iho74frh" path="res://ui/art/pages_grouped.png" id="3_0uavt"]
@@ -10,6 +11,11 @@
 [ext_resource type="FontFile" uid="uid://ypscax7btp20" path="res://ui/fonts/ReenieBeanie-Regular.ttf" id="6_jsgm6"]
 [ext_resource type="Texture2D" uid="uid://cijxpb3s3wtdm" path="res://ui/art/tape.png" id="7_84cat"]
 [ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="7_ncmin"]
+[ext_resource type="Texture2D" uid="uid://bfbl33k3gelxp" path="res://ui/art/select_icons.png" id="10_qogv1"]
+[ext_resource type="Texture2D" uid="uid://djteiwjuom4de" path="res://ui/art/paper_button_normal.png" id="11_c8rbg"]
+[ext_resource type="Texture2D" uid="uid://bklo6bmmsjuw4" path="res://ui/art/paper_button_pressed.png" id="12_tpffv"]
+[ext_resource type="Texture2D" uid="uid://bp624ujgre6t0" path="res://ui/art/paper_button_hover.png" id="13_jnocb"]
+[ext_resource type="Texture2D" uid="uid://be47xvtrlygwf" path="res://ui/art/paper_button_focus.png" id="14_bwqnd"]
 
 [node name="SettingsMenu" type="Control"]
 layout_mode = 3
@@ -18,6 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_eqi5l")
 
 [node name="book_container" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -34,7 +41,9 @@ stretch_mode = 3
 
 [node name="right_side" type="MarginContainer" parent="book_container"]
 layout_mode = 2
-theme_override_constants/margin_left = 589
+size_flags_horizontal = 8
+theme_override_constants/margin_left = -41
+theme_override_constants/margin_right = 230
 theme_override_constants/margin_bottom = 10
 
 [node name="pages_container" type="HBoxContainer" parent="book_container/right_side"]
@@ -68,17 +77,20 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -42.5
-offset_right = 42.5
-offset_bottom = 50.0
+offset_left = 10.0
+offset_right = 405.0
+offset_bottom = 598.0
 grow_horizontal = 2
-theme_override_constants/margin_left = 400
+theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 90
+theme_override_constants/margin_right = 20
 
-[node name="page_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
+[node name="controls_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
+unique_name_in_owner = true
+visible = false
 layout_mode = 2
 
-[node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container"]
+[node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
@@ -88,52 +100,228 @@ theme_override_fonts/font = ExtResource("5_yo3np")
 theme_override_font_sizes/font_size = 41
 text = "CONTROLS"
 
-[node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container"]
+[node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content"]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 18
 
-[node name="movement" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container/controls_container"]
+[node name="movement" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
 layout_mode = 2
 theme_override_constants/separation = 100
 alignment = 1
 
-[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container/controls_container/movement"]
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/movement"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
 text = "Movement"
 
-[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container/controls_container/movement"]
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/movement"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
 text = "W/A/S/D"
 
-[node name="interact" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container/controls_container"]
+[node name="run" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
+layout_mode = 2
+theme_override_constants/separation = -10
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/run"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Run"
+
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/run"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Shift + W/A/S/D"
+
+[node name="interact" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
 layout_mode = 2
 theme_override_constants/separation = 72
 
-[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container/controls_container/interact"]
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/interact"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
 text = "Interact"
 
-[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/page_container/controls_container/interact"]
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/interact"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
 text = "Left-Click"
 
+[node name="read" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
+layout_mode = 2
+theme_override_constants/separation = 183
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/read"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Read"
+
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/read"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "R"
+
+[node name="drop" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
+layout_mode = 2
+theme_override_constants/separation = 184
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/drop"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Drop Item"
+
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/drop"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Q"
+
+[node name="throw" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
+layout_mode = 2
+theme_override_constants/separation = 178
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/throw"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Throw Item"
+
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/throw"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "T"
+
+[node name="hand_switch" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
+layout_mode = 2
+theme_override_constants/separation = 150
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/hand_switch"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Hand Switch"
+
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/hand_switch"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Tab"
+
+[node name="stop_climbing" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container"]
+layout_mode = 2
+theme_override_constants/separation = 107
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/stop_climbing"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Stop Climbing"
+
+[node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/stop_climbing"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Space"
+
+[node name="accessibility_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
+theme_override_colors/font_outline_color = Color(0.294772, 0.181172, 0.00790796, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("5_yo3np")
+theme_override_font_sizes/font_size = 41
+text = "ACCESSIBILITY"
+horizontal_alignment = 1
+
+[node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="audio_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
+theme_override_colors/font_outline_color = Color(0.294772, 0.181172, 0.00790796, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("5_yo3np")
+theme_override_font_sizes/font_size = 41
+text = "AUDIO"
+horizontal_alignment = 1
+
+[node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="display_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/display_content"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
+theme_override_colors/font_outline_color = Color(0.294772, 0.181172, 0.00790796, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("5_yo3np")
+theme_override_font_sizes/font_size = 41
+text = "DISPLAY"
+horizontal_alignment = 1
+
+[node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/display_content"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
 [node name="thread_container" type="MarginContainer" parent="book_container/right_side"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/margin_left = -587
+theme_override_constants/margin_right = -230
 
 [node name="thread" type="TextureRect" parent="book_container/right_side/thread_container"]
 layout_mode = 2
@@ -170,33 +358,79 @@ theme_override_constants/margin_top = 10
 
 [node name="button_container" type="VBoxContainer" parent="book_container/left_side/small_page_container/small_page/buttons_margin"]
 layout_mode = 2
-theme_override_constants/separation = 40
+theme_override_constants/separation = 5
 
 [node name="controls_button" type="Button" parent="book_container/left_side/small_page_container/small_page/buttons_margin/button_container"]
 layout_mode = 2
 theme = ExtResource("7_ncmin")
 theme_override_font_sizes/font_size = 30
 text = "CONTROLS"
+icon = ExtResource("10_qogv1")
+icon_alignment = 1
 
 [node name="accessibility_button" type="Button" parent="book_container/left_side/small_page_container/small_page/buttons_margin/button_container"]
 layout_mode = 2
 theme = ExtResource("7_ncmin")
 theme_override_font_sizes/font_size = 30
 text = "ACCESSIBILITY"
+icon = ExtResource("10_qogv1")
+icon_alignment = 1
 
 [node name="audio_button" type="Button" parent="book_container/left_side/small_page_container/small_page/buttons_margin/button_container"]
 layout_mode = 2
 theme = ExtResource("7_ncmin")
 theme_override_font_sizes/font_size = 30
 text = "AUDIO"
+icon = ExtResource("10_qogv1")
+icon_alignment = 1
 
 [node name="display_button" type="Button" parent="book_container/left_side/small_page_container/small_page/buttons_margin/button_container"]
 layout_mode = 2
 theme = ExtResource("7_ncmin")
 theme_override_font_sizes/font_size = 30
 text = "DISPLAY"
+icon = ExtResource("10_qogv1")
+icon_alignment = 1
 
 [node name="tape" type="TextureRect" parent="book_container/left_side/small_page_container"]
 layout_mode = 2
 texture = ExtResource("7_84cat")
 stretch_mode = 3
+
+[node name="back_button_container" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="back_button" type="TextureButton" parent="back_button_container"]
+layout_mode = 2
+theme = ExtResource("7_ncmin")
+texture_normal = ExtResource("11_c8rbg")
+texture_pressed = ExtResource("12_tpffv")
+texture_hover = ExtResource("13_jnocb")
+texture_focused = ExtResource("14_bwqnd")
+
+[node name="Label" type="Label" parent="back_button_container/back_button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -24.5
+offset_right = 29.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/controls_button" to="." method="_on_controls_button_pressed"]
+[connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/accessibility_button" to="." method="_on_accessibility_button_pressed"]
+[connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/audio_button" to="." method="_on_audio_button_pressed"]
+[connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/display_button" to="." method="_on_display_button_pressed"]
+[connection signal="pressed" from="back_button_container/back_button" to="." method="_on_back_button_pressed"]
