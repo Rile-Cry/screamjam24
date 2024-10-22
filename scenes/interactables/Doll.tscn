@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://diq6m5n535d0"]
 
 [ext_resource type="Script" path="res://scripts/objects/Doll.gd" id="1_3yyrv"]
-[ext_resource type="Texture2D" uid="uid://cwbpjx25bf5fk" path="res://Placeholders (Will be deleted)/textures/doll-576791_640.png" id="2_l6nhe"]
 [ext_resource type="AudioStream" uid="uid://7wijbueu0bly" path="res://Placeholders (Will be deleted)/Sounds/jump-scare-sound-2-82831.mp3" id="3_xb3ul"]
 [ext_resource type="AudioStream" uid="uid://bmp1u2g67skko" path="res://Placeholders (Will be deleted)/Sounds/baby-laugh-70665.mp3" id="4_cqgq2"]
+[ext_resource type="PackedScene" uid="uid://bjtrv2tc22e2g" path="res://scenes/interactables/seb.tscn" id="4_d4xiv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqdx3"]
 size = Vector3(0.316406, 0.503418, 0.352539)
@@ -25,14 +25,6 @@ type = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.248291, 0)
 shape = SubResource("BoxShape3D_lqdx3")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30615, 0)
-pixel_size = 0.001
-billboard = 1
-shaded = true
-alpha_cut = 2
-texture = ExtResource("2_l6nhe")
-
 [node name="JumpSound" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = SubResource("AudioStreamRandomizer_47kug")
@@ -51,3 +43,5 @@ bus = &"SoundEffects"
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.211328, 0)
 aabb = AABB(-0.181275, -0.231685, -0.212785, 0.362551, 0.463371, 0.42557)
+
+[node name="Seb" parent="." instance=ExtResource("4_d4xiv")]
