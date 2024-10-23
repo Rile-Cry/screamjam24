@@ -1,10 +1,10 @@
 [gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://uhwqn3i6f8p1"]
 
-[ext_resource type="Texture2D" uid="uid://d4il81j4d1gxn" path="res://Trim_01_LP_standardSurface1_BaseColor.tga" id="1_vapdh"]
-[ext_resource type="Texture2D" uid="uid://bxpa7uv6fvmct" path="res://Trim_01_LP_standardSurface1_Height.tga" id="2_bwyrm"]
-[ext_resource type="Texture2D" uid="uid://udkgk2rcu5wk" path="res://Trim_01_LP_standardSurface1_Metallic.tga" id="3_h2q7i"]
-[ext_resource type="Texture2D" uid="uid://do64yf0ojam57" path="res://Trim_01_LP_standardSurface1_Normal.tga" id="4_yuk1f"]
-[ext_resource type="Texture2D" uid="uid://gnwfv5ugulxy" path="res://Trim_01_LP_standardSurface1_Roughness.tga" id="5_acyx3"]
+[ext_resource type="Texture2D" uid="uid://b02hilc0aqyc2" path="res://visuals/Textures/objects/Trims/Trim_01_LP_standardSurface1_BaseColor.tga" id="1_vapdh"]
+[ext_resource type="Texture2D" uid="uid://b8hcy7kfhpe17" path="res://visuals/Textures/objects/Trims/Trim_01_LP_standardSurface1_Height.tga" id="2_bwyrm"]
+[ext_resource type="Texture2D" uid="uid://cpjb1cy0lwj3u" path="res://visuals/Textures/objects/Trims/Trim_01_LP_standardSurface1_Metallic.tga" id="3_h2q7i"]
+[ext_resource type="Texture2D" uid="uid://bn0y3y7mf1otr" path="res://visuals/Textures/objects/Trims/Trim_01_LP_standardSurface1_Normal.tga" id="4_yuk1f"]
+[ext_resource type="Texture2D" uid="uid://dvco8mcc6tegv" path="res://visuals/Textures/objects/Trims/Trim_01_LP_standardSurface1_Roughness.tga" id="5_acyx3"]
 
 [resource]
 albedo_texture = ExtResource("1_vapdh")

@@ -1,10 +1,10 @@
 [gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://d1rgxdnm5u2lv"]
 
-[ext_resource type="Texture2D" uid="uid://3gngr7ahyfxv" path="res://tlsmbafdy_2K_Albedo.jpg" id="1_vmt77"]
-[ext_resource type="Texture2D" uid="uid://xfopolk6wir" path="res://tlsmbafdy_2K_AO.jpg" id="2_kn6yv"]
-[ext_resource type="Texture2D" uid="uid://d0eq8sfln4e03" path="res://tlsmbafdy_2K_Displacement.jpg" id="3_i3cft"]
-[ext_resource type="Texture2D" uid="uid://bnix4178b2dad" path="res://tlsmbafdy_2K_Normal.jpg" id="4_20llc"]
-[ext_resource type="Texture2D" uid="uid://wvonvq5mbkyy" path="res://tlsmbafdy_2K_Roughness.jpg" id="5_5urr0"]
+[ext_resource type="Texture2D" uid="uid://telpky8bh8fw" path="res://visuals/Textures/objects/FlakedWood(BellTowerTopFloor)/tlsmbafdy_2K_Albedo.jpg" id="1_vmt77"]
+[ext_resource type="Texture2D" uid="uid://bcly1o0n0rtt5" path="res://visuals/Textures/objects/FlakedWood(BellTowerTopFloor)/tlsmbafdy_2K_AO.jpg" id="2_kn6yv"]
+[ext_resource type="Texture2D" uid="uid://dru32cu2jb1v4" path="res://visuals/Textures/objects/FlakedWood(BellTowerTopFloor)/tlsmbafdy_2K_Displacement.jpg" id="3_i3cft"]
+[ext_resource type="Texture2D" uid="uid://c8a7bjbrkjl12" path="res://visuals/Textures/objects/FlakedWood(BellTowerTopFloor)/tlsmbafdy_2K_Normal.jpg" id="4_20llc"]
+[ext_resource type="Texture2D" uid="uid://benr615dm3mso" path="res://visuals/Textures/objects/FlakedWood(BellTowerTopFloor)/tlsmbafdy_2K_Roughness.jpg" id="5_5urr0"]
 
 [resource]
 albedo_texture = ExtResource("1_vmt77")
