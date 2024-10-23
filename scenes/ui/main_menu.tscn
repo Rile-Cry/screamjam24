@@ -1,9 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxrlgka3dpjjp"]
+[gd_scene load_steps=8 format=3 uid="uid://dxrlgka3dpjjp"]
 
 [ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_7k2pl"]
 [ext_resource type="Texture2D" uid="uid://b8f1dof2vhuk7" path="res://ui/art/book_front.png" id="1_s8mlr"]
 [ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="2_f1s41"]
 [ext_resource type="Texture2D" uid="uid://bfbl33k3gelxp" path="res://ui/art/select_icons.png" id="3_040sq"]
+[ext_resource type="Script" path="res://scenes/ui/background_panner.gd" id="3_yrhwy"]
+[ext_resource type="Texture2D" uid="uid://cy0huwr8u0bph" path="res://visuals/Textures/UI/Screenshot 2024-10-23 161818.png" id="5_qo1pw"]
+
+[sub_resource type="Environment" id="Environment_iltdw"]
+background_mode = 3
+tonemap_mode = 3
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -13,6 +19,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7k2pl")
+
+[node name="Background" type="TextureRect" parent="."]
+unique_name_in_owner = true
+modulate = Color(0.564962, 0.564962, 0.564962, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -861.0
+offset_top = -458.0
+offset_right = 861.0
+offset_bottom = 459.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("5_qo1pw")
+expand_mode = 1
+script = ExtResource("3_yrhwy")
 
 [node name="BookMargin" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -88,20 +114,10 @@ text = "QUIT"
 icon = ExtResource("3_040sq")
 icon_alignment = 1
 
-[node name="BackColor" type="ColorRect" parent="."]
-show_behind_parent = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-color = Color(0.0392157, 0, 0.14902, 1)
-
-[node name="SubViewport" type="SubViewport" parent="."]
-gui_disable_input = true
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_iltdw")
 
 [connection signal="pressed" from="BookMargin/book_cover/ButtonMargin/ButtonContainer/play_button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="BookMargin/book_cover/ButtonMargin/ButtonContainer/options_button" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="BookMargin/book_cover/ButtonMargin/ButtonContainer/credits_button" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="BookMargin/book_cover/ButtonMargin/ButtonContainer/quit_button" to="." method="_on_quit_button_pressed"]

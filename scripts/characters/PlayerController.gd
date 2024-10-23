@@ -35,21 +35,17 @@ func _enter_tree() -> void:
 
 
 func _ready():
-	# Start with mouse captured
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
 	Global.OnSanityChanged.connect(OnSanityChanged)
 
 
 func _input(event):
+
 	if pauseInput:
 		return
 	# Basic "pause", as in if the player's screen moves.
 	# Will change to a full pause functionality later.
-	if event.is_action_pressed("ui_cancel"):
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		else:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
 	if event is InputEventMouseMotion:
 		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 			rotate_y(event.relative.x * -0.001)
@@ -107,6 +103,13 @@ func _physics_process(delta) -> void:
 func _process(_delta) -> void:
 	check_ray()
 
+#activate for flying
+	#if Input.is_mouse_button_pressed(1):
+		#global_position.y += _delta*10
+	#if Input.is_mouse_button_pressed(2):
+		#global_position.y -= _delta *10
+
+
 
 # _physics_process methods
 func movement(delta) -> void:
@@ -115,6 +118,8 @@ func movement(delta) -> void:
 		velocity.y -= gravity * delta
 	else:
 		velocity.y = 0
+
+
 
 	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

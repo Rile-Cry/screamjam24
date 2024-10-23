@@ -1,5 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cn1ybgbckp7is"]
+[gd_scene load_steps=3 format=3 uid="uid://cn1ybgbckp7is"]
 
 [ext_resource type="PackedScene" uid="uid://deov8r8th0lep" path="res://models/objects/sm_chains.fbx" id="1_m2qbv"]
+[ext_resource type="Material" uid="uid://brylbw0xxwedn" path="res://visuals/materials/church_mats/M_Chain.tres" id="2_45mc6"]
 
 [node name="ChainsRoot" instance=ExtResource("1_m2qbv")]
+
+[node name="MASH1_ReproMesh" parent="RootNode" index="0"]
+material_override = ExtResource("2_45mc6")
+
+[node name="pasted__MASH1_ReproMesh" parent="RootNode/group133" index="0"]
+material_override = ExtResource("2_45mc6")
+
+[node name="MASH2_ReproMesh" parent="RootNode" index="2"]
+material_override = ExtResource("2_45mc6")

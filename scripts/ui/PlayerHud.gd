@@ -26,12 +26,12 @@ func _ready() -> void:
 	Instance = self
 
 
-func _input(event) -> void:
-	if Global.is_holding_book and event.is_action_pressed("read"):
-		if get_tree().paused:
-			close_book()
-		else:
-			open_book()
+#func _input(event) -> void:
+	#if Global.is_holding_book and event.is_action_pressed("read"):
+		#if get_tree().paused:
+			#close_book()
+		#else:
+			#open_book()
 
 func _process(delta) -> void:
 	if Global.hoveredItem:

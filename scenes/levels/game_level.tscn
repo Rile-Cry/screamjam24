@@ -133,7 +133,7 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
-[sub_resource type="Resource" id="Resource_yff6r"]
+[sub_resource type="Resource" id="Resource_enm53"]
 resource_local_to_scene = true
 script = ExtResource("26_utnp7")
 date = "February 1st 1914:"
@@ -148,14 +148,23 @@ size = Vector3(0.45459, 0.318596, 3.08249)
 
 [node name="SettingsMenu" parent="." instance=ExtResource("1_bxdda")]
 visible = false
+in_game_settings_menu = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.723604, -0.329806, -0.606321, -0.438737, -0.458359, 0.772927, -0.532829, 0.825309, 0.186972, -2.49683, 2.45225, 17.0174)
 light_color = Color(0.59, 0.719833, 1, 1)
-light_energy = 0.2
-light_volumetric_fog_energy = 16.0
+light_energy = 0.5
+light_volumetric_fog_energy = 5.0
 shadow_enabled = true
 shadow_bias = 0.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="DirectionalLight3D"]
+transform = Transform3D(0.215947, 0.836626, 0.503413, -0.348064, 0.547666, -0.760864, -0.91226, -0.0109133, 0.409466, 14.2927, -58.247, -0.832264)
+light_color = Color(0.588235, 0.721569, 1, 1)
+light_energy = 8.373
+light_volumetric_fog_energy = 5.0
+spot_range = 16.2772
+spot_angle = 5.0
 
 [node name="ChurchZone" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5922, 0, -39.7383)
@@ -243,11 +252,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.22558, 2.33415, -15.6294)
 [node name="Knife" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
 transform = Transform3D(0.223925, -0.101445, -0.969312, 0.412659, 0.910885, 0, 0.882932, -0.399995, 0.245832, -9.34282, 0.877896, -25.1464)
 script = ExtResource("14_d8016")
-itemName = "GaDimitrie's Blade"
+itemName = "Gabriel's Blade"
 
 [node name="Knife2" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
 transform = Transform3D(0.126409, -0.914228, 0.384975, 0.818083, 0.31557, 0.480786, -0.561035, 0.254166, 0.787807, -9.92128, 0.674312, -25.0685)
-itemName = "Gabriel's Blade"
+itemName = "GaDimitrie's Blade"
 
 [node name="Knife3" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
 transform = Transform3D(0.578645, -0.262144, -0.772301, 0.412659, 0.910885, 0, 0.703478, -0.318697, 0.635256, -8.6752, 0.877896, -25.1721)
@@ -478,7 +487,7 @@ noteResource = ExtResource("29_k7txf")
 
 [node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -6.24698, -7.52993, -23.6838)
-noteResource = SubResource("Resource_yff6r")
+noteResource = SubResource("Resource_enm53")
 
 [node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)
@@ -543,7 +552,7 @@ bus = &"SoundEffects"
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -3.32905)
 
 [node name="Bell" parent="." instance=ExtResource("32_4q8fj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.98289, 19.663, -26.033)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.94697, 18.4156, -25.9332)
 
 [node name="CoffinPuzzle" type="Node3D" parent="."]
 
@@ -582,6 +591,109 @@ transform = Transform3D(0.254585, 0, 0.96705, 0, 1, 0, -0.96705, 0, 0.254585, -1
 
 [node name="Chair" parent="." instance=ExtResource("44_x0i2x")]
 transform = Transform3D(0.787645, 0, -0.616129, 0, 1, 0, 0.616129, 0, 0.787645, -11.5912, 0.491255, -27.2309)
+
+[node name="LightBlocker (volumetric fog is bleeding through walls)" type="Node3D" parent="."]
+
+[node name="OutsideSounds" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.55597, 6.43789, 7.27998)
+cast_shadow = 3
+size = Vector3(1, 13.0754, 13.7002)
+
+[node name="OutsideSounds" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)/OutsideSounds"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0428329, -3.2765, -0.569371)
+operation = 2
+size = Vector3(1.49316, 3.61105, 2.36766)
+
+[node name="OutsideSounds4" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.35678, 6.31494, -11.4972)
+cast_shadow = 3
+size = Vector3(2.29613, 13.1612, 25.8467)
+
+[node name="OutsideSounds" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)/OutsideSounds4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.399076, -2.43123, 6.01258)
+operation = 2
+size = Vector3(3.61978, 5.48039, 2.74571)
+
+[node name="OutsideSounds3" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)/OutsideSounds4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.60154, -0.789799, 6.05629)
+operation = 2
+size = Vector3(3.38477, 5.04589, 2.79731)
+
+[node name="OutsideSounds4" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)/OutsideSounds4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849526, -1.44137, 5.84873)
+operation = 2
+size = Vector3(1.49316, 6.33257, 2.65132)
+
+[node name="OutsideSounds2" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)/OutsideSounds4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.165962, -2.8445, -6.0228)
+operation = 2
+size = Vector3(4.2905, 5.11943, 2.67721)
+
+[node name="OutsideSounds5" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)/OutsideSounds4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02658, -1.01651, -5.90228)
+operation = 2
+size = Vector3(2.97412, 6.09516, 2.91606)
+
+[node name="OutsideSounds2" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43971, 9.28123, 7.18483)
+cast_shadow = 3
+size = Vector3(12.9914, 1.13739, 13.5099)
+
+[node name="OutsideSounds3" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.33228, 5.70499, 14.4081)
+cast_shadow = 3
+size = Vector3(16.7765, 14.5412, 2.13507)
+
+[node name="OutsideSounds5" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7394, 12.0314, -4.59579)
+cast_shadow = 3
+size = Vector3(7.16896, 1.75438, 39.4583)
+
+[node name="OutsideSounds6" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.81559, 12.0314, -6.96363)
+cast_shadow = 3
+size = Vector3(9.31348, 1.75438, 44.194)
+
+[node name="OutsideSounds7" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51717, 17.2311, -7.14426)
+cast_shadow = 3
+size = Vector3(9.31348, 1.75438, 44.194)
+
+[node name="OutsideSounds8" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.17134, 5.26378, -28.7469)
+cast_shadow = 3
+size = Vector3(8.34766, 1.1087, 9.28768)
+
+[node name="OutsideSounds11" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6265, 2.5016, -23.6434)
+cast_shadow = 3
+size = Vector3(4.77297, 5.64012, 1.46333)
+
+[node name="OutsideSounds12" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.22202, 2.5016, -34.3056)
+cast_shadow = 3
+size = Vector3(4.77297, 5.64012, 1.46333)
+
+[node name="OutsideSounds13" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.0202, 12.1429, -31.9818)
+cast_shadow = 3
+size = Vector3(4.28364, 24.9228, 0.96294)
+
+[node name="OutsideSounds14" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29425, 12.1429, -28.2815)
+cast_shadow = 3
+size = Vector3(1.31676, 24.9228, 8.36343)
+
+[node name="OutsideSounds9" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5359, 2.06209, -26.8959)
+cast_shadow = 3
+size = Vector3(1, 5.874, 5.586)
+
+[node name="OutsideSounds10" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)/OutsideSounds9"]
+transform = Transform3D(0.448804, 0.89363, 0, -0.89363, 0.448804, 0, 0, 0, 1, -0.617108, 0.883615, 0.421223)
+cast_shadow = 3
+operation = 2
+size = Vector3(3.47688, 2.35054, 1.99754)
 
 [connection signal="body_entered" from="Cabinet/area" to="Cabinet/area" method="_on_body_entered"]
 
