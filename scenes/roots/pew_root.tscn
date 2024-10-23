@@ -1,5 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cyuaudabu4bux"]
+[gd_scene load_steps=3 format=3 uid="uid://cyuaudabu4bux"]
 
 [ext_resource type="PackedScene" uid="uid://c2smvqt6m3phc" path="res://models/objects/Pew.fbx" id="1_6khcg"]
+[ext_resource type="Material" uid="uid://d3dahn6rtooj0" path="res://visuals/materials/church_mats/Pew.tres" id="2_48x14"]
 
 [node name="PewRoot" instance=ExtResource("1_6khcg")]
+
+[node name="Pew" parent="RootNode" index="0"]
+surface_material_override/0 = ExtResource("2_48x14")

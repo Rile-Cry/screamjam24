@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c53fvuqbxlgb7"]
+
+[ext_resource type="PackedScene" uid="uid://c2cbd3wese7ld" path="res://models/objects/Chalice.fbx" id="1_5myhq"]
+[ext_resource type="Material" uid="uid://b2jyyj5cwaio0" path="res://visuals/materials/chalice.tres" id="2_xx5p2"]
+
+[node name="ChaliceRoot" instance=ExtResource("1_5myhq")]
+
+[node name="pasted__pCylinder11" parent="RootNode/group85" index="0"]
+surface_material_override/0 = ExtResource("2_xx5p2")

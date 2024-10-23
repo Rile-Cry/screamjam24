@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bviww88xq15nk"]
+
+[ext_resource type="PackedScene" uid="uid://fiuwx4kbawyr" path="res://models/objects/Mirror.fbx" id="1_apyw8"]
+[ext_resource type="Material" uid="uid://cl3sxxou81oh7" path="res://visuals/materials/mirror.tres" id="2_2xfv5"]
+
+[node name="MirrorRoot" instance=ExtResource("1_apyw8")]
+
+[node name="polySurface11" parent="RootNode/pCylinder10" index="0"]
+surface_material_override/0 = ExtResource("2_2xfv5")
+
+[node name="polySurface12" parent="RootNode/pCylinder10" index="1"]
+surface_material_override/0 = ExtResource("2_2xfv5")

@@ -1,3 +1,11 @@
-[gd_resource type="ORMMaterial3D" format=3 uid="uid://cp1jqxii8g4j"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://cp1jqxii8g4j"]
+
+[ext_resource type="Texture2D" uid="uid://g5bd26va1avk" path="res://visuals/Textures/objects/FrontDoor/FrontDoorLP_lambert1_BaseColor.tga" id="1_b7r1a"]
+[ext_resource type="Texture2D" uid="uid://hy2yrxs0cqxf" path="res://visuals/Textures/objects/FrontDoor/FrontDoorLP_lambert1_Normal.tga" id="2_gywuv"]
+[ext_resource type="Texture2D" uid="uid://couf60mg1rtw6" path="res://visuals/Textures/objects/FrontDoor/FrontDoorLP_lambert1_OcclusionRoughnessMetallic.tga" id="3_ixhit"]
 
 [resource]
+albedo_texture = ExtResource("1_b7r1a")
+orm_texture = ExtResource("3_ixhit")
+normal_enabled = true
+normal_texture = ExtResource("2_gywuv")

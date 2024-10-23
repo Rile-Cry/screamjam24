@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://coqioxqwjrkir"]
+
+[ext_resource type="PackedScene" uid="uid://bviww88xq15nk" path="res://scenes/roots/mirror_root.tscn" id="1_lfngi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_25kc3"]
+size = Vector3(0.187073, 0.0410461, 0.40564)
+
+[node name="Mirror" type="RigidBody3D"]
+
+[node name="MirrorRoot" parent="." instance=ExtResource("1_lfngi")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00088501, 0.0166473, 0.0846558)
+shape = SubResource("BoxShape3D_25kc3")

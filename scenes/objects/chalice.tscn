@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvnk02v5ytn87"]
+
+[ext_resource type="PackedScene" uid="uid://c53fvuqbxlgb7" path="res://scenes/roots/chalice_root.tscn" id="1_7mq3s"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xut34"]
+size = Vector3(0.446838, 0.653564, 0.453735)
+
+[node name="Chalice" type="RigidBody3D"]
+
+[node name="ChaliceRoot" parent="." instance=ExtResource("1_7mq3s")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00326538, 0.32019, 0.00665283)
+shape = SubResource("BoxShape3D_xut34")

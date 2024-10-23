@@ -1,3 +1,11 @@
-[gd_resource type="ORMMaterial3D" format=3 uid="uid://wftg8b2ewfql"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://wftg8b2ewfql"]
+
+[ext_resource type="Texture2D" uid="uid://b1pnbbjgyae3f" path="res://visuals/Textures/objects/Votive/VotiveLP_lambert1_BaseColor.tga" id="1_v4mqf"]
+[ext_resource type="Texture2D" uid="uid://dfi44wu3fo6q4" path="res://visuals/Textures/objects/Votive/VotiveLP_lambert1_Normal.tga" id="2_nawc5"]
+[ext_resource type="Texture2D" uid="uid://dhdg2d4kog14o" path="res://visuals/Textures/objects/Votive/VotiveLP_lambert1_OcclusionRoughnessMetallic.tga" id="3_fsoby"]
 
 [resource]
+albedo_texture = ExtResource("1_v4mqf")
+orm_texture = ExtResource("3_fsoby")
+normal_enabled = true
+normal_texture = ExtResource("2_nawc5")

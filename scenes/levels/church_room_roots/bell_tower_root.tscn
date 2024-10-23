@@ -1,6 +1,10 @@
-[gd_scene load_steps=75 format=3 uid="uid://c3qcx5sf7hcgp"]
+[gd_scene load_steps=79 format=3 uid="uid://c3qcx5sf7hcgp"]
 
 [ext_resource type="PackedScene" uid="uid://hqrbwto4j7i4" path="res://models/maps/BellTower.fbx" id="1_3u2an"]
+[ext_resource type="Material" uid="uid://ddkiv3dbwstip" path="res://visuals/materials/church_mats/M_Block_Floor.tres" id="2_v8ho6"]
+[ext_resource type="Material" uid="uid://d1rgxdnm5u2lv" path="res://visuals/materials/church_mats/M_Flaked_Wood_Panel.tres" id="3_fb0tq"]
+[ext_resource type="Material" uid="uid://b04m125hjq5r5" path="res://visuals/materials/church_mats/M_Concrete.tres" id="4_urylt"]
+[ext_resource type="Material" uid="uid://cfih1kulkegns" path="res://visuals/materials/church_mats/M_OldWood.tres" id="5_biwue"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_p5nwq"]
 data = PackedVector3Array(-0.0081, 0, -0.0081, -3.9919, 0, -0.0081, -4, 0.0081, 0, 0, 0.0081, 0, -0.0081, 0, -0.0081, -4, 0.0081, 0, -4, 0.0081, 0, -3.9919, 0, -0.0081, -3.9919, 0, -6.992, -3.9919, 0, -6.992, -4, 0.0081, -7, -4, 0.0081, 0, -4, 0.0081, -7, -4, 0.0905, -7, -4, 0.0905, 0, -0.0081, 0, -6.992, -0.0081, 0, -0.0081, 0, 0.0081, 0, -0.0081, 0, -6.992, -0.0767, 0, -6.9272, -0.0767, 0, -0.073, -0.0081, 0, -6.992, -0.0767, 0, -0.073, -0.0081, 0, -0.0081, 0, 0.0081, 0, 0, 0.0905, -7, 0, 0.0081, -7, 0, 0.0081, -7, -0.0081, 0, -6.992, 0, 0.0081, 0, -3.9919, 0.0986, -6.992, -3.9919, 0.0986, -0.0081, -4, 0.0905, 0, -3.9919, 0.0986, -6.992, -3.9271, 0.0986, -6.9272, -3.9271, 0.0986, -0.073, -3.9919, 0.0986, -6.992, -3.9271, 0.0986, -0.073, -3.9919, 0.0986, -0.0081, -4, 0.0905, 0, -4, 0.0081, 0, -4, 0.0081, -7, -4, 0.0905, -7, -3.9919, 0.0986, -6.992, -4, 0.0905, 0, -4, 0.0905, 0, -3.9919, 0.0986, -0.0081, -0.0081, 0.0986, -0.0081, -0.0081, 0.0986, -0.0081, 0, 0.0905, 0, -4, 0.0905, 0, -3.9919, 0.0986, -0.0081, -3.9271, 0.0986, -0.073, -0.0767, 0.0986, -0.073, -3.9919, 0.0986, -0.0081, -0.0767, 0.0986, -0.073, -0.0081, 0.0986, -0.0081, 0, 0.0905, 0, 0, 0.0081, 0, -4, 0.0081, 0, 0, 0.0905, 0, -4, 0.0081, 0, -4, 0.0905, 0, 0, 0.0905, 0, -0.0081, 0.0986, -0.0081, -0.0081, 0.0986, -6.992, -0.0081, 0.0986, -6.992, 0, 0.0905, -7, 0, 0.0905, 0, 0, 0.0905, -7, 0, 0.0081, 0, 0, 0.0905, 0, -4, 0.0905, -7, 0, 0.0905, -7, -0.0081, 0.0986, -6.992, -0.0081, 0.0986, -6.992, -3.9919, 0.0986, -6.992, -4, 0.0905, -7, -3.9919, 0.0986, -6.992, -0.0081, 0.0986, -6.992, -0.0767, 0.0986, -6.9272, -4, 0.0081, -7, -3.9919, 0, -6.992, -0.0081, 0, -6.992, -0.0081, 0, -6.992, 0, 0.0081, -7, -4, 0.0081, -7, 0, 0.0081, -7, -4, 0.0905, -7, -4, 0.0081, -7, 0, 0.0081, -7, 0, 0.0905, -7, -4, 0.0905, -7, -3.919, 0.0905, -6.919, -3.919, 0.0905, -0.0811, -3.9271, 0.0986, -0.073, -3.919, 0.0905, -6.919, -3.919, 0.0081, -6.919, -3.919, 0.0081, -0.0811, -3.9271, 0.0986, -6.9272, -3.919, 0.0905, -6.919, -3.9271, 0.0986, -0.073, -3.9271, 0.0986, -0.073, -3.919, 0.0905, -0.0811, -0.0848, 0.0905, -0.0811, -0.0848, 0.0905, -0.0811, -0.0767, 0.0986, -0.073, -3.9271, 0.0986, -0.073, -0.0767, 0.0986, -0.073, -0.0848, 0.0905, -0.0811, -0.0848, 0.0905, -6.919, -0.0767, 0.0986, -0.073, -0.0767, 0.0986, -6.9272, -0.0081, 0.0986, -6.992, -0.0848, 0.0905, -6.919, -0.0767, 0.0986, -6.9272, -0.0767, 0.0986, -0.073, -0.0848, 0.0905, -0.0811, -0.0848, 0.0081, -6.919, -0.0848, 0.0905, -6.919, -0.0767, 0.0986, -6.9272, -0.0848, 0.0905, -6.919, -3.9271, 0.0986, -6.9272, -0.0767, 0.0986, -6.9272, -3.9271, 0.0986, -6.9272, -3.9919, 0.0986, -6.992, -0.0848, 0.0905, -6.919, -3.919, 0.0905, -6.919, -3.9271, 0.0986, -6.9272, -0.0848, 0.0905, -6.919, -0.0848, 0.0081, -6.919, -3.919, 0.0081, -6.919, -3.9271, 0, -0.073, -3.9271, 0, -6.9272, -3.9919, 0, -6.992, -3.9271, 0, -0.073, -3.919, 0.0081, -0.0811, -3.919, 0.0081, -6.919, -3.919, 0.0081, -6.919, -3.9271, 0, -6.9272, -3.9271, 0, -0.073, -3.919, 0.0081, -0.0811, -3.919, 0.0905, -0.0811, -3.919, 0.0905, -6.919, -3.9271, 0, -6.9272, -3.919, 0.0081, -6.919, -0.0848, 0.0081, -6.919, -0.0848, 0.0081, -6.919, -0.0767, 0, -6.9272, -3.9271, 0, -6.9272, -3.919, 0.0081, -6.919, -3.919, 0.0905, -6.919, -0.0848, 0.0905, -6.919, -0.0767, 0, -0.073, -0.0767, 0, -6.9272, -0.0848, 0.0081, -6.919, -0.0848, 0.0081, -6.919, -0.0848, 0.0081, -0.0811, -0.0767, 0, -0.073, -0.0848, 0.0081, -6.919, -0.0848, 0.0905, -0.0811, -0.0848, 0.0081, -0.0811, -0.0767, 0, -0.073, -0.0848, 0.0081, -0.0811, -3.9271, 0, -0.073, -0.0767, 0, -0.073, -3.9271, 0, -0.073, -3.9919, 0, -0.0081, -0.0848, 0.0081, -0.0811, -3.919, 0.0081, -0.0811, -3.9271, 0, -0.073, -0.0848, 0.0081, -0.0811, -3.919, 0.0905, -0.0811, -3.919, 0.0081, -0.0811, -0.0848, 0.0081, -0.0811, -0.0848, 0.0905, -0.0811, -3.919, 0.0905, -0.0811, -0.0081, 0.0986, -6.992, -0.0081, 0.0986, -0.0081, -0.0767, 0.0986, -0.073, -3.9919, 0, -6.992, -0.0767, 0, -6.9272, -0.0081, 0, -6.992, -3.9919, 0, -6.992, -3.9271, 0, -6.9272, -0.0767, 0, -6.9272, -3.9919, 0, -0.0081, -0.0081, 0, -0.0081, -0.0767, 0, -0.073, -3.9919, 0, -6.992, -3.9919, 0, -0.0081, -3.9271, 0, -0.073)
@@ -225,9 +229,11 @@ data = PackedVector3Array(-0.3411, 0.0534, 0.25, -9.2754, -0.2431, 0.25, -9.2754
 
 [node name="pasted__pPlane3" parent="RootNode/group106" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("2_v8ho6")
 
 [node name="pasted__LandingBellTpwer_pCube38" parent="RootNode/group106" index="1"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__LandingBellTpwer_pCube38" index="0"]
 
@@ -236,6 +242,7 @@ shape = SubResource("ConcavePolygonShape3D_p5nwq")
 
 [node name="pasted__pasted__LandingBellTpwer_pCube38" parent="RootNode/group106" index="2"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__LandingBellTpwer_pCube38" index="0"]
 
@@ -245,9 +252,11 @@ shape = SubResource("ConcavePolygonShape3D_hvnak")
 [node name="pPlane1" parent="RootNode/group106" index="3"]
 transform = Transform3D(1, 2.44929e-16, 0, 0, 0, 1, 2.44929e-16, -1, 0, 2, 2, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p2" parent="RootNode/group106" index="4"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p2" index="0"]
 
@@ -256,9 +265,11 @@ shape = SubResource("ConcavePolygonShape3D_i2pr8")
 
 [node name="pPlane3" parent="RootNode/group106" index="5"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("2_v8ho6")
 
 [node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__p" parent="RootNode/group106" index="6"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__p" index="0"]
 
@@ -267,9 +278,11 @@ shape = SubResource("ConcavePolygonShape3D_cjrso")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="7"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__group137pasted__pasted__group139pasted__group140group141" parent="RootNode/group106" index="8"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__group137pasted__pasted__group139pasted__group140group141" index="0"]
 
@@ -278,15 +291,19 @@ shape = SubResource("ConcavePolygonShape3D_km4vq")
 
 [node name="pasted__pasted__pPlane1" parent="RootNode/group106" index="9"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="10"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pPlane18" parent="RootNode/group106" index="11"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p1" parent="RootNode/group106" index="12"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p1" index="0"]
 
@@ -295,6 +312,7 @@ shape = SubResource("ConcavePolygonShape3D_hot6k")
 
 [node name="LandingBellTpwer_pasted__pasted__pasted__pCube39pasted__pasted__group137pasted__group139group140" parent="RootNode/group106" index="13"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pCube39pasted__pasted__group137pasted__group139group140" index="0"]
 
@@ -303,6 +321,7 @@ shape = SubResource("ConcavePolygonShape3D_sxsqq")
 
 [node name="LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139p" parent="RootNode/group106" index="14"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139p" index="0"]
 
@@ -311,6 +330,7 @@ shape = SubResource("ConcavePolygonShape3D_mqk8x")
 
 [node name="LandingBellTpwer_pCube38" parent="RootNode/group106" index="15"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pCube38" index="0"]
 
@@ -319,6 +339,7 @@ shape = SubResource("ConcavePolygonShape3D_rrh75")
 
 [node name="LandingBellTpwer_pasted__pCube39group136" parent="RootNode/group106" index="16"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pCube39group136" index="0"]
 
@@ -327,6 +348,7 @@ shape = SubResource("ConcavePolygonShape3D_r4d2a")
 
 [node name="Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" parent="RootNode/group106" index="17"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" index="0"]
 
@@ -335,6 +357,7 @@ shape = SubResource("ConcavePolygonShape3D_r4k63")
 
 [node name="LandingBellTpwer_pCube39" parent="RootNode/group106" index="18"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pCube39" index="0"]
 
@@ -343,6 +366,7 @@ shape = SubResource("ConcavePolygonShape3D_x1q1e")
 
 [node name="LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p" parent="RootNode/group106" index="19"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__group137pasted__pasted__pasted__group139pasted__p" index="0"]
 
@@ -351,9 +375,11 @@ shape = SubResource("ConcavePolygonShape3D_rgr6c")
 
 [node name="pasted__pPlane1" parent="RootNode/group106" index="20"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p1" parent="RootNode/group106" index="21"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p1" index="0"]
 
@@ -362,6 +388,7 @@ shape = SubResource("ConcavePolygonShape3D_gi3bb")
 
 [node name="LandingBellTpwer_pasted__pCube39group137" parent="RootNode/group106" index="22"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_pasted__pCube39group137" index="0"]
 
@@ -370,12 +397,15 @@ shape = SubResource("ConcavePolygonShape3D_8vfs6")
 
 [node name="LandingBellTpwer_pCube16" parent="RootNode/group106" index="23"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="pasted__pasted__pasted__pPlane17" parent="RootNode/group106" index="24"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p" parent="RootNode/group106" index="25"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/LandingBellTpwer_group149pasted__pasted__pasted__pasted__pasted__pasted__pCube39pasted__pasted__pasted__pasted__pasted__group137pasted__pasted__p" index="0"]
 
@@ -384,6 +414,7 @@ shape = SubResource("ConcavePolygonShape3D_5aaae")
 
 [node name="pasted__Stairs_pCube11" parent="RootNode/group106" index="26"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pCube11" index="0"]
 
@@ -392,6 +423,7 @@ shape = SubResource("ConcavePolygonShape3D_q8cvp")
 
 [node name="pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" parent="RootNode/group106" index="27"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" index="0"]
 
@@ -400,6 +432,8 @@ shape = SubResource("ConcavePolygonShape3D_vq10o")
 
 [node name="pasted__Stairs_polySurface7pasted__pCube10group54" parent="RootNode/group106" index="28"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
+surface_material_override/1 = ExtResource("2_v8ho6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_polySurface7pasted__pCube10group54" index="0"]
 
@@ -408,6 +442,8 @@ shape = SubResource("ConcavePolygonShape3D_stqj0")
 
 [node name="Stairs_polySurface7pasted__pCube10group54" parent="RootNode/group106" index="29"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
+surface_material_override/1 = ExtResource("2_v8ho6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_polySurface7pasted__pCube10group54" index="0"]
 
@@ -416,6 +452,7 @@ shape = SubResource("ConcavePolygonShape3D_11qlv")
 
 [node name="pasted__Stairs_pasted__pCube10group54polySurface8" parent="RootNode/group106" index="30"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube10group54polySurface8" index="0"]
 
@@ -424,6 +461,7 @@ shape = SubResource("ConcavePolygonShape3D_p7ex3")
 
 [node name="Stairs_pasted__pasted__pCube11pasted__group60group61" parent="RootNode/group106" index="31"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pCube11pasted__group60group61" index="0"]
 
@@ -432,6 +470,7 @@ shape = SubResource("ConcavePolygonShape3D_4kk2w")
 
 [node name="Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" parent="RootNode/group106" index="32"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" index="0"]
 
@@ -440,6 +479,7 @@ shape = SubResource("ConcavePolygonShape3D_o0igs")
 
 [node name="Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" parent="RootNode/group106" index="33"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" index="0"]
 
@@ -448,6 +488,7 @@ shape = SubResource("ConcavePolygonShape3D_noutr")
 
 [node name="Stairs_pasted__polySurface10pasted__pCube10group58" parent="RootNode/group106" index="34"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__polySurface10pasted__pCube10group58" index="0"]
 
@@ -456,6 +497,7 @@ shape = SubResource("ConcavePolygonShape3D_0onga")
 
 [node name="pasted__Stairs_pCube12" parent="RootNode/group106" index="35"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pCube12" index="0"]
 
@@ -464,6 +506,7 @@ shape = SubResource("ConcavePolygonShape3D_14vun")
 
 [node name="Stairs_pCube10polySurface10" parent="RootNode/group106" index="36"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pCube10polySurface10" index="0"]
 
@@ -472,6 +515,7 @@ shape = SubResource("ConcavePolygonShape3D_s4uo5")
 
 [node name="pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" parent="RootNode/group106" index="37"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group62" index="0"]
 
@@ -481,6 +525,7 @@ shape = SubResource("ConcavePolygonShape3D_dl3jm")
 [node name="pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" parent="RootNode/group106" index="38"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" index="0"]
 
@@ -489,6 +534,7 @@ shape = SubResource("ConcavePolygonShape3D_o5hxl")
 
 [node name="Stairs_pCube11" parent="RootNode/group106" index="39"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pCube11" index="0"]
 
@@ -497,6 +543,7 @@ shape = SubResource("ConcavePolygonShape3D_x4ncl")
 
 [node name="Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" parent="RootNode/group106" index="40"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group57" index="0"]
 
@@ -505,6 +552,7 @@ shape = SubResource("ConcavePolygonShape3D_8rpup")
 
 [node name="pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group63" parent="RootNode/group106" index="41"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pasted__pCube11pasted__pasted__group60pasted__group61group63" index="0"]
 
@@ -513,6 +561,7 @@ shape = SubResource("ConcavePolygonShape3D_vucve")
 
 [node name="pasted__Stairs_pasted__pCube11group60" parent="RootNode/group106" index="42"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube11group60" index="0"]
 
@@ -521,6 +570,7 @@ shape = SubResource("ConcavePolygonShape3D_iex4r")
 
 [node name="pasted__Stairs_pasted__pCube10group54polySurface9" parent="RootNode/group106" index="43"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube10group54polySurface9" index="0"]
 
@@ -529,6 +579,8 @@ shape = SubResource("ConcavePolygonShape3D_4hkr5")
 
 [node name="pasted__Stairs_polySurface7pasted__pCube10group55" parent="RootNode/group106" index="44"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
+surface_material_override/1 = ExtResource("2_v8ho6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_polySurface7pasted__pCube10group55" index="0"]
 
@@ -537,6 +589,7 @@ shape = SubResource("ConcavePolygonShape3D_unvbe")
 
 [node name="pasted__Stairs_pasted__pasted__pCube11pasted__group60group61" parent="RootNode/group106" index="45"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pCube11pasted__group60group61" index="0"]
 
@@ -545,6 +598,7 @@ shape = SubResource("ConcavePolygonShape3D_0412o")
 
 [node name="Stairs_pasted__pCube10group54polySurface8" parent="RootNode/group106" index="46"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pCube10group54polySurface8" index="0"]
 
@@ -554,6 +608,7 @@ shape = SubResource("ConcavePolygonShape3D_6884h")
 [node name="pasted__pasted__pasted__Stairs_pCube10polySurface10" parent="RootNode/group106" index="47"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pCube10polySurface10" index="0"]
 
@@ -562,6 +617,7 @@ shape = SubResource("ConcavePolygonShape3D_xat0g")
 
 [node name="Stairs_pasted__pCube11group60" parent="RootNode/group106" index="48"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pCube11group60" index="0"]
 
@@ -570,6 +626,8 @@ shape = SubResource("ConcavePolygonShape3D_olmf0")
 
 [node name="Stairs_polySurface9pCube10" parent="RootNode/group106" index="49"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
+surface_material_override/1 = ExtResource("2_v8ho6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_polySurface9pCube10" index="0"]
 
@@ -578,6 +636,7 @@ shape = SubResource("ConcavePolygonShape3D_0e7se")
 
 [node name="Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" parent="RootNode/group106" index="50"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" index="0"]
 
@@ -586,6 +645,7 @@ shape = SubResource("ConcavePolygonShape3D_lq062")
 
 [node name="pasted__Stairs_pasted__pCube11group61" parent="RootNode/group106" index="51"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pCube11group61" index="0"]
 
@@ -594,6 +654,7 @@ shape = SubResource("ConcavePolygonShape3D_vmugx")
 
 [node name="pasted__Stairs_pasted__pasted__pCube11pasted__group60group62" parent="RootNode/group106" index="52"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__pasted__pCube11pasted__group60group62" index="0"]
 
@@ -603,6 +664,7 @@ shape = SubResource("ConcavePolygonShape3D_2fg7o")
 [node name="pasted__pasted__Stairs_pasted__polySurface10pasted__pCube10group58" parent="RootNode/group106" index="53"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__polySurface10pasted__pCube10group58" index="0"]
 
@@ -611,12 +673,15 @@ shape = SubResource("ConcavePolygonShape3D_8rm1k")
 
 [node name="pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="54"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__pPlane18" parent="RootNode/group106" index="55"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" parent="RootNode/group106" index="56"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" index="0"]
 
@@ -626,6 +691,7 @@ shape = SubResource("ConcavePolygonShape3D_nmec7")
 [node name="pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" parent="RootNode/group106" index="57"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" index="0"]
 
@@ -635,6 +701,8 @@ shape = SubResource("ConcavePolygonShape3D_ogfev")
 [node name="pasted__pasted__pasted__Stairs_polySurface9pCube10" parent="RootNode/group106" index="58"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
+surface_material_override/1 = ExtResource("2_v8ho6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_polySurface9pCube10" index="0"]
 
@@ -643,6 +711,7 @@ shape = SubResource("ConcavePolygonShape3D_agtut")
 
 [node name="pasted__Stairs_pasted__polySurface10pasted__pCube10group58" parent="RootNode/group106" index="59"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface10pasted__pCube10group58" index="0"]
 
@@ -651,6 +720,8 @@ shape = SubResource("ConcavePolygonShape3D_d6i6k")
 
 [node name="pasted__pasted__Stairs_polySurface9pCube10" parent="RootNode/group106" index="60"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
+surface_material_override/1 = ExtResource("2_v8ho6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_polySurface9pCube10" index="0"]
 
@@ -660,9 +731,11 @@ shape = SubResource("ConcavePolygonShape3D_eea48")
 [node name="pasted__pPlane16" parent="RootNode/group106" index="61"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2, 6, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group58" parent="RootNode/group106" index="62"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__Stairs_pasted__polySurface8pasted__pasted__pCube10pasted__group54group58" index="0"]
 
@@ -671,6 +744,7 @@ shape = SubResource("ConcavePolygonShape3D_6qil1")
 
 [node name="pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" parent="RootNode/group106" index="63"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__group60pasted__pasted__group61pasted__group62group63" index="0"]
 
@@ -679,13 +753,16 @@ shape = SubResource("ConcavePolygonShape3D_gfltc")
 
 [node name="pasted__pasted__pPlane19" parent="RootNode/group106" index="64"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__pPlane19" parent="RootNode/group106" index="65"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" parent="RootNode/group106" index="66"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10321e-14, 7, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__group61pasted__pas" index="0"]
 
@@ -694,6 +771,7 @@ shape = SubResource("ConcavePolygonShape3D_8o4ps")
 
 [node name="pasted__pasted__Stairs_pCube10polySurface10" parent="RootNode/group106" index="67"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pCube10polySurface10" index="0"]
 
@@ -702,9 +780,11 @@ shape = SubResource("ConcavePolygonShape3D_2hyd6")
 
 [node name="pasted__pasted__pasted__pPlane20" parent="RootNode/group106" index="68"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" parent="RootNode/group106" index="69"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__Stairs_pasted__pasted__pasted__pasted__pasted__pasted__pCube11pasted__pasted__pasted__pasted__pasted__group60pasted__pasted__pasted__pa" index="0"]
 
@@ -713,44 +793,57 @@ shape = SubResource("ConcavePolygonShape3D_asdyi")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="70"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__pasted__pPlane2" parent="RootNode/group106" index="71"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__pasted__pPlane3" parent="RootNode/group106" index="72"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane2" parent="RootNode/group106" index="73"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pPlane20" parent="RootNode/group106" index="74"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2, 10, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pPlane2" parent="RootNode/group106" index="75"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pasted__pPlane21" parent="RootNode/group106" index="76"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 2, 14, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane3" parent="RootNode/group106" index="77"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pPlane3" parent="RootNode/group106" index="78"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pasted__pasted__pPlane4" parent="RootNode/group106" index="79"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pPlane4" parent="RootNode/group106" index="80"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group106" index="81"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pCube1" parent="RootNode/group106" index="82"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pCube1" index="0"]
 
@@ -759,9 +852,11 @@ shape = SubResource("ConcavePolygonShape3D_u2dxw")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pPlane5" parent="RootNode/group106" index="83"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pCube1" parent="RootNode/group106" index="84"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pCube1" index="0"]
 
@@ -770,9 +865,11 @@ shape = SubResource("ConcavePolygonShape3D_4bqgs")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pPlane4" parent="RootNode/group106" index="85"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pasted__pasted__pasted__pPlane5" parent="RootNode/group106" index="86"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_urylt")
 
 [node name="pasted__pasted__pCylinder5" parent="RootNode/group106" index="87"]
 cast_shadow = 2
@@ -800,6 +897,7 @@ shape = SubResource("ConcavePolygonShape3D_yl0ak")
 
 [node name="pasted__pPlane8" parent="RootNode/group106" index="90"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pPlane8" index="0"]
 
@@ -809,6 +907,7 @@ shape = SubResource("ConcavePolygonShape3D_wk0a1")
 [node name="pasted__pasted__pPlane16" parent="RootNode/group106" index="91"]
 transform = Transform3D(0, 0, -1, -1, 0, 0, 0, 1, 0, 2, 22, 0)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane16" index="0"]
 
@@ -817,6 +916,7 @@ shape = SubResource("ConcavePolygonShape3D_2kqcd")
 
 [node name="pasted__pasted__pPlane17" parent="RootNode/group106" index="92"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane17" index="0"]
 
@@ -825,6 +925,7 @@ shape = SubResource("ConcavePolygonShape3D_4nuqw")
 
 [node name="pasted__pasted__pPlane8" parent="RootNode/group106" index="93"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pPlane8" index="0"]
 
@@ -833,6 +934,7 @@ shape = SubResource("ConcavePolygonShape3D_8hi60")
 
 [node name="pasted__pasted__pasted__pPlane8" parent="RootNode/group106" index="94"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane8" index="0"]
 
@@ -841,6 +943,7 @@ shape = SubResource("ConcavePolygonShape3D_6pp4r")
 
 [node name="pasted__pasted__pasted__pPlane16" parent="RootNode/group106" index="95"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pPlane16" index="0"]
 
@@ -849,6 +952,7 @@ shape = SubResource("ConcavePolygonShape3D_dxnaw")
 
 [node name="pasted__polySurface13" parent="RootNode/group106" index="96"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("3_fb0tq")
 
 [node name="pasted__pPlane15" parent="RootNode/group106" index="97"]
 transform = Transform3D(0, 0, -1.09019, -0.0629282, 0, 0, 0, 1, 0, 2, 18, -0.144675)
@@ -878,6 +982,7 @@ shape = SubResource("ConcavePolygonShape3D_3yhti")
 
 [node name="pasted__pasted__pasted__pCube1" parent="RootNode/group106" index="100"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pCube1" index="0"]
 
@@ -886,6 +991,7 @@ shape = SubResource("ConcavePolygonShape3D_xiglx")
 
 [node name="pasted__pasted__pasted__pCube2" parent="RootNode/group106" index="101"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pCube2" index="0"]
 
@@ -903,6 +1009,7 @@ shape = SubResource("ConcavePolygonShape3D_vdfro")
 [node name="pasted__pasted__pasted__pasted__pCube1" parent="RootNode/group106" index="103"]
 transform = Transform3D(0, 0, 0.370088, 0, 1, 0, -1, 0, 0, 1.94462, 19.2801, 1.64066)
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pasted__pasted__pasted__pCube1" index="0"]
 
@@ -911,6 +1018,7 @@ shape = SubResource("ConcavePolygonShape3D_qfkhj")
 
 [node name="pasted__pCube1" parent="RootNode/group106" index="104"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_biwue")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group106/pasted__pCube1" index="0"]
 

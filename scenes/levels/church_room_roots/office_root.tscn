@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c37hy0t3t3p2e"]
+[gd_scene load_steps=8 format=3 uid="uid://btyqqxa31yi00"]
 
 [ext_resource type="PackedScene" uid="uid://bn3rl20n4vsy3" path="res://models/maps/Office.fbx" id="1_x8fes"]
 [ext_resource type="Material" uid="uid://dbg2tkfpgax1d" path="res://visuals/materials/church_mats/M_Office_Walls.tres" id="2_xj7so"]

@@ -1,3 +1,17 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://cfih1kulkegns"]
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://cfih1kulkegns"]
+
+[ext_resource type="Texture2D" uid="uid://dyqsts4vq4iqf" path="res://visuals/Textures/objects/OldWood(BellTower)/tk5magvl_2K_Albedo.jpg" id="1_335bp"]
+[ext_resource type="Texture2D" uid="uid://bchlcwah36ovx" path="res://visuals/Textures/objects/OldWood(BellTower)/tk5magvl_2K_AO.jpg" id="2_3d2g4"]
+[ext_resource type="Texture2D" uid="uid://f321lb4vgtwh" path="res://visuals/Textures/objects/OldWood(BellTower)/tk5magvl_2K_Displacement.jpg" id="3_u7oky"]
+[ext_resource type="Texture2D" uid="uid://cnhjrdwf5esos" path="res://visuals/Textures/objects/OldWood(BellTower)/tk5magvl_2K_Normal.jpg" id="4_kc3cp"]
+[ext_resource type="Texture2D" uid="uid://5hyy8svqigku" path="res://visuals/Textures/objects/OldWood(BellTower)/tk5magvl_2K_Roughness.jpg" id="5_asvkf"]
 
 [resource]
+albedo_texture = ExtResource("1_335bp")
+roughness_texture = ExtResource("5_asvkf")
+normal_enabled = true
+normal_texture = ExtResource("4_kc3cp")
+ao_enabled = true
+ao_texture = ExtResource("2_3d2g4")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_u7oky")

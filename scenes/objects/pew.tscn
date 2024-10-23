@@ -5,7 +5,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifb1g"]
 size = Vector3(1, 1.85474, 4.21149)
 
-[node name="Pew" type="StaticBody3D"]
+[node name="Pew" type="RigidBody3D"]
 
 [node name="PewRoot" parent="." instance=ExtResource("1_bvw2x")]
 

@@ -1,5 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cag2a2b63j2u7"]
+[gd_scene load_steps=3 format=3 uid="uid://cag2a2b63j2u7"]
 
 [ext_resource type="PackedScene" uid="uid://csmpjjngcd80" path="res://models/objects/Ladder.fbx" id="1_ci73h"]
+[ext_resource type="Material" uid="uid://cfih1kulkegns" path="res://visuals/materials/church_mats/M_OldWood.tres" id="2_psfmv"]
 
 [node name="LadderRoot" instance=ExtResource("1_ci73h")]
+
+[node name="pasted__pasted__polySurface12" parent="RootNode" index="0"]
+surface_material_override/0 = ExtResource("2_psfmv")

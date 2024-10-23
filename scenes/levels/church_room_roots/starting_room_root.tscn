@@ -1,9 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://d0w3h4psbroei"]
+[gd_scene load_steps=11 format=3 uid="uid://c4txl8v4wwmvt"]
 
 [ext_resource type="PackedScene" uid="uid://cb82nlsvcqkf7" path="res://models/maps/StartingRoom.fbx" id="1_criab"]
 [ext_resource type="Material" uid="uid://ddkiv3dbwstip" path="res://visuals/materials/church_mats/M_Block_Floor.tres" id="2_votbb"]
 [ext_resource type="Material" uid="uid://cp1jqxii8g4j" path="res://visuals/materials/church_mats/FrontDoor.tres" id="2_vu70q"]
 [ext_resource type="Material" uid="uid://ctraaqw0hb0ea" path="res://visuals/materials/church_mats/M_Block_Wall.tres" id="3_iyvk1"]
+[ext_resource type="Material" uid="uid://brylbw0xxwedn" path="res://visuals/materials/church_mats/M_Chain.tres" id="4_chq1r"]
+[ext_resource type="Material" uid="uid://uhwqn3i6f8p1" path="res://visuals/materials/church_mats/Trim.tres" id="5_otuto"]
+[ext_resource type="Material" uid="uid://cfih1kulkegns" path="res://visuals/materials/church_mats/M_OldWood.tres" id="6_ph2cq"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_o1q0a"]
 data = PackedVector3Array(1.9999, 0, 1.9999, 0.7908, 0, 0.7165, 0.6219, 0, 0.9752, 1.9999, 0, 1.9999, 0.6219, 0, 0.9752, 0.4391, 0, 1.2338, 1.9999, 0, 1.9999, 1.9999, 0, -2, 1.0475, 0, 0, 1.9999, 0, 1.9999, 1.0475, 0, 0, 0.7908, 0, 0.7165, 1.9999, 0, 1.9999, 0.4391, 0, 1.2338, 0, 0, 1.9999, 1.9999, 0, -2, 1.0475, 0, -2, 1.0475, 0, 0, -0.4434, 0, 1.2338, -2, 0, 1.9999, 0, 0, 1.9999, 0, 0, 1.9999, 0, 0, 1.5368, -0.4434, 0, 1.2338, -2, 0, 1.9999, -1.0516, 0, 0, -2, 0, -2, -2, 0, 1.9999, -0.7948, 0, 0.7165, -1.0516, 0, 0, -2, 0, 1.9999, -0.4434, 0, 1.2338, -0.6191, 0, 0.9752, -2, 0, 1.9999, -0.6191, 0, 0.9752, -0.7948, 0, 0.7165, -1.0516, 0, 0, -1.0516, 0, -2, -2, 0, -2, 0.4391, 0, 1.2338, 0, 0, 1.5368, 0, 0, 1.9999)
@@ -26,21 +29,26 @@ surface_material_override/0 = ExtResource("3_iyvk1")
 
 [node name="pasted__polySurface5" parent="RootNode/Window/group111" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube9" parent="RootNode/Window/group111" index="1"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="2"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="3"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pPlane6" parent="RootNode/Window/group111" index="4"]
 transparency = 0.42
 
 [node name="pasted__pasted__pasted__pCube7" parent="RootNode/Window/group111" index="5"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pPlane7" parent="RootNode/Window/group111" index="6"]
 cast_shadow = 2
@@ -48,15 +56,19 @@ surface_material_override/0 = ExtResource("3_iyvk1")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="7"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/Window/group111" index="8"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pCube7" parent="RootNode/Window/group111" index="9"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pCube7" parent="RootNode/Window/group111" index="10"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pPlane17" parent="RootNode/Doorway" index="0"]
 cast_shadow = 2
@@ -64,6 +76,7 @@ surface_material_override/0 = ExtResource("2_votbb")
 
 [node name="pasted__pCube4" parent="RootNode/Doorway" index="1"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_otuto")
 
 [node name="pasted__polySurface2" parent="RootNode/Doorway" index="2"]
 cast_shadow = 2
@@ -88,6 +101,7 @@ shape = SubResource("ConcavePolygonShape3D_hyik8")
 
 [node name="pasted__pasted__pCube3" parent="RootNode/Doorway" index="5"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_otuto")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Doorway/pasted__pasted__pCube3" index="0"]
 
@@ -140,21 +154,26 @@ surface_material_override/0 = ExtResource("3_iyvk1")
 
 [node name="pasted__pasted__polySurface5" parent="RootNode/group119/pasted__Window/pasted__group111" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pCube9" parent="RootNode/group119/pasted__Window/pasted__group111" index="1"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube8" parent="RootNode/group119/pasted__Window/pasted__group111" index="2"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube82" parent="RootNode/group119/pasted__Window/pasted__group111" index="3"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pPlane6" parent="RootNode/group119/pasted__Window/pasted__group111" index="4"]
 transparency = 0.42
 
 [node name="pasted__pasted__pasted__pasted__pCube72" parent="RootNode/group119/pasted__Window/pasted__group111" index="5"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pPlane7" parent="RootNode/group119/pasted__Window/pasted__group111" index="6"]
 cast_shadow = 2
@@ -162,15 +181,19 @@ surface_material_override/0 = ExtResource("3_iyvk1")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCube82" parent="RootNode/group119/pasted__Window/pasted__group111" index="7"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pasted__pCube82" parent="RootNode/group119/pasted__Window/pasted__group111" index="8"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pCube7" parent="RootNode/group119/pasted__Window/pasted__group111" index="9"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__pasted__pasted__pasted__pCube7" parent="RootNode/group119/pasted__Window/pasted__group111" index="10"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("4_chq1r")
 
 [node name="pasted__pasted__Wall12" parent="RootNode/group120/pasted__group1172" index="0"]
 cast_shadow = 2
@@ -194,30 +217,39 @@ surface_material_override/0 = ExtResource("3_iyvk1")
 
 [node name="pasted__pasted__Wall14" parent="RootNode/group126/pasted__group1173" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__pasted__pasted__Wall13" parent="RootNode/group127/pasted__group126/pasted__pasted__group1172" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__pasted__pasted__pasted__Wall1" parent="RootNode/group128/pasted__group127/pasted__pasted__group126/pasted__pasted__pasted__group117" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__pasted__pasted__Wall14" parent="RootNode/group129/pasted__group1262/pasted__pasted__group1173" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__pasted__pasted__pasted__Wall12" parent="RootNode/group129/pasted__group1272/pasted__pasted__group1262/pasted__pasted__pasted__group1172" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__pasted__pasted__pasted__pasted__Wall1" parent="RootNode/group129/pasted__group128/pasted__pasted__group127/pasted__pasted__pasted__group126/pasted__pasted__pasted__pasted__group117" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__Floor4" parent="RootNode/group130" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__pasted__Floor4" parent="RootNode/group130/pasted__group1142" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__pasted__pasted__Floor3" parent="RootNode/group130/pasted__group115/pasted__pasted__group114" index="0"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("6_ph2cq")
 
 [node name="pasted__Wall14" parent="RootNode/group133" index="0"]
 cast_shadow = 2
@@ -283,3 +315,4 @@ surface_material_override/0 = ExtResource("2_vu70q")
 
 [node name="group137_pasted__pCube367" parent="RootNode" index="38"]
 cast_shadow = 2
+surface_material_override/0 = ExtResource("5_otuto")

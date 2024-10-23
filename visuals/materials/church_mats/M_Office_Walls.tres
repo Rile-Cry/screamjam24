@@ -1,3 +1,17 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://dbg2tkfpgax1d"]
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://dbg2tkfpgax1d"]
+
+[ext_resource type="Texture2D" uid="uid://ddk41mw2fcgle" path="res://visuals/Textures/objects/OfficeWall/ugclefmn_2K_Albedo.jpg" id="1_y77uw"]
+[ext_resource type="Texture2D" uid="uid://dtggjwmfe741i" path="res://visuals/Textures/objects/OfficeWall/ugclefmn_2K_AO.jpg" id="2_w7itq"]
+[ext_resource type="Texture2D" uid="uid://5w1mlxvpa3on" path="res://visuals/Textures/objects/OfficeWall/ugclefmn_2K_Bump.jpg" id="3_2tt5y"]
+[ext_resource type="Texture2D" uid="uid://da2yfmd2xiui4" path="res://visuals/Textures/objects/OfficeWall/ugclefmn_2K_Normal.jpg" id="4_ofug3"]
+[ext_resource type="Texture2D" uid="uid://ck1pcoghlxxto" path="res://visuals/Textures/objects/OfficeWall/ugclefmn_2K_Roughness.jpg" id="5_oyda4"]
 
 [resource]
+albedo_texture = ExtResource("1_y77uw")
+roughness_texture = ExtResource("5_oyda4")
+normal_enabled = true
+normal_texture = ExtResource("4_ofug3")
+ao_enabled = true
+ao_texture = ExtResource("2_w7itq")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_2tt5y")

@@ -1,5 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctdkn1g1vdofr"]
+[gd_scene load_steps=3 format=3 uid="uid://ctdkn1g1vdofr"]
 
 [ext_resource type="PackedScene" uid="uid://cj6kl0bg1ylfd" path="res://models/objects/Door.fbx" id="1_qqbyn"]
+[ext_resource type="Material" uid="uid://duv2mqt8x6b65" path="res://visuals/materials/church_mats/Door.tres" id="2_m3h1g"]
 
 [node name="DoorRoot" instance=ExtResource("1_qqbyn")]
+
+[node name="group116_pasted__group108_pasted__polySurface17" parent="RootNode" index="1"]
+surface_material_override/0 = ExtResource("2_m3h1g")

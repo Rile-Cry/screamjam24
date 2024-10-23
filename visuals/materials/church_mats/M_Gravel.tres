@@ -1,3 +1,17 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://wmsuquoxmvg"]
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://wmsuquoxmvg"]
+
+[ext_resource type="Texture2D" uid="uid://ca83efoahxidy" path="res://visuals/Textures/objects/Gravel/ud0iaebkw_2K_Albedo.jpg" id="1_r4t56"]
+[ext_resource type="Texture2D" uid="uid://ls25ouqbv7bo" path="res://visuals/Textures/objects/Gravel/ud0iaebkw_2K_AO.jpg" id="2_j1smf"]
+[ext_resource type="Texture2D" uid="uid://tjtkjrc25g3f" path="res://visuals/Textures/objects/Gravel/ud0iaebkw_2K_Displacement.jpg" id="3_o64xq"]
+[ext_resource type="Texture2D" uid="uid://d30h0atu10ajl" path="res://visuals/Textures/objects/Gravel/ud0iaebkw_2K_Normal.jpg" id="4_qu6h6"]
+[ext_resource type="Texture2D" uid="uid://doqdddc3b34cm" path="res://visuals/Textures/objects/Gravel/ud0iaebkw_2K_Roughness.jpg" id="5_bfedu"]
 
 [resource]
+albedo_texture = ExtResource("1_r4t56")
+roughness_texture = ExtResource("5_bfedu")
+normal_enabled = true
+normal_texture = ExtResource("4_qu6h6")
+ao_enabled = true
+ao_texture = ExtResource("2_j1smf")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_o64xq")

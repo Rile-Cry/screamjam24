@@ -1,3 +1,11 @@
-[gd_resource type="ORMMaterial3D" format=3 uid="uid://b2jyyj5cwaio0"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://b2jyyj5cwaio0"]
+
+[ext_resource type="Texture2D" uid="uid://n0h23flado0k" path="res://visuals/Textures/objects/Chalice/ChaliceLP_standardSurface1_BaseColor.tga" id="1_v6u3g"]
+[ext_resource type="Texture2D" uid="uid://bfa1w24y05cep" path="res://visuals/Textures/objects/Chalice/ChaliceLP_standardSurface1_Normal.tga" id="2_2lyck"]
+[ext_resource type="Texture2D" uid="uid://duo2hpaikmrlb" path="res://visuals/Textures/objects/Chalice/ChaliceLP_standardSurface1_OcclusionRoughnessMetallic.tga" id="3_4rudx"]
 
 [resource]
+albedo_texture = ExtResource("1_v6u3g")
+orm_texture = ExtResource("3_4rudx")
+normal_enabled = true
+normal_texture = ExtResource("2_2lyck")

@@ -1,5 +1,114 @@
-[gd_scene load_steps=2 format=3 uid="uid://by6x1n3osimd2"]
+[gd_scene load_steps=3 format=3 uid="uid://by6x1n3osimd2"]
 
 [ext_resource type="PackedScene" uid="uid://cqt74ua4mr11m" path="res://models/objects/Votive.fbx" id="1_ay5j0"]
+[ext_resource type="Material" uid="uid://wftg8b2ewfql" path="res://visuals/materials/church_mats/M_Votive.tres" id="2_ep8ic"]
 
 [node name="VotiveRoot" instance=ExtResource("1_ay5j0")]
+
+[node name="pCube363" parent="RootNode" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="polySurface2" parent="RootNode/pCube364" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__polySurface2" parent="RootNode/group24/pasted__pCube364" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__polySurface22" parent="RootNode/group28/pasted__pCube3642" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__polySurface23" parent="RootNode/group29/pasted__pCube3643" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__polySurface2" parent="RootNode/group30/pasted__group24/pasted__pasted__pCube364" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__polySurface24" parent="RootNode/group33/pasted__pCube3644" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__polySurface22" parent="RootNode/group33/pasted__group242/pasted__pasted__pCube3642" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__polySurface23" parent="RootNode/group33/pasted__group28/pasted__pasted__pCube3643" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pCube365" parent="RootNode" index="7"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pCube366" parent="RootNode" index="8"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pCube366" parent="RootNode/group34" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pCube366" parent="RootNode/group35/pasted__group34" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pCube366" parent="RootNode/group36/pasted__group35/pasted__pasted__group34" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pasted__pCube366" parent="RootNode/group37/pasted__group36/pasted__pasted__group35/pasted__pasted__pasted__group34" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pPlane2" parent="RootNode" index="13"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pCube365" parent="RootNode/group39" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pPlane2" parent="RootNode/group40" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pCube3652" parent="RootNode/group41" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pCube3662" parent="RootNode/group41" index="1"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pCube3662" parent="RootNode/group41/pasted__group342" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pCube3662" parent="RootNode/group41/pasted__group352/pasted__pasted__group342" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pasted__pCube3662" parent="RootNode/group41/pasted__group362/pasted__pasted__group352/pasted__pasted__pasted__group342" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pCube366" parent="RootNode/group41/pasted__group37/pasted__pasted__group36/pasted__pasted__pasted__group35/pasted__pasted__pasted__pasted__group34" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pPlane22" parent="RootNode/group41" index="6"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pCube365" parent="RootNode/group41/pasted__group39" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pPlane2" parent="RootNode/group41/pasted__group40" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pCube3652" parent="RootNode/group42/pasted__group41" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pCube3663" parent="RootNode/group42/pasted__group41" index="1"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pCube3663" parent="RootNode/group42/pasted__group41/pasted__pasted__group343" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pasted__pCube3663" parent="RootNode/group42/pasted__group41/pasted__pasted__group353/pasted__pasted__pasted__group343" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pCube3662" parent="RootNode/group42/pasted__group41/pasted__pasted__group362/pasted__pasted__pasted__group352/pasted__pasted__pasted__pasted__group342" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pasted__pCube366" parent="RootNode/group42/pasted__group41/pasted__pasted__group37/pasted__pasted__pasted__group36/pasted__pasted__pasted__pasted__group35/pasted__pasted__pasted__pasted__pasted__group34" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pPlane22" parent="RootNode/group42/pasted__group41" index="6"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pCube365" parent="RootNode/group42/pasted__group41/pasted__pasted__group39" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
+
+[node name="pasted__pasted__pasted__pPlane2" parent="RootNode/group42/pasted__group41/pasted__pasted__group40" index="0"]
+surface_material_override/0 = ExtResource("2_ep8ic")
