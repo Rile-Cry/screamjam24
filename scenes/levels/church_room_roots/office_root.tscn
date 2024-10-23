@@ -1,0 +1,171 @@
+[gd_scene load_steps=8 format=3 uid="uid://c37hy0t3t3p2e"]
+
+[ext_resource type="PackedScene" uid="uid://bn3rl20n4vsy3" path="res://models/maps/Office.fbx" id="1_x8fes"]
+[ext_resource type="Material" uid="uid://dbg2tkfpgax1d" path="res://visuals/materials/church_mats/M_Office_Walls.tres" id="2_xj7so"]
+[ext_resource type="Material" uid="uid://b04m125hjq5r5" path="res://visuals/materials/church_mats/M_Concrete.tres" id="3_dbhjj"]
+[ext_resource type="Material" uid="uid://ddkiv3dbwstip" path="res://visuals/materials/church_mats/M_Block_Floor.tres" id="3_t2clo"]
+[ext_resource type="Material" uid="uid://wmsuquoxmvg" path="res://visuals/materials/church_mats/M_Gravel.tres" id="4_5stfk"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ilj17"]
+data = PackedVector3Array(1, 0, 1.9999, 0, 0, 1.1873, 0.7153, 0, 0.848, 1, 0, 1.9999, 2, 0, 1, 2, 0, 1.9999, 0, 0, 1.9999, 0, 0, 1.1873, 1, 0, 1.9999, -1, 0, 1.9999, -1.0257, 0, 0.6028, 0, 0, 1.1873, -1, 0, 1.9999, 0, 0, 1.1873, 0, 0, 1.9999, -1, 0, 1.9999, -2, 0, 1.9999, -2, 0, 1, 2, 0, -1, 0.924, 0, -1, 1, 0, -2, 1, 0, 0, 2, 0, -1, 2, 0, 0, 1, 0, 0, 0.924, 0, -1, 2, 0, -1, 1, 0, 0, 2, 0, 0, 2, 0, 1, 2, 0, 1, 1, 0, 1.9999, 0.7153, 0, 0.848, 2, 0, 1, 0.7153, 0, 0.848, 1, 0, 0, -1.0618, 0, 0, -2, 0, 0, -2, 0, -1, -2, 0, 1, -1.0257, 0, 0.6028, -1, 0, 1.9999, -2, 0, 0, -1.0618, 0, 0, -1.0257, 0, 0.6028, -1.0257, 0, 0.6028, -2, 0, 1, -2, 0, 0, 1, 0, -2, 0.924, 0, -1, 0, 0, -1.2256, 1, 0, -2, 2, 0, -2, 2, 0, -1, 0, 0, -1.2256, 0, 0, -2, 1, 0, -2, 0, 0, -1.2256, -0.6578, 0, -1, -1, 0, -2, -2, 0, -1, -2, 0, -2, -1, 0, -2, -2, 0, -1, -0.6578, 0, -1, -1.0618, 0, 0, -1, 0, -2, 0, 0, -2, 0, 0, -1.2256, -0.6578, 0, -1, -2, 0, -1, -1, 0, -2)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nuvy5"]
+data = PackedVector3Array(3.0617, -4, 2, 2.6577, -4, 1, 2.924, 0, 1, 3, 0, 2, 2.7153, 0, 2.848, 3.0256, -4, 2.6029, 3.0256, -4, 2.6029, 3.0617, -4, 2, 3, 0, 2, 2.7153, 0, 2.848, 2, 0, 3.1874, 2, -4, 3.1874, 2, -4, 3.1874, 3.0256, -4, 2.6029, 2.7153, 0, 2.848, 2, 0, 3.1874, 0.9743, 0, 2.6029, 1.2847, -4, 2.848, 1.2847, -4, 2.848, 2, -4, 3.1874, 2, 0, 3.1874, 0.9743, 0, 2.6029, 0.9382, 0, 2, 1, -4, 2, 1, -4, 2, 1.2847, -4, 2.848, 0.9743, 0, 2.6029, 1.076, -4, 1, 1, -4, 2, 0.9382, 0, 2, 0.9382, 0, 2, 1.3422, 0, 1, 1.076, -4, 1, 1.3422, 0, 1, 2, 0, 0.7744, 2, -4, 0.7744, 2, -4, 0.7744, 1.076, -4, 1, 1.3422, 0, 1, 2.924, 0, 1, 3, 0, 2, 3.0617, -4, 2, 2.6577, -4, 1, 2, -4, 0.7744, 2, 0, 0.7744, 2, 0, 0.7744, 2.924, 0, 1, 2.6577, -4, 1)
+
+[node name="OfficeRoot" instance=ExtResource("1_x8fes")]
+
+[node name="pasted__pasted__pasted__pCube17" parent="RootNode/group168" index="0"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pPlane21" parent="RootNode/group168" index="1"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pCube40" parent="RootNode/group168" index="2"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pPlane20" parent="RootNode/group168" index="3"]
+transparency = 0.42
+
+[node name="pasted__pPlane1" parent="RootNode/group168" index="4"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pCube17" parent="RootNode/group168" index="5"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pCube18" parent="RootNode/group168" index="6"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pPlane1" parent="RootNode/group168" index="7"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pCube18" parent="RootNode/group168" index="8"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group168" index="9"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pasted__pPlane1" parent="RootNode/group168" index="10"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pPlane16" parent="RootNode/group168" index="11"]
+material_override = ExtResource("3_dbhjj")
+cast_shadow = 2
+
+[node name="pasted__pCube17" parent="RootNode/group168" index="12"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pPlane16" parent="RootNode/group168" index="13"]
+material_override = ExtResource("3_dbhjj")
+cast_shadow = 2
+
+[node name="pasted__pasted__pCube19" parent="RootNode/group168" index="14"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pPlane3" parent="RootNode/group168" index="15"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("3_t2clo")
+
+[node name="pasted__pasted__pasted__pasted__pasted__pCube17" parent="RootNode/group168" index="16"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pPlane1" parent="RootNode/group168" index="17"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pCube17" parent="RootNode/group168" index="18"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pCube18" parent="RootNode/group168" index="19"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pPlane17" parent="RootNode/group168" index="20"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pasted__pCube17" parent="RootNode/group168" index="21"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pCube19" parent="RootNode/group168" index="22"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pasted__pCube18" parent="RootNode/group168" index="23"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pPlane11" parent="RootNode/group168" index="24"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pPlane10" parent="RootNode/group168" index="25"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("3_t2clo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group168/pPlane10" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group168/pPlane10/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_ilj17")
+
+[node name="pasted__pasted__pCube20" parent="RootNode/group168" index="26"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pasted__pCube19" parent="RootNode/group168" index="28"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pPlane11" parent="RootNode/group168" index="29"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pCube21" parent="RootNode/group168" index="30"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="polySurface15" parent="RootNode/group168" index="31"]
+surface_material_override/0 = ExtResource("4_5stfk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/group168/polySurface15" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/group168/polySurface15/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_nuvy5")
+
+[node name="pasted__pasted__pPlane17" parent="RootNode/group168" index="32"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pasted__pPlane16" parent="RootNode/group168" index="33"]
+material_override = ExtResource("3_dbhjj")
+cast_shadow = 2
+
+[node name="pasted__pasted__pasted__pCube20" parent="RootNode/group168" index="34"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pPlane3" parent="RootNode/group168" index="35"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("3_t2clo")
+
+[node name="pCube13" parent="RootNode/group168" index="36"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pPlane21" parent="RootNode/group168" index="37"]
+cast_shadow = 2
+surface_material_override/0 = ExtResource("2_xj7so")
