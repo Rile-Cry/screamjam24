@@ -1,0 +1,21 @@
+[gd_resource type="StandardMaterial3D" load_steps=7 format=3 uid="uid://bdn2lq28udxdh"]
+
+[ext_resource type="Texture2D" uid="uid://d0d3uubaocaqe" path="res://visuals/Textures/objects/Pedestals/Obsidian_002_basecolor.png" id="1_p7er2"]
+[ext_resource type="Texture2D" uid="uid://dywtmcaqphwx5" path="res://visuals/Textures/objects/Pedestals/Obsidian_002_ambientOcclusion.png" id="2_ipknn"]
+[ext_resource type="Texture2D" uid="uid://bg5na10mdcjcn" path="res://visuals/Textures/objects/Pedestals/Obsidian_002_height.png" id="3_2tccf"]
+[ext_resource type="Texture2D" uid="uid://dasry8f1cbk47" path="res://visuals/Textures/objects/Pedestals/Obsidian_002_normal.png" id="4_r0rat"]
+[ext_resource type="Texture2D" uid="uid://coskfm64fuhxm" path="res://visuals/Textures/objects/Pedestals/Obsidian_002_translucency.png" id="5_dtluc"]
+[ext_resource type="Texture2D" uid="uid://b5px58l5ujfbg" path="res://visuals/Textures/objects/Pedestals/Obsidian_002_roughness.png" id="6_podgi"]
+
+[resource]
+albedo_texture = ExtResource("1_p7er2")
+roughness_texture = ExtResource("6_podgi")
+normal_enabled = true
+normal_texture = ExtResource("4_r0rat")
+ao_enabled = true
+ao_texture = ExtResource("2_ipknn")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_2tccf")
+subsurf_scatter_texture = ExtResource("5_dtluc")
+refraction_enabled = true
+refraction_texture = ExtResource("5_dtluc")
