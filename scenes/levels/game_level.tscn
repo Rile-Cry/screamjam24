@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=66 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://cgt568l8kwmu7" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://bohodi3wlnly" path="res://scenes/characters/demon_teleporter.tscn" id="24_eb66c"]
 [ext_resource type="PackedScene" uid="uid://ccvs74jc3856l" path="res://scenes/interactables/Note.tscn" id="25_1lmjg"]
 [ext_resource type="PackedScene" uid="uid://b64v2w7rch36v" path="res://scenes/objects/ladder.tscn" id="25_w0xto"]
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="26_utnp7"]
 [ext_resource type="Resource" uid="uid://c8jo3dr8ly7ic" path="res://Notes/Note1.tres" id="27_gnmhj"]
 [ext_resource type="PackedScene" uid="uid://cngtjukni3ncy" path="res://scenes/objects/pew.tscn" id="27_mtyij"]
 [ext_resource type="PackedScene" uid="uid://c5ss28meyqyum" path="res://scenes/interactables/doorway.tscn" id="28_0kth3"]
@@ -37,7 +38,6 @@
 [ext_resource type="AudioStream" uid="uid://b2ibl5t0of3ln" path="res://Audio/sfx/Stone on stone scraping (secret passageway) 1.mp3" id="31_nba7b"]
 [ext_resource type="PackedScene" uid="uid://c106x0ii6l8be" path="res://scenes/objects/bell.tscn" id="32_4q8fj"]
 [ext_resource type="Resource" uid="uid://da1bewuv17rby" path="res://Notes/Note6.tres" id="32_p4eoy"]
-[ext_resource type="Resource" uid="uid://byhv3kwgo1rut" path="res://Notes/Note4.tres" id="33_8iqm6"]
 [ext_resource type="PackedScene" uid="uid://dk5dcnljyn026" path="res://scenes/objects/coffin.tscn" id="33_8wlpa"]
 [ext_resource type="Resource" uid="uid://bjqvt66a6ech6" path="res://Notes/Note7.tres" id="33_kip2a"]
 [ext_resource type="PackedScene" uid="uid://ci1150jtyq3lw" path="res://scenes/objects/chains.tscn" id="34_pc5qq"]
@@ -133,6 +133,12 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
+[sub_resource type="Resource" id="Resource_yff6r"]
+resource_local_to_scene = true
+script = ExtResource("26_utnp7")
+date = "February 1st 1914:"
+text = "Something I can only describe as a work of god has occurred. I woke up tonight to look out my window, and almost all of the snow was gone, perfect paths carved in the 5ft of snow leading to the center of town that was practically spotless, as well as clear paths for everyone to get home, I didn’t hear any shoveling during the night, and it snowed all throughout the night too, but that might not be the craziest thing to occur tonight, in the middle of town square, some kind of priest was chanting louder than I had ever heard anyone go before about some angel named “Mincinos”, he knew about our struggles, and even managed to point out specific private struggles some were having, like Lena’s husband recently dying, something she hadn’t announced to us yet, he then introduced himself as “Mincinos’s most loyal follower, Andrei Dragos!” I couldn’t quite pin down the accent, but I was certain they were not a native Polack. Goofy costume too, like a mix between a priest and a really cheap magician. However he did claim his “Lord blessed the town, by relieving it of one of it’s pains.” I guess angels can shovel very quietly, but it seems like alot of people bought it… especially mom."
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_34e2i"]
 size = Vector3(0.45459, 0.318596, 3.08249)
 
@@ -144,7 +150,7 @@ size = Vector3(0.45459, 0.318596, 3.08249)
 visible = false
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.0763496, -0.690965, -0.718845, -0.837298, -0.435888, 0.330052, -0.54139, 0.576687, -0.611824, -2.49683, 2.45225, 17.0174)
+transform = Transform3D(-0.723604, -0.329806, -0.606321, -0.438737, -0.458359, 0.772927, -0.532829, 0.825309, 0.186972, -2.49683, 2.45225, 17.0174)
 light_color = Color(0.59, 0.719833, 1, 1)
 light_energy = 0.2
 light_volumetric_fog_energy = 16.0
@@ -472,7 +478,7 @@ noteResource = ExtResource("29_k7txf")
 
 [node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -6.24698, -7.52993, -23.6838)
-noteResource = ExtResource("33_8iqm6")
+noteResource = SubResource("Resource_yff6r")
 
 [node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)

@@ -15,6 +15,8 @@ func fade_in():
 	tween.tween_property(self,"volume_db",0,1)
 
 func change_to_main_menu_music():
+	if stream == MAIN_MENU_THEME:
+		return
 	stream = MAIN_MENU_THEME
 	play()
 	fade_in()
@@ -32,6 +34,7 @@ func change_to_demon_music():
 	fade_in()
 
 func change_to_church_music():
+
 	await fade_out()
 	stream = SPOOKY_CHURCH_AMBIENCE__1_
 	play()

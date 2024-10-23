@@ -103,5 +103,6 @@ color = Color(0.00410879, 0.000296299, 0.121805, 1)
 [node name="SubViewport" type="SubViewport" parent="."]
 gui_disable_input = true
 
+[connection signal="pressed" from="BookMargin/book_cover/ButtonMargin/ButtonContainer/play_button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="BookMargin/book_cover/ButtonMargin/ButtonContainer/options_button" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="BookMargin/book_cover/ButtonMargin/ButtonContainer/credits_button" to="." method="_on_credits_button_pressed"]
