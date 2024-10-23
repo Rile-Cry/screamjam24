@@ -5,6 +5,8 @@ extends Control
 @onready var audio_content = %audio_content
 @onready var display_content = %display_content
 
+@onready var animation_player = $AnimationPlayer
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -21,6 +23,7 @@ func _on_back_button_pressed():
 
 
 func _on_controls_button_pressed():
+	animation_player.play("blood_trans")
 	controls_content.visible = true
 	accessibility_content.visible = false
 	audio_content.visible = false
@@ -29,6 +32,7 @@ func _on_controls_button_pressed():
 
 
 func _on_accessibility_button_pressed():
+	animation_player.play("blood_trans")
 	controls_content.visible = false
 	accessibility_content.visible = true
 	audio_content.visible = false
@@ -37,6 +41,7 @@ func _on_accessibility_button_pressed():
 
 
 func _on_audio_button_pressed():
+	animation_player.play("blood_trans")
 	controls_content.visible = false
 	accessibility_content.visible = false
 	audio_content.visible = true
@@ -45,6 +50,7 @@ func _on_audio_button_pressed():
 
 
 func _on_display_button_pressed():
+	animation_player.play("blood_trans")
 	controls_content.visible = false
 	accessibility_content.visible = false
 	audio_content.visible = false
