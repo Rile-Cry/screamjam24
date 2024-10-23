@@ -279,7 +279,7 @@ footstepSounds = Array[AudioStream]([SubResource("AudioStreamRandomizer_7os0v"),
 
 [node name="ReadingPosition" type="Node3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.727773, -0.685818, 0, 0.685818, 0.727773, 0, 0.679914, -0.974449)
+transform = Transform3D(1, 0, 0, 0, 0.727773, -0.685818, 0, 0.685818, 0.727773, 0, 0.938156, -0.78212)
 
 [node name="breath_heartbeat_manager" type="Node3D" parent="."]
 script = ExtResource("22_gqtdu")

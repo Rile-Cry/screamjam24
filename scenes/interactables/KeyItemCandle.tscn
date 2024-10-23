@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://dkjqmfo078bo3"]
 
 [ext_resource type="Script" path="res://scenes/interactables/KeyItemCandle.gd" id="1_v7th1"]
-[ext_resource type="PackedScene" uid="uid://dglbbmjvokxv5" path="res://scenes/interactables/root_node.tscn" id="2_isjpp"]
+[ext_resource type="PackedScene" uid="uid://xisynqg2ihh8" path="res://scenes/interactables/roots/candle_root.tscn" id="2_4gytu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rlkhp"]
-size = Vector3(0.456787, 0.577026, 0.419678)
+size = Vector3(0.197266, 0.365768, 0.207031)
 
 [node name="KeyItemCandle" type="RigidBody3D"]
 transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 0, 0, 0)
@@ -16,14 +16,12 @@ script = ExtResource("1_v7th1")
 itemName = "Human Fat Candle"
 type = 1
 
-[node name="RootNode" parent="." instance=ExtResource("2_isjpp")]
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, -2.68221e-07, 0, 1, 0, 2.68221e-07, 0, 1, 0, 0.253723, 0)
+transform = Transform3D(0.999999, 0, -3.27826e-07, 0, 1, 0, 3.27826e-07, 0, 0.999999, 0, 0.181831, 0)
 shape = SubResource("BoxShape3D_rlkhp")
 
 [node name="Point" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 1.42109e-14, -8.9407e-08, 0, 1, 2.09858e-07, 8.9407e-08, -2.09857e-07, 1, 0, 0.399809, 0)
+transform = Transform3D(0.999999, 3.55271e-14, -1.49012e-07, 0, 1, 2.09857e-07, 1.49012e-07, -2.09857e-07, 0.999999, 0, 0.373045, 0)
 light_color = Color(0.77, 0.2002, 0.209697, 1)
 light_energy = 3.0
 light_volumetric_fog_energy = 0.05
@@ -33,3 +31,6 @@ distance_fade_begin = 0.0
 distance_fade_shadow = 0.0
 distance_fade_length = 5.0
 omni_range = 10.0
+
+[node name="CandleRoot" parent="." instance=ExtResource("2_4gytu")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

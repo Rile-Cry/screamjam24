@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://csca6nw4extwp"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_31062"]
+
+[resource]
+script = ExtResource("1_31062")
+date = "April 1st 1914"
+text = "Mom is gone, mom and dad went to their meeting today, once again I refused to join them and just stayed home to read a book, but when they were supposed to return, only dad walked through the door, with a facial expression that felt wrong, his eyes were filled with sadness and pain, but he had a large unnerving smile on his face, I asked him where is mom, and he just smiled at me, I think he was crying, I kept asking him where she is and all he would say was “Gabriel, it was Gabriel” over and over before going into his room, I ran into town to find someone who knew where she was, and when I ran into Lena, she just gave me a pained expression and said “She chose wrong, i’m so sorry.” before giving me a hug. "

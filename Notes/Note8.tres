@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://tx5qpjr4pcao"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_lhd3g"]
+
+[resource]
+script = ExtResource("1_lhd3g")
+date = "March 19th 1914"
+text = "I’ve started noticing people going missing, it’s almost like 1 person goes missing after every meeting, speaking of, they’ve only gone up in frequency, weekly meetings now to twice a week now they’re meeting every day, luckily because of this my parents have stopped caring to force me to go, whenever I ask them if they’ve noticed the missing people growing rampant they try to brush me off. Mom especially gets defensive whenever I bring up the subject."

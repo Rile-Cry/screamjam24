@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://dpvep2yy33701"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_7o0ue"]
+
+[resource]
+script = ExtResource("1_7o0ue")
+date = "April 4th 1914"
+text = "I couldn’t let dad go alone, I tried to stop him from going, but it was like he didn’t even notice me trying to hold him back, and begging him to come back home, and so I was forced to attend this meeting with him. When we arrived I immediately asked the “priest” what happened last meeting, “What eventually happens to everyone.” he said ominously with a laugh. It was a mostly uneventful and seemingly business as usual for them, at the end another test occurred, I couldn’t stand watching this, I wanted to scream at the top of my lungs about how this man murdered my mother. But I managed to stay composed, Lena was chosen this time, she seemed happy, happier than I ever seen her, like usual the trial wasn’t witnessed, Andrei grabbed a book from his podium and put it on a cabinet in his office that caused it to move. Neither returned and everyone began to leave once the bookcase closed behind them."

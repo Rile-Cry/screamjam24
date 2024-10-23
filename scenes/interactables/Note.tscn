@@ -35,7 +35,7 @@ texture = ExtResource("3_x52vw")
 
 [node name="TextOnPage" type="Label3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(0.5, -1.77636e-15, -7.7647e-23, 0, -2.18557e-08, 0.5, -1.77636e-15, -0.5, -2.18557e-08, 1.91069e-17, 0.0950044, 2.18557e-10)
+transform = Transform3D(0.5, -1.77636e-15, -7.76472e-23, 0, -2.18557e-08, 0.5, -1.77636e-15, -0.5, -2.18557e-08, 1.91069e-17, 0.0950044, 2.18557e-10)
 sorting_offset = 0.1
 pixel_size = 0.002
 shaded = true
@@ -46,13 +46,14 @@ The last words he spoke.
 Before the rope broke,
 Were, \"Arsehole, you bugger, and suck it.\""
 font = ExtResource("4_am882")
-font_size = 50
+font_size = 45
+outline_size = 0
 autowrap_mode = 3
-width = 700.0
+width = 750.0
 
 [node name="Date" type="Label3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(0.5, -1.77636e-15, -7.7647e-23, 0, -2.18557e-08, 0.5, -1.77636e-15, -0.5, -2.18557e-08, -0.239619, 0.0987438, -0.472496)
+transform = Transform3D(0.5, -1.77636e-15, -7.76472e-23, 0, -2.18557e-08, 0.5, -1.77636e-15, -0.5, -2.18557e-08, -0.239619, 0.0987438, -0.506701)
 sorting_offset = 0.2
 pixel_size = 0.002
 shaded = true

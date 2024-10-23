@@ -266,4 +266,5 @@ func got_on_ladder() -> void:
 
 
 func got_off_ladder() -> void:
+	velocity = Vector3.ZERO
 	is_on_ladder = false

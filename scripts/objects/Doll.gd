@@ -3,6 +3,8 @@ extends KeyItem
 var player: Player
 const teleportFromPlayerDistance:= 7
 const teleportFromPlayerMinDistance:= 2
+@export var fistTelePosition: Node3D
+var hasTeled := false
 @export var positionsToSpawnAt: Node3D
 @onready var jump_sound: AudioStreamPlayer = %JumpSound
 @onready var visible_on_screen_notifier_3d: VisibleOnScreenNotifier3D = %VisibleOnScreenNotifier3D
@@ -36,7 +38,11 @@ func teleportToNextPosition():
 	await get_tree().create_timer(.5).timeout
 	interactable = true
 	Global.sanity -= 5
-	var lastPosition := global_position
-	while lastPosition.distance_to(global_position) < 3:
-		global_position = positionsToSpawnAt.get_children().pick_random().global_position
+	if !hasTeled:
+		global_position = fistTelePosition.global_position
+		hasTeled = true
+	else:
+		var lastPosition := global_position
+		while lastPosition.distance_to(global_position) < 3:
+			global_position = positionsToSpawnAt.get_children().pick_random().global_position
 	jumpTriggered = false

@@ -1,4 +1,4 @@
-[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://dt10yh720856s"]
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://cj0cauuytd6j3"]
 
 [ext_resource type="Texture2D" uid="uid://dhjpunkou0ncs" path="res://visuals/Textures/objects/Doll/dollguy_pSphere10_01_BaseColor.tga" id="1_opm7j"]
 [ext_resource type="Texture2D" uid="uid://ivmmdffi06cq" path="res://visuals/Textures/objects/Doll/dollguy_pSphere10_01_Normal.tga" id="2_iwrb0"]

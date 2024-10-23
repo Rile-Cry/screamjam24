@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://wip458kyia0y"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_s2gqc"]
+
+[resource]
+script = ExtResource("1_s2gqc")
+date = "April 17th 1914"
+text = "I should have known the bastard would betray me, I did everything I could for that demonic freak, and all I got from it, is a early casket and 6ft of dirt, all this time I called these villagers fools for believing the crap i’m preaching, and somehow I never thought that perhaps I was the fool. To whoever finds this, all I ask is that you grant my last request, and send that thing back to hell where it belongs, reassemble my summoning ritual, and then ring the church bell, and Mincinos will be banished."

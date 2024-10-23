@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://xemfug7rd5ig"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_ktpxc"]
+
+[resource]
+script = ExtResource("1_ktpxc")
+date = "April 11th 1914:"
+text = "Dad got selected for one of his “tests” I tried to stop them, but all the church goers pulled me away and Lena kept telling me how this will be a “blessing” for my father, I liked Lena, so I’m not the proudest in saying that I responded to her comment by punching her in the jaw. I screamed at dad to come with me as I ran to the door, but he didn’t even look at me, I wanted with every fiber of my being to stay there and fight for him, but I knew that whoever I was looking at, they weren’t my father. Some of the cultists chased after me, one nearly caught me until I was able to hit them in the eye with a rock. I’m going to try and contact brother, maybe he can figure this all out, or at least he can help me put a stop to this. "

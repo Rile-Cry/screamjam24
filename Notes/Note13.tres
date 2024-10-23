@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://d3a432uohjyyr"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_jq4p0"]
+
+[resource]
+script = ExtResource("1_jq4p0")
+date = "April 14th 1914:"
+text = "Mincinos has been demanding that little girl who freaked out at the party, the final sacrifice always has to be a nonbeliever and unfortunately I did too good of a job it would seem, I’d prefer not to sacrifice children, but luckily capturing her should be quite easy, how much harm could one girl do anyway.April 15th 1914So to answer my previous question, quite alot, that rat threw boiling water on one of my lackeys, and broke another one’s leg with a hammer. If only Mincinos didn’t demand her father’s soul as one of his sacrifices, he would have made a great bargaining chip here. April 16th 1914It wasn’t pretty, but we finally got the runt, I got to join in on the “fun” if getting stabbed in the thigh with scissors can be considered fun. But luckily with her captured, i’m only moments away from achieving ultimate power like Mincinos promised."
