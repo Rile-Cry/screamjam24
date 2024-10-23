@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ckkuoomn8py68"]
 
 [ext_resource type="Script" path="res://scripts/ui/PlayerHud.gd" id="1_g8afo"]
-[ext_resource type="Script" path="res://scenes/ui/Found pages debug.gd" id="2_xv8xl"]
+[ext_resource type="Script" path="res://scripts/Found pages debug.gd" id="2_xv8xl"]
 
 [node name="PlayerHud" type="CanvasLayer"]
 follow_viewport_enabled = true

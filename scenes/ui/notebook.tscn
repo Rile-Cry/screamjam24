@@ -81,7 +81,7 @@ text = "1"
 custom_minimum_size = Vector2(2.08165e-12, 420)
 layout_mode = 2
 theme = ExtResource("3_imhbc")
-text = "This is where the body of text goes...
+text = "This is where text goes/...
 "
 autowrap_mode = 3
 
@@ -119,6 +119,7 @@ stretch_mode = 2
 
 [node name="arrow_buttons_margin" type="MarginContainer" parent="book_container/pages_container"]
 layout_mode = 2
+size_flags_vertical = 8
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_right = 20
 theme_override_constants/margin_bottom = 20

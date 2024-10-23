@@ -48,7 +48,7 @@ theme_override_constants/margin_top = 100
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 30
+theme_override_constants/separation = 10
 alignment = 1
 
 [node name="play_button" type="Button" parent="BookMargin/book_cover/ButtonMargin/ButtonContainer"]
@@ -89,7 +89,6 @@ icon = ExtResource("3_040sq")
 icon_alignment = 1
 
 [node name="BackColor" type="ColorRect" parent="."]
-visible = false
 show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
@@ -98,7 +97,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0.00410879, 0.000296299, 0.121805, 1)
+color = Color(0.0392157, 0, 0.14902, 1)
 
 [node name="SubViewport" type="SubViewport" parent="."]
 gui_disable_input = true

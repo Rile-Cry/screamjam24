@@ -1,0 +1,133 @@
+[gd_scene load_steps=7 format=3 uid="uid://bquwg6s7rrjfv"]
+
+[ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="1_4y63e"]
+[ext_resource type="Texture2D" uid="uid://djteiwjuom4de" path="res://ui/art/paper_button_normal.png" id="2_1rdgj"]
+[ext_resource type="Texture2D" uid="uid://bklo6bmmsjuw4" path="res://ui/art/paper_button_pressed.png" id="3_v6krl"]
+[ext_resource type="Texture2D" uid="uid://bp624ujgre6t0" path="res://ui/art/paper_button_hover.png" id="4_hahqq"]
+[ext_resource type="Texture2D" uid="uid://be47xvtrlygwf" path="res://ui/art/paper_button_focus.png" id="5_7o7s5"]
+[ext_resource type="FontFile" uid="uid://d1gnl65obr7h4" path="res://ui/fonts/Kings-Regular.ttf" id="6_jqej4"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="back_color" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0392157, 0, 0.14902, 0.313726)
+
+[node name="back_button_container" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="back_button" type="TextureButton" parent="back_button_container"]
+layout_mode = 2
+theme = ExtResource("1_4y63e")
+texture_normal = ExtResource("2_1rdgj")
+texture_pressed = ExtResource("3_v6krl")
+texture_hover = ExtResource("4_hahqq")
+texture_focused = ExtResource("5_7o7s5")
+
+[node name="Label" type="Label" parent="back_button_container/back_button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -24.5
+offset_right = 29.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="content_container" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 120
+
+[node name="center_container" type="VBoxContainer" parent="content_container"]
+layout_mode = 2
+theme_override_constants/separation = 80
+alignment = 1
+
+[node name="pause" type="Label" parent="content_container/center_container"]
+layout_mode = 2
+theme = ExtResource("1_4y63e")
+theme_override_colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
+theme_override_colors/font_outline_color = Color(0.294772, 0.181172, 0.00790796, 1)
+theme_override_fonts/font = ExtResource("6_jqej4")
+theme_override_font_sizes/font_size = 60
+text = "PAUSE"
+
+[node name="settings_button" type="TextureButton" parent="content_container/center_container"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_4y63e")
+texture_normal = ExtResource("2_1rdgj")
+texture_pressed = ExtResource("3_v6krl")
+texture_hover = ExtResource("4_hahqq")
+texture_focused = ExtResource("5_7o7s5")
+
+[node name="Label" type="Label" parent="content_container/center_container/settings_button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -24.5
+offset_right = 29.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Settings"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="quit_button" type="TextureButton" parent="content_container/center_container"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_4y63e")
+texture_normal = ExtResource("2_1rdgj")
+texture_pressed = ExtResource("3_v6krl")
+texture_hover = ExtResource("4_hahqq")
+texture_focused = ExtResource("5_7o7s5")
+
+[node name="Label" type="Label" parent="content_container/center_container/quit_button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -24.5
+offset_right = 29.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1

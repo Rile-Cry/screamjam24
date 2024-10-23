@@ -1,6 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://cgt568l8kwmu7"]
+[gd_scene load_steps=24 format=3 uid="uid://cgt568l8kwmu7"]
 
-[ext_resource type="Script" path="res://scenes/ui/settings_menu.gd" id="1_eqi5l"]
+[ext_resource type="Script" path="res://ui/settings_menu.gd" id="1_eqi5l"]
 [ext_resource type="Texture2D" uid="uid://dcohboog3guj7" path="res://ui/art/book_cover_open.png" id="1_t4atj"]
 [ext_resource type="Texture2D" uid="uid://cmkk32le5nmx2" path="res://ui/art/page_torn.png" id="2_m1rcv"]
 [ext_resource type="Texture2D" uid="uid://cx4c5iho74frh" path="res://ui/art/pages_grouped.png" id="3_0uavt"]
@@ -11,11 +11,52 @@
 [ext_resource type="FontFile" uid="uid://ypscax7btp20" path="res://ui/fonts/ReenieBeanie-Regular.ttf" id="6_jsgm6"]
 [ext_resource type="Texture2D" uid="uid://cijxpb3s3wtdm" path="res://ui/art/tape.png" id="7_84cat"]
 [ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="7_ncmin"]
+[ext_resource type="PackedScene" uid="uid://lrhmy4b1vyb8" path="res://scenes/ui/volume_slider.tscn" id="8_wdice"]
+[ext_resource type="PackedScene" uid="uid://b8a44kckebu4e" path="res://scenes/ui/window_mode_button.tscn" id="9_k6jhe"]
+[ext_resource type="PackedScene" uid="uid://dsylvhnqynf7j" path="res://scenes/ui/resolution_mode_button.tscn" id="10_nmnii"]
 [ext_resource type="Texture2D" uid="uid://bfbl33k3gelxp" path="res://ui/art/select_icons.png" id="10_qogv1"]
 [ext_resource type="Texture2D" uid="uid://djteiwjuom4de" path="res://ui/art/paper_button_normal.png" id="11_c8rbg"]
 [ext_resource type="Texture2D" uid="uid://bklo6bmmsjuw4" path="res://ui/art/paper_button_pressed.png" id="12_tpffv"]
 [ext_resource type="Texture2D" uid="uid://bp624ujgre6t0" path="res://ui/art/paper_button_hover.png" id="13_jnocb"]
 [ext_resource type="Texture2D" uid="uid://be47xvtrlygwf" path="res://ui/art/paper_button_focus.png" id="14_bwqnd"]
+[ext_resource type="Texture2D" uid="uid://bm8ibo6msqkp5" path="res://ui/art/blood.png" id="20_o6yr0"]
+
+[sub_resource type="Animation" id="Animation_gay0k"]
+resource_name = "blood_trans"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Blood:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(853, -465), Vector2(853, 1200)]
+}
+
+[sub_resource type="Animation" id="Animation_fi3rj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Blood:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(853, -465)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tql42"]
+_data = {
+"RESET": SubResource("Animation_fi3rj"),
+"blood_trans": SubResource("Animation_gay0k")
+}
 
 [node name="SettingsMenu" type="Control"]
 layout_mode = 3
@@ -25,6 +66,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_eqi5l")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0392157, 0, 0.14902, 1)
 
 [node name="book_container" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -259,7 +309,6 @@ text = "Space"
 
 [node name="accessibility_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 
 [node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content"]
@@ -293,12 +342,85 @@ theme_override_font_sizes/font_size = 41
 text = "AUDIO"
 horizontal_alignment = 1
 
-[node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content"]
+[node name="audio_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content"]
 layout_mode = 2
-theme_override_constants/separation = 18
+theme_override_constants/separation = 50
+
+[node name="master" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container"]
+layout_mode = 2
+theme_override_constants/separation = 90
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/master"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Master"
+
+[node name="volume_slider" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/master" instance=ExtResource("8_wdice")]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+size_flags_vertical = 4
+bus_name = "Master"
+
+[node name="music" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container"]
+layout_mode = 2
+theme_override_constants/separation = 90
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/music"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Music"
+
+[node name="volume_slider" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/music" instance=ExtResource("8_wdice")]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+size_flags_vertical = 4
+bus_name = "Music"
+
+[node name="sound_effects" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/sound_effects"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Sound Effects"
+
+[node name="volume_slider" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/sound_effects" instance=ExtResource("8_wdice")]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+size_flags_vertical = 4
+bus_name = "SoundEffects"
+
+[node name="outside_sound" type="HBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container"]
+layout_mode = 2
+theme_override_constants/separation = 90
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/outside_sound"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Outside"
+
+[node name="volume_slider" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/audio_content/audio_container/outside_sound" instance=ExtResource("8_wdice")]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+size_flags_vertical = 4
+bus_name = "OutsideSound"
 
 [node name="display_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 
 [node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/display_content"]
@@ -314,7 +436,13 @@ horizontal_alignment = 1
 
 [node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/display_content"]
 layout_mode = 2
-theme_override_constants/separation = 18
+theme_override_constants/separation = 100
+
+[node name="window_mode_button" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/display_content/controls_container" instance=ExtResource("9_k6jhe")]
+layout_mode = 2
+
+[node name="resolution_mode_button" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/display_content/controls_container" instance=ExtResource("10_nmnii")]
+layout_mode = 2
 
 [node name="thread_container" type="MarginContainer" parent="book_container/right_side"]
 layout_mode = 2
@@ -428,6 +556,16 @@ grow_vertical = 2
 text = "Back"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Blood" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(853, -465)
+texture = ExtResource("20_o6yr0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tql42")
+}
 
 [connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/controls_button" to="." method="_on_controls_button_pressed"]
 [connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/accessibility_button" to="." method="_on_accessibility_button_pressed"]
