@@ -2,7 +2,6 @@ extends Interactable
 
 @onready var bell_sound: AudioStreamPlayer = $BellSound
 var gameOver := false
-const MAIN_MENU = preload("res://scenes/ui/main_menu.tscn")
 
 func interact():
 	interactable = false
@@ -33,4 +32,3 @@ func interact():
 		return
 	await get_tree().create_timer(8).timeout
 	interactable = true
-

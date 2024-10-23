@@ -1,6 +1,5 @@
 extends Node3D
 
-signal OnTrialPassed
 @export var finishedColor :Color
 @onready var finished_sound: AudioStreamPlayer = %FinishedSound
 @onready var item_pop_sound: AudioStreamPlayer = %ItemPopSound
@@ -45,4 +44,3 @@ func TrialPassed():
 	Camera.Instance.environment.volumetric_fog_albedo = Color.WHITE
 	itemToAppearWhenTrialIsPassed.visible = true
 	itemToAppearWhenTrialIsPassed.process_mode = Node.PROCESS_MODE_INHERIT
-

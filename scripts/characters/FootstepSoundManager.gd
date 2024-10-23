@@ -19,4 +19,3 @@ func _physics_process(delta: float) -> void:
 	else:
 		if footsteps_player.stream != footstepSounds[2]:
 				footsteps_player.stream = footstepSounds[2]
-

@@ -1,5 +1,5 @@
 extends Control
-
+const GAME_LEVEL = preload("res://scenes/levels/game_level.tscn")
 
 func _on_options_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/ui/settings_menu.tscn")
@@ -12,7 +12,7 @@ func _on_credits_button_pressed():
 
 
 func _on_play_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/levels/game_level.tscn")
+	get_tree().change_scene_to_packed(GAME_LEVEL)
 
 
 func _on_quit_button_pressed() -> void:

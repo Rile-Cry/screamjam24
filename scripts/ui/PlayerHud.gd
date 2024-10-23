@@ -73,6 +73,3 @@ func display_overlay_text(text: String):
 	await get_tree().create_timer(overlayDisplayTime).timeout
 	overlayTween = create_tween()
 	overlayTween.tween_property(overlay_text,"modulate:a",0,1)
-
-
-

@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=3 uid="uid://dxrlgka3dpjjp"]
 
-[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_7k2pl"]
-[ext_resource type="Texture2D" uid="uid://b8f1dof2vhuk7" path="res://ui/art/book_front.png" id="1_s8mlr"]
-[ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="2_f1s41"]
-[ext_resource type="Texture2D" uid="uid://bfbl33k3gelxp" path="res://ui/art/select_icons.png" id="3_040sq"]
-[ext_resource type="Script" path="res://scenes/ui/background_panner.gd" id="3_yrhwy"]
-[ext_resource type="Texture2D" uid="uid://cy0huwr8u0bph" path="res://visuals/Textures/UI/Screenshot 2024-10-23 161818.png" id="5_qo1pw"]
+[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_gwsb6"]
+[ext_resource type="Texture2D" uid="uid://cy0huwr8u0bph" path="res://visuals/Textures/UI/Screenshot 2024-10-23 161818.png" id="3_mmbth"]
+[ext_resource type="Script" path="res://scenes/ui/background_panner.gd" id="4_3byyu"]
+[ext_resource type="Texture2D" uid="uid://b8f1dof2vhuk7" path="res://ui/art/book_front.png" id="5_8q03x"]
+[ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="6_a021n"]
+[ext_resource type="Texture2D" uid="uid://bfbl33k3gelxp" path="res://ui/art/select_icons.png" id="7_c2tvp"]
 
 [sub_resource type="Environment" id="Environment_iltdw"]
 background_mode = 3
@@ -18,7 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_7k2pl")
+script = ExtResource("1_gwsb6")
 
 [node name="Background" type="TextureRect" parent="."]
 unique_name_in_owner = true
@@ -36,9 +36,9 @@ offset_bottom = 459.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("5_qo1pw")
+texture = ExtResource("3_mmbth")
 expand_mode = 1
-script = ExtResource("3_yrhwy")
+script = ExtResource("4_3byyu")
 
 [node name="BookMargin" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -58,7 +58,7 @@ theme_override_constants/margin_bottom = -15
 
 [node name="book_cover" type="TextureRect" parent="BookMargin"]
 layout_mode = 2
-texture = ExtResource("1_s8mlr")
+texture = ExtResource("5_8q03x")
 
 [node name="ButtonMargin" type="MarginContainer" parent="BookMargin/book_cover"]
 layout_mode = 1
@@ -81,37 +81,37 @@ alignment = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("6_a021n")
 theme_override_font_sizes/font_size = 60
 text = "PLAY"
-icon = ExtResource("3_040sq")
+icon = ExtResource("7_c2tvp")
 icon_alignment = 1
 
 [node name="options_button" type="Button" parent="BookMargin/book_cover/ButtonMargin/ButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("6_a021n")
 text = "OPTIONS"
-icon = ExtResource("3_040sq")
+icon = ExtResource("7_c2tvp")
 icon_alignment = 1
 
 [node name="credits_button" type="Button" parent="BookMargin/book_cover/ButtonMargin/ButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("6_a021n")
 text = "CREDITS"
-icon = ExtResource("3_040sq")
+icon = ExtResource("7_c2tvp")
 icon_alignment = 1
 
 [node name="quit_button" type="Button" parent="BookMargin/book_cover/ButtonMargin/ButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("6_a021n")
 text = "QUIT"
-icon = ExtResource("3_040sq")
+icon = ExtResource("7_c2tvp")
 icon_alignment = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]

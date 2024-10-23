@@ -47,6 +47,3 @@ func _process(delta: float) -> void:
 				mirror.visible = true
 			else:
 				(get_tree().get_first_node_in_group("player") as Player).GoInsane()
-
-
-

@@ -16,5 +16,3 @@ func _ready() -> void:
 func interact():
 	pickup_drop_sound.play()
 	super.interact()
-
-

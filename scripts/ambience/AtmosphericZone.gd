@@ -64,4 +64,3 @@ func transition_out():
 	transitionTween.tween_property(reverbEffect,"wet",0,transitionSpeed)
 	transitionTween.tween_property(outsideLowPass,"cutoff_hz",10000,transitionSpeed)
 	transitionTween.tween_property(environment,"volumetric_fog_density",fog_starting_density,transitionSpeed)
-
