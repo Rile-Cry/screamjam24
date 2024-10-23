@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://3bm4al536hm"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_a6sew"]
+
+[resource]
+script = ExtResource("1_a6sew")
+date = "January 31st 1914:"
+text = "Brother left to “fight the good fight” he said, likely the last of our village to go, everyone else is either too young, too old, or doesn’t care enough. Mom has been worried however, she’s saying the war is taking all the local farmers' attention away from us and towards selling to soldier’s instead, and now that we lost our village’s only seasoned farmer, food shortages are only gonna get worse. Dad keeps trying to reassure her  that the government promised aid, but I don’t think she believes it. "

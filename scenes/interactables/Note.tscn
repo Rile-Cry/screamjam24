@@ -1,14 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://ccvs74jc3856l"]
+[gd_scene load_steps=5 format=3 uid="uid://ccvs74jc3856l"]
 
 [ext_resource type="Script" path="res://scripts/Readable.gd" id="1_8r0mw"]
-[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="2_7575m"]
 [ext_resource type="Texture2D" uid="uid://boacwjwimkf5v" path="res://ui/art/top_page_single.png" id="3_x52vw"]
 [ext_resource type="FontFile" uid="uid://iooms834mlvy" path="res://visuals/fonts/ReenieBeanie-Regular.ttf" id="4_am882"]
-
-[sub_resource type="Resource" id="Resource_4my3h"]
-script = ExtResource("2_7575m")
-pageNumber = 1
-text = "There was a young man of Nantucket.Who went down a well in a bucket;The last words he spoke.Before the rope broke,Were, \"Arsehole, you bugger, and suck it.\""
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqdx3"]
 size = Vector3(1, 0.145386, 1)
@@ -17,7 +11,6 @@ size = Vector3(1, 0.145386, 1)
 collision_layer = 5
 collision_mask = 5
 script = ExtResource("1_8r0mw")
-noteResource = SubResource("Resource_4my3h")
 itemName = "Note"
 type = 0
 
@@ -34,6 +27,7 @@ texture = ExtResource("3_x52vw")
 unique_name_in_owner = true
 transform = Transform3D(0.5, -1.77636e-15, -7.7647e-23, 0, -2.18557e-08, 0.5, -1.77636e-15, -0.5, -2.18557e-08, 1.91069e-17, 0.0950044, 2.18557e-10)
 sorting_offset = 0.1
+pixel_size = 0.002
 shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "There was a young man of Nantucket.
@@ -42,6 +36,19 @@ The last words he spoke.
 Before the rope broke,
 Were, \"Arsehole, you bugger, and suck it.\""
 font = ExtResource("4_am882")
+font_size = 50
+autowrap_mode = 3
+width = 700.0
+
+[node name="Date" type="Label3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(0.5, -1.77636e-15, -7.7647e-23, 0, -2.18557e-08, 0.5, -1.77636e-15, -0.5, -2.18557e-08, -0.239619, 0.0987438, -0.472496)
+sorting_offset = 0.2
+pixel_size = 0.002
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "January 31st 1914:"
+font = ExtResource("4_am882")
 font_size = 40
 autowrap_mode = 3
-width = 300.0
+width = 700.0

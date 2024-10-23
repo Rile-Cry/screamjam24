@@ -25,7 +25,7 @@ var goingInsane := false
 @onready var reading_position: Node3D = %ReadingPosition
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
 @onready var death_sound: AudioStreamPlayer = %DeathSound
-
+var pauseInput:= false
 
 # Project Setting References
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -41,6 +41,8 @@ func _ready():
 
 
 func _input(event):
+	if pauseInput:
+		return
 	# Basic "pause", as in if the player's screen moves.
 	# Will change to a full pause functionality later.
 	if event.is_action_pressed("ui_cancel"):
@@ -95,6 +97,7 @@ func _input(event):
 
 
 func _physics_process(delta) -> void:
+	if pauseInput: return
 	if is_on_ladder and climbing:
 		climb_ladder(delta)
 	else:

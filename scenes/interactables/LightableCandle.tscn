@@ -1,17 +1,17 @@
 [gd_scene load_steps=6 format=3 uid="uid://7uk2mtu17r5o"]
 
 [ext_resource type="Script" path="res://scripts/objects/Lightable.gd" id="1_2l6vj"]
-[ext_resource type="PackedScene" uid="uid://dglbbmjvokxv5" path="res://scenes/interactables/root_node.tscn" id="2_mi4pf"]
 [ext_resource type="AudioStream" uid="uid://c0van36teygrq" path="res://Audio/sfx/maybe placeholders/match-lighting-candle-81020.mp3" id="3_f7lwe"]
+[ext_resource type="PackedScene" uid="uid://xisynqg2ihh8" path="res://scenes/interactables/roots/candle_root.tscn" id="4_ihtn7"]
 [ext_resource type="AudioStream" uid="uid://4hc70gw5o6t3" path="res://Audio/sfx/maybe placeholders/blowing-out-candlewav-14441.mp3" id="4_ug7eu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rlkhp"]
 size = Vector3(0.456787, 0.577026, 0.419678)
 
-[node name="LightableCandle" type="RigidBody3D"]
+[node name="LightableCandle" type="StaticBody3D"]
 transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 0, 0, 0)
-collision_layer = 5
-collision_mask = 5
+collision_layer = 4
+collision_mask = 4
 axis_lock_angular_x = true
 axis_lock_angular_z = true
 script = ExtResource("1_2l6vj")
@@ -20,10 +20,8 @@ itemName = "Candle"
 interactDescription = "Light"
 type = 3
 
-[node name="RootNode" parent="." instance=ExtResource("2_mi4pf")]
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, -2.68221e-07, 0, 1, 0, 2.68221e-07, 0, 1, 0, 0.253723, 0)
+transform = Transform3D(0.999999, 0, -3.27826e-07, 0, 1, 0, 3.27826e-07, 0, 0.999999, 0, 0.253723, 0)
 shape = SubResource("BoxShape3D_rlkhp")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
@@ -50,5 +48,7 @@ volume_db = -15.0
 [node name="ExhaustTimer" type="Timer" parent="."]
 unique_name_in_owner = true
 one_shot = true
+
+[node name="CandleRoot" parent="." instance=ExtResource("4_ihtn7")]
 
 [connection signal="timeout" from="ExhaustTimer" to="." method="ExtinguishCandle"]

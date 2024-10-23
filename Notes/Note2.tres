@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://ck3foiuq2l8so"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_h3jci"]
+
+[resource]
+script = ExtResource("1_h3jci")
+date = "January 5th 1914: "
+text = "Brother, I write to you in these dire times to beg for you to return home. Shortly after everyone left for the war, a religious madman arrived and took over the village. I fear I may be the only one left willing to fight, and I can’t do this alone, please return home immediately, Mom and Dad cannot be trusted, if I am not at the house when you return then that means they’ve likely taken me to the previously abandoned church. I wish I could disclose more, but it is becoming increasingly difficult to write in secret. Just know, if you must go to the church, the only way to hurt it, is with the bell. Your sister"
