@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvnk02v5ytn87"]
+[gd_scene load_steps=3 format=3 uid="uid://daf883l0jbctm"]
 
-[ext_resource type="PackedScene" uid="uid://c53fvuqbxlgb7" path="res://scenes/roots/chalice_root.tscn" id="1_7mq3s"]
+[ext_resource type="PackedScene" path="res://scenes/roots/chalice_root.tscn" id="1_7mq3s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xut34"]
 size = Vector3(0.446838, 0.653564, 0.453735)

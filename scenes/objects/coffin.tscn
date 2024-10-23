@@ -47,9 +47,9 @@ shape = SubResource("BoxShape3D_sxk43")
 
 [node name="Here lies text" type="Label3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0, 0.757036, 1.53673)
-modulate = Color(0.162066, 0.162066, 0.162066, 1)
-outline_modulate = Color(0.41598, 0.41598, 0.41598, 1)
+transform = Transform3D(0.2, 0, 0, 0, -8.74228e-09, 0.2, 0, -0.2, -8.74228e-09, 0, 0.757036, 1.45561)
+modulate = Color(0, 0, 0, 0.843137)
+outline_modulate = Color(0, 0, 0, 0)
 text = "Here lies Jack"
 font = ExtResource("3_1uqae")
 font_size = 200

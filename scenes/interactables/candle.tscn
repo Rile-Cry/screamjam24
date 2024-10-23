@@ -8,10 +8,11 @@ height = 0.206277
 radius = 0.10753
 
 [node name="Candle" type="RigidBody3D"]
-transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 collision_layer = 5
 collision_mask = 5
 axis_lock_angular_x = true
+axis_lock_angular_y = true
 axis_lock_angular_z = true
 script = ExtResource("1_q3366")
 itemName = "Candle"
@@ -26,7 +27,7 @@ light_energy = 3.0
 light_volumetric_fog_energy = 0.02
 light_size = 0.1
 shadow_enabled = true
-shadow_blur = 2.0
+shadow_blur = 3.083
 distance_fade_begin = 0.0
 distance_fade_shadow = 0.0
 distance_fade_length = 5.0

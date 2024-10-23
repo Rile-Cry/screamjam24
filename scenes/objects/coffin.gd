@@ -4,7 +4,7 @@ extends Interactable
 @onready var here_lies_text: Label3D = %"Here lies text"
 @onready var indicator: Sprite3D = %Indicator
 @export var mirror: Node3D
-const correctCoffin := "Jack"
+const correctCoffin := "Andrei Dragos"
 const openingTime := 10.0
 var timeMouseHeld := 0.0
 var isOpening := false
