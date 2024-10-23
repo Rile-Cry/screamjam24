@@ -40,6 +40,10 @@ project/assembly_name="Screamjam 24"
 
 enabled=PackedStringArray("res://addons/shaker/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
 
+[filesystem]
+
+import/fbx/enabled=false
+
 [input]
 
 move_forward={
