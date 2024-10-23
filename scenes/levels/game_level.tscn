@@ -1,7 +1,7 @@
 [gd_scene load_steps=60 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
-[ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
+[ext_resource type="PackedScene" uid="uid://cgt568l8kwmu7" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
 [ext_resource type="PackedScene" uid="uid://08w31gfhrnws" path="res://scenes/levels/church.tscn" id="1_rxm03"]
 [ext_resource type="PackedScene" uid="uid://ci4s5wyfxbnsl" path="res://scenes/characters/player.tscn" id="2_csr4c"]
 [ext_resource type="Terrain3DStorage" uid="uid://b70e0pipjuf3c" path="res://Terrain.res" id="2_i2uo6"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://c7j30lsugj4hk" path="res://Placeholders (Will be deleted)/textures/normal.png" id="4_tyx3h"]
 [ext_resource type="PackedScene" uid="uid://drm4nnnapaago" path="res://scenes/interactables/candle.tscn" id="5_7wh1f"]
 [ext_resource type="PackedScene" uid="uid://b6uo0bxp6jnr" path="res://scenes/objects/ritual_circle.tscn" id="9_535ft"]
-[ext_resource type="PackedScene" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
 [ext_resource type="PackedScene" uid="uid://bruwmf30bj5fc" path="res://scenes/objects/altar.tscn" id="11_snhal"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="12_02yxp"]
 [ext_resource type="PackedScene" uid="uid://dcs7udlo38mom" path="res://scripts/objects/knife.tscn" id="13_frigp"]
@@ -42,6 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://dk5dcnljyn026" path="res://scenes/objects/coffin.tscn" id="33_8wlpa"]
 [ext_resource type="Resource" uid="uid://bjqvt66a6ech6" path="res://Notes/Note7.tres" id="33_kip2a"]
 [ext_resource type="PackedScene" uid="uid://ci1150jtyq3lw" path="res://scenes/objects/chains.tscn" id="34_pc5qq"]
+[ext_resource type="PackedScene" uid="uid://63jepa4yj4s7" path="res://scenes/objects/mirror.tscn" id="43_g0k4k"]
 [ext_resource type="PackedScene" uid="uid://c3j75812wqbcc" path="res://scenes/objects/desk.tscn" id="43_q33bd"]
 [ext_resource type="PackedScene" uid="uid://vl57mdwwn58p" path="res://scenes/objects/chair.tscn" id="44_x0i2x"]
 
@@ -126,13 +126,13 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
-[sub_resource type="Resource" id="Resource_gfrja"]
+[sub_resource type="Resource" id="Resource_a8vy6"]
 resource_local_to_scene = true
 script = ExtResource("26_utnp7")
 date = "February 1st 1914:"
 text = "Something I can only describe as a work of god has occurred. I woke up tonight to look out my window, and almost all of the snow was gone, perfect paths carved in the 5ft of snow leading to the center of town that was practically spotless, as well as clear paths for everyone to get home, I didn’t hear any shoveling during the night, and it snowed all throughout the night too, but that might not be the craziest thing to occur tonight, in the middle of town square, some kind of priest was chanting louder than I had ever heard anyone go before about some angel named “Mincinos”, he knew about our struggles, and even managed to point out specific private struggles some were having, like Lena’s husband recently dying, something she hadn’t announced to us yet, he then introduced himself as “Mincinos’s most loyal follower, Andrei Dragos!” I couldn’t quite pin down the accent, but I was certain they were not a native Polack. Goofy costume too, like a mix between a priest and a really cheap magician. However he did claim his “Lord blessed the town, by relieving it of one of it’s pains.” I guess angels can shovel very quietly, but it seems like alot of people bought it… especially mom."
 
-[sub_resource type="Resource" id="Resource_tdle6"]
+[sub_resource type="Resource" id="Resource_dk3qm"]
 resource_local_to_scene = true
 script = ExtResource("26_utnp7")
 date = "February 1st 1914:"
@@ -198,14 +198,6 @@ transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544
 [node name="RitualCircle" parent="." instance=ExtResource("9_535ft")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.99738, -7.51906, 9.00955)
 
-[node name="KeyItems" type="Node3D" parent="."]
-
-[node name="KeyItem4" parent="KeyItems" instance=ExtResource("10_kpjts")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.36385, -6.79586, 8.04946)
-
-[node name="KeyItem5" parent="KeyItems" instance=ExtResource("10_kpjts")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.36521, -6.79586, 8.04946)
-
 [node name="Altar" parent="." instance=ExtResource("11_snhal")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.53755, 0.491255, -19.4888)
 
@@ -247,32 +239,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05136, 1.97057, -20.037)
 [node name="KnifePuzzle" type="Node3D" parent="."]
 
 [node name="Knife" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.34282, 0.877896, -25.1464)
+transform = Transform3D(0.223925, -0.101445, -0.969312, 0.412659, 0.910885, 0, 0.882932, -0.399995, 0.245832, -9.34282, 0.877896, -25.1464)
 script = ExtResource("14_d8016")
-itemName = "Jack's Knife"
+itemName = "GaDimitrie's Blade"
 
 [node name="Knife2" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.79167, 0.877896, -25.0685)
-itemName = "Barrys's Knife"
+transform = Transform3D(0.717601, -0.325095, 0.615923, 0.412659, 0.910885, 0, -0.561035, 0.254166, 0.787807, -9.79167, 0.877896, -25.0685)
+itemName = "Gabriel's Blade"
 
 [node name="Knife3" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -8.6752, 0.877896, -25.1721)
-itemName = "Barrys's Knife"
+transform = Transform3D(0.578645, -0.262144, -0.772301, 0.412659, 0.910885, 0, 0.703478, -0.318697, 0.635256, -8.6752, 0.877896, -25.1721)
+itemName = "Andrei's Blade"
 
 [node name="Knife4" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -8.48671, 0.877896, -24.9001)
-itemName = "Barrys's Knife"
+transform = Transform3D(-0.0738126, 0.0334394, 0.996711, 0.412659, 0.910885, 0, -0.907889, 0.411302, -0.081034, -8.48671, 0.877896, -24.9001)
+itemName = "Isabela's Blade"
 
 [node name="Knife5" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
 transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.29937, 0.877896, -24.9001)
-itemName = "Barrys's Knife"
+itemName = "Radu's Blade"
 
 [node name="Knife6" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -10.5828, 0.877896, -24.9001)
-itemName = "Barrys's Knife"
+transform = Transform3D(0.603868, -0.273571, -0.748667, 0.412659, 0.910885, 0, 0.681949, -0.308944, 0.662947, -10.5828, 0.877896, -24.9001)
+itemName = "Vasile's Blade"
 
 [node name="BloodChalice" parent="KnifePuzzle" instance=ExtResource("14_ymk8b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1802, 1.23771, -26.4942)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.139, 1.23771, -26.4942)
 
 [node name="CandlePuzzle" type="Node3D" parent="."]
 
@@ -476,7 +468,7 @@ noteResource = ExtResource("27_gnmhj")
 
 [node name="Note8" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.51604, 0.491254, 4.79429)
-noteResource = SubResource("Resource_gfrja")
+noteResource = SubResource("Resource_a8vy6")
 
 [node name="Note2" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 0.85173, 0.47856, -18.4791)
@@ -488,7 +480,7 @@ noteResource = ExtResource("29_k7txf")
 
 [node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -9.85117, 0.47856, -26.4675)
-noteResource = SubResource("Resource_tdle6")
+noteResource = SubResource("Resource_dk3qm")
 
 [node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)
@@ -531,37 +523,37 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.98289, 19.663, -26.033)
 
 [node name="Coffin" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.18723, -7.51906, -20.0213)
-nameOnCoffin = "Dave"
+nameOnCoffin = "Serghei Ghita"
 
 [node name="Coffin2" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.18723, -7.51906, -11.1933)
-nameOnCoffin = "Dave"
+nameOnCoffin = "Silviu Hagi"
 
 [node name="Coffin3" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.18723, -7.51906, -2.88471)
-nameOnCoffin = "Dave"
+nameOnCoffin = "Violeta Bucsa"
 
 [node name="Coffin4" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.1377, -7.51906, -3.69158)
-nameOnCoffin = "Dave"
+nameOnCoffin = "Ivan Radu"
 
 [node name="Coffin5" parent="CoffinPuzzle" node_paths=PackedStringArray("mirror") instance=ExtResource("33_8wlpa")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.1377, -7.51906, -11.6735)
-nameOnCoffin = "Jack"
-mirror = NodePath("../REPLACE WITH MIRROR")
+nameOnCoffin = "Andrei Dragos"
+mirror = NodePath("../Mirror")
 
 [node name="Coffin6" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.1377, -7.51906, -19.5828)
-nameOnCoffin = "Dave"
+transform = Transform3D(0.0845821, 0, 0.996417, 0, 1, 0, -0.996417, 0, 0.0845821, -11.1377, -7.51906, -19.5828)
+nameOnCoffin = "Teodor Arcos"
 
-[node name="REPLACE WITH MIRROR" parent="CoffinPuzzle" instance=ExtResource("5_7wh1f")]
-transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -10.1049, -6.76403, -11.6387)
+[node name="Mirror" parent="CoffinPuzzle" instance=ExtResource("43_g0k4k")]
+transform = Transform3D(0.988756, 0.144752, 0.037519, -0.149535, 0.957128, 0.248083, 0, -0.250904, 0.968012, -10.0547, -6.41912, -11.6944)
 
 [node name="Desk" parent="." instance=ExtResource("43_q33bd")]
 transform = Transform3D(0.254585, 0, 0.96705, 0, 1, 0, -0.96705, 0, 0.254585, -11.5136, 0.492781, -26.5504)
 
 [node name="Chair" parent="." instance=ExtResource("44_x0i2x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5604, 0.491255, -26.7448)
+transform = Transform3D(0.787645, 0, -0.616129, 0, 1, 0, 0.616129, 0, 0.787645, -11.5912, 0.491255, -27.2309)
 
 [connection signal="body_entered" from="Cabinet/area" to="Cabinet/area" method="_on_body_entered"]
 

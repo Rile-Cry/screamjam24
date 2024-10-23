@@ -113,6 +113,13 @@ toggle_settings_menu={
 3d_physics/layer_3="Interactable Layer"
 3d_physics/layer_4="Ground"
 
+[physics]
+
+3d/default_linear_damp=1.0
+3d/default_angular_damp=1.0
+3d/sleep_threshold_angular=0.05
+3d/time_before_sleep=0.1
+
 [rendering]
 
 lights_and_shadows/positional_shadow/soft_shadow_filter_quality=5

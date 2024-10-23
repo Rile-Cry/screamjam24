@@ -19,7 +19,7 @@ func interact():
 	for child in player.main_hand.get_children():
 		if child is Interactable:
 			var knife_name = child.itemName
-			if knife_name.contains("Knife"):
+			if knife_name.contains("Blade"):
 				player.animation_player.play("CutSelfAnimation")
 				cutting_sound.play()
 				filled = true
@@ -28,7 +28,7 @@ func interact():
 				player.pauseInput = false
 				await get_tree().create_timer(1).timeout
 
-				if knife_name == "Jack's Knife":
+				if knife_name == "Gabriel's Blade":
 					playerHasKnife()
 				else:
 					Global.sanity =0
@@ -69,10 +69,13 @@ func mouse_entered():
 	var isholdingKnife := false
 	for child in player.main_hand.get_children():
 		if child is Interactable:
-			if child.itemName.contains("Knife"):
+			if child.itemName.contains("Blade"):
 				isholdingKnife = true
+
 	if isholdingKnife:
 		interactDescription = "Fill with Blood"
 	else:
 		interactDescription = "Demands Blood"
+	if filled:
+		interactDescription = "Pickup"
 	super.mouse_entered()

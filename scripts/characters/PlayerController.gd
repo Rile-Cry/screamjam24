@@ -182,13 +182,14 @@ func read() ->void:
 
 func drop(throw: bool = false) -> void:
 	if main_hand.get_child_count() > 1:
-		var main_hand_item = main_hand.get_child(1)
+		var main_hand_item = main_hand.get_child(1) as CollisionObject3D
 		if is_instance_of(main_hand_item, Book):
 			Global.is_holding_book = false
 		main_hand_item.reparent(get_parent())
 #		i got rid of this so you cant push things through walls
 		#main_hand_item.global_position = main_hand.global_position + (transform.basis * main_hand.position).normalized()
 		main_hand_item.process_mode = Node.PROCESS_MODE_PAUSABLE
+		main_hand_item.global_rotation = Vector3.ZERO
 		(main_hand_item as RigidBody3D).add_collision_exception_with(self)
 		if throw:
 			Global.sanity += 1
