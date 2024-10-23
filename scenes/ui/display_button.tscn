@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1u2ho11trl6o"]
+[gd_scene load_steps=3 format=3 uid="uid://c1u2ho11trl6o"]
 
 [ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="1_e251m"]
+[ext_resource type="FontFile" uid="uid://xuoghss3te07" path="res://ui/fonts/PTSansNarrow-Regular.ttf" id="2_0owml"]
 
 [node name="display_button" type="Control"]
 layout_mode = 3
@@ -26,3 +27,4 @@ text = "BASE_LABEL
 [node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
 custom_minimum_size = Vector2(150, 50)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_0owml")

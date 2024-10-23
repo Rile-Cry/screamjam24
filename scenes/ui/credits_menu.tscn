@@ -27,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0404235, 3.84418e-05, 0.148837, 1)
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="content_margin" type="MarginContainer" parent="."]
 custom_minimum_size = Vector2(600, 2.08165e-12)
 layout_mode = 1
 anchors_preset = 9
@@ -37,15 +37,15 @@ theme_override_constants/margin_left = 40
 theme_override_constants/margin_top = 150
 theme_override_constants/margin_bottom = 82
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+[node name="content_container" type="HBoxContainer" parent="content_margin"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+[node name="credits_container" type="VBoxContainer" parent="content_margin/content_container"]
 custom_minimum_size = Vector2(500, 2.08165e-12)
 layout_mode = 2
-theme_override_constants/separation = 25
+theme_override_constants/separation = 15
 
-[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="credits" type="Label" parent="content_margin/content_container/credits_container"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 theme_override_colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
@@ -56,139 +56,150 @@ text = "CREDITS"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="names_roles_container" type="VBoxContainer" parent="content_margin/content_container/credits_container"]
 layout_mode = 2
 
-[node name="role" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="role" type="Label" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 theme_override_colors/font_color = Color(0.333333, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.996078, 0.823529, 0.376471)
 theme_override_font_sizes/font_size = 50
 text = "3D Art"
 horizontal_alignment = 1
 
-[node name="name" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="name" type="HBoxContainer" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme_override_constants/separation = 250
 
-[node name="name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name"]
+[node name="name" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "Daniel Wood"
 horizontal_alignment = 3
 
-[node name="itch" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name"]
+[node name="itch" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "dan_gor.itch.io"
 
-[node name="role2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="role2" type="Label" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 theme_override_colors/font_color = Color(0.333333, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.996078, 0.823529, 0.376471)
 theme_override_font_sizes/font_size = 50
 text = "Narration Design"
 horizontal_alignment = 1
 
-[node name="name2" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="name2" type="HBoxContainer" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme_override_constants/separation = 288
 
-[node name="name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name2"]
+[node name="name" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name2"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "\"Praytor\""
 
-[node name="itch" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name2"]
+[node name="itch" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name2"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "prayt0r.itch.io"
 
-[node name="role3" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="role3" type="Label" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 theme_override_colors/font_color = Color(0.333333, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.996078, 0.823529, 0.376471)
 theme_override_font_sizes/font_size = 50
 text = "Programming"
 horizontal_alignment = 1
 
-[node name="name3" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="name3" type="HBoxContainer" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme_override_constants/separation = 90
 
-[node name="name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name3"]
+[node name="name" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name3"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "Jack Vanderkolk "
 
-[node name="itch" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name3"]
+[node name="itch" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name3"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "orphic-dreaming.itch.io"
 
-[node name="name4" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="name4" type="HBoxContainer" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme_override_constants/separation = 90
 
-[node name="name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name4"]
+[node name="name" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name4"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "\"Lunel\""
 
-[node name="itch" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name4"]
+[node name="itch" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name4"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "..."
 
-[node name="role4" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="role4" type="Label" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 theme_override_colors/font_color = Color(0.333333, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.996078, 0.823529, 0.376471)
 theme_override_font_sizes/font_size = 50
 text = "Sound Design"
 horizontal_alignment = 1
 
-[node name="name5" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="name5" type="HBoxContainer" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme_override_constants/separation = 111
 
-[node name="name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name5"]
+[node name="name" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name5"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "Tom Bretherton "
 
-[node name="itch" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name5"]
+[node name="itch" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name5"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "tombstonemusic.itch.io"
 
-[node name="role5" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="role5" type="Label" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 theme_override_colors/font_color = Color(0.333333, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0.996078, 0.823529, 0.376471)
 theme_override_font_sizes/font_size = 50
 text = "UX/UI Design"
 horizontal_alignment = 1
 
-[node name="name6" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+[node name="name6" type="HBoxContainer" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2
 theme_override_constants/separation = 244
 
-[node name="name" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name6"]
+[node name="name" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name6"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "Megan Eaton"
 
-[node name="itch" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name6"]
+[node name="itch" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name6"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
 text = "me-gan.itch.io"
 
-[node name="doll_container" type="MarginContainer" parent="MarginContainer/HBoxContainer"]
+[node name="doll_container" type="MarginContainer" parent="content_margin/content_container"]
 layout_mode = 2
 theme_override_constants/margin_left = 0
 
-[node name="doll" type="TextureRect" parent="MarginContainer/HBoxContainer/doll_container"]
+[node name="doll" type="TextureRect" parent="content_margin/content_container/doll_container"]
+modulate = Color(1, 1, 1, 0.309804)
 layout_mode = 2
 texture = ExtResource("3_6no4r")
 expand_mode = 3

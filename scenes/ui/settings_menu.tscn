@@ -13,9 +13,9 @@
 [ext_resource type="FontFile" uid="uid://ypscax7btp20" path="res://ui/fonts/ReenieBeanie-Regular.ttf" id="6_jsgm6"]
 [ext_resource type="Texture2D" uid="uid://cijxpb3s3wtdm" path="res://ui/art/tape.png" id="7_84cat"]
 [ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="7_ncmin"]
-[ext_resource type="PackedScene" path="res://scenes/ui/volume_slider.tscn" id="8_wdice"]
-[ext_resource type="PackedScene" path="res://scenes/ui/window_mode_button.tscn" id="9_k6jhe"]
-[ext_resource type="PackedScene" path="res://scenes/ui/resolution_mode_button.tscn" id="10_nmnii"]
+[ext_resource type="PackedScene" uid="uid://lrhmy4b1vyb8" path="res://scenes/ui/volume_slider.tscn" id="8_wdice"]
+[ext_resource type="PackedScene" uid="uid://b8a44kckebu4e" path="res://scenes/ui/window_mode_button.tscn" id="9_k6jhe"]
+[ext_resource type="PackedScene" uid="uid://dsylvhnqynf7j" path="res://scenes/ui/resolution_mode_button.tscn" id="10_nmnii"]
 [ext_resource type="Texture2D" uid="uid://bfbl33k3gelxp" path="res://ui/art/select_icons.png" id="10_qogv1"]
 [ext_resource type="Texture2D" uid="uid://djteiwjuom4de" path="res://ui/art/paper_button_normal.png" id="11_c8rbg"]
 [ext_resource type="Texture2D" uid="uid://bklo6bmmsjuw4" path="res://ui/art/paper_button_pressed.png" id="12_tpffv"]
@@ -135,6 +135,8 @@ stretch_mode = 3
 
 [node name="single_page" type="TextureRect" parent="book_container/right_side/pages_container/full_pages"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 texture = ExtResource("4_1upcm")
 stretch_mode = 3
 
@@ -149,12 +151,11 @@ offset_right = 405.0
 offset_bottom = 598.0
 grow_horizontal = 2
 theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 90
+theme_override_constants/margin_top = 120
 theme_override_constants/margin_right = 20
 
 [node name="controls_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
 unique_name_in_owner = true
-visible = false
 layout_mode = 2
 
 [node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content"]
@@ -179,13 +180,13 @@ alignment = 1
 [node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/movement"]
 custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
-theme_override_fonts/font = ExtResource("6_jsgm6")
+theme = ExtResource("7_ncmin")
 theme_override_font_sizes/font_size = 40
 text = "Movement"
 
 [node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/movement"]
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -198,6 +199,7 @@ theme_override_constants/separation = -10
 [node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/run"]
 custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -205,6 +207,7 @@ text = "Run"
 
 [node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/run"]
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -217,6 +220,7 @@ theme_override_constants/separation = 72
 [node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/interact"]
 custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -224,6 +228,7 @@ text = "Interact"
 
 [node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/interact"]
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -236,6 +241,7 @@ theme_override_constants/separation = 184
 [node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/drop"]
 custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -243,6 +249,7 @@ text = "Drop Item"
 
 [node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/drop"]
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -255,6 +262,7 @@ theme_override_constants/separation = 178
 [node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/throw"]
 custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -262,6 +270,7 @@ text = "Throw Item"
 
 [node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/throw"]
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -274,6 +283,7 @@ theme_override_constants/separation = 150
 [node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/hand_switch"]
 custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -281,6 +291,7 @@ text = "Hand Switch"
 
 [node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/hand_switch"]
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -293,6 +304,7 @@ theme_override_constants/separation = 107
 [node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/stop_climbing"]
 custom_minimum_size = Vector2(150, 2.08165e-12)
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -300,6 +312,7 @@ text = "Stop Climbing"
 
 [node name="controls" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/controls_content/controls_container/stop_climbing"]
 layout_mode = 2
+theme = ExtResource("7_ncmin")
 theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
 theme_override_fonts/font = ExtResource("6_jsgm6")
 theme_override_font_sizes/font_size = 40
@@ -307,6 +320,7 @@ text = "Space"
 
 [node name="accessibility_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2
 
 [node name="title" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content"]
@@ -323,6 +337,14 @@ horizontal_alignment = 1
 [node name="controls_container" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content"]
 layout_mode = 2
 theme_override_constants/separation = 18
+
+[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content/controls_container"]
+custom_minimum_size = Vector2(150, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
+theme_override_fonts/font = ExtResource("6_jsgm6")
+theme_override_font_sizes/font_size = 40
+text = "Coming soon..."
 
 [node name="audio_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
 unique_name_in_owner = true
@@ -552,6 +574,7 @@ offset_right = 29.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("7_ncmin")
 text = "Back"
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://bquwg6s7rrjfv"]
+[gd_scene load_steps=9 format=3 uid="uid://bquwg6s7rrjfv"]
 
 [ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="1_4y63e"]
+[ext_resource type="Script" path="res://scripts/ui/pause_menu.gd" id="1_kf85o"]
 [ext_resource type="Texture2D" uid="uid://djteiwjuom4de" path="res://ui/art/paper_button_normal.png" id="2_1rdgj"]
 [ext_resource type="Texture2D" uid="uid://bklo6bmmsjuw4" path="res://ui/art/paper_button_pressed.png" id="3_v6krl"]
 [ext_resource type="Texture2D" uid="uid://bp624ujgre6t0" path="res://ui/art/paper_button_hover.png" id="4_hahqq"]
 [ext_resource type="Texture2D" uid="uid://be47xvtrlygwf" path="res://ui/art/paper_button_focus.png" id="5_7o7s5"]
 [ext_resource type="FontFile" uid="uid://d1gnl65obr7h4" path="res://ui/fonts/Kings-Regular.ttf" id="6_jqej4"]
+[ext_resource type="PackedScene" uid="uid://cgt568l8kwmu7" path="res://scenes/ui/settings_menu.tscn" id="7_3drav"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -14,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_kf85o")
 
 [node name="back_color" type="ColorRect" parent="."]
 layout_mode = 1
@@ -25,6 +28,7 @@ grow_vertical = 2
 color = Color(0.0392157, 0, 0.14902, 0.313726)
 
 [node name="back_button_container" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 10
@@ -102,6 +106,7 @@ offset_right = 29.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_4y63e")
 text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -131,3 +136,17 @@ grow_vertical = 2
 text = "Quit"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="SettingsMenu" parent="." instance=ExtResource("7_3drav")]
+visible = false
+layout_mode = 1
+
+[node name="Background" parent="SettingsMenu" index="0"]
+visible = false
+
+[node name="back_button_container" parent="SettingsMenu" index="2"]
+visible = false
+
+[connection signal="pressed" from="content_container/center_container/settings_button" to="." method="_on_settings_button_pressed"]
+
+[editable path="SettingsMenu"]
