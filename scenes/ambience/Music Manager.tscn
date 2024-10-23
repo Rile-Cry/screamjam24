@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3rx44y1ynwpg"]
 
-[ext_resource type="AudioStream" uid="uid://b6dtreo20vkg3" path="res://Audio/Music/Spooky Church Ambience (1).mp3" id="1_a5sod"]
+[ext_resource type="AudioStream" uid="uid://1wv6g5kfmqev" path="res://Audio/Music/Main Menu Theme.mp3" id="1_ssh7h"]
 [ext_resource type="Script" path="res://scenes/ambience/Music Manager.gd" id="2_bh5y5"]
 
 [node name="MusicPlayer" type="AudioStreamPlayer"]
-stream = ExtResource("1_a5sod")
+stream = ExtResource("1_ssh7h")
 autoplay = true
 max_polyphony = 3
 bus = &"Music"

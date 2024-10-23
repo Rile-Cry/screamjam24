@@ -199,8 +199,10 @@ func drop(throw: bool = false) -> void:
 
 func drop_note() -> void:
 	if currentReadingItem:
+		currentReadingItem.interact()
 		currentReadingItem.reparent(get_tree().current_scene)
 		currentReadingItem.process_mode = Node.PROCESS_MODE_PAUSABLE
+		currentReadingItem = null
 func switch_hands() -> void:
 	if main_hand.get_child_count() > 1:
 		var main_hand_item = main_hand.get_child(1)

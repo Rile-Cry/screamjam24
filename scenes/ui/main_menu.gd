@@ -9,8 +9,10 @@ const GAME_LEVEL = preload("res://scenes/levels/game_level.tscn")
 func _ready() -> void:
 	play_button.pressed.connect(new_game)
 	quit_button.pressed.connect(quit)
+	MusicManager.change_to_main_menu_music()
 func new_game():
 	get_tree().change_scene_to_packed(GAME_LEVEL)
+	MusicManager.change_to_church_music()
 
 func quit():
 	get_tree().quit()

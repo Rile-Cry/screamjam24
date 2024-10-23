@@ -1,11 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccvs74jc3856l"]
+[gd_scene load_steps=8 format=3 uid="uid://ccvs74jc3856l"]
 
 [ext_resource type="Script" path="res://scripts/Readable.gd" id="1_8r0mw"]
 [ext_resource type="Texture2D" uid="uid://boacwjwimkf5v" path="res://ui/art/top_page_single.png" id="3_x52vw"]
 [ext_resource type="FontFile" uid="uid://iooms834mlvy" path="res://visuals/fonts/ReenieBeanie-Regular.ttf" id="4_am882"]
+[ext_resource type="AudioStream" uid="uid://d00j2wgo7pcgt" path="res://Audio/sfx/Page turn 1.mp3" id="4_mb2e1"]
+[ext_resource type="AudioStream" uid="uid://vicgxlas4mr" path="res://Audio/sfx/Page turn 2.mp3" id="5_fyccc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqdx3"]
 size = Vector3(1, 0.145386, 1)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7174d"]
+random_pitch = 1.1
+streams_count = 2
+stream_0/stream = ExtResource("4_mb2e1")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("5_fyccc")
+stream_1/weight = 1.0
 
 [node name="Note" type="RigidBody3D"]
 collision_layer = 5
@@ -52,3 +62,7 @@ font = ExtResource("4_am882")
 font_size = 40
 autowrap_mode = 3
 width = 700.0
+
+[node name="Pickup_DropSound" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_7174d")
+bus = &"SoundEffects"

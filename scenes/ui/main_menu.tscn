@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbr7gpfc4w0wj"]
 
-[ext_resource type="Texture2D" uid="uid://b8f1dof2vhuk7" path="res://ui/art/book_front.png" id="1_s8mlr"]
-[ext_resource type="Script" path="res://scenes/ui/main_menu.gd" id="1_w7jqa"]
-[ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="2_f1s41"]
+[ext_resource type="Script" path="res://scenes/ui/main_menu.gd" id="1_g5mk5"]
+[ext_resource type="Texture2D" uid="uid://b8f1dof2vhuk7" path="res://ui/art/book_front.png" id="2_ocvm6"]
+[ext_resource type="Theme" uid="uid://cxlqi1so5wmjb" path="res://ui/themes/standard_theme.tres" id="3_aiuka"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -11,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_w7jqa")
+script = ExtResource("1_g5mk5")
 
 [node name="BookMargin" type="MarginContainer" parent="."]
 unique_name_in_owner = true
@@ -32,7 +32,7 @@ theme_override_constants/margin_bottom = -20
 [node name="book_cover" type="TextureRect" parent="BookMargin"]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("1_s8mlr")
+texture = ExtResource("2_ocvm6")
 
 [node name="ButtonMargin" type="MarginContainer" parent="BookMargin/book_cover"]
 unique_name_in_owner = true
@@ -58,7 +58,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("3_aiuka")
 theme_override_font_sizes/font_size = 60
 text = "PLAY"
 
@@ -67,7 +67,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("3_aiuka")
 text = "OPTIONS"
 
 [node name="credits_button" type="Button" parent="BookMargin/book_cover/ButtonMargin/ButtonContainer"]
@@ -75,7 +75,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("3_aiuka")
 text = "CREDITS"
 
 [node name="quit_button" type="Button" parent="BookMargin/book_cover/ButtonMargin/ButtonContainer"]
@@ -83,7 +83,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme = ExtResource("2_f1s41")
+theme = ExtResource("3_aiuka")
 text = "QUIT"
 
 [node name="BackColor" type="ColorRect" parent="."]
