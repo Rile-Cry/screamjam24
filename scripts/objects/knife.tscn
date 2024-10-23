@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cmlxcocw8rbxb"]
+[gd_scene load_steps=9 format=3 uid="uid://dcs7udlo38mom"]
 
 [ext_resource type="Script" path="res://scripts/interactables/Interactable.gd" id="1_y1otl"]
 [ext_resource type="Texture2D" uid="uid://chdpew2hmci18" path="res://Placeholders (Will be deleted)/food/knife2_knife2_color.png" id="2_58ae0"]

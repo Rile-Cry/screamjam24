@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://da1bewuv17rby"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_mj42j"]
+
+[resource]
+script = ExtResource("1_mj42j")
+date = "February 15th 1914"
+text = "It would appear Mincinos has pointed me in the right direction, these people have been eating up everything i’ve said like starving animals at a fresh carcass. Just the right crowd to recruit for Mincinos. If only they knew what I was really here for.February 7th 1914:Already I have established myself as the leading voice in this village. I had to ask one more favor of Mincinos to make that church at all habitable, but he didn’t seem to mind considering it’ll be his eventual temple later, and Mincinos is one for theatrics. In unfortunate news, the damn doll got out again, luckily it’s not malicious, but I can’t reveal all my cards yet. The last thing I need is people seeing a possessed doll and throwing demon allegations my way. I’ll have to find and capture her discreetly, rather difficult to look like you belong when you’re trying to catch something with your back turned to it. But Mincinos requires the soul in that doll to be summoned, it is a necessity."

@@ -7,7 +7,7 @@ var player: Player
 @onready var success_sound_2: AudioStreamPlayer = %SuccessSound2
 @onready var omni_light_3d: OmniLight3D = $OmniLight3D
 @onready var fail_sound: AudioStreamPlayer = %FailSound
-
+var pauseInput := false
 var filled := false
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
@@ -23,8 +23,11 @@ func interact():
 				player.animation_player.play("CutSelfAnimation")
 				cutting_sound.play()
 				filled = true
+				player.pauseInput = true
 				await player.animation_player.animation_finished
+				player.pauseInput = false
 				await get_tree().create_timer(1).timeout
+
 				if knife_name == "Jack's Knife":
 					playerHasKnife()
 				else:

@@ -2,7 +2,7 @@
 
 [sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_mfyka"]
 resource_name = "Compressor"
-ratio = 2.0
+ratio = 6.0
 
 [sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_nh6wk"]
 resource_name = "PitchShift"

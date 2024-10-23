@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=60 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" path="res://scenes/interactables/temp_items/applejuice.tscn" id="10_kpjts"]
 [ext_resource type="PackedScene" uid="uid://bruwmf30bj5fc" path="res://scenes/objects/altar.tscn" id="11_snhal"]
 [ext_resource type="PackedScene" uid="uid://diq6m5n535d0" path="res://scenes/interactables/Doll.tscn" id="12_02yxp"]
-[ext_resource type="PackedScene" path="res://scripts/objects/knife.tscn" id="13_frigp"]
+[ext_resource type="PackedScene" uid="uid://dcs7udlo38mom" path="res://scripts/objects/knife.tscn" id="13_frigp"]
 [ext_resource type="Script" path="res://scripts/objects/KeyItemKnife.gd" id="14_d8016"]
 [ext_resource type="PackedScene" uid="uid://b3qphi6tibi4g" path="res://scenes/interactables/BloodChalice.tscn" id="14_ymk8b"]
 [ext_resource type="Script" path="res://scripts/Trials/CandleTrial.gd" id="16_6210w"]
@@ -26,14 +26,24 @@
 [ext_resource type="PackedScene" uid="uid://ccvs74jc3856l" path="res://scenes/interactables/Note.tscn" id="25_1lmjg"]
 [ext_resource type="PackedScene" uid="uid://b64v2w7rch36v" path="res://scenes/objects/ladder.tscn" id="25_w0xto"]
 [ext_resource type="Script" path="res://scripts/NoteResource.gd" id="26_utnp7"]
+[ext_resource type="Resource" uid="uid://c8jo3dr8ly7ic" path="res://Notes/Note1.tres" id="27_gnmhj"]
+[ext_resource type="PackedScene" uid="uid://cngtjukni3ncy" path="res://scenes/objects/pew.tscn" id="27_mtyij"]
 [ext_resource type="PackedScene" uid="uid://c5ss28meyqyum" path="res://scenes/interactables/doorway.tscn" id="28_0kth3"]
 [ext_resource type="PackedScene" uid="uid://bm617llvppw0h" path="res://scenes/objects/votive.tscn" id="28_ftldx"]
+[ext_resource type="Resource" uid="uid://ck3foiuq2l8so" path="res://Notes/Note2.tres" id="28_s64ql"]
+[ext_resource type="PackedScene" uid="uid://g0johx6oqj32" path="res://scenes/objects/confessional.tscn" id="29_ct4v2"]
 [ext_resource type="PackedScene" uid="uid://cuake6wm1ym4j" path="res://scenes/roots/cabinet.tscn" id="29_eir6v"]
+[ext_resource type="Resource" uid="uid://3bm4al536hm" path="res://Notes/Note3.tres" id="29_k7txf"]
 [ext_resource type="Script" path="res://scenes/roots/SecretDoorway.gd" id="30_mvp5o"]
+[ext_resource type="Resource" uid="uid://daxr78d7p7bjw" path="res://Notes/Note5.tres" id="31_0lwwl"]
 [ext_resource type="AudioStream" uid="uid://b2ibl5t0of3ln" path="res://Audio/sfx/Stone on stone scraping (secret passageway) 1.mp3" id="31_nba7b"]
 [ext_resource type="PackedScene" uid="uid://c106x0ii6l8be" path="res://scenes/objects/bell.tscn" id="32_4q8fj"]
+[ext_resource type="Resource" uid="uid://da1bewuv17rby" path="res://Notes/Note6.tres" id="32_p4eoy"]
 [ext_resource type="PackedScene" uid="uid://dk5dcnljyn026" path="res://scenes/objects/coffin.tscn" id="33_8wlpa"]
+[ext_resource type="Resource" uid="uid://bjqvt66a6ech6" path="res://Notes/Note7.tres" id="33_kip2a"]
 [ext_resource type="PackedScene" uid="uid://ci1150jtyq3lw" path="res://scenes/objects/chains.tscn" id="34_pc5qq"]
+[ext_resource type="PackedScene" uid="uid://c3j75812wqbcc" path="res://scenes/objects/desk.tscn" id="43_q33bd"]
+[ext_resource type="PackedScene" uid="uid://vl57mdwwn58p" path="res://scenes/objects/chair.tscn" id="44_x0i2x"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 27.0753, 49.2281)
@@ -116,40 +126,17 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
-[sub_resource type="Resource" id="Resource_f7eub"]
+[sub_resource type="Resource" id="Resource_gfrja"]
+resource_local_to_scene = true
 script = ExtResource("26_utnp7")
-pageNumber = 0
-text = "I am a your families. Big bad demon in basement, the bell kills demons. Good luck!"
+date = "February 1st 1914:"
+text = "Something I can only describe as a work of god has occurred. I woke up tonight to look out my window, and almost all of the snow was gone, perfect paths carved in the 5ft of snow leading to the center of town that was practically spotless, as well as clear paths for everyone to get home, I didn’t hear any shoveling during the night, and it snowed all throughout the night too, but that might not be the craziest thing to occur tonight, in the middle of town square, some kind of priest was chanting louder than I had ever heard anyone go before about some angel named “Mincinos”, he knew about our struggles, and even managed to point out specific private struggles some were having, like Lena’s husband recently dying, something she hadn’t announced to us yet, he then introduced himself as “Mincinos’s most loyal follower, Andrei Dragos!” I couldn’t quite pin down the accent, but I was certain they were not a native Polack. Goofy costume too, like a mix between a priest and a really cheap magician. However he did claim his “Lord blessed the town, by relieving it of one of it’s pains.” I guess angels can shovel very quietly, but it seems like alot of people bought it… especially mom."
 
-[sub_resource type="Resource" id="Resource_us5n7"]
+[sub_resource type="Resource" id="Resource_tdle6"]
+resource_local_to_scene = true
 script = ExtResource("26_utnp7")
-pageNumber = 0
-text = "The holy fat was hidden in darkness, only the light could reveal it again."
-
-[sub_resource type="Resource" id="Resource_sbvpc"]
-script = ExtResource("26_utnp7")
-pageNumber = 0
-text = "The only one who survived the shedding of blood was Jack"
-
-[sub_resource type="Resource" id="Resource_w40ss"]
-script = ExtResource("26_utnp7")
-pageNumber = 0
-text = "The bookshelf hides the truth, A golden book is the key"
-
-[sub_resource type="Resource" id="Resource_7h851"]
-script = ExtResource("26_utnp7")
-pageNumber = 0
-text = "The Child who was murdered could never stand eye contact with strangers, dont look at her"
-
-[sub_resource type="Resource" id="Resource_oiso7"]
-script = ExtResource("26_utnp7")
-pageNumber = 0
-text = "Only this holy bell could damage the devil. Only in his physical form can he be destroyed"
-
-[sub_resource type="Resource" id="Resource_01ktg"]
-script = ExtResource("26_utnp7")
-pageNumber = 0
-text = "The demon can only be brought back into a form where you can kill him by performing the ritual. You need A holy fat candle, a doll owned by a murdered child, a holy grail and a knife, and a mirror that reflects only darkness."
+date = "February 1st 1914:"
+text = "Something I can only describe as a work of god has occurred. I woke up tonight to look out my window, and almost all of the snow was gone, perfect paths carved in the 5ft of snow leading to the center of town that was practically spotless, as well as clear paths for everyone to get home, I didn’t hear any shoveling during the night, and it snowed all throughout the night too, but that might not be the craziest thing to occur tonight, in the middle of town square, some kind of priest was chanting louder than I had ever heard anyone go before about some angel named “Mincinos”, he knew about our struggles, and even managed to point out specific private struggles some were having, like Lena’s husband recently dying, something she hadn’t announced to us yet, he then introduced himself as “Mincinos’s most loyal follower, Andrei Dragos!” I couldn’t quite pin down the accent, but I was certain they were not a native Polack. Goofy costume too, like a mix between a priest and a really cheap magician. However he did claim his “Lord blessed the town, by relieving it of one of it’s pains.” I guess angels can shovel very quietly, but it seems like alot of people bought it… especially mom."
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_34e2i"]
 size = Vector3(0.45459, 0.318596, 3.08249)
@@ -260,16 +247,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05136, 1.97057, -20.037)
 [node name="KnifePuzzle" type="Node3D" parent="."]
 
 [node name="Knife" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -10.239, 0.877896, -28.2235)
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.34282, 0.877896, -25.1464)
 script = ExtResource("14_d8016")
 itemName = "Jack's Knife"
 
 [node name="Knife2" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.36569, 0.877896, -28.2235)
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -9.79167, 0.877896, -25.0685)
 itemName = "Barrys's Knife"
 
 [node name="Knife3" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
-transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -8.48671, 0.877896, -28.2235)
+transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, -8.6752, 0.877896, -25.1721)
 itemName = "Barrys's Knife"
 
 [node name="Knife4" parent="KnifePuzzle" instance=ExtResource("13_frigp")]
@@ -285,7 +272,7 @@ transform = Transform3D(0.910885, -0.412659, 0, 0.412659, 0.910885, 0, 0, 0, 1, 
 itemName = "Barrys's Knife"
 
 [node name="BloodChalice" parent="KnifePuzzle" instance=ExtResource("14_ymk8b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3808, 0.516101, -26.4836)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1802, 1.23771, -26.4942)
 
 [node name="CandlePuzzle" type="Node3D" parent="."]
 
@@ -448,35 +435,72 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5.136
 [node name="Ladder2" parent="BuildingStuff" instance=ExtResource("25_w0xto")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.8431, 16.1015, -30.4057)
 
+[node name="Chains" parent="BuildingStuff" instance=ExtResource("34_pc5qq")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.54907, 0.491564, -19.4803)
+
+[node name="Pew" parent="BuildingStuff" instance=ExtResource("27_mtyij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.01981, 0.491864, -3.67162)
+
+[node name="Pew2" parent="BuildingStuff" instance=ExtResource("27_mtyij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.01981, 0.491864, -7.72046)
+
+[node name="Pew4" parent="BuildingStuff" instance=ExtResource("27_mtyij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3.01981, 0.491864, -15.8617)
+
+[node name="Pew5" parent="BuildingStuff" instance=ExtResource("27_mtyij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.8133, 0.491864, -3.67162)
+
+[node name="Pew6" parent="BuildingStuff" instance=ExtResource("27_mtyij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.8133, 0.491864, -7.72046)
+
+[node name="Pew8" parent="BuildingStuff" instance=ExtResource("27_mtyij")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.8133, 0.491864, -15.8617)
+
+[node name="Votive2" parent="BuildingStuff" instance=ExtResource("28_ftldx")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, -1.07637, 0.491255, -23.4524)
+
+[node name="Votive3" parent="BuildingStuff" instance=ExtResource("28_ftldx")]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 8.10774, 0.491255, -23.4524)
+
+[node name="Confessional" parent="BuildingStuff" instance=ExtResource("29_ct4v2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4297, 0.491865, -10.6859)
+
+[node name="Confessional2" parent="BuildingStuff" instance=ExtResource("29_ct4v2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.43748, 0.491865, -12.846)
+
 [node name="Notes" type="Node3D" parent="."]
 
 [node name="Note" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.80128, 0.491254, 4.27222)
-noteResource = SubResource("Resource_f7eub")
+noteResource = ExtResource("27_gnmhj")
+
+[node name="Note8" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.51604, 0.491254, 4.79429)
+noteResource = SubResource("Resource_gfrja")
 
 [node name="Note2" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 0.85173, 0.47856, -18.4791)
-noteResource = SubResource("Resource_us5n7")
-
-[node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
-transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -9.85117, 0.47856, -26.4675)
-noteResource = SubResource("Resource_sbvpc")
-
-[node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
-transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)
-noteResource = SubResource("Resource_w40ss")
-
-[node name="Note7" parent="Notes" instance=ExtResource("25_1lmjg")]
-transform = Transform3D(0.99835, 0, 0.0574247, 0, 1, 0, -0.0574247, 0, 0.99835, -5.89124, -7.53176, 4.96243)
-noteResource = SubResource("Resource_7h851")
-
-[node name="Note6" parent="Notes" instance=ExtResource("25_1lmjg")]
-transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 9.56037, 16.6513, -28.8426)
-noteResource = SubResource("Resource_oiso7")
+noteResource = ExtResource("28_s64ql")
 
 [node name="Note3" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(-0.946351, 0, -0.323141, 0, 1, 0, 0.323141, 0, -0.946351, -5.50982, -7.53176, -2.38123)
-noteResource = SubResource("Resource_01ktg")
+noteResource = ExtResource("29_k7txf")
+
+[node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -9.85117, 0.47856, -26.4675)
+noteResource = SubResource("Resource_tdle6")
+
+[node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)
+noteResource = ExtResource("31_0lwwl")
+
+[node name="Note6" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 9.56037, 16.6513, -28.8426)
+noteResource = ExtResource("32_p4eoy")
+
+[node name="Note7" parent="Notes" instance=ExtResource("25_1lmjg")]
+transform = Transform3D(0.99835, 0, 0.0574247, 0, 1, 0, -0.0574247, 0, 0.99835, -5.89124, -7.53176, 4.96243)
+noteResource = ExtResource("33_kip2a")
 
 [node name="Votive" parent="." instance=ExtResource("28_ftldx")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.342939, 0.491255, 1.10634)
@@ -533,8 +557,11 @@ nameOnCoffin = "Dave"
 [node name="REPLACE WITH MIRROR" parent="CoffinPuzzle" instance=ExtResource("5_7wh1f")]
 transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -10.1049, -6.76403, -11.6387)
 
-[node name="Chains" parent="." instance=ExtResource("34_pc5qq")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.54907, 0.491564, -19.4803)
+[node name="Desk" parent="." instance=ExtResource("43_q33bd")]
+transform = Transform3D(0.254585, 0, 0.96705, 0, 1, 0, -0.96705, 0, 0.254585, -11.5136, 0.492781, -26.5504)
+
+[node name="Chair" parent="." instance=ExtResource("44_x0i2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5604, 0.491255, -26.7448)
 
 [connection signal="body_entered" from="Cabinet/area" to="Cabinet/area" method="_on_body_entered"]
 

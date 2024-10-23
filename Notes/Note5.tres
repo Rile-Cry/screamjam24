@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NoteResource" load_steps=2 format=3 uid="uid://daxr78d7p7bjw"]
+
+[ext_resource type="Script" path="res://scripts/NoteResource.gd" id="1_wingj"]
+
+[resource]
+script = ExtResource("1_wingj")
+date = "February 3rd 1914:"
+text = "Something I can only describe as a work of god has occurred. I woke up tonight to look out my window, and almost all of the snow was gone, perfect paths carved in the 5ft of snow leading to the center of town that was practically spotless, as well as clear paths for everyone to get home, I didn’t hear any shoveling during the night, and it snowed all throughout the night too, but that might not be the craziest thing to occur tonight, in the middle of town square, some kind of priest was chanting louder than I had ever heard anyone go before about some angel named “Mincinos”, he knew about our struggles, and even managed to point out specific private struggles some were having, like Lena’s husband recently dying, something she hadn’t announced to us yet, he then introduced himself as “Mincinos’s most loyal follower, Andrei Dragos!” I couldn’t quite pin down the accent, but I was certain they were not a native Polack. Goofy costume too, like a mix between a priest and a really cheap magician. However he did claim his “Lord blessed the town, by relieving it of one of it’s pains.” I guess angels can shovel very quietly, but it seems like alot of people bought it… especially mom."
