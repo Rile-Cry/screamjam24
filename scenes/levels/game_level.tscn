@@ -126,13 +126,13 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
-[sub_resource type="Resource" id="Resource_d7hjk"]
+[sub_resource type="Resource" id="Resource_gfrja"]
 resource_local_to_scene = true
 script = ExtResource("26_utnp7")
 date = "February 1st 1914:"
 text = "Something I can only describe as a work of god has occurred. I woke up tonight to look out my window, and almost all of the snow was gone, perfect paths carved in the 5ft of snow leading to the center of town that was practically spotless, as well as clear paths for everyone to get home, I didn’t hear any shoveling during the night, and it snowed all throughout the night too, but that might not be the craziest thing to occur tonight, in the middle of town square, some kind of priest was chanting louder than I had ever heard anyone go before about some angel named “Mincinos”, he knew about our struggles, and even managed to point out specific private struggles some were having, like Lena’s husband recently dying, something she hadn’t announced to us yet, he then introduced himself as “Mincinos’s most loyal follower, Andrei Dragos!” I couldn’t quite pin down the accent, but I was certain they were not a native Polack. Goofy costume too, like a mix between a priest and a really cheap magician. However he did claim his “Lord blessed the town, by relieving it of one of it’s pains.” I guess angels can shovel very quietly, but it seems like alot of people bought it… especially mom."
 
-[sub_resource type="Resource" id="Resource_qdi2h"]
+[sub_resource type="Resource" id="Resource_tdle6"]
 resource_local_to_scene = true
 script = ExtResource("26_utnp7")
 date = "February 1st 1914:"
@@ -476,7 +476,7 @@ noteResource = ExtResource("27_gnmhj")
 
 [node name="Note8" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.51604, 0.491254, 4.79429)
-noteResource = SubResource("Resource_d7hjk")
+noteResource = SubResource("Resource_gfrja")
 
 [node name="Note2" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 0.85173, 0.47856, -18.4791)
@@ -488,7 +488,7 @@ noteResource = ExtResource("29_k7txf")
 
 [node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -9.85117, 0.47856, -26.4675)
-noteResource = SubResource("Resource_qdi2h")
+noteResource = SubResource("Resource_tdle6")
 
 [node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)
