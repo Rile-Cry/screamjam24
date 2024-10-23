@@ -36,5 +36,7 @@ func teleportToNextPosition():
 	await get_tree().create_timer(.5).timeout
 	interactable = true
 	Global.sanity -= 5
-	global_position = positionsToSpawnAt.get_children().pick_random().global_position
+	var lastPosition := global_position
+	while lastPosition.distance_to(global_position) < 3:
+		global_position = positionsToSpawnAt.get_children().pick_random().global_position
 	jumpTriggered = false

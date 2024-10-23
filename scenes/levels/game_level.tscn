@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=55 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://bvdo4m6dao4wf" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
@@ -32,6 +32,8 @@
 [ext_resource type="Script" path="res://scenes/roots/SecretDoorway.gd" id="30_mvp5o"]
 [ext_resource type="AudioStream" uid="uid://b2ibl5t0of3ln" path="res://Audio/sfx/Stone on stone scraping (secret passageway) 1.mp3" id="31_nba7b"]
 [ext_resource type="PackedScene" uid="uid://c106x0ii6l8be" path="res://scenes/objects/bell.tscn" id="32_4q8fj"]
+[ext_resource type="PackedScene" uid="uid://dk5dcnljyn026" path="res://scenes/objects/coffin.tscn" id="33_8wlpa"]
+[ext_resource type="PackedScene" uid="uid://ci1150jtyq3lw" path="res://scenes/objects/chains.tscn" id="34_pc5qq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 27.0753, 49.2281)
@@ -201,7 +203,7 @@ collision_mask = 9
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.491255, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_csr4c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2384, 16.4267, -28.7992)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.706874, 0.927775, 6.70548)
 
 [node name="Candle" parent="." instance=ExtResource("5_7wh1f")]
 transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -0.422723, 1.52536, 0.673901)
@@ -412,7 +414,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.18719, -1.86367)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.10841, -6.05705)
 
 [node name="Book" parent="." instance=ExtResource("22_52psr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.14701, 0.528348, 2.61632)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.00176, 1.73344, -20.0543)
 
 [node name="DemonTeleporters" type="Node3D" parent="."]
 
@@ -492,7 +494,7 @@ shape = SubResource("BoxShape3D_34e2i")
 
 [node name="OpenSound" type="AudioStreamPlayer" parent="Cabinet/area"]
 stream = ExtResource("31_nba7b")
-volume_db = 20.0
+volume_db = 5.0
 bus = &"SoundEffects"
 
 [node name="slidePosition" type="Node3D" parent="Cabinet"]
@@ -500,6 +502,39 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 
 
 [node name="Bell" parent="." instance=ExtResource("32_4q8fj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.98289, 19.663, -26.033)
+
+[node name="CoffinPuzzle" type="Node3D" parent="."]
+
+[node name="Coffin" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.18723, -7.51906, -20.0213)
+nameOnCoffin = "Dave"
+
+[node name="Coffin2" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.18723, -7.51906, -11.1933)
+nameOnCoffin = "Dave"
+
+[node name="Coffin3" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.18723, -7.51906, -2.88471)
+nameOnCoffin = "Dave"
+
+[node name="Coffin4" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.1377, -7.51906, -3.69158)
+nameOnCoffin = "Dave"
+
+[node name="Coffin5" parent="CoffinPuzzle" node_paths=PackedStringArray("mirror") instance=ExtResource("33_8wlpa")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.1377, -7.51906, -11.6735)
+nameOnCoffin = "Jack"
+mirror = NodePath("../REPLACE WITH MIRROR")
+
+[node name="Coffin6" parent="CoffinPuzzle" instance=ExtResource("33_8wlpa")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.1377, -7.51906, -19.5828)
+nameOnCoffin = "Dave"
+
+[node name="REPLACE WITH MIRROR" parent="CoffinPuzzle" instance=ExtResource("5_7wh1f")]
+transform = Transform3D(-0.333544, 0, -0.942735, 0, 1, 0, 0.942735, 0, -0.333544, -10.1049, -6.76403, -11.6387)
+
+[node name="Chains" parent="." instance=ExtResource("34_pc5qq")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 3.54907, 0.491564, -19.4803)
 
 [connection signal="body_entered" from="Cabinet/area" to="Cabinet/area" method="_on_body_entered"]
 
