@@ -162,6 +162,8 @@ func check_ray() -> void:
 func pick_up() -> void:
 	# Crude pickup method :: will look very different.
 	drop()
+	if is_instance_of(colliding_obj, KeyItem):
+		key_item_check(colliding_obj)
 	if colliding_obj.get_parent() != null:
 		colliding_obj.get_parent().remove_child(colliding_obj)
 	if is_instance_of(colliding_obj, Book):

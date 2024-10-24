@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://btyqqxa31yi00"]
+[gd_scene load_steps=9 format=3 uid="uid://btyqqxa31yi00"]
 
 [ext_resource type="PackedScene" uid="uid://bn3rl20n4vsy3" path="res://models/maps/Office.fbx" id="1_x8fes"]
 [ext_resource type="Material" uid="uid://dbg2tkfpgax1d" path="res://visuals/materials/church_mats/M_Office_Walls.tres" id="2_xj7so"]
 [ext_resource type="Material" uid="uid://b04m125hjq5r5" path="res://visuals/materials/church_mats/M_Concrete.tres" id="3_dbhjj"]
 [ext_resource type="Material" uid="uid://ddkiv3dbwstip" path="res://visuals/materials/church_mats/M_Block_Floor.tres" id="3_t2clo"]
 [ext_resource type="Material" uid="uid://wmsuquoxmvg" path="res://visuals/materials/church_mats/M_Gravel.tres" id="4_5stfk"]
+[ext_resource type="Material" uid="uid://4eq13rjbcv8a" path="res://visuals/materials/church_mats/M_Crypt_WallandCeiling.tres" id="5_gi2ad"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ilj17"]
 data = PackedVector3Array(1, 0, 1.9999, 0, 0, 1.1873, 0.7153, 0, 0.848, 1, 0, 1.9999, 2, 0, 1, 2, 0, 1.9999, 0, 0, 1.9999, 0, 0, 1.1873, 1, 0, 1.9999, -1, 0, 1.9999, -1.0257, 0, 0.6028, 0, 0, 1.1873, -1, 0, 1.9999, 0, 0, 1.1873, 0, 0, 1.9999, -1, 0, 1.9999, -2, 0, 1.9999, -2, 0, 1, 2, 0, -1, 0.924, 0, -1, 1, 0, -2, 1, 0, 0, 2, 0, -1, 2, 0, 0, 1, 0, 0, 0.924, 0, -1, 2, 0, -1, 1, 0, 0, 2, 0, 0, 2, 0, 1, 2, 0, 1, 1, 0, 1.9999, 0.7153, 0, 0.848, 2, 0, 1, 0.7153, 0, 0.848, 1, 0, 0, -1.0618, 0, 0, -2, 0, 0, -2, 0, -1, -2, 0, 1, -1.0257, 0, 0.6028, -1, 0, 1.9999, -2, 0, 0, -1.0618, 0, 0, -1.0257, 0, 0.6028, -1.0257, 0, 0.6028, -2, 0, 1, -2, 0, 0, 1, 0, -2, 0.924, 0, -1, 0, 0, -1.2256, 1, 0, -2, 2, 0, -2, 2, 0, -1, 0, 0, -1.2256, 0, 0, -2, 1, 0, -2, 0, 0, -1.2256, -0.6578, 0, -1, -1, 0, -2, -2, 0, -1, -2, 0, -2, -1, 0, -2, -2, 0, -1, -0.6578, 0, -1, -1.0618, 0, 0, -1, 0, -2, 0, 0, -2, 0, 0, -1.2256, -0.6578, 0, -1, -2, 0, -1, -1, 0, -2)
@@ -125,6 +126,9 @@ shape = SubResource("ConcavePolygonShape3D_ilj17")
 [node name="pasted__pasted__pCube20" parent="RootNode/group168" index="26"]
 cast_shadow = 2
 surface_material_override/0 = ExtResource("2_xj7so")
+
+[node name="pasted__pPlane10" parent="RootNode/group168" index="27"]
+material_override = ExtResource("5_gi2ad")
 
 [node name="pasted__pasted__pasted__pCube19" parent="RootNode/group168" index="28"]
 cast_shadow = 2

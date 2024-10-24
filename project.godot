@@ -129,3 +129,4 @@ toggle_settings_menu={
 
 textures/vram_compression/import_etc2_astc=true
 lights_and_shadows/positional_shadow/soft_shadow_filter_quality=5
+environment/volumetric_fog/volume_size=128

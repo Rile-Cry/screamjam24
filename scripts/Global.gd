@@ -30,7 +30,7 @@ var hints := {
 }
 
 # Accessibility Options
-var access_hint := false
+var access_hint := true
 
 var sanity := 100:
 	set(x):
