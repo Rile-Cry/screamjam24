@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bellv4p6a5tiq"
 path.s3tc="res://.godot/imported/Door_standardSurface1_Height.tga-ccebf264f0dd22b7a60f919aaf412103.s3tc.ctex"
+path.etc2="res://.godot/imported/Door_standardSurface1_Height.tga-ccebf264f0dd22b7a60f919aaf412103.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Door/Door_standardSurface1_Height.tga"
-dest_files=["res://.godot/imported/Door_standardSurface1_Height.tga-ccebf264f0dd22b7a60f919aaf412103.s3tc.ctex"]
+dest_files=["res://.godot/imported/Door_standardSurface1_Height.tga-ccebf264f0dd22b7a60f919aaf412103.s3tc.ctex", "res://.godot/imported/Door_standardSurface1_Height.tga-ccebf264f0dd22b7a60f919aaf412103.etc2.ctex"]
 
 [params]
 

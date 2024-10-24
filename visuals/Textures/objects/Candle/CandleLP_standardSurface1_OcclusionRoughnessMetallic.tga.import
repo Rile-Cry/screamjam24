@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://1mlm0rv0mocj"
 path.s3tc="res://.godot/imported/CandleLP_standardSurface1_OcclusionRoughnessMetallic.tga-da877f87eee6658b104ad388067f02c9.s3tc.ctex"
+path.etc2="res://.godot/imported/CandleLP_standardSurface1_OcclusionRoughnessMetallic.tga-da877f87eee6658b104ad388067f02c9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Candle/CandleLP_standardSurface1_OcclusionRoughnessMetallic.tga"
-dest_files=["res://.godot/imported/CandleLP_standardSurface1_OcclusionRoughnessMetallic.tga-da877f87eee6658b104ad388067f02c9.s3tc.ctex"]
+dest_files=["res://.godot/imported/CandleLP_standardSurface1_OcclusionRoughnessMetallic.tga-da877f87eee6658b104ad388067f02c9.s3tc.ctex", "res://.godot/imported/CandleLP_standardSurface1_OcclusionRoughnessMetallic.tga-da877f87eee6658b104ad388067f02c9.etc2.ctex"]
 
 [params]
 

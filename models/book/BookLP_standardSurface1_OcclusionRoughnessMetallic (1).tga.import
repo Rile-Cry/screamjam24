@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://crulkwbwja778"
 path.bptc="res://.godot/imported/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga-190a88ab832bb328cb4772186f2e415c.bptc.ctex"
+path.astc="res://.godot/imported/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga-190a88ab832bb328cb4772186f2e415c.astc.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://models/book/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga"
-dest_files=["res://.godot/imported/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga-190a88ab832bb328cb4772186f2e415c.bptc.ctex"]
+dest_files=["res://.godot/imported/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga-190a88ab832bb328cb4772186f2e415c.bptc.ctex", "res://.godot/imported/BookLP_standardSurface1_OcclusionRoughnessMetallic (1).tga-190a88ab832bb328cb4772186f2e415c.astc.ctex"]
 
 [params]
 

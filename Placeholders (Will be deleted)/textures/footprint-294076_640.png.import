@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctxl0yr0chok7"
 path.s3tc="res://.godot/imported/footprint-294076_640.png-c69eb226f98578fd4285d2052565933a.s3tc.ctex"
+path.etc2="res://.godot/imported/footprint-294076_640.png-c69eb226f98578fd4285d2052565933a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Placeholders (Will be deleted)/textures/footprint-294076_640.png"
-dest_files=["res://.godot/imported/footprint-294076_640.png-c69eb226f98578fd4285d2052565933a.s3tc.ctex"]
+dest_files=["res://.godot/imported/footprint-294076_640.png-c69eb226f98578fd4285d2052565933a.s3tc.ctex", "res://.godot/imported/footprint-294076_640.png-c69eb226f98578fd4285d2052565933a.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw2pv5e1taf18"
 path.s3tc="res://.godot/imported/MirrorLP_lambert1_BaseColor.tga-b5c4b1e9488ac245cf436620e0bc1af4.s3tc.ctex"
+path.etc2="res://.godot/imported/MirrorLP_lambert1_BaseColor.tga-b5c4b1e9488ac245cf436620e0bc1af4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Mirror/MirrorLP_lambert1_BaseColor.tga"
-dest_files=["res://.godot/imported/MirrorLP_lambert1_BaseColor.tga-b5c4b1e9488ac245cf436620e0bc1af4.s3tc.ctex"]
+dest_files=["res://.godot/imported/MirrorLP_lambert1_BaseColor.tga-b5c4b1e9488ac245cf436620e0bc1af4.s3tc.ctex", "res://.godot/imported/MirrorLP_lambert1_BaseColor.tga-b5c4b1e9488ac245cf436620e0bc1af4.etc2.ctex"]
 
 [params]
 

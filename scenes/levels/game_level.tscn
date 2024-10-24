@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://bnhqyw7sepsbm"]
+[gd_scene load_steps=67 format=3 uid="uid://bnhqyw7sepsbm"]
 
 [ext_resource type="PackedScene" uid="uid://ckkuoomn8py68" path="res://scenes/ui/player_hud.tscn" id="1_btbe4"]
 [ext_resource type="PackedScene" uid="uid://cgt568l8kwmu7" path="res://scenes/ui/settings_menu.tscn" id="1_bxdda"]
@@ -51,6 +51,7 @@
 [ext_resource type="PackedScene" uid="uid://63jepa4yj4s7" path="res://scenes/objects/mirror.tscn" id="43_g0k4k"]
 [ext_resource type="PackedScene" uid="uid://c3j75812wqbcc" path="res://scenes/objects/desk.tscn" id="43_q33bd"]
 [ext_resource type="PackedScene" uid="uid://vl57mdwwn58p" path="res://scenes/objects/chair.tscn" id="44_x0i2x"]
+[ext_resource type="PackedScene" uid="uid://dfdjwgjt5ot5b" path="res://scenes/objects/sanity_items/sanity_item.tscn" id="52_1leq1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7pjwy"]
 size = Vector3(28.8857, 27.0753, 49.2281)
@@ -133,7 +134,7 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
-[sub_resource type="Resource" id="Resource_tf1qb"]
+[sub_resource type="Resource" id="Resource_xid6b"]
 resource_local_to_scene = true
 script = ExtResource("26_utnp7")
 date = "February 1st 1914:"
@@ -487,7 +488,8 @@ noteResource = ExtResource("29_k7txf")
 
 [node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -6.24698, -7.52993, -23.6838)
-noteResource = SubResource("Resource_tf1qb")
+noteResource = SubResource("Resource_xid6b")
+fontSize = 40
 
 [node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, 10.1138, 0.478559, -29.3421)
@@ -694,6 +696,15 @@ transform = Transform3D(0.448804, 0.89363, 0, -0.89363, 0.448804, 0, 0, 0, 1, -0
 cast_shadow = 3
 operation = 2
 size = Vector3(3.47688, 2.35054, 1.99754)
+
+[node name="Candle2" parent="." instance=ExtResource("5_7wh1f")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -8.46542, -6.51668, 3.93019)
+
+[node name="Votive2" parent="." instance=ExtResource("28_ftldx")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, -8.1154, -7.50295, 3.97757)
+
+[node name="SanityItem" parent="." instance=ExtResource("52_1leq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.53309, 0.492353, 5.47506)
 
 [connection signal="body_entered" from="Cabinet/area" to="Cabinet/area" method="_on_body_entered"]
 

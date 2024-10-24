@@ -21,6 +21,7 @@ func _process(delta) -> void:
 			spawn_light.visible = true
 			spawn_light.light_energy = 0
 			summoned = true
+			Global.checkpoints["summoned_demon"] = true
 			spawn_sound.play()
 			Camera.Instance.PlayShake(3,2)
 			pentagram_particles.emitting = true

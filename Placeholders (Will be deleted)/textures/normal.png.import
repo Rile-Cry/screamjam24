@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7j30lsugj4hk"
 path.bptc="res://.godot/imported/normal.png-7a466f442a0bacc8d022e98eae401320.bptc.ctex"
+path.astc="res://.godot/imported/normal.png-7a466f442a0bacc8d022e98eae401320.astc.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Placeholders (Will be deleted)/textures/normal.png"
-dest_files=["res://.godot/imported/normal.png-7a466f442a0bacc8d022e98eae401320.bptc.ctex"]
+dest_files=["res://.godot/imported/normal.png-7a466f442a0bacc8d022e98eae401320.bptc.ctex", "res://.godot/imported/normal.png-7a466f442a0bacc8d022e98eae401320.astc.ctex"]
 
 [params]
 

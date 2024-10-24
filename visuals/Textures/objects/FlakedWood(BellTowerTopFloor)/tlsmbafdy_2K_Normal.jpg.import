@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8a7bjbrkjl12"
 path.s3tc="res://.godot/imported/tlsmbafdy_2K_Normal.jpg-cd619c7616ba7e4f2fc32cd76b130db0.s3tc.ctex"
+path.etc2="res://.godot/imported/tlsmbafdy_2K_Normal.jpg-cd619c7616ba7e4f2fc32cd76b130db0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/FlakedWood(BellTowerTopFloor)/tlsmbafdy_2K_Normal.jpg"
-dest_files=["res://.godot/imported/tlsmbafdy_2K_Normal.jpg-cd619c7616ba7e4f2fc32cd76b130db0.s3tc.ctex"]
+dest_files=["res://.godot/imported/tlsmbafdy_2K_Normal.jpg-cd619c7616ba7e4f2fc32cd76b130db0.s3tc.ctex", "res://.godot/imported/tlsmbafdy_2K_Normal.jpg-cd619c7616ba7e4f2fc32cd76b130db0.etc2.ctex"]
 
 [params]
 

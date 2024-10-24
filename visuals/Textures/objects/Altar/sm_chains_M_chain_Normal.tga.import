@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn2120pifm61x"
 path.s3tc="res://.godot/imported/sm_chains_M_chain_Normal.tga-2356f674adab658e60b3867644a1e2bd.s3tc.ctex"
+path.etc2="res://.godot/imported/sm_chains_M_chain_Normal.tga-2356f674adab658e60b3867644a1e2bd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Altar/sm_chains_M_chain_Normal.tga"
-dest_files=["res://.godot/imported/sm_chains_M_chain_Normal.tga-2356f674adab658e60b3867644a1e2bd.s3tc.ctex"]
+dest_files=["res://.godot/imported/sm_chains_M_chain_Normal.tga-2356f674adab658e60b3867644a1e2bd.s3tc.ctex", "res://.godot/imported/sm_chains_M_chain_Normal.tga-2356f674adab658e60b3867644a1e2bd.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyulgg7d7lqio"
 path.s3tc="res://.godot/imported/knife2_knife2_metallic-knife2_roughness.png-ebfc04b6a3e55b50af81f32ebf232eea.s3tc.ctex"
+path.etc2="res://.godot/imported/knife2_knife2_metallic-knife2_roughness.png-ebfc04b6a3e55b50af81f32ebf232eea.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Placeholders (Will be deleted)/food/knife2_knife2_metallic-knife2_roughness.png"
-dest_files=["res://.godot/imported/knife2_knife2_metallic-knife2_roughness.png-ebfc04b6a3e55b50af81f32ebf232eea.s3tc.ctex"]
+dest_files=["res://.godot/imported/knife2_knife2_metallic-knife2_roughness.png-ebfc04b6a3e55b50af81f32ebf232eea.s3tc.ctex", "res://.godot/imported/knife2_knife2_metallic-knife2_roughness.png-ebfc04b6a3e55b50af81f32ebf232eea.etc2.ctex"]
 
 [params]
 

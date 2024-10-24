@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwbpjx25bf5fk"
 path.s3tc="res://.godot/imported/doll-576791_640.png-cf8be9bcf695dd23cd00346ba9376ee4.s3tc.ctex"
+path.etc2="res://.godot/imported/doll-576791_640.png-cf8be9bcf695dd23cd00346ba9376ee4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Placeholders (Will be deleted)/textures/doll-576791_640.png"
-dest_files=["res://.godot/imported/doll-576791_640.png-cf8be9bcf695dd23cd00346ba9376ee4.s3tc.ctex"]
+dest_files=["res://.godot/imported/doll-576791_640.png-cf8be9bcf695dd23cd00346ba9376ee4.s3tc.ctex", "res://.godot/imported/doll-576791_640.png-cf8be9bcf695dd23cd00346ba9376ee4.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://yyrky5nts0f6"
 path.s3tc="res://.godot/imported/viyjde3_2K_Displacement.jpg-ef59b125bb1f9808ffbdab3905583f9c.s3tc.ctex"
+path.etc2="res://.godot/imported/viyjde3_2K_Displacement.jpg-ef59b125bb1f9808ffbdab3905583f9c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/ConcreteDamaged/viyjde3_2K_Displacement.jpg"
-dest_files=["res://.godot/imported/viyjde3_2K_Displacement.jpg-ef59b125bb1f9808ffbdab3905583f9c.s3tc.ctex"]
+dest_files=["res://.godot/imported/viyjde3_2K_Displacement.jpg-ef59b125bb1f9808ffbdab3905583f9c.s3tc.ctex", "res://.godot/imported/viyjde3_2K_Displacement.jpg-ef59b125bb1f9808ffbdab3905583f9c.etc2.ctex"]
 
 [params]
 

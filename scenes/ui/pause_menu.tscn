@@ -25,6 +25,7 @@ grow_vertical = 2
 color = Color(0.0392157, 0, 0.14902, 0.313726)
 
 [node name="back_button_container" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 10

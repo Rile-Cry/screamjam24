@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg5na10mdcjcn"
 path.s3tc="res://.godot/imported/Obsidian_002_height.png-917c2b1b7567a3e47d1b5e9c7bec3cf0.s3tc.ctex"
+path.etc2="res://.godot/imported/Obsidian_002_height.png-917c2b1b7567a3e47d1b5e9c7bec3cf0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Pedestals/Obsidian_002_height.png"
-dest_files=["res://.godot/imported/Obsidian_002_height.png-917c2b1b7567a3e47d1b5e9c7bec3cf0.s3tc.ctex"]
+dest_files=["res://.godot/imported/Obsidian_002_height.png-917c2b1b7567a3e47d1b5e9c7bec3cf0.s3tc.ctex", "res://.godot/imported/Obsidian_002_height.png-917c2b1b7567a3e47d1b5e9c7bec3cf0.etc2.ctex"]
 
 [params]
 

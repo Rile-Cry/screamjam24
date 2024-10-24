@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1pnbbjgyae3f"
 path.s3tc="res://.godot/imported/VotiveLP_lambert1_BaseColor.tga-4d9cb3eab04b69f9e10445a55631f8b9.s3tc.ctex"
+path.etc2="res://.godot/imported/VotiveLP_lambert1_BaseColor.tga-4d9cb3eab04b69f9e10445a55631f8b9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Votive/VotiveLP_lambert1_BaseColor.tga"
-dest_files=["res://.godot/imported/VotiveLP_lambert1_BaseColor.tga-4d9cb3eab04b69f9e10445a55631f8b9.s3tc.ctex"]
+dest_files=["res://.godot/imported/VotiveLP_lambert1_BaseColor.tga-4d9cb3eab04b69f9e10445a55631f8b9.s3tc.ctex", "res://.godot/imported/VotiveLP_lambert1_BaseColor.tga-4d9cb3eab04b69f9e10445a55631f8b9.etc2.ctex"]
 
 [params]
 

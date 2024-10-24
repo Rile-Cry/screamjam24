@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://ckkuoomn8py68"]
+[gd_scene load_steps=5 format=3 uid="uid://ckkuoomn8py68"]
 
 [ext_resource type="Script" path="res://scripts/ui/PlayerHud.gd" id="1_g8afo"]
 [ext_resource type="FontFile" uid="uid://iooms834mlvy" path="res://visuals/fonts/ReenieBeanie-Regular.ttf" id="2_k25kn"]
+[ext_resource type="FontFile" uid="uid://d1gnl65obr7h4" path="res://ui/fonts/Kings-Regular.ttf" id="3_ewj8c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2rmg8"]
 font = ExtResource("2_k25kn")
@@ -99,22 +100,6 @@ theme_override_font_sizes/font_size = 20
 label_settings = SubResource("LabelSettings_2rmg8")
 horizontal_alignment = 1
 
-[node name="BookLabel" type="Label" parent="."]
-visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -105.5
-offset_top = -27.5
-offset_right = 105.5
-offset_bottom = 27.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 40
-text = "Book Open"
-
 [node name="Sanity" type="MarginContainer" parent="."]
 anchors_preset = 1
 anchor_left = 1.0
@@ -131,3 +116,18 @@ layout_mode = 2
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Hint" type="MarginContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 43.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 20
+
+[node name="Label" type="Label" parent="Hint"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ewj8c")
+theme_override_font_sizes/font_size = 23

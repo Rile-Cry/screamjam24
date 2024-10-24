@@ -138,7 +138,7 @@ text = "\"Lunel\""
 [node name="itch" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/name4"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
-text = "..."
+text = "astrowl.itch.io"
 
 [node name="role4" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2

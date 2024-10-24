@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2et1jmsktthy"
 path.s3tc="res://.godot/imported/vh0xccl_2K_Displacement.jpg-a3223a18228f138ad225d01a57903ea5.s3tc.ctex"
+path.etc2="res://.godot/imported/vh0xccl_2K_Displacement.jpg-a3223a18228f138ad225d01a57903ea5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/BlockWall/vh0xccl_2K_Displacement.jpg"
-dest_files=["res://.godot/imported/vh0xccl_2K_Displacement.jpg-a3223a18228f138ad225d01a57903ea5.s3tc.ctex"]
+dest_files=["res://.godot/imported/vh0xccl_2K_Displacement.jpg-a3223a18228f138ad225d01a57903ea5.s3tc.ctex", "res://.godot/imported/vh0xccl_2K_Displacement.jpg-a3223a18228f138ad225d01a57903ea5.etc2.ctex"]
 
 [params]
 

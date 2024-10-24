@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://g5bd26va1avk"
 path.s3tc="res://.godot/imported/FrontDoorLP_lambert1_BaseColor.tga-5a09d1d41ec76b7611c883fac89c5077.s3tc.ctex"
+path.etc2="res://.godot/imported/FrontDoorLP_lambert1_BaseColor.tga-5a09d1d41ec76b7611c883fac89c5077.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/FrontDoor/FrontDoorLP_lambert1_BaseColor.tga"
-dest_files=["res://.godot/imported/FrontDoorLP_lambert1_BaseColor.tga-5a09d1d41ec76b7611c883fac89c5077.s3tc.ctex"]
+dest_files=["res://.godot/imported/FrontDoorLP_lambert1_BaseColor.tga-5a09d1d41ec76b7611c883fac89c5077.s3tc.ctex", "res://.godot/imported/FrontDoorLP_lambert1_BaseColor.tga-5a09d1d41ec76b7611c883fac89c5077.etc2.ctex"]
 
 [params]
 

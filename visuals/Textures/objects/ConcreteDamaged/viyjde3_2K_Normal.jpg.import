@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://lf1d6aa68jc4"
 path.s3tc="res://.godot/imported/viyjde3_2K_Normal.jpg-8f4262c5d14986efeb4fc6edd379e52c.s3tc.ctex"
+path.etc2="res://.godot/imported/viyjde3_2K_Normal.jpg-8f4262c5d14986efeb4fc6edd379e52c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/ConcreteDamaged/viyjde3_2K_Normal.jpg"
-dest_files=["res://.godot/imported/viyjde3_2K_Normal.jpg-8f4262c5d14986efeb4fc6edd379e52c.s3tc.ctex"]
+dest_files=["res://.godot/imported/viyjde3_2K_Normal.jpg-8f4262c5d14986efeb4fc6edd379e52c.s3tc.ctex", "res://.godot/imported/viyjde3_2K_Normal.jpg-8f4262c5d14986efeb4fc6edd379e52c.etc2.ctex"]
 
 [params]
 

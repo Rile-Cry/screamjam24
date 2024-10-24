@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctqv2dbhldu66"
 path.s3tc="res://.godot/imported/Bell_lambert1_OcclusionRoughnessMetallic.tga-b24a06ccf4a26f8c38f52512080a7008.s3tc.ctex"
+path.etc2="res://.godot/imported/Bell_lambert1_OcclusionRoughnessMetallic.tga-b24a06ccf4a26f8c38f52512080a7008.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Bell/Bell_lambert1_OcclusionRoughnessMetallic.tga"
-dest_files=["res://.godot/imported/Bell_lambert1_OcclusionRoughnessMetallic.tga-b24a06ccf4a26f8c38f52512080a7008.s3tc.ctex"]
+dest_files=["res://.godot/imported/Bell_lambert1_OcclusionRoughnessMetallic.tga-b24a06ccf4a26f8c38f52512080a7008.s3tc.ctex", "res://.godot/imported/Bell_lambert1_OcclusionRoughnessMetallic.tga-b24a06ccf4a26f8c38f52512080a7008.etc2.ctex"]
 
 [params]
 

@@ -11,7 +11,6 @@ size = Vector3(0.316406, 0.856323, 0.352539)
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_47kug"]
 streams_count = 1
 stream_0/stream = ExtResource("2_o0ce7")
-stream_0/weight = 1.0
 
 [node name="Doll" type="RigidBody3D"]
 collision_layer = 5

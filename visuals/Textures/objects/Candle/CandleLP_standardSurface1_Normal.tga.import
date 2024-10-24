@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0xftf0l46epu"
 path.s3tc="res://.godot/imported/CandleLP_standardSurface1_Normal.tga-779412bcce18c080248b1bf5d061de33.s3tc.ctex"
+path.etc2="res://.godot/imported/CandleLP_standardSurface1_Normal.tga-779412bcce18c080248b1bf5d061de33.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Candle/CandleLP_standardSurface1_Normal.tga"
-dest_files=["res://.godot/imported/CandleLP_standardSurface1_Normal.tga-779412bcce18c080248b1bf5d061de33.s3tc.ctex"]
+dest_files=["res://.godot/imported/CandleLP_standardSurface1_Normal.tga-779412bcce18c080248b1bf5d061de33.s3tc.ctex", "res://.godot/imported/CandleLP_standardSurface1_Normal.tga-779412bcce18c080248b1bf5d061de33.etc2.ctex"]
 
 [params]
 

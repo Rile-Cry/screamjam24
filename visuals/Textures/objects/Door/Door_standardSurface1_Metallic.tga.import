@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmlrb753d6tsm"
 path.s3tc="res://.godot/imported/Door_standardSurface1_Metallic.tga-ce6a6159b44acb4f1bccffded871553f.s3tc.ctex"
+path.etc2="res://.godot/imported/Door_standardSurface1_Metallic.tga-ce6a6159b44acb4f1bccffded871553f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Door/Door_standardSurface1_Metallic.tga"
-dest_files=["res://.godot/imported/Door_standardSurface1_Metallic.tga-ce6a6159b44acb4f1bccffded871553f.s3tc.ctex"]
+dest_files=["res://.godot/imported/Door_standardSurface1_Metallic.tga-ce6a6159b44acb4f1bccffded871553f.s3tc.ctex", "res://.godot/imported/Door_standardSurface1_Metallic.tga-ce6a6159b44acb4f1bccffded871553f.etc2.ctex"]
 
 [params]
 

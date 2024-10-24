@@ -16,6 +16,9 @@ var startingEnergy:float
 signal OnLit
 
 func _ready() -> void:
+	if timeCandleStaysLit == 0.:
+		stayLit = true
+	
 	startingEnergy = omni_light_3d.light_energy
 	if !isLit:
 		omni_light_3d.light_energy = 0
