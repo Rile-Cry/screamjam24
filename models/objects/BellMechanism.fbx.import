@@ -31,7 +31,18 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"M_Bell": {
+"use_external/enabled": true,
+"use_external/path": "res://visuals/materials/church_mats/M_Bell.tres"
+},
+"M_Wood_Raw": {
+"use_external/enabled": true,
+"use_external/path": "res://visuals/materials/church_mats/Trim.tres"
+}
+}
+}
 fbx/importer=1
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

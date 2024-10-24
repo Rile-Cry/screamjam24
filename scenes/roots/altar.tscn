@@ -7,6 +7,9 @@
 
 [node name="Altar" instance=ExtResource("1_d6fbi")]
 
+[node name="pCube8" parent="RootNode" index="0"]
+surface_material_override/0 = ExtResource("4_7dmyc")
+
 [node name="pCube9" parent="RootNode" index="1"]
 material_override = ExtResource("2_8mqca")
 

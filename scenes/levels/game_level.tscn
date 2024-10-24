@@ -133,7 +133,7 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 [sub_resource type="BoxShape3D" id="BoxShape3D_ifuwc"]
 size = Vector3(55.6354, 7.41811, 59.3623)
 
-[sub_resource type="Resource" id="Resource_kjkoc"]
+[sub_resource type="Resource" id="Resource_sh51j"]
 resource_local_to_scene = true
 script = ExtResource("26_utnp7")
 date = "February 1st 1914:"
@@ -489,7 +489,7 @@ noteResource = ExtResource("29_k7txf")
 
 [node name="Note4" parent="Notes" instance=ExtResource("25_1lmjg")]
 transform = Transform3D(0.404328, 0, -0.914614, 0, 1, 0, 0.914614, 0, 0.404328, -6.24698, -7.52993, -23.6838)
-noteResource = SubResource("Resource_kjkoc")
+noteResource = SubResource("Resource_sh51j")
 fontSize = 40
 
 [node name="Note5" parent="Notes" instance=ExtResource("25_1lmjg")]
@@ -653,9 +653,9 @@ cast_shadow = 3
 size = Vector3(7.16896, 1.75438, 39.4583)
 
 [node name="OutsideSounds6" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.81559, 12.0314, -6.96363)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.81559, 12.0314, -4.61014)
 cast_shadow = 3
-size = Vector3(9.31348, 1.75438, 44.194)
+size = Vector3(9.31348, 1.75438, 39.487)
 
 [node name="OutsideSounds7" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51717, 17.2311, -7.14426)
@@ -683,9 +683,14 @@ cast_shadow = 3
 size = Vector3(4.28364, 24.9228, 0.96294)
 
 [node name="OutsideSounds14" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29425, 12.1429, -28.2815)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.29425, 12.5113, -28.2815)
 cast_shadow = 3
-size = Vector3(1.31676, 24.9228, 8.36343)
+size = Vector3(1.31676, 25.6595, 8.36343)
+
+[node name="OutsideSounds15" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.56394, 25.3218, -27.7875)
+cast_shadow = 3
+size = Vector3(5.85613, 1.33495, 11.1797)
 
 [node name="OutsideSounds9" type="CSGBox3D" parent="LightBlocker (volumetric fog is bleeding through walls)"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5359, 2.06209, -26.8959)
