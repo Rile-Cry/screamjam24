@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bchlcwah36ovx"
 path.s3tc="res://.godot/imported/tk5magvl_2K_AO.jpg-2949ffa412c69ad645081ad8908ffbec.s3tc.ctex"
+path.etc2="res://.godot/imported/tk5magvl_2K_AO.jpg-2949ffa412c69ad645081ad8908ffbec.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/OldWood(BellTower)/tk5magvl_2K_AO.jpg"
-dest_files=["res://.godot/imported/tk5magvl_2K_AO.jpg-2949ffa412c69ad645081ad8908ffbec.s3tc.ctex"]
+dest_files=["res://.godot/imported/tk5magvl_2K_AO.jpg-2949ffa412c69ad645081ad8908ffbec.s3tc.ctex", "res://.godot/imported/tk5magvl_2K_AO.jpg-2949ffa412c69ad645081ad8908ffbec.etc2.ctex"]
 
 [params]
 

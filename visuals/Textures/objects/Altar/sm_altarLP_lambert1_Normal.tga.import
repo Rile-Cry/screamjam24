@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://kutbw8vp7av5"
 path.s3tc="res://.godot/imported/sm_altarLP_lambert1_Normal.tga-d9a6394a9689bfa46e78f88b53c87150.s3tc.ctex"
+path.etc2="res://.godot/imported/sm_altarLP_lambert1_Normal.tga-d9a6394a9689bfa46e78f88b53c87150.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Altar/sm_altarLP_lambert1_Normal.tga"
-dest_files=["res://.godot/imported/sm_altarLP_lambert1_Normal.tga-d9a6394a9689bfa46e78f88b53c87150.s3tc.ctex"]
+dest_files=["res://.godot/imported/sm_altarLP_lambert1_Normal.tga-d9a6394a9689bfa46e78f88b53c87150.s3tc.ctex", "res://.godot/imported/sm_altarLP_lambert1_Normal.tga-d9a6394a9689bfa46e78f88b53c87150.etc2.ctex"]
 
 [params]
 

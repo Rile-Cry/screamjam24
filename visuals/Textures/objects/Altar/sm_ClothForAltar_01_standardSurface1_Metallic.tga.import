@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccby0ueiayj6q"
 path.s3tc="res://.godot/imported/sm_ClothForAltar_01_standardSurface1_Metallic.tga-4ef4d3731b062ed7aa0a959603f9215c.s3tc.ctex"
+path.etc2="res://.godot/imported/sm_ClothForAltar_01_standardSurface1_Metallic.tga-4ef4d3731b062ed7aa0a959603f9215c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Altar/sm_ClothForAltar_01_standardSurface1_Metallic.tga"
-dest_files=["res://.godot/imported/sm_ClothForAltar_01_standardSurface1_Metallic.tga-4ef4d3731b062ed7aa0a959603f9215c.s3tc.ctex"]
+dest_files=["res://.godot/imported/sm_ClothForAltar_01_standardSurface1_Metallic.tga-4ef4d3731b062ed7aa0a959603f9215c.s3tc.ctex", "res://.godot/imported/sm_ClothForAltar_01_standardSurface1_Metallic.tga-4ef4d3731b062ed7aa0a959603f9215c.etc2.ctex"]
 
 [params]
 

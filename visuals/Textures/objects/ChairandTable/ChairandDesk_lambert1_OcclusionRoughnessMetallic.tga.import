@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cncv6jfxeamx4"
 path.s3tc="res://.godot/imported/ChairandDesk_lambert1_OcclusionRoughnessMetallic.tga-e97d346441359230c9b9c7bd7e6ceb03.s3tc.ctex"
+path.etc2="res://.godot/imported/ChairandDesk_lambert1_OcclusionRoughnessMetallic.tga-e97d346441359230c9b9c7bd7e6ceb03.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/ChairandTable/ChairandDesk_lambert1_OcclusionRoughnessMetallic.tga"
-dest_files=["res://.godot/imported/ChairandDesk_lambert1_OcclusionRoughnessMetallic.tga-e97d346441359230c9b9c7bd7e6ceb03.s3tc.ctex"]
+dest_files=["res://.godot/imported/ChairandDesk_lambert1_OcclusionRoughnessMetallic.tga-e97d346441359230c9b9c7bd7e6ceb03.s3tc.ctex", "res://.godot/imported/ChairandDesk_lambert1_OcclusionRoughnessMetallic.tga-e97d346441359230c9b9c7bd7e6ceb03.etc2.ctex"]
 
 [params]
 

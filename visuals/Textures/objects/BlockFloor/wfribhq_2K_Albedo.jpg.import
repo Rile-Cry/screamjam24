@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpd8fv3bgb67v"
 path.s3tc="res://.godot/imported/wfribhq_2K_Albedo.jpg-a2f52f8646fcf86447a3cea0028fb640.s3tc.ctex"
+path.etc2="res://.godot/imported/wfribhq_2K_Albedo.jpg-a2f52f8646fcf86447a3cea0028fb640.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/BlockFloor/wfribhq_2K_Albedo.jpg"
-dest_files=["res://.godot/imported/wfribhq_2K_Albedo.jpg-a2f52f8646fcf86447a3cea0028fb640.s3tc.ctex"]
+dest_files=["res://.godot/imported/wfribhq_2K_Albedo.jpg-a2f52f8646fcf86447a3cea0028fb640.s3tc.ctex", "res://.godot/imported/wfribhq_2K_Albedo.jpg-a2f52f8646fcf86447a3cea0028fb640.etc2.ctex"]
 
 [params]
 

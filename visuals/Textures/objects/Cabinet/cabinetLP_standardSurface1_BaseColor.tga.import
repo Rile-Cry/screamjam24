@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1ymqonmhctst"
 path.s3tc="res://.godot/imported/cabinetLP_standardSurface1_BaseColor.tga-a6dfab43cd915098bc3d21994f8d0fd4.s3tc.ctex"
+path.etc2="res://.godot/imported/cabinetLP_standardSurface1_BaseColor.tga-a6dfab43cd915098bc3d21994f8d0fd4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Cabinet/cabinetLP_standardSurface1_BaseColor.tga"
-dest_files=["res://.godot/imported/cabinetLP_standardSurface1_BaseColor.tga-a6dfab43cd915098bc3d21994f8d0fd4.s3tc.ctex"]
+dest_files=["res://.godot/imported/cabinetLP_standardSurface1_BaseColor.tga-a6dfab43cd915098bc3d21994f8d0fd4.s3tc.ctex", "res://.godot/imported/cabinetLP_standardSurface1_BaseColor.tga-a6dfab43cd915098bc3d21994f8d0fd4.etc2.ctex"]
 
 [params]
 

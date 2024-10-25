@@ -25,6 +25,7 @@ func OnCandleLit():
 
 func TrialPassed():
 	passed = true
+	Global.checkpoints["lit_candles"] = true
 
 	for child in get_children():
 		if child is Lightable:

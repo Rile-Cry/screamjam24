@@ -9,9 +9,14 @@
 
 [resource]
 albedo_texture = ExtResource("1_p7er2")
+metallic_specular = 0.15
+roughness = 0.2
 roughness_texture = ExtResource("6_podgi")
 normal_enabled = true
+normal_scale = 7.48
 normal_texture = ExtResource("4_r0rat")
+rim = 0.45
+rim_tint = 1.0
 ao_enabled = true
 ao_texture = ExtResource("2_ipknn")
 heightmap_enabled = true

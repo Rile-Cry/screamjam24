@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://5w1mlxvpa3on"
 path.s3tc="res://.godot/imported/ugclefmn_2K_Bump.jpg-8d9f73d8ced90ef150d11e66e488fa4a.s3tc.ctex"
+path.etc2="res://.godot/imported/ugclefmn_2K_Bump.jpg-8d9f73d8ced90ef150d11e66e488fa4a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/OfficeWall/ugclefmn_2K_Bump.jpg"
-dest_files=["res://.godot/imported/ugclefmn_2K_Bump.jpg-8d9f73d8ced90ef150d11e66e488fa4a.s3tc.ctex"]
+dest_files=["res://.godot/imported/ugclefmn_2K_Bump.jpg-8d9f73d8ced90ef150d11e66e488fa4a.s3tc.ctex", "res://.godot/imported/ugclefmn_2K_Bump.jpg-8d9f73d8ced90ef150d11e66e488fa4a.etc2.ctex"]
 
 [params]
 

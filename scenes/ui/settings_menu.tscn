@@ -338,13 +338,14 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_constants/separation = 18
 
-[node name="action" type="Label" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content/controls_container"]
-custom_minimum_size = Vector2(150, 2.08165e-12)
+[node name="HintsCheck" type="CheckBox" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content/controls_container"]
+unique_name_in_owner = true
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 0.996078, 0.823529, 1)
-theme_override_fonts/font = ExtResource("6_jsgm6")
-theme_override_font_sizes/font_size = 40
-text = "Coming soon..."
+theme_override_colors/font_color = Color(0.649633, 0.447809, 0.219303, 1)
+theme_override_colors/font_outline_color = Color(0.294772, 0.181172, 0.00790796, 1)
+theme_override_fonts/font = ExtResource("5_yo3np")
+theme_override_font_sizes/font_size = 42
+text = "Hints"
 
 [node name="audio_content" type="VBoxContainer" parent="book_container/right_side/pages_container/full_pages/single_page/content_margin"]
 unique_name_in_owner = true
@@ -592,6 +593,7 @@ libraries = {
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3cn4i")
 
+[connection signal="toggled" from="book_container/right_side/pages_container/full_pages/single_page/content_margin/accessibility_content/controls_container/HintsCheck" to="." method="_on_hints_check_toggled"]
 [connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/controls_button" to="." method="_on_controls_button_pressed"]
 [connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/accessibility_button" to="." method="_on_accessibility_button_pressed"]
 [connection signal="pressed" from="book_container/left_side/small_page_container/small_page/buttons_margin/button_container/audio_button" to="." method="_on_audio_button_pressed"]

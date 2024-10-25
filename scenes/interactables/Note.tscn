@@ -13,9 +13,7 @@ size = Vector3(1, 0.145386, 1)
 random_pitch = 1.1
 streams_count = 2
 stream_0/stream = ExtResource("4_mb2e1")
-stream_0/weight = 1.0
 stream_1/stream = ExtResource("5_fyccc")
-stream_1/weight = 1.0
 
 [node name="Note" type="RigidBody3D"]
 collision_layer = 5

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3bpacyr0lwtb"
 path.bptc="res://.godot/imported/BookLP_standardSurface1_BaseColor.tga-6fc50602b1ca142db78eb740f64d3d8c.bptc.ctex"
+path.astc="res://.godot/imported/BookLP_standardSurface1_BaseColor.tga-6fc50602b1ca142db78eb740f64d3d8c.astc.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://models/book/BookLP_standardSurface1_BaseColor.tga"
-dest_files=["res://.godot/imported/BookLP_standardSurface1_BaseColor.tga-6fc50602b1ca142db78eb740f64d3d8c.bptc.ctex"]
+dest_files=["res://.godot/imported/BookLP_standardSurface1_BaseColor.tga-6fc50602b1ca142db78eb740f64d3d8c.bptc.ctex", "res://.godot/imported/BookLP_standardSurface1_BaseColor.tga-6fc50602b1ca142db78eb740f64d3d8c.astc.ctex"]
 
 [params]
 

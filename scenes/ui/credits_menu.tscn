@@ -144,7 +144,7 @@ text = "\"Lunel\""
 [node name="itch" type="Label" parent="content_margin/content_container/credits_container/names_roles_container/name4"]
 layout_mode = 2
 theme = ExtResource("1_3enx2")
-text = "..."
+text = "astrowl.itch.io"
 
 [node name="role4" type="Label" parent="content_margin/content_container/credits_container/names_roles_container"]
 layout_mode = 2

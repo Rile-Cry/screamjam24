@@ -7,6 +7,7 @@ extends Control
 @onready var back_button: TextureButton = %back_button
 @onready var background: TextureRect = %Background
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
+@onready var hints_toggle: CheckBox = %HintsCheck
 
 
 @onready var animation_player = $AnimationPlayer
@@ -17,7 +18,9 @@ func _ready() -> void:
 		back_button.pressed.connect(close_in_game_menu)
 		# Start with mouse captured
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		process_mode = ProcessMode.PROCESS_MODE_ALWAYS
 		background.visible = false
+		hints_toggle.button_pressed = Global.access_hint
 		world_environment.queue_free()
 	else:
 		back_button.pressed.connect(_on_back_button_pressed)
@@ -31,11 +34,11 @@ func _input(event: InputEvent) -> void:
 func close_in_game_menu():
 	visible = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	Engine.time_scale = 1
+	get_tree().paused = false
 func open_in_game_menu():
 	visible = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	Engine.time_scale = 0
+	get_tree().paused = true
 
 func _on_back_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/ui/main_menu.tscn")
@@ -76,3 +79,7 @@ func _on_display_button_pressed():
 	audio_content.visible = false
 	display_content.visible = true
 	pass # Replace with function body.
+
+
+func _on_hints_check_toggled(toggled_on: bool) -> void:
+	Global.access_hint = toggled_on

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvco8mcc6tegv"
 path.s3tc="res://.godot/imported/Trim_01_LP_standardSurface1_Roughness.tga-606783749edd1ddb72dc316b5e894b7a.s3tc.ctex"
+path.etc2="res://.godot/imported/Trim_01_LP_standardSurface1_Roughness.tga-606783749edd1ddb72dc316b5e894b7a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Trims/Trim_01_LP_standardSurface1_Roughness.tga"
-dest_files=["res://.godot/imported/Trim_01_LP_standardSurface1_Roughness.tga-606783749edd1ddb72dc316b5e894b7a.s3tc.ctex"]
+dest_files=["res://.godot/imported/Trim_01_LP_standardSurface1_Roughness.tga-606783749edd1ddb72dc316b5e894b7a.s3tc.ctex", "res://.godot/imported/Trim_01_LP_standardSurface1_Roughness.tga-606783749edd1ddb72dc316b5e894b7a.etc2.ctex"]
 
 [params]
 

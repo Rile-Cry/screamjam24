@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0ta25yrvi28i"
 path.s3tc="res://.godot/imported/MirrorLP_lambert1_OcclusionRoughnessMetallic.tga-68a1d5d85bfa3fe46dc1fb29b0a2ec6a.s3tc.ctex"
+path.etc2="res://.godot/imported/MirrorLP_lambert1_OcclusionRoughnessMetallic.tga-68a1d5d85bfa3fe46dc1fb29b0a2ec6a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Mirror/MirrorLP_lambert1_OcclusionRoughnessMetallic.tga"
-dest_files=["res://.godot/imported/MirrorLP_lambert1_OcclusionRoughnessMetallic.tga-68a1d5d85bfa3fe46dc1fb29b0a2ec6a.s3tc.ctex"]
+dest_files=["res://.godot/imported/MirrorLP_lambert1_OcclusionRoughnessMetallic.tga-68a1d5d85bfa3fe46dc1fb29b0a2ec6a.s3tc.ctex", "res://.godot/imported/MirrorLP_lambert1_OcclusionRoughnessMetallic.tga-68a1d5d85bfa3fe46dc1fb29b0a2ec6a.etc2.ctex"]
 
 [params]
 

@@ -18,6 +18,10 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if not Global.checkpoints["picked_up_doll"]:
+		behavior()
+
+func behavior() -> void:
 	if jumpTriggered:
 		return
 	if !visible_on_screen_notifier_3d.is_on_screen():
@@ -29,7 +33,6 @@ func _physics_process(delta: float) -> void:
 	global_rotation.x = 0
 	global_rotation.z = 0
 	global_rotation.y -= PI
-
 
 func teleportToNextPosition():
 	jump_sound.play()

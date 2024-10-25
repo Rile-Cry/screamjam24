@@ -10,6 +10,7 @@ func _on_body_entered(body: Node) -> void:
 	if isOpen: return
 	if body is Book:
 		isOpen = true
+		Global.checkpoints["picked_up_book"] = true
 		OpenPassage()
 func OpenPassage():
 	var moveTween := create_tween()

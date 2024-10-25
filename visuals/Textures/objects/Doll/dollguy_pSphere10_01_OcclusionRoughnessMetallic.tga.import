@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d35v3mm8ksw0o"
 path.s3tc="res://.godot/imported/dollguy_pSphere10_01_OcclusionRoughnessMetallic.tga-72a0f5b3fce72c52607023db72d67e34.s3tc.ctex"
+path.etc2="res://.godot/imported/dollguy_pSphere10_01_OcclusionRoughnessMetallic.tga-72a0f5b3fce72c52607023db72d67e34.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/Doll/dollguy_pSphere10_01_OcclusionRoughnessMetallic.tga"
-dest_files=["res://.godot/imported/dollguy_pSphere10_01_OcclusionRoughnessMetallic.tga-72a0f5b3fce72c52607023db72d67e34.s3tc.ctex"]
+dest_files=["res://.godot/imported/dollguy_pSphere10_01_OcclusionRoughnessMetallic.tga-72a0f5b3fce72c52607023db72d67e34.s3tc.ctex", "res://.godot/imported/dollguy_pSphere10_01_OcclusionRoughnessMetallic.tga-72a0f5b3fce72c52607023db72d67e34.etc2.ctex"]
 
 [params]
 

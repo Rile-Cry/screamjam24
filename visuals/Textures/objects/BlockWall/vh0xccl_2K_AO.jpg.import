@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuo5pasuoe0ar"
 path.s3tc="res://.godot/imported/vh0xccl_2K_AO.jpg-70aab11b9262b66b8ab04754150cb29c.s3tc.ctex"
+path.etc2="res://.godot/imported/vh0xccl_2K_AO.jpg-70aab11b9262b66b8ab04754150cb29c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/BlockWall/vh0xccl_2K_AO.jpg"
-dest_files=["res://.godot/imported/vh0xccl_2K_AO.jpg-70aab11b9262b66b8ab04754150cb29c.s3tc.ctex"]
+dest_files=["res://.godot/imported/vh0xccl_2K_AO.jpg-70aab11b9262b66b8ab04754150cb29c.s3tc.ctex", "res://.godot/imported/vh0xccl_2K_AO.jpg-70aab11b9262b66b8ab04754150cb29c.etc2.ctex"]
 
 [params]
 

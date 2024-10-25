@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://da2yfmd2xiui4"
 path.s3tc="res://.godot/imported/ugclefmn_2K_Normal.jpg-c2d0f4fbd3870507ba131d2d5e5837a0.s3tc.ctex"
+path.etc2="res://.godot/imported/ugclefmn_2K_Normal.jpg-c2d0f4fbd3870507ba131d2d5e5837a0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/OfficeWall/ugclefmn_2K_Normal.jpg"
-dest_files=["res://.godot/imported/ugclefmn_2K_Normal.jpg-c2d0f4fbd3870507ba131d2d5e5837a0.s3tc.ctex"]
+dest_files=["res://.godot/imported/ugclefmn_2K_Normal.jpg-c2d0f4fbd3870507ba131d2d5e5837a0.s3tc.ctex", "res://.godot/imported/ugclefmn_2K_Normal.jpg-c2d0f4fbd3870507ba131d2d5e5837a0.etc2.ctex"]
 
 [params]
 

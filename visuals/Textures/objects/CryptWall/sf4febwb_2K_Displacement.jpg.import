@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://si72wn6mk7ms"
 path.s3tc="res://.godot/imported/sf4febwb_2K_Displacement.jpg-ddc7e7bcb09dc2fdda673142c47de4d0.s3tc.ctex"
+path.etc2="res://.godot/imported/sf4febwb_2K_Displacement.jpg-ddc7e7bcb09dc2fdda673142c47de4d0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/CryptWall/sf4febwb_2K_Displacement.jpg"
-dest_files=["res://.godot/imported/sf4febwb_2K_Displacement.jpg-ddc7e7bcb09dc2fdda673142c47de4d0.s3tc.ctex"]
+dest_files=["res://.godot/imported/sf4febwb_2K_Displacement.jpg-ddc7e7bcb09dc2fdda673142c47de4d0.s3tc.ctex", "res://.godot/imported/sf4febwb_2K_Displacement.jpg-ddc7e7bcb09dc2fdda673142c47de4d0.etc2.ctex"]
 
 [params]
 

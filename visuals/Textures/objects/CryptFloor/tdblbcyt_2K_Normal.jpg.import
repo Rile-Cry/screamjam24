@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwwv36m0u6c2s"
 path.s3tc="res://.godot/imported/tdblbcyt_2K_Normal.jpg-87c3421ac4f62855d59a49fc0604c0a1.s3tc.ctex"
+path.etc2="res://.godot/imported/tdblbcyt_2K_Normal.jpg-87c3421ac4f62855d59a49fc0604c0a1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://visuals/Textures/objects/CryptFloor/tdblbcyt_2K_Normal.jpg"
-dest_files=["res://.godot/imported/tdblbcyt_2K_Normal.jpg-87c3421ac4f62855d59a49fc0604c0a1.s3tc.ctex"]
+dest_files=["res://.godot/imported/tdblbcyt_2K_Normal.jpg-87c3421ac4f62855d59a49fc0604c0a1.s3tc.ctex", "res://.godot/imported/tdblbcyt_2K_Normal.jpg-87c3421ac4f62855d59a49fc0604c0a1.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://45nirgscd1ra"
 path.s3tc="res://.godot/imported/shadow-flying-satan-devil-lucifer-demon-death-black-white-background-silhouette-178123673.png-00d9c48ed34e8cc241f326387f935074.s3tc.ctex"
+path.etc2="res://.godot/imported/shadow-flying-satan-devil-lucifer-demon-death-black-white-background-silhouette-178123673.png-00d9c48ed34e8cc241f326387f935074.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Placeholders (Will be deleted)/textures/shadow-flying-satan-devil-lucifer-demon-death-black-white-background-silhouette-178123673.png"
-dest_files=["res://.godot/imported/shadow-flying-satan-devil-lucifer-demon-death-black-white-background-silhouette-178123673.png-00d9c48ed34e8cc241f326387f935074.s3tc.ctex"]
+dest_files=["res://.godot/imported/shadow-flying-satan-devil-lucifer-demon-death-black-white-background-silhouette-178123673.png-00d9c48ed34e8cc241f326387f935074.s3tc.ctex", "res://.godot/imported/shadow-flying-satan-devil-lucifer-demon-death-black-white-background-silhouette-178123673.png-00d9c48ed34e8cc241f326387f935074.etc2.ctex"]
 
 [params]
 

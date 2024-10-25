@@ -15,9 +15,11 @@ func _ready():
 
 func _process(_delta):
 	if pedestal_slot.get_child_count() > 1:
+		interactDescription = "Take Item"
 		is_holding_item = true
 	else:
 		is_holding_item = false
+		interactDescription = "Place Item"
 
 
 func interact():

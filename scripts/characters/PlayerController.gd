@@ -119,8 +119,6 @@ func movement(delta) -> void:
 	else:
 		velocity.y = 0
 
-
-
 	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
@@ -164,6 +162,8 @@ func check_ray() -> void:
 func pick_up() -> void:
 	# Crude pickup method :: will look very different.
 	drop()
+	if is_instance_of(colliding_obj, KeyItem):
+		key_item_check(colliding_obj)
 	if colliding_obj.get_parent() != null:
 		colliding_obj.get_parent().remove_child(colliding_obj)
 	if is_instance_of(colliding_obj, Book):
@@ -273,3 +273,18 @@ func got_on_ladder() -> void:
 func got_off_ladder() -> void:
 	velocity = Vector3.ZERO
 	is_on_ladder = false
+
+func key_item_check(item: KeyItem) -> void:
+	match(item.itemName):
+		"Human Fat Candle":
+			Global.checkpoints["picked_up_candle"] = true
+		"Doll":
+			Global.checkpoints["picked_up_doll"] = true
+		"Gabriel's Blade":
+			Global.checkpoints["picked_up_knife"] = true
+		"Mirror":
+			Global.checkpoints["found_mirror"] = true
+		"Full Chalice":
+			Global.checkpoints["picked_up_chalice"] = true
+		_:
+			pass
